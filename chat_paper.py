@@ -368,159 +368,24 @@ class Reader:
                     raise Exception("无法读取配置文件，请确保文件编码正确且内容有效") from e
                 continue  # 尝试下一个编码
 
-        # --- Gemini and API Key Configuration ---
+        # LLM client centralized initialization (moved to llm_client.py)
         try:
-            # 从配置文件获取API密钥和模型名称
-            gemini_api_key = self.config.get('Gemini', 'API_KEY')
-            if not gemini_api_key or gemini_api_key == 'your_gemini_api_key_here':
-                print("警告：未在 apikey.ini 中找到有效的 Gemini API 密钥")
-                self.model = None
-                return
-
-            # 检查 google-generativeai 版本
-            genai_version = genai.__version__
-            # print(f"正在使用 google-generativeai 版本: {genai_version}")
-
-            # 配置 API
-            genai.configure(api_key=gemini_api_key)
-            
-            print("正在初始化 Gemini 模型...")
-            try:
-                # 获取可用模型列表
-                models = [m.name for m in genai.list_models()]
-                # print(f"可用的模型列表: {models}")
-                
-                # 从配置文件获取指定的模型名称
-                try:
-                    model_name = self.config.get('Gemini', 'MODEL_NAME')
-                    if model_name not in models:
-                        print(f"警告：配置的模型 {model_name} 不可用")
-                        # 寻找2.5版本模型
-                        preferred_models = [m for m in models if "gemini-2.5-pro" in m or "gemini-2.5-flash" in m]
-                        # 按照优先级排序：flash > pro
-                        preferred_models.sort(key=lambda x: "flash" in x, reverse=True)
-
-                        if not preferred_models:
-                            print("警告：未找到2.5版本模型，尝试使用其他可用模型")
-                            model_name = models[0]
-                        else:
-                            model_name = preferred_models[0]
-                        print(f"将使用模型: {model_name}")
-                except (configparser.NoOptionError, KeyError):
-                    print("未在配置文件中找到MODEL_NAME，将使用默认模型")
-                    # 使用2.5版本模型
-                        # 清理模型名称并查找可用模型
-                    models = [m.name.replace('models/', '') for m in genai.list_models()]
-                    
-                    # 优先尝试2.5版本模型
-                    if "gemini-2.5-flash" in models:
-                        model_name = "gemini-2.5-flash"
-                    elif "gemini-2.5-pro" in models:
-                        model_name = "gemini-2.5-pro"
-                    elif "gemini-pro" in models:
-                        print("未找到2.5版本模型，使用gemini-pro")
-                        model_name = "gemini-pro"
-                    else:
-                        print("警告：未找到指定模型，使用第一个可用模型")
-                        model_name = models[0] if models else "gemini-pro"
-                
-                print(f"正在使用模型: {model_name}")
-                self.model = genai.GenerativeModel(model_name)
-                
-                # 测试模型是否可用
-                model_queue = [model_name]  # 初始模型
-                
-                # 定义优先级顺序
-                priority_models = [
-                    "gemini-2.5-flash",
-                    "gemini-2.5-pro",
-                ]
-                
-                # 获取所有可用的模型
-                try:
-                    # 获取模型列表并清理名称
-                    all_models = [m.name.replace('models/', '') for m in genai.list_models()]
-                    
-                    # 初始化模型队列
-                    model_queue = []
-                    
-                    # 首先尝试添加2.5版本的模型
-                    for model in priority_models:
-                        if model in all_models:
-                            model_queue.append(model)
-                    
-                    # 然后添加基础的gemini-pro
-                    if "gemini-pro" in all_models and "gemini-pro" not in model_queue:
-                        model_queue.append("gemini-pro")
-                    
-                    # 如果队列为空，使用第一个可用模型
-                    if not model_queue and all_models:
-                        model_queue.append(all_models[0])
-                    
-                    print(f"可用模型队列: {', '.join(model_queue)}")
-                    if not model_queue:
-                        print("警告：未找到可用的模型")
-                        self.model = None
-                        return
-                        
-                except Exception as e:
-                    print(f"警告：无法获取模型列表: {e}")
-                    model_queue = ["gemini-pro"]  # 使用默认模型作为后备
-                
-                for model_name in model_queue:
-                    max_retries = 3  # 每个模型最多重试3次
-                    retry_delay = 60  # 重试等待时间（秒）
-                    
-                    for retry in range(max_retries):
-                        try:
-                            print(f"\n尝试使用模型: {model_name} (第 {retry + 1} 次尝试)")
-                            self.model = genai.GenerativeModel(model_name)
-                            
-                            # 测试模型
-                            response = self.model.generate_content("Test message")
-                            if response and response.text:
-                                print(f"成功初始化模型: {model_name}")
-                                return  # 成功初始化，退出函数
-                            else:
-                                print(f"警告：模型 {model_name} 返回空响应")
-                                if retry < max_retries - 1:
-                                    print(f"等待 {retry_delay} 秒后重试...")
-                                    time.sleep(retry_delay)
-                                    continue
-                                else:
-                                    self.model = None
-                                    break
-                                
-                        except Exception as e:
-                            error_msg = str(e).lower()
-                            if "quota" in error_msg or "429" in error_msg:
-                                print(f"配额超限: {e}")
-                                if retry < max_retries - 1:
-                                    print(f"\n等待 {retry_delay} 秒后重试...")
-                                    time.sleep(retry_delay)
-                                    continue
-                                else:
-                                    print(f"模型 {model_name} 重试次数已达上限")
-                            else:
-                                print(f"模型 {model_name} 初始化失败: {e}")
-                            self.model = None
-                            break  # 如果不是配额问题，直接尝试下一个模型
-                
-                # 如果所有模型都失败了
-                print("\n警告：所有可用模型都初始化失败，将使用备用响应")
-                self.model = None
-                    
-            except Exception as e:
-                print(f"Error initializing Gemini model: {e}")
-                self.model = None
-                
-        except (configparser.NoSectionError, configparser.NoOptionError):
-            print("Warning: [Gemini] section or API_KEY not found in apikey.ini.")
-            self.model = None
+            from llm_client import make_client
+            self.llm = make_client(self.config, args)
+            if getattr(self.llm, 'enabled', False):
+                print(f"使用 LLM 模型: {self.llm.current_model_name()}")
+            else:
+                print("LLM 未初始化或不可用，后续生成将返回备用消息")
+        except Exception as e:
+            print(f"初始化 LLM 客户端失败: {e}")
+            self.llm = None
 
         self.file_format = args.file_format
         if args.save_image:
-            self.gitee_key = self.config.get('Gitee', 'api')
+            try:
+                self.gitee_key = self.config.get('Gitee', 'api')
+            except Exception:
+                self.gitee_key = ''
         else:
             self.gitee_key = ''
 
@@ -576,30 +441,30 @@ class Reader:
         title_list, link_list, date_list = [], [], []
         for page in range(page_num):
             url = self.get_url(keyword, page)  # 根据关键词和页码生成链接
+            print(f"Fetching page {page+1} with URL: {url}")
             titles, links, dates = self.get_titles(url, days)  # 根据链接获取论文标题
             if not titles:  # 如果没有获取到任何标题，说明已经到达最后一页，退出循环
                 break
+            print(f"get_all_titles_from_web \r")
             for title_index, title in enumerate(titles):  # 遍历每个标题，并打印出来
-                print(page, title_index, title, links[title_index], dates[title_index])
+                print(f"Page:{page}, Index:{title_index}, {title}, {links[title_index]}, {dates[title_index]}")
             title_list.extend(titles)
             link_list.extend(links)
             date_list.extend(dates)
-        print("-" * 40)
+        print("---" * 40)
         return title_list, link_list, date_list
 
     def get_arxiv_web(self, args, page_num=1, days=2):
         titles, links, dates = self.get_all_titles_from_web(args.query, page_num=page_num, days=days)
         paper_list = []
+        print(f"get_arxiv_web \r")
         for title_index, title in enumerate(titles):
             if title_index + 1 > args.max_results:
                 break
-            print(title_index, title, links[title_index], dates[title_index])
+            print(f"Index:{title_index}, {title}, {links[title_index]}, {dates[title_index]}")
             url = links[title_index] + ".pdf"  # the link of the pdf document
             filename = self.try_download_pdf(url, title)
-            paper = Paper(path=filename,
-                          url=links[title_index],
-                          title=title,
-                          )
+            paper = Paper(path=filename, url=links[title_index], title=title)
             paper_list.append(paper)
         return paper_list
 
@@ -628,13 +493,20 @@ class Reader:
 
     def download_pdf(self, url, title):
         response = requests.get(url)  # send a GET request to the url
-        date_str = str(datetime.datetime.now())[:13].replace(' ', '-')
-        path = self.root_path + 'pdf_files/' + self.validateTitle(self.args.query) + '-' + date_str
-        try:
-            os.makedirs(path)
-        except:
-            pass
-        filename = os.path.join(path, self.validateTitle(title)[:80] + '.pdf')
+        # 不再在路径中使用时间戳，改为使用基于查询的子目录
+        path = os.path.join(self.root_path, 'pdf_files', self.validateTitle(self.args.query))
+        os.makedirs(path, exist_ok=True)
+        base_name = f"{self.validateTitle(title)[:80]}.pdf"
+        filename = os.path.join(path, base_name)
+        # 如果文件存在且未启用 --force，则添加数字后缀避免覆盖
+        if os.path.exists(filename) and not getattr(self.args, 'force', False):
+            idx = 1
+            while True:
+                candidate = os.path.join(path, f"{self.validateTitle(title)[:80]}-{idx}.pdf")
+                if not os.path.exists(candidate):
+                    filename = candidate
+                    break
+                idx += 1
         with open(filename, "wb") as f:  # open a file with write and binary mode
             f.write(response.content)  # write the content of the response to the file
         return filename
@@ -718,8 +590,8 @@ class Reader:
                 print("\n正在获取可用模型列表...")
                 # 获取所有可用模型
                 all_models = [
-                    model.name for model in self.genai.list_models()
-                    if 'generateContent' in model.supported_generation_methods
+                    model.name for model in genai.list_models()
+                    if 'generateContent' in getattr(model, 'supported_generation_methods', [])
                 ]
                 
                 # 筛选2.5pro和2.5flash版本的模型
@@ -744,7 +616,7 @@ class Reader:
             self._current_model_index = (self._current_model_index + 1) % len(self._available_models)
             model_name = self._available_models[self._current_model_index]
             try:
-                self.model = self.genai.GenerativeModel(model_name=model_name)
+                self.model = genai.GenerativeModel(model_name=model_name)
                 print(f"\n已切换到新模型: {model_name}")
                 return True
             except Exception as e:
@@ -755,75 +627,12 @@ class Reader:
         """
         调用 Gemini API 的包装函数，包含重试逻辑、速率限制处理和模型自动切换
         """
-        if not self.model:
-            print("\n错误：Gemini 模型未初始化，将使用备用响应。")
-            return "抱歉，由于 API 初始化问题，我暂时无法生成响应。请检查您的 API 密钥和模型可用性。"
+        # Delegate LLM generation to centralized LLM client if available
+        if hasattr(self, 'llm') and self.llm:
+            return self.llm.generate(prompt)
 
-        max_retries = 3
-        retry_delay = 60  # 固定等待60秒
-        
-        # 设置安全配置
-        safety_settings = [
-            {
-                "category": "HARM_CATEGORY_HARASSMENT",
-                "threshold": "BLOCK_NONE",
-            },
-            {
-                "category": "HARM_CATEGORY_HATE_SPEECH",
-                "threshold": "BLOCK_NONE",
-            },
-            {
-                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-                "threshold": "BLOCK_NONE",
-            },
-            {
-                "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-                "threshold": "BLOCK_NONE",
-            },
-        ]
-        
-        for retry in range(max_retries):
-            try:
-                if retry > 0:
-                    print(f"\n第 {retry + 1} 次尝试生成内容...")
-                
-                print(f"\n正在使用模型 {self.model.model_name} 生成内容...")
-                response = self.model.generate_content(
-                    prompt,
-                    safety_settings=safety_settings
-                )
-                
-                # 验证响应
-                if not response:
-                    raise Exception("生成的响应为空")
-                    
-                if not hasattr(response, 'text'):
-                    raise Exception("响应中没有文本内容")
-                    
-                if not response.text:
-                    raise Exception("响应文本为空")
-                
-                return response.text
-                
-            except Exception as e:
-                error_msg = str(e).lower()
-                if "quota" in error_msg or "429" in error_msg or "rate" in error_msg or "limit" in error_msg:
-                    if retry < max_retries - 1:
-                        print(f"\n配额超限或速率限制，等待 {retry_delay} 秒后重试...\n错误信息：{e}")
-                        time.sleep(retry_delay)
-                    else:
-                        print(f"\n已达到最大重试次数 ({max_retries})，无法继续重试")
-                        break
-                else:
-                    print(f"\nGemini API 调用出错：{e}")
-                    if retry < max_retries - 1:
-                        print(f"等待 {retry_delay} 秒后重试...")
-                        time.sleep(retry_delay)
-                    else:
-                        break
-        
-        # 如果所有重试都失败了
-        return "抱歉，生成内容时遇到问题，请稍后重试。"
+        print("\n错误：LLM 客户端未初始化，将使用备用响应。")
+        return "抱歉，由于 API 初始化问题，我暂时无法生成响应。请检查您的 API 密钥和模型可用性。"
 
     def summary_with_chat(self, paper_list):
         # 加载已处理文件缓存，跳过已处理的论文
@@ -897,7 +706,11 @@ class Reader:
             full_summary += f"作者: {', '.join(paper.authers)}\n\n"
             
             # 添加模型信息
-            current_model = getattr(self.model, 'model_name', 'Unknown')
+            # 优先从 LLM 客户端获取当前模型名
+            if hasattr(self, 'llm') and self.llm:
+                current_model = getattr(self.llm, 'model_name', 'Unknown')
+            else:
+                current_model = 'Unknown'
             full_summary += f"使用模型: {current_model}\n\n"
             
             # 添加论文分析
@@ -908,9 +721,8 @@ class Reader:
             
             # 如果开启了保存图片功能，提取并保存图片
             if self.args.save_image:
-                # 创建图片保存目录
-                date_str = str(datetime.datetime.now())[:13].replace(' ', '-')
-                image_dir = os.path.join(self.root_path, "export", f"images_{self.validateTitle(paper.title)}_{date_str}")
+                # 创建图片保存目录（不再在目录名中使用时间戳）
+                image_dir = os.path.join(self.root_path, "export", f"images_{self.validateTitle(paper.title)}")
                 if not os.path.exists(image_dir):
                     os.makedirs(image_dir)
                 
@@ -981,18 +793,30 @@ class Reader:
 
     def get_output_filename(self, paper_title=None):
         """获取输出文件的完整路径"""
-        date_str = str(datetime.datetime.now())[:13].replace(' ', '-')
         export_path = os.path.join(self.root_path, "export")
         if not os.path.exists(export_path):
             os.makedirs(export_path)
         
-        # 如果提供了论文标题，使用论文标题作为文件名的一部分
+        # 如果提供了论文标题，使用论文标题作为文件名的一部分（不再包含时间戳）
         if paper_title:
-            filename = f"{self.validateTitle(paper_title)}-{date_str}.{self.args.file_format}"
+            base = self.validateTitle(paper_title)
         else:
-            filename = f"{self.validateTitle(self.args.query)}-{date_str}.{self.args.file_format}"
-        
-        return os.path.join(export_path, filename)
+            base = self.validateTitle(self.args.query)
+
+        filename = f"{base}.{self.args.file_format}"
+        full = os.path.join(export_path, filename)
+
+        # 如果文件存在且未启用 --force，则添加数字后缀避免覆盖
+        if os.path.exists(full) and not getattr(self.args, 'force', False):
+            idx = 1
+            while True:
+                candidate = os.path.join(export_path, f"{base}-{idx}.{self.args.file_format}")
+                if not os.path.exists(candidate):
+                    full = candidate
+                    break
+                idx += 1
+
+        return full
 
     def export_to_markdown(self, text, file_name, mode='w'):
         """
@@ -1091,16 +915,16 @@ if __name__ == '__main__':
                          help="arxiv搜索查询字符串，ti: xx, au: xx, all: xx")
     arxiv_group.add_argument("--key_word", type=str, default='GPT robot', 
                          help="用户研究领域的关键词")
-    arxiv_group.add_argument("--page_num", type=int, default=2, 
+    arxiv_group.add_argument("--page_num", type=int, default=25, 
                          help="arxiv搜索时的最大页数")
-    arxiv_group.add_argument("--days", type=int, default=10, 
+    arxiv_group.add_argument("--days", type=int, default=180, 
                          help="arxiv搜索时的最近天数限制")
     arxiv_group.add_argument("--sort", type=str, default="web", 
                          help="arxiv排序方式，可选 LastUpdatedDate")
     
     # 通用选项参数组
     general_group = parser.add_argument_group('通用选项')
-    general_group.add_argument("--max_results", type=int, default=3, 
+    general_group.add_argument("--max_results", type=int, default=2, 
                           help="要处理的最大论文数量")
     general_group.add_argument("--save_image", action='store_true', default=True,
                           help="是否保存论文图片，默认开启。可能需要一两分钟的时间来保存图片")
