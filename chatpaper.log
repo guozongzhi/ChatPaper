@@ -6288,3 +6288,948 @@ openai.APIConnectionError: Connection error.
 2025-11-09 20:55:07,959 - INFO - root - 跳过已处理论文 A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies：d:\ChatPaper\academic Papers\Quantization-Aware-Training\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.pdf
 2025-11-09 20:55:07,959 - INFO - root - 跳过已处理论文 FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error：d:\ChatPaper\academic Papers\Quantization-Aware-Training\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error.pdf
 2025-11-09 20:55:07,960 - INFO - root - summary time: 68.21 seconds
+2025-11-09 20:58:06,281 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 20:58:06,283 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 20:58:06,286 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 20:58:07,080 - INFO - root - LLMClientManager: 指定使用客户端: Gemini
+2025-11-09 20:58:08,427 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 20:58:11,567 - INFO - root - GeminiClient: initialized model gemini-2.5-flash
+2025-11-09 20:58:11,568 - INFO - root - LLMClientManager: Gemini 客户端初始化成功
+2025-11-09 20:58:11,568 - INFO - root - LLMClientManager: switched to Gemini client
+2025-11-09 20:58:11,568 - INFO - root - 已手动切换到 LLM 客户端: Gemini
+2025-11-09 20:58:11,569 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 20:58:11,569 - INFO - root - 可用客户端: ['Gemini']
+2025-11-09 20:58:11,570 - INFO - root - === 运行配置 ===
+2025-11-09 20:58:11,570 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 20:58:11,570 - INFO - root - 关键词: QAT
+2025-11-09 20:58:11,570 - INFO - root - 查询: Quantization-Aware-Training
+2025-11-09 20:58:11,571 - INFO - root - 排序: None
+2025-11-09 20:58:11,572 - INFO - root - 最近天数: 180
+2025-11-09 20:58:11,573 - INFO - root - 最大处理数量: 40
+2025-11-09 20:58:11,573 - INFO - root - 保存图片: 是
+2025-11-09 20:58:11,573 - INFO - root - 输出语言: 中文
+2025-11-09 20:58:11,574 - INFO - root - 强制重新处理: 否
+2025-11-09 20:58:11,575 - INFO - root - ====================
+2025-11-09 20:58:11,575 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 20:58:11,575 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 20:58:18,450 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:18,450 - INFO - root - Page:0, Index:0, A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies, https://arxiv.org/pdf/2511.03201, 2025-11-05
+2025-11-09 20:58:18,451 - INFO - root - Page:0, Index:1, FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error, https://arxiv.org/pdf/2511.02302, 2025-11-04
+2025-11-09 20:58:18,451 - INFO - root - Page:0, Index:2, Outlier-Aware Post-Training Quantization for Image Super-Resolution, https://arxiv.org/pdf/2511.00682, 2025-11-01
+2025-11-09 20:58:18,451 - INFO - root - Page:0, Index:3, Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications, https://arxiv.org/pdf/2510.25853, 2025-11-03
+2025-11-09 20:58:18,452 - INFO - root - Page:0, Index:4, Improving the Straight-Through Estimator with Zeroth-Order Information, https://arxiv.org/pdf/2510.23926, 2025-10-27
+2025-11-09 20:58:18,452 - INFO - root - Page:0, Index:5, Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework, https://arxiv.org/pdf/2510.22243, 2025-10-25
+2025-11-09 20:58:18,453 - INFO - root - Page:0, Index:6, TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge, https://arxiv.org/pdf/2510.21879, 2025-10-23
+2025-11-09 20:58:18,453 - INFO - root - Page:0, Index:7, KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group, https://arxiv.org/pdf/2510.21844, 2025-10-22
+2025-11-09 20:58:18,453 - INFO - root - Page:0, Index:8, A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization, https://arxiv.org/pdf/2510.21314, 2025-10-24
+2025-11-09 20:58:18,455 - INFO - root - Page:0, Index:9, Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks, https://arxiv.org/pdf/2510.19760, 2025-10-22
+2025-11-09 20:58:18,455 - INFO - root - Page:0, Index:10, CAGE: Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Training, https://arxiv.org/pdf/2510.18784, 2025-10-21
+2025-11-09 20:58:18,455 - INFO - root - Page:0, Index:11, Mixed-Precision Quantization for Language Models: Techniques and Prospects, https://arxiv.org/pdf/2510.16805, 2025-10-19
+2025-11-09 20:58:18,456 - INFO - root - Page:0, Index:12, SPLite Hand: Sparsity-Aware Lightweight 3D Hand Pose Estimation, https://arxiv.org/pdf/2510.16396, 2025-10-30
+2025-11-09 20:58:18,456 - INFO - root - Page:0, Index:13, CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models, https://arxiv.org/pdf/2510.15962, 2025-10-11
+2025-11-09 20:58:18,457 - INFO - root - Page:0, Index:14, SANR: Scene-Aware Neural Representation for Light Field Image Compression with Rate-Distortion Optimization, https://arxiv.org/pdf/2510.15775, 2025-10-17
+2025-11-09 20:58:18,457 - INFO - root - Page:0, Index:15, SpikeFit: Towards Optimal Deployment of Spiking Networks on Neuromorphic Hardware, https://arxiv.org/pdf/2510.15542, 2025-10-31
+2025-11-09 20:58:18,458 - INFO - root - Page:0, Index:16, GRank: Towards Target-Aware and Streamlined Industrial Retrieval with a Generate-Rank Framework, https://arxiv.org/pdf/2510.15299, 2025-10-17
+2025-11-09 20:58:18,458 - INFO - root - Page:0, Index:17, SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images, https://arxiv.org/pdf/2510.15072, 2025-10-16
+2025-11-09 20:58:18,459 - INFO - root - Page:0, Index:18, FraQAT: Quantization Aware Training with Fractional bits, https://arxiv.org/pdf/2510.14823, 2025-10-16
+2025-11-09 20:58:18,459 - INFO - root - Page:0, Index:19, Computing-In-Memory Aware Model Adaption For Edge Devices, https://arxiv.org/pdf/2510.14379, 2025-10-16
+2025-11-09 20:58:18,461 - INFO - root - Page:0, Index:20, Invited Paper: BitMedViT: Ternary-Quantized Vision Transformer for Medical AI Assistants on the Edge, https://arxiv.org/pdf/2510.13760, 2025-11-04
+2025-11-09 20:58:18,462 - INFO - root - Page:0, Index:21, NeuroRVQ: Multi-Scale EEG Tokenization for Generative Large Brainwave Models, https://arxiv.org/pdf/2510.13068, 2025-10-14
+2025-11-09 20:58:18,463 - INFO - root - Page:0, Index:22, Detect Anything via Next Point Prediction, https://arxiv.org/pdf/2510.12798, 2025-10-14
+2025-11-09 20:58:18,464 - INFO - root - Page:0, Index:23, AndesVL Technical Report: An Efficient Mobile-side Multimodal Large Language Model, https://arxiv.org/pdf/2510.11496, 2025-10-14
+2025-11-09 20:58:18,464 - INFO - root - Page:0, Index:24, Rescaling-Aware Training for Efficient Deployment of Deep Learning Models on Full-Integer Hardware, https://arxiv.org/pdf/2510.11484, 2025-10-13
+2025-11-09 20:58:18,464 - INFO - root - Page:0, Index:25, SASER: Stego attacks on open-source LLMs, https://arxiv.org/pdf/2510.10486, 2025-10-12
+2025-11-09 20:58:18,466 - INFO - root - Page:0, Index:26, Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8 and YOLOv5 Object Detectors for Computer Vision and Pattern Recognition, https://arxiv.org/pdf/2510.09653, 2025-10-15
+2025-11-09 20:58:18,466 - INFO - root - Page:0, Index:27, A Theoretically-Grounded Codebook for Digital Semantic Communications, https://arxiv.org/pdf/2510.07108, 2025-10-14
+2025-11-09 20:58:18,467 - INFO - root - Page:0, Index:28, QuantDemoire: Quantization with Outlier Aware for Image Demoiréing, https://arxiv.org/pdf/2510.04066, 2025-10-05
+2025-11-09 20:58:18,469 - INFO - root - Page:0, Index:29, Adaptively Sampling-Reusing-Mixing Decomposed Gradients to Speed Up Sharpness Aware Minimization, https://arxiv.org/pdf/2510.03763, 2025-10-04
+2025-11-09 20:58:18,474 - INFO - root - Page:0, Index:30, Quant-dLLM: Post-Training Extreme Low-Bit Quantization for Diffusion Large Language Models, https://arxiv.org/pdf/2510.03274, 2025-09-27
+2025-11-09 20:58:18,474 - INFO - root - Page:0, Index:31, PT$^2$-LLM: Post-Training Ternarization for Large Language Models, https://arxiv.org/pdf/2510.03267, 2025-09-26
+2025-11-09 20:58:18,475 - INFO - root - Page:0, Index:32, Purrception: Variational Flow Matching for Vector-Quantized Image Generation, https://arxiv.org/pdf/2510.01478, 2025-10-01
+2025-11-09 20:58:18,476 - INFO - root - Page:0, Index:33, Post-Training Quantization for Audio Diffusion Transformers, https://arxiv.org/pdf/2510.00313, 2025-09-30
+2025-11-09 20:58:18,477 - INFO - root - Page:0, Index:34, Rethinking RoPE Scaling in Quantized LLM: Theory, Outlier, and Channel-Band Analysis with Weight Rescaling, https://arxiv.org/pdf/2510.00028, 2025-09-25
+2025-11-09 20:58:18,477 - INFO - root - Page:0, Index:35, Post-Training Quantization via Residual Truncation and Zero Suppression for Diffusion Models, https://arxiv.org/pdf/2509.26436, 2025-09-30
+2025-11-09 20:58:18,483 - INFO - root - Page:0, Index:36, Cat: Post-Training Quantization Error Reduction via Cluster-based Affine Transformation, https://arxiv.org/pdf/2509.26277, 2025-10-07
+2025-11-09 20:58:18,484 - INFO - root - Page:0, Index:37, CAST: Continuous and Differentiable Semi-Structured Sparsity-Aware Training for Large Language Models, https://arxiv.org/pdf/2509.25996, 2025-09-30
+2025-11-09 20:58:18,484 - INFO - root - Page:0, Index:38, Norm-Q: Effective Compression Method for Hidden Markov Models in Neuro-Symbolic Applications, https://arxiv.org/pdf/2509.25439, 2025-09-29
+2025-11-09 20:58:18,484 - INFO - root - Page:0, Index:39, On-the-Fly Adaptation to Quantization: Configuration-Aware LoRA for Efficient Fine-Tuning of Quantized LLMs, https://arxiv.org/pdf/2509.25214, 2025-09-22
+2025-11-09 20:58:18,485 - INFO - root - Page:0, Index:40, VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning, https://arxiv.org/pdf/2509.24650, 2025-09-29
+2025-11-09 20:58:18,485 - INFO - root - Page:0, Index:41, S$^2$NN: Sub-bit Spiking Neural Networks, https://arxiv.org/pdf/2509.24266, 2025-10-24
+2025-11-09 20:58:18,486 - INFO - root - Page:0, Index:42, Tequila: Trapping-free Ternary Quantization for Large Language Models, https://arxiv.org/pdf/2509.23809, 2025-10-17
+2025-11-09 20:58:18,486 - INFO - root - Page:0, Index:43, Texture Vector-Quantization and Reconstruction Aware Prediction for Generative Super-Resolution, https://arxiv.org/pdf/2509.23774, 2025-09-30
+2025-11-09 20:58:18,486 - INFO - root - Page:0, Index:44, RobuQ: Pushing DiTs to W1.58A2 via Robust Activation Quantization, https://arxiv.org/pdf/2509.23582, 2025-09-27
+2025-11-09 20:58:18,487 - INFO - root - Page:0, Index:45, Beyond Outliers: A Study of Optimizers Under Quantization, https://arxiv.org/pdf/2509.23500, 2025-10-02
+2025-11-09 20:58:18,487 - INFO - root - Page:0, Index:46, Compute-Optimal Quantization-Aware Training, https://arxiv.org/pdf/2509.22935, 2025-09-26
+2025-11-09 20:58:18,487 - INFO - root - Page:0, Index:47, COSPADI: Compressing LLMs via Calibration-Guided Sparse Dictionary Learning, https://arxiv.org/pdf/2509.22075, 2025-10-06
+2025-11-09 20:58:18,488 - INFO - root - Page:0, Index:48, SlimDiff: Training-Free, Activation-Guided Hands-free Slimming of Diffusion Models, https://arxiv.org/pdf/2509.21498, 2025-09-25
+2025-11-09 20:58:18,489 - INFO - root - Page:0, Index:49, Quantized Visual Geometry Grounded Transformer, https://arxiv.org/pdf/2509.21302, 2025-09-29
+2025-11-09 20:58:18,492 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 20:58:25,321 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:25,323 - INFO - root - Page:1, Index:0, Can Less Precise Be More Reliable? A Systematic Evaluation of Quantization's Impact on CLIP Beyond Accuracy, https://arxiv.org/pdf/2509.21173, 2025-10-27
+2025-11-09 20:58:25,324 - INFO - root - Page:1, Index:1, Punching Above Precision: Small Quantized Model Distillation with Learnable Regularizer, https://arxiv.org/pdf/2509.20854, 2025-09-25
+2025-11-09 20:58:25,325 - INFO - root - Page:1, Index:2, TinyEcoWeedNet: Edge Efficient Real-Time Aerial Agricultural Weed Detection, https://arxiv.org/pdf/2509.18193, 2025-09-19
+2025-11-09 20:58:25,325 - INFO - root - Page:1, Index:3, SBVR: Summation of BitVector Representation for Efficient LLM Quantization, https://arxiv.org/pdf/2509.18172, 2025-09-17
+2025-11-09 20:58:25,326 - INFO - root - Page:1, Index:4, QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models, https://arxiv.org/pdf/2509.17428, 2025-09-26
+2025-11-09 20:58:25,327 - INFO - root - Page:1, Index:5, PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models, https://arxiv.org/pdf/2509.16989, 2025-10-28
+2025-11-09 20:58:25,329 - INFO - root - Page:1, Index:6, MEC-Quant: Maximum Entropy Coding for Extremely Low Bit Quantization-Aware Training, https://arxiv.org/pdf/2509.15514, 2025-09-18
+2025-11-09 20:58:25,330 - INFO - root - Page:1, Index:7, Q-ROAR: Outlier-Aware Rescaling for RoPE Position Interpolation in Quantized Long-Context LLMs, https://arxiv.org/pdf/2509.14391, 2025-09-17
+2025-11-09 20:58:25,332 - INFO - root - Page:1, Index:8, Efficient Quantization-Aware Neural Receivers: Beyond Post-Training Quantization, https://arxiv.org/pdf/2509.13786, 2025-09-19
+2025-11-09 20:58:25,341 - INFO - root - Page:1, Index:9, Rate-Distortion Limits for Multimodal Retrieval: Theory, Optimal Codes, and Finite-Sample Guarantees, https://arxiv.org/pdf/2509.11054, 2025-09-13
+2025-11-09 20:58:25,345 - INFO - root - Page:1, Index:10, SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework for High-Performance Vision-Language-Action Models, https://arxiv.org/pdf/2509.09090, 2025-09-10
+2025-11-09 20:58:25,347 - INFO - root - Page:1, Index:11, CSI Compression Beyond Latents: End-to-End Hybrid Attention-CNN Networks with Entropy Regularization, https://arxiv.org/pdf/2509.08776, 2025-09-10
+2025-11-09 20:58:25,348 - INFO - root - Page:1, Index:12, Explaining How Quantization Disparately Skews a Model, https://arxiv.org/pdf/2509.07222, 2025-09-08
+2025-11-09 20:58:25,348 - INFO - root - Page:1, Index:13, LoaQ: Layer-wise Output Approximation Quantization, https://arxiv.org/pdf/2509.06297, 2025-09-07
+2025-11-09 20:58:25,350 - INFO - root - Page:1, Index:14, FineServe: Precision-Aware KV Slab and Two-Level Scheduling for Heterogeneous Precision LLM Serving, https://arxiv.org/pdf/2509.06261, 2025-09-14
+2025-11-09 20:58:25,350 - INFO - root - Page:1, Index:15, Sensitivity-Aware Post-Training Quantization for Deep Neural Networks, https://arxiv.org/pdf/2509.05576, 2025-09-05
+2025-11-09 20:58:25,351 - INFO - root - Page:1, Index:16, SuperSNN: A Hardware-Aware Framework for Physically Realizable, High-Performance Superconducting Spiking Neural Network Chips, https://arxiv.org/pdf/2509.05532, 2025-09-05
+2025-11-09 20:58:25,351 - INFO - root - Page:1, Index:17, Data-Augmented Quantization-Aware Knowledge Distillation, https://arxiv.org/pdf/2509.03850, 2025-09-03
+2025-11-09 20:58:25,353 - INFO - root - Page:1, Index:18, DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling, https://arxiv.org/pdf/2509.03472, 2025-09-03
+2025-11-09 20:58:25,356 - INFO - root - Page:1, Index:19, Empowering Large Language Model for Sequential Recommendation via Multimodal Embeddings and Semantic IDs, https://arxiv.org/pdf/2509.02017, 2025-09-02
+2025-11-09 20:58:25,357 - INFO - root - Page:1, Index:20, Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling, https://arxiv.org/pdf/2509.01624, 2025-09-01
+2025-11-09 20:58:25,357 - INFO - root - Page:1, Index:21, Quantization Meets OOD: Generalizable Quantization-aware Training from a Flatness Perspective, https://arxiv.org/pdf/2509.00859, 2025-08-31
+2025-11-09 20:58:25,357 - INFO - root - Page:1, Index:22, Progressive Element-wise Gradient Estimation for Neural Network Quantization, https://arxiv.org/pdf/2509.00097, 2025-08-27
+2025-11-09 20:58:25,359 - INFO - root - Page:1, Index:23, End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost, https://arxiv.org/pdf/2509.00031, 2025-09-29
+2025-11-09 20:58:25,359 - INFO - root - Page:1, Index:24, Quantization Robustness to Input Degradations for Object Detection, https://arxiv.org/pdf/2508.19600, 2025-08-27
+2025-11-09 20:58:25,359 - INFO - root - Page:1, Index:25, Scaling Laws for Task-Stratified Knowledge in Post-Training Quantized Large Language Models, https://arxiv.org/pdf/2508.18609, 2025-08-27
+2025-11-09 20:58:25,360 - INFO - root - Page:1, Index:26, AQ-PCDSys: An Adaptive Quantized Planetary Crater Detection System for Autonomous Space Exploration, https://arxiv.org/pdf/2508.18025, 2025-08-25
+2025-11-09 20:58:25,361 - INFO - root - Page:1, Index:27, TaDiCodec: Text-aware Diffusion Speech Tokenizer for Speech Language Modeling, https://arxiv.org/pdf/2508.16790, 2025-08-22
+2025-11-09 20:58:25,362 - INFO - root - Page:1, Index:28, A Node-Aware Dynamic Quantization Approach for Graph Collaborative Filtering, https://arxiv.org/pdf/2508.16516, 2025-08-22
+2025-11-09 20:58:25,365 - INFO - root - Page:1, Index:29, JEDI-linear: Fast and Efficient Graph Neural Networks for Jet Tagging on FPGAs, https://arxiv.org/pdf/2508.15468, 2025-08-21
+2025-11-09 20:58:25,366 - INFO - root - Page:1, Index:30, MMQ: Multimodal Mixture-of-Quantization Tokenization for Semantic ID Generation and User Behavioral Adaptation, https://arxiv.org/pdf/2508.15281, 2025-08-21
+2025-11-09 20:58:25,366 - INFO - root - Page:1, Index:31, DLLMQuant: Quantizing Diffusion-based Large Language Models, https://arxiv.org/pdf/2508.14090, 2025-08-25
+2025-11-09 20:58:25,366 - INFO - root - Page:1, Index:32, Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management, https://arxiv.org/pdf/2508.13905, 2025-08-19
+2025-11-09 20:58:25,368 - INFO - root - Page:1, Index:33, XR-NPE: High-Throughput Mixed-precision SIMD Neural Processing Engine for Extended Reality Perception Workloads, https://arxiv.org/pdf/2508.13049, 2025-08-18
+2025-11-09 20:58:25,368 - INFO - root - Page:1, Index:34, Exploring Self-Supervised Audio Models for Generalized Anomalous Sound Detection, https://arxiv.org/pdf/2508.12230, 2025-08-17
+2025-11-09 20:58:25,370 - INFO - root - Page:1, Index:35, TriQDef: Disrupting Semantic and Gradient Alignment to Prevent Adversarial Patch Transferability in Quantized Neural Networks, https://arxiv.org/pdf/2508.12132, 2025-08-16
+2025-11-09 20:58:25,373 - INFO - root - Page:1, Index:36, Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion, https://arxiv.org/pdf/2508.12094, 2025-10-13
+2025-11-09 20:58:25,375 - INFO - root - Page:1, Index:37, Extending Straight-Through Estimation for Robust Neural Networks on Analog CIM Hardware, https://arxiv.org/pdf/2508.11940, 2025-08-16
+2025-11-09 20:58:25,375 - INFO - root - Page:1, Index:38, PTQAT: A Hybrid Parameter-Efficient Quantization Algorithm for 3D Perception Tasks, https://arxiv.org/pdf/2508.10557, 2025-08-15
+2025-11-09 20:58:25,377 - INFO - root - Page:1, Index:39, MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI, https://arxiv.org/pdf/2508.09500, 2025-08-13
+2025-11-09 20:58:25,378 - INFO - root - Page:1, Index:40, SPARC: Soft Probabilistic Adaptive multi-interest Retrieval Model via Codebooks for recommender system, https://arxiv.org/pdf/2508.09090, 2025-08-12
+2025-11-09 20:58:25,379 - INFO - root - Page:1, Index:41, Rethinking 1-bit Optimization Leveraging Pre-trained Large Language Models, https://arxiv.org/pdf/2508.06974, 2025-08-09
+2025-11-09 20:58:25,380 - INFO - root - Page:1, Index:42, Efficient Deep Neural Receiver with Post-Training Quantization, https://arxiv.org/pdf/2508.06275, 2025-08-08
+2025-11-09 20:58:25,381 - INFO - root - Page:1, Index:43, iFairy: the First 2-bit Complex LLM with All Parameters in $\{\pm1, \pm i\}$, https://arxiv.org/pdf/2508.05571, 2025-08-16
+2025-11-09 20:58:25,381 - INFO - root - Page:1, Index:44, S$^2$Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation, https://arxiv.org/pdf/2508.04016, 2025-10-27
+2025-11-09 20:58:25,381 - INFO - root - Page:1, Index:45, LRQ-DiT: Log-Rotation Post-Training Quantization of Diffusion Transformers for Image and Video Generation, https://arxiv.org/pdf/2508.03485, 2025-09-23
+2025-11-09 20:58:25,383 - INFO - root - Page:1, Index:46, VLMQ: Efficient Post-Training Quantization for Large Vision-Language Models via Hessian Augmentation, https://arxiv.org/pdf/2508.03351, 2025-08-05
+2025-11-09 20:58:25,383 - INFO - root - Page:1, Index:47, TF-MLPNet: Tiny Real-Time Neural Speech Separation, https://arxiv.org/pdf/2508.03047, 2025-08-04
+2025-11-09 20:58:25,384 - INFO - root - Page:1, Index:48, SaviorRec: Semantic-Behavior Alignment for Cold-Start Recommendation, https://arxiv.org/pdf/2508.01375, 2025-08-02
+2025-11-09 20:58:25,384 - INFO - root - Page:1, Index:49, MixA-Q: Revisiting Activation Sparsity for Vision Transformers from a Mixed-Precision Quantization Perspective, https://arxiv.org/pdf/2507.19131, 2025-07-25
+2025-11-09 20:58:25,384 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 20:58:32,730 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:32,730 - INFO - root - Page:2, Index:0, Enhancing Quantization-Aware Training on Edge Devices via Relative Entropy Coreset Selection and Cascaded Layer Correction, https://arxiv.org/pdf/2507.17768, 2025-07-16
+2025-11-09 20:58:32,731 - INFO - root - Page:2, Index:1, SiLQ: Simple Large Language Model Quantization-Aware Training, https://arxiv.org/pdf/2507.16933, 2025-07-22
+2025-11-09 20:58:32,731 - INFO - root - Page:2, Index:2, Task-Specific Zero-shot Quantization-Aware Training for Object Detection, https://arxiv.org/pdf/2507.16782, 2025-07-22
+2025-11-09 20:58:32,731 - INFO - root - Page:2, Index:3, TorchAO: PyTorch-Native Training-to-Serving Model Optimization, https://arxiv.org/pdf/2507.16099, 2025-07-21
+2025-11-09 20:58:32,731 - INFO - root - Page:2, Index:4, SegQuant: A Semantics-Aware and Generalizable Quantization Framework for Diffusion Models, https://arxiv.org/pdf/2507.14811, 2025-08-27
+2025-11-09 20:58:32,732 - INFO - root - Page:2, Index:5, Apple Intelligence Foundation Language Models: Tech Report 2025, https://arxiv.org/pdf/2507.13575, 2025-08-27
+2025-11-09 20:58:32,732 - INFO - root - Page:2, Index:6, Generative Multi-Target Cross-Domain Recommendation, https://arxiv.org/pdf/2507.12871, 2025-08-07
+2025-11-09 20:58:32,732 - INFO - root - Page:2, Index:7, DAF: An Efficient End-to-End Dynamic Activation Framework for on-Device DNN Training, https://arxiv.org/pdf/2507.07149, 2025-07-09
+2025-11-09 20:58:32,732 - INFO - root - Page:2, Index:8, Opto-ViT: Architecting a Near-Sensor Region of Interest-Aware Vision Transformer Accelerator with Silicon Photonics, https://arxiv.org/pdf/2507.07044, 2025-07-15
+2025-11-09 20:58:32,733 - INFO - root - Page:2, Index:9, QS4D: Quantization-aware training for efficient hardware deployment of structured state-space sequential models, https://arxiv.org/pdf/2507.06079, 2025-07-08
+2025-11-09 20:58:32,733 - INFO - root - Page:2, Index:10, GSVR: 2D Gaussian-based Video Representation for 800+ FPS with Hybrid Deformation Field, https://arxiv.org/pdf/2507.05594, 2025-07-07
+2025-11-09 20:58:32,733 - INFO - root - Page:2, Index:11, Hita: Holistic Tokenizer for Autoregressive Image Generation, https://arxiv.org/pdf/2507.02358, 2025-07-11
+2025-11-09 20:58:32,734 - INFO - root - Page:2, Index:12, QPART: Adaptive Model Quantization and Dynamic Workload Balancing for Accuracy-aware Edge Inference, https://arxiv.org/pdf/2506.23934, 2025-06-30
+2025-11-09 20:58:32,734 - INFO - root - Page:2, Index:13, FedWSQ: Efficient Federated Learning with Weight Standardization and Distribution-Aware Non-Uniform Quantization, https://arxiv.org/pdf/2506.23516, 2025-07-21
+2025-11-09 20:58:32,734 - INFO - root - Page:2, Index:14, Spectra 1.1: Scaling Laws and Efficient Inference for Ternary Language Models, https://arxiv.org/pdf/2506.23025, 2025-06-28
+2025-11-09 20:58:32,734 - INFO - root - Page:2, Index:15, Joint Quantization and Pruning Neural Networks Approach: A Case Study on FSO Receivers, https://arxiv.org/pdf/2506.20084, 2025-06-24
+2025-11-09 20:58:32,734 - INFO - root - Page:2, Index:16, Single-step Diffusion for Image Compression at Ultra-Low Bitrates, https://arxiv.org/pdf/2506.16572, 2025-09-22
+2025-11-09 20:58:32,735 - INFO - root - Page:2, Index:17, LittleBit: Ultra Low-Bit Quantization via Latent Factorization, https://arxiv.org/pdf/2506.13771, 2025-10-28
+2025-11-09 20:58:32,736 - INFO - root - Page:2, Index:18, MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering, https://arxiv.org/pdf/2506.13755, 2025-06-16
+2025-11-09 20:58:32,736 - INFO - root - Page:2, Index:19, EAQuant: Enhancing Post-Training Quantization for MoE Models via Expert-Aware Optimization, https://arxiv.org/pdf/2506.13329, 2025-07-04
+2025-11-09 20:58:32,737 - INFO - root - Page:2, Index:20, Towards Neural Audio Codec Source Parsing, https://arxiv.org/pdf/2506.12627, 2025-06-14
+2025-11-09 20:58:32,746 - INFO - root - Page:2, Index:21, Quantizing Small-Scale State-Space Models for Edge AI, https://arxiv.org/pdf/2506.12480, 2025-06-14
+2025-11-09 20:58:32,748 - INFO - root - Page:2, Index:22, EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction, https://arxiv.org/pdf/2506.12015, 2025-06-13
+2025-11-09 20:58:32,749 - INFO - root - Page:2, Index:23, Compression Aware Certified Training, https://arxiv.org/pdf/2506.11992, 2025-06-13
+2025-11-09 20:58:32,750 - INFO - root - Page:2, Index:24, GPLQ: A General, Practical, and Lightning QAT Method for Vision Transformers, https://arxiv.org/pdf/2506.11784, 2025-06-13
+2025-11-09 20:58:32,750 - INFO - root - Page:2, Index:25, TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision, https://arxiv.org/pdf/2506.11431, 2025-06-12
+2025-11-09 20:58:32,750 - INFO - root - Page:2, Index:26, EfficientQuant: An Efficient Post-Training Quantization for CNN-Transformer Hybrid Models on Edge Devices, https://arxiv.org/pdf/2506.11093, 2025-06-05
+2025-11-09 20:58:32,751 - INFO - root - Page:2, Index:27, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 20:58:32,751 - INFO - root - Page:2, Index:28, AWP: Activation-Aware Weight Pruning and Quantization with Projected Gradient Descent, https://arxiv.org/pdf/2506.10205, 2025-06-11
+2025-11-09 20:58:32,752 - INFO - root - Page:2, Index:29, Q-SAM2: Accurate Quantization for Segment Anything Model 2, https://arxiv.org/pdf/2506.09782, 2025-06-11
+2025-11-09 20:58:32,752 - INFO - root - Page:2, Index:30, Unifying Block-wise PTQ and Distillation-based QAT for Progressive Quantization toward 2-bit Instruction-Tuned LLMs, https://arxiv.org/pdf/2506.09104, 2025-06-10
+2025-11-09 20:58:32,752 - INFO - root - Page:2, Index:31, Implementing Keyword Spotting on the MCUX947 Microcontroller with Integrated NPU, https://arxiv.org/pdf/2506.08911, 2025-06-10
+2025-11-09 20:58:32,755 - INFO - root - Page:2, Index:32, POLARON: Precision-aware On-device Learning and Adaptive Runtime-cONfigurable AI acceleration, https://arxiv.org/pdf/2506.08785, 2025-06-10
+2025-11-09 20:58:32,758 - INFO - root - Page:2, Index:33, MoQAE: Mixed-Precision Quantization for Long-Context LLM Inference via Mixture of Quantization-Aware Experts, https://arxiv.org/pdf/2506.07533, 2025-06-09
+2025-11-09 20:58:32,761 - INFO - root - Page:2, Index:34, BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation, https://arxiv.org/pdf/2506.07530, 2025-06-09
+2025-11-09 20:58:32,762 - INFO - root - Page:2, Index:35, RecGPT: A Foundation Model for Sequential Recommendation, https://arxiv.org/pdf/2506.06270, 2025-06-12
+2025-11-09 20:58:32,762 - INFO - root - Page:2, Index:36, FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion, https://arxiv.org/pdf/2506.04648, 2025-06-05
+2025-11-09 20:58:32,763 - INFO - root - Page:2, Index:37, BitTTS: Highly Compact Text-to-Speech Using 1.58-bit Quantization and Weight Indexing, https://arxiv.org/pdf/2506.03515, 2025-06-03
+2025-11-09 20:58:32,763 - INFO - root - Page:2, Index:38, ShapeLLM-Omni: A Native Multimodal LLM for 3D Generation and Understanding, https://arxiv.org/pdf/2506.01853, 2025-06-02
+2025-11-09 20:58:32,763 - INFO - root - Page:2, Index:39, Movable Antenna Enhanced Federated Fine-Tuning of Large Language Models via Hybrid Client Selection Optimization, https://arxiv.org/pdf/2506.00011, 2025-10-26
+2025-11-09 20:58:32,763 - INFO - root - Page:2, Index:40, Running Conventional Automatic Speech Recognition on Memristor Hardware: A Simulated Approach, https://arxiv.org/pdf/2505.24721, 2025-05-30
+2025-11-09 20:58:32,765 - INFO - root - Page:2, Index:41, GARLIC: GAussian Representation LearnIng for spaCe partitioning, https://arxiv.org/pdf/2505.24608, 2025-10-02
+2025-11-09 20:58:32,765 - INFO - root - Page:2, Index:42, AutoChemSchematic AI: Agentic Physics-Aware Automation for Chemical Manufacturing Scale-Up, https://arxiv.org/pdf/2505.24584, 2025-08-18
+2025-11-09 20:58:32,765 - INFO - root - Page:2, Index:43, Model-Preserving Adaptive Rounding, https://arxiv.org/pdf/2505.22988, 2025-09-25
+2025-11-09 20:58:32,766 - INFO - root - Page:2, Index:44, Highly Efficient and Effective LLMs with Multi-Boolean Architectures, https://arxiv.org/pdf/2505.22811, 2025-10-03
+2025-11-09 20:58:32,766 - INFO - root - Page:2, Index:45, Pioneering 4-Bit FP Quantization for Diffusion Models: Mixup-Sign Quantization and Timestep-Aware Fine-Tuning, https://arxiv.org/pdf/2505.21591, 2025-05-27
+2025-11-09 20:58:32,768 - INFO - root - Page:2, Index:46, Frequency Composition for Compressed and Domain-Adaptive Neural Networks, https://arxiv.org/pdf/2505.20890, 2025-05-27
+2025-11-09 20:58:32,768 - INFO - root - Page:2, Index:47, MoPFormer: Motion-Primitive Transformer for Wearable-Sensor Activity Recognition, https://arxiv.org/pdf/2505.20744, 2025-10-27
+2025-11-09 20:58:32,770 - INFO - root - Page:2, Index:48, Optimizing edge AI models on HPC systems with the edge in the loop, https://arxiv.org/pdf/2505.19995, 2025-05-26
+2025-11-09 20:58:32,789 - INFO - root - Fetching page 4 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=150
+2025-11-09 20:58:39,412 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:39,412 - INFO - root - Page:3, Index:0, DPASyn: Mechanism-Aware Drug Synergy Prediction via Dual Attention and Precision-Aware Quantization, https://arxiv.org/pdf/2505.19144, 2025-09-20
+2025-11-09 20:58:39,413 - INFO - root - Page:3, Index:1, Reducing Storage of Pretrained Neural Networks by Rate-Constrained Quantization and Entropy Coding, https://arxiv.org/pdf/2505.18758, 2025-05-24
+2025-11-09 20:58:39,413 - INFO - root - Page:3, Index:2, Beyond Discreteness: Finite-Sample Analysis of Straight-Through Estimator for Quantization, https://arxiv.org/pdf/2505.18113, 2025-05-23
+2025-11-09 20:58:39,413 - INFO - root - Page:3, Index:3, Automating Versatile Time-Series Analysis with Tiny Transformers on Embedded FPGAs, https://arxiv.org/pdf/2505.17662, 2025-09-19
+2025-11-09 20:58:39,413 - INFO - root - Page:3, Index:4, FPQVAR: Floating Point Quantization for Visual Autoregressive Model with FPGA Hardware Co-design, https://arxiv.org/pdf/2505.16335, 2025-05-22
+2025-11-09 20:58:39,414 - INFO - root - Page:3, Index:5, Saliency-Aware Quantized Imitation Learning for Efficient Robotic Control, https://arxiv.org/pdf/2505.15304, 2025-05-30
+2025-11-09 20:58:39,414 - INFO - root - Page:3, Index:6, Scaling Law for Quantization-Aware Training, https://arxiv.org/pdf/2505.14302, 2025-05-20
+2025-11-09 20:58:39,414 - INFO - root - Page:3, Index:7, Automatic mixed precision for optimizing gained time with constrained loss mean-squared-error based on model partition to sequential sub-graphs, https://arxiv.org/pdf/2505.13060, 2025-05-19
+2025-11-09 20:58:39,415 - INFO - root - Page:3, Index:8, Deep Unfolding with Kernel-based Quantization in MIMO Detection, https://arxiv.org/pdf/2505.12736, 2025-05-19
+2025-11-09 20:58:39,415 - INFO - root - Page:3, Index:9, FedHQ: Hybrid Runtime Quantization for Federated Learning, https://arxiv.org/pdf/2505.11982, 2025-05-17
+2025-11-09 20:58:39,415 - INFO - root - Page:3, Index:10, QVGen: Pushing the Limit of Quantized Video Generative Models, https://arxiv.org/pdf/2505.11497, 2025-09-27
+2025-11-09 20:58:39,415 - INFO - root - Page:3, Index:11, EA-3DGS: Efficient and Adaptive 3D Gaussians with Highly Enhanced Quality for outdoor scenes, https://arxiv.org/pdf/2505.10787, 2025-05-15
+2025-11-09 20:58:39,416 - INFO - root - Page:3, Index:12, ITERA-LLM: Boosting Sub-8-Bit Large Language Model Inference via Iterative Tensor Decomposition, https://arxiv.org/pdf/2505.08981, 2025-05-13
+2025-11-09 20:58:39,417 - INFO - root - Page:3, Index:13, PROM: Prioritize Reduction of Multiplications Over Lower Bit-Widths for Efficient CNNs, https://arxiv.org/pdf/2505.03254, 2025-08-06
+2025-11-09 20:58:39,417 - INFO - root - Page:3, Index:14, ICQuant: Index Coding enables Low-bit LLM Quantization, https://arxiv.org/pdf/2505.00850, 2025-08-24
+2025-11-09 20:58:39,417 - INFO - root - Page:3, Index:15, Enhancing Ultra-Low-Bit Quantization of Large Language Models Through Saliency-Aware Partial Retraining, https://arxiv.org/pdf/2504.13932, 2025-07-30
+2025-11-09 20:58:39,418 - INFO - root - Page:3, Index:16, Achieving binary weight and activation for LLMs using Post-Training Quantization, https://arxiv.org/pdf/2504.05352, 2025-06-30
+2025-11-09 20:58:39,418 - INFO - root - Page:3, Index:17, Wireless Hearables With Programmable Speech AI Accelerators, https://arxiv.org/pdf/2503.18698, 2025-10-21
+2025-11-09 20:58:39,420 - INFO - root - Page:3, Index:18, GranQ: Efficient Channel-wise Quantization via Vectorized Pre-Scaling for Zero-Shot QAT, https://arxiv.org/pdf/2503.18339, 2025-10-15
+2025-11-09 20:58:39,420 - INFO - root - Page:3, Index:19, CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting, https://arxiv.org/pdf/2503.12836, 2025-09-29
+2025-11-09 20:58:39,421 - INFO - root - Page:3, Index:20, AHCPTQ: Accurate and Hardware-Compatible Post-Training Quantization for Segment Anything Model, https://arxiv.org/pdf/2503.03088, 2025-07-11
+2025-11-09 20:58:39,421 - INFO - root - Page:3, Index:21, Teaching Metric Distance to Discrete Autoregressive Language Models, https://arxiv.org/pdf/2503.02379, 2025-10-07
+2025-11-09 20:58:39,421 - INFO - root - Page:3, Index:22, Regularization-based Framework for Quantization-, Fault- and Variability-Aware Training, https://arxiv.org/pdf/2503.01297, 2025-07-12
+2025-11-09 20:58:39,422 - INFO - root - Fetching page 5 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=200
+2025-11-09 20:58:46,111 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:46,111 - INFO - root - Page:4, Index:0, Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models, https://arxiv.org/pdf/2502.15799, 2025-06-29
+2025-11-09 20:58:46,111 - INFO - root - Page:4, Index:1, Rotate, Clip, and Partition: Towards W2A4KV4 Quantization by Integrating Rotation and Learnable Non-uniform Quantizer, https://arxiv.org/pdf/2502.15779, 2025-09-01
+2025-11-09 20:58:46,111 - INFO - root - Page:4, Index:2, RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models, https://arxiv.org/pdf/2502.09003, 2025-06-05
+2025-11-09 20:58:46,111 - INFO - root - Page:4, Index:3, Spatial Degradation-Aware and Temporal Consistent Diffusion Model for Compressed Video Super-Resolution, https://arxiv.org/pdf/2502.07381, 2025-06-27
+2025-11-09 20:58:46,112 - INFO - root - Page:4, Index:4, QuEST: Stable Training of LLMs with 1-Bit Weights and Activations, https://arxiv.org/pdf/2502.05003, 2025-06-10
+2025-11-09 20:58:46,112 - INFO - root - Page:4, Index:5, HALO: Hadamard-Assisted Lower-Precision Optimization for LLMs, https://arxiv.org/pdf/2501.02625, 2025-11-05
+2025-11-09 20:58:46,112 - INFO - root - Page:4, Index:6, TAR3D: Creating High-Quality 3D Assets via Next-Part Prediction, https://arxiv.org/pdf/2412.16919, 2025-08-08
+2025-11-09 20:58:46,112 - INFO - root - Page:4, Index:7, Training Multi-Layer Binary Neural Networks With Local Binary Error Signals, https://arxiv.org/pdf/2412.00119, 2025-08-05
+2025-11-09 20:58:46,113 - INFO - root - Page:4, Index:8, Scaling Large-scale GNN Training to Thousands of Processors on CPU-based Supercomputers, https://arxiv.org/pdf/2411.16025, 2025-05-26
+2025-11-09 20:58:46,113 - INFO - root - Page:4, Index:9, HAFLQ: Heterogeneous Adaptive Federated LoRA Fine-tuned LLM with Quantization, https://arxiv.org/pdf/2411.06581, 2025-05-16
+2025-11-09 20:58:46,113 - INFO - root - Fetching page 6 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=250
+2025-11-09 20:58:51,485 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:51,486 - INFO - root - Page:5, Index:0, Gradient-Free Training of Quantized Neural Networks, https://arxiv.org/pdf/2410.09734, 2025-09-29
+2025-11-09 20:58:51,486 - INFO - root - Page:5, Index:1, QT-DoG: Quantization-aware Training for Domain Generalization, https://arxiv.org/pdf/2410.06020, 2025-06-26
+2025-11-09 20:58:51,486 - INFO - root - Page:5, Index:2, Constraint Guided Model Quantization of Neural Networks, https://arxiv.org/pdf/2409.20138, 2025-09-12
+2025-11-09 20:58:51,486 - INFO - root - Page:5, Index:3, Accumulator-Aware Post-Training Quantization for Large Language Models, https://arxiv.org/pdf/2409.17092, 2025-07-30
+2025-11-09 20:58:51,487 - INFO - root - Page:5, Index:4, DilateQuant: Accurate and Efficient Diffusion Quantization via Weight Dilation, https://arxiv.org/pdf/2409.14307, 2025-07-09
+2025-11-09 20:58:51,487 - INFO - root - Page:5, Index:5, Robust Training of Neural Networks at Arbitrary Precision and Sparsity, https://arxiv.org/pdf/2409.09245, 2025-09-23
+2025-11-09 20:58:51,487 - INFO - root - Page:5, Index:6, VQ-CTAP: Cross-Modal Fine-Grained Sequence Representation Learning for Speech Processing, https://arxiv.org/pdf/2408.05758, 2025-05-27
+2025-11-09 20:58:51,487 - INFO - root - Page:5, Index:7, DopQ-ViT: Towards Distribution-Friendly and Outlier-Aware Post-Training Quantization for Vision Transformers, https://arxiv.org/pdf/2408.03291, 2025-06-19
+2025-11-09 20:58:51,488 - INFO - root - Page:5, Index:8, Temporal Feature Matters: A Framework for Diffusion Model Quantization, https://arxiv.org/pdf/2407.19547, 2025-07-11
+2025-11-09 20:58:51,488 - INFO - root - Page:5, Index:9, EfficientQAT: Efficient Quantization-Aware Training for Large Language Models, https://arxiv.org/pdf/2407.11062, 2025-05-19
+2025-11-09 20:58:51,488 - INFO - root - Page:5, Index:10, Integer-only Quantized Transformers for Embedded FPGA-based Time-series Forecasting in AIoT, https://arxiv.org/pdf/2407.11041, 2025-10-31
+2025-11-09 20:58:51,489 - INFO - root - Fetching page 7 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=300
+2025-11-09 20:58:59,088 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:58:59,088 - INFO - root - Page:6, Index:0, BoA: Attention-aware Post-training Quantization without Backpropagation, https://arxiv.org/pdf/2406.13474, 2025-06-06
+2025-11-09 20:58:59,089 - INFO - root - Page:6, Index:1, A Rescaling-Invariant Lipschitz Bound Based on Path-Metrics for Modern ReLU Network Parameterizations, https://arxiv.org/pdf/2405.15006, 2025-06-13
+2025-11-09 20:58:59,089 - INFO - root - Page:6, Index:2, Scheduling Weight Transitions for Quantization-Aware Training, https://arxiv.org/pdf/2404.19248, 2025-10-01
+2025-11-09 20:58:59,089 - INFO - root - Page:6, Index:3, GPTVQ: The Blessing of Dimensionality for LLM Quantization, https://arxiv.org/pdf/2402.15319, 2025-06-03
+2025-11-09 20:58:59,090 - INFO - root - Fetching page 8 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=350
+2025-11-09 20:59:05,602 - INFO - root - get_all_titles_from_web 
+2025-11-09 20:59:05,602 - INFO - root - Page:7, Index:0, Squat: Quant Small Language Models on the Edge, https://arxiv.org/pdf/2402.10787, 2025-07-01
+2025-11-09 20:59:05,603 - INFO - root - Page:7, Index:1, L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models, https://arxiv.org/pdf/2402.04902, 2025-07-21
+2025-11-09 20:59:05,603 - INFO - root - Fetching page 9 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=400
+2025-11-09 20:59:12,042 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 21:05:14,531 - INFO - root - 正在总结论文 1/40: A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies
+2025-11-09 21:05:56,734 - INFO - root - LLMClient: rate limit reached, sleeping 17.8s
+2025-11-09 21:06:34,404 - INFO - root - 正在提取论文图片...
+2025-11-09 21:06:34,576 - INFO - root - 已保存图片 1/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_1_page4.png
+2025-11-09 21:06:34,640 - INFO - root - 已保存图片 2/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_2_page4.png
+2025-11-09 21:06:34,701 - INFO - root - 已保存图片 3/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_3_page4.png
+2025-11-09 21:06:34,831 - INFO - root - 已保存图片 4/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_4_page5.png
+2025-11-09 21:06:34,908 - INFO - root - 已保存图片 5/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_5_page3.png
+2025-11-09 21:06:34,998 - INFO - root - 已保存图片 6/10：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_6_page4.png
+2025-11-09 21:06:35,000 - INFO - root - 成功添加图片 1：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_1_page4.png
+2025-11-09 21:06:35,001 - INFO - root - 成功添加图片 2：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_2_page4.png
+2025-11-09 21:06:35,001 - INFO - root - 成功添加图片 3：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_3_page4.png
+2025-11-09 21:06:35,002 - INFO - root - 成功添加图片 4：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_4_page5.png
+2025-11-09 21:06:35,002 - INFO - root - 成功添加图片 5：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_5_page3.png
+2025-11-09 21:06:35,003 - INFO - root - 成功添加图片 6：./export\images_A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat\figure_6_page4.png
+2025-11-09 21:06:35,013 - INFO - root - 论文《A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies》的分析已保存到 ./export\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.md
+2025-11-09 21:06:35,034 - INFO - root - 正在总结论文 2/40: FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error
+2025-11-09 21:06:46,076 - INFO - root - LLMClient: rate limit reached, sleeping 28.5s
+2025-11-09 21:08:01,934 - INFO - root - 正在提取论文图片...
+2025-11-09 21:08:05,846 - INFO - root - 已保存图片 1/10：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_1_page6.png
+2025-11-09 21:08:06,250 - INFO - root - 已保存图片 2/10：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_2_page6.png
+2025-11-09 21:08:06,570 - INFO - root - 已保存图片 3/10：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_3_page6.png
+2025-11-09 21:08:06,923 - INFO - root - 已保存图片 4/10：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_4_page6.png
+2025-11-09 21:08:06,981 - INFO - root - 成功添加图片 1：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_1_page6.png
+2025-11-09 21:08:06,982 - INFO - root - 成功添加图片 2：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_2_page6.png
+2025-11-09 21:08:06,982 - INFO - root - 成功添加图片 3：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_3_page6.png
+2025-11-09 21:08:06,982 - INFO - root - 成功添加图片 4：./export\images_FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error\figure_4_page6.png
+2025-11-09 21:08:06,993 - INFO - root - 论文《FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error》的分析已保存到 ./export\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error.md
+2025-11-09 21:08:07,043 - INFO - root - 正在总结论文 3/40: Outlier-Aware Post-Training Quantization for Image Super-Resolution
+2025-11-09 21:08:07,051 - INFO - root - LLMClient: rate limit reached, sleeping 7.5s
+2025-11-09 21:08:25,249 - INFO - root - LLMClient: rate limit reached, sleeping 16.9s
+2025-11-09 21:09:12,054 - INFO - root - LLMClient: rate limit reached, sleeping 2.5s
+2025-11-09 21:09:31,067 - INFO - root - 正在提取论文图片...
+2025-11-09 21:09:31,978 - INFO - root - 已保存图片 1/10：./export\images_Outlier-Aware Post-Training Quantization for Image Super-Resolution\figure_1_page7.jpeg
+2025-11-09 21:09:32,111 - INFO - root - 已保存图片 2/10：./export\images_Outlier-Aware Post-Training Quantization for Image Super-Resolution\figure_2_page4.png
+2025-11-09 21:09:32,115 - INFO - root - 成功添加图片 1：./export\images_Outlier-Aware Post-Training Quantization for Image Super-Resolution\figure_1_page7.jpeg
+2025-11-09 21:09:32,117 - INFO - root - 成功添加图片 2：./export\images_Outlier-Aware Post-Training Quantization for Image Super-Resolution\figure_2_page4.png
+2025-11-09 21:09:32,121 - INFO - root - 论文《Outlier-Aware Post-Training Quantization for Image Super-Resolution》的分析已保存到 ./export\Outlier-Aware Post-Training Quantization for Image Super-Resolution.md
+2025-11-09 21:09:32,134 - INFO - root - 正在总结论文 4/40: Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications
+2025-11-09 21:09:32,138 - INFO - root - LLMClient: rate limit reached, sleeping 10.0s
+2025-11-09 21:09:54,523 - INFO - root - LLMClient: rate limit reached, sleeping 20.0s
+2025-11-09 21:11:08,565 - INFO - root - 正在提取论文图片...
+2025-11-09 21:11:09,565 - INFO - root - 已保存图片 1/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_1_page4.png
+2025-11-09 21:11:09,674 - INFO - root - 已保存图片 2/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_2_page6.png
+2025-11-09 21:11:09,754 - INFO - root - 已保存图片 3/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_3_page6.png
+2025-11-09 21:11:09,820 - INFO - root - 已保存图片 4/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_4_page6.png
+2025-11-09 21:11:09,885 - INFO - root - 已保存图片 5/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_5_page6.png
+2025-11-09 21:11:09,964 - INFO - root - 已保存图片 6/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_6_page6.png
+2025-11-09 21:11:10,013 - INFO - root - 已保存图片 7/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_7_page6.png
+2025-11-09 21:11:10,069 - INFO - root - 已保存图片 8/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_8_page6.png
+2025-11-09 21:11:10,125 - INFO - root - 已保存图片 9/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_9_page6.png
+2025-11-09 21:11:10,171 - INFO - root - 已保存图片 10/10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_10_page6.png
+2025-11-09 21:11:10,176 - INFO - root - 成功添加图片 1：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_1_page4.png
+2025-11-09 21:11:10,176 - INFO - root - 成功添加图片 2：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_2_page6.png
+2025-11-09 21:11:10,177 - INFO - root - 成功添加图片 3：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_3_page6.png
+2025-11-09 21:11:10,177 - INFO - root - 成功添加图片 4：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_4_page6.png
+2025-11-09 21:11:10,177 - INFO - root - 成功添加图片 5：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_5_page6.png
+2025-11-09 21:11:10,177 - INFO - root - 成功添加图片 6：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_6_page6.png
+2025-11-09 21:11:10,179 - INFO - root - 成功添加图片 7：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_7_page6.png
+2025-11-09 21:11:10,179 - INFO - root - 成功添加图片 8：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_8_page6.png
+2025-11-09 21:11:10,179 - INFO - root - 成功添加图片 9：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_9_page6.png
+2025-11-09 21:11:10,180 - INFO - root - 成功添加图片 10：./export\images_Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications\figure_10_page6.png
+2025-11-09 21:11:10,185 - INFO - root - 论文《Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications》的分析已保存到 ./export\Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications.md
+2025-11-09 21:11:10,194 - INFO - root - 正在总结论文 5/40: Improving the Straight-Through Estimator with Zeroth-Order Information
+2025-11-09 21:11:10,194 - INFO - root - LLMClient: rate limit reached, sleeping 4.3s
+2025-11-09 21:11:24,951 - INFO - root - LLMClient: rate limit reached, sleeping 18.8s
+2025-11-09 21:12:07,988 - INFO - root - LLMClient: rate limit reached, sleeping 6.6s
+2025-11-09 21:12:32,927 - INFO - root - 正在提取论文图片...
+2025-11-09 21:12:34,064 - INFO - root - 已保存图片 1/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_1_page8.png
+2025-11-09 21:12:34,128 - INFO - root - 已保存图片 2/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_2_page9.png
+2025-11-09 21:12:34,177 - INFO - root - 已保存图片 3/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_3_page7.png
+2025-11-09 21:12:34,264 - INFO - root - 已保存图片 4/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_4_page23.png
+2025-11-09 21:12:34,379 - INFO - root - 已保存图片 5/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_5_page25.png
+2025-11-09 21:12:34,447 - INFO - root - 已保存图片 6/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_6_page25.png
+2025-11-09 21:12:34,524 - INFO - root - 已保存图片 7/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_7_page25.png
+2025-11-09 21:12:34,598 - INFO - root - 已保存图片 8/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_8_page26.png
+2025-11-09 21:12:34,672 - INFO - root - 已保存图片 9/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_9_page26.png
+2025-11-09 21:12:34,720 - INFO - root - 已保存图片 10/10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_10_page26.png
+2025-11-09 21:12:34,723 - INFO - root - 成功添加图片 1：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_1_page8.png
+2025-11-09 21:12:34,723 - INFO - root - 成功添加图片 2：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_2_page9.png
+2025-11-09 21:12:34,724 - INFO - root - 成功添加图片 3：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_3_page7.png
+2025-11-09 21:12:34,724 - INFO - root - 成功添加图片 4：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_4_page23.png
+2025-11-09 21:12:34,725 - INFO - root - 成功添加图片 5：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_5_page25.png
+2025-11-09 21:12:34,725 - INFO - root - 成功添加图片 6：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_6_page25.png
+2025-11-09 21:12:34,726 - INFO - root - 成功添加图片 7：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_7_page25.png
+2025-11-09 21:12:34,726 - INFO - root - 成功添加图片 8：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_8_page26.png
+2025-11-09 21:12:34,726 - INFO - root - 成功添加图片 9：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_9_page26.png
+2025-11-09 21:12:34,727 - INFO - root - 成功添加图片 10：./export\images_Improving the Straight-Through Estimator with Zeroth-Order Information\figure_10_page26.png
+2025-11-09 21:12:34,729 - INFO - root - 论文《Improving the Straight-Through Estimator with Zeroth-Order Information》的分析已保存到 ./export\Improving the Straight-Through Estimator with Zeroth-Order Information.md
+2025-11-09 21:12:34,734 - INFO - root - 正在总结论文 6/40: Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework
+2025-11-09 21:12:34,736 - INFO - root - LLMClient: rate limit reached, sleeping 9.1s
+2025-11-09 21:12:53,598 - INFO - root - LLMClient: rate limit reached, sleeping 20.9s
+2025-11-09 21:13:39,268 - INFO - root - LLMClient: rate limit reached, sleeping 4.5s
+2025-11-09 21:14:06,878 - INFO - root - 正在提取论文图片...
+2025-11-09 21:14:10,482 - INFO - root - 已保存图片 1/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_1_page5.png
+2025-11-09 21:14:10,841 - INFO - root - 已保存图片 2/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_2_page5.png
+2025-11-09 21:14:10,967 - INFO - root - 已保存图片 3/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_3_page4.png
+2025-11-09 21:14:11,122 - INFO - root - 已保存图片 4/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_4_page4.png
+2025-11-09 21:14:11,237 - INFO - root - 已保存图片 5/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_5_page8.png
+2025-11-09 21:14:11,529 - INFO - root - 已保存图片 6/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_6_page8.png
+2025-11-09 21:14:11,866 - INFO - root - 已保存图片 7/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_7_page8.png
+2025-11-09 21:14:11,924 - INFO - root - 已保存图片 8/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_8_page7.png
+2025-11-09 21:14:12,003 - INFO - root - 已保存图片 9/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_9_page7.png
+2025-11-09 21:14:12,162 - INFO - root - 已保存图片 10/10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_10_page7.png
+2025-11-09 21:14:12,199 - INFO - root - 成功添加图片 1：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_1_page5.png
+2025-11-09 21:14:12,202 - INFO - root - 成功添加图片 2：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_2_page5.png
+2025-11-09 21:14:12,204 - INFO - root - 成功添加图片 3：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_3_page4.png
+2025-11-09 21:14:12,207 - INFO - root - 成功添加图片 4：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_4_page4.png
+2025-11-09 21:14:12,209 - INFO - root - 成功添加图片 5：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_5_page8.png
+2025-11-09 21:14:12,211 - INFO - root - 成功添加图片 6：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_6_page8.png
+2025-11-09 21:14:12,212 - INFO - root - 成功添加图片 7：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_7_page8.png
+2025-11-09 21:14:12,215 - INFO - root - 成功添加图片 8：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_8_page7.png
+2025-11-09 21:14:12,218 - INFO - root - 成功添加图片 9：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_9_page7.png
+2025-11-09 21:14:12,222 - INFO - root - 成功添加图片 10：./export\images_Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi\figure_10_page7.png
+2025-11-09 21:14:12,239 - INFO - root - 论文《Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework》的分析已保存到 ./export\Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi.md
+2025-11-09 21:14:12,259 - INFO - root - 正在总结论文 7/40: TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge
+2025-11-09 21:14:12,265 - INFO - root - LLMClient: rate limit reached, sleeping 2.3s
+2025-11-09 21:14:24,786 - INFO - root - LLMClient: rate limit reached, sleeping 19.0s
+2025-11-09 21:15:10,252 - INFO - root - LLMClient: rate limit reached, sleeping 4.3s
+2025-11-09 21:15:34,652 - INFO - root - 正在提取论文图片...
+2025-11-09 21:15:38,659 - INFO - root - 已保存图片 1/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_1_page1.png
+2025-11-09 21:15:38,945 - INFO - root - 已保存图片 2/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_2_page22.png
+2025-11-09 21:15:39,102 - INFO - root - 已保存图片 3/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_3_page9.png
+2025-11-09 21:15:39,255 - INFO - root - 已保存图片 4/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_4_page9.png
+2025-11-09 21:15:39,405 - INFO - root - 已保存图片 5/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_5_page11.png
+2025-11-09 21:15:39,552 - INFO - root - 已保存图片 6/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_6_page11.png
+2025-11-09 21:15:39,703 - INFO - root - 已保存图片 7/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_7_page26.png
+2025-11-09 21:15:39,887 - INFO - root - 已保存图片 8/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_8_page28.png
+2025-11-09 21:15:40,064 - INFO - root - 已保存图片 9/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_9_page27.png
+2025-11-09 21:15:40,140 - INFO - root - 已保存图片 10/10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_10_page21.png
+2025-11-09 21:15:40,164 - INFO - root - 成功添加图片 1：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_1_page1.png
+2025-11-09 21:15:40,165 - INFO - root - 成功添加图片 2：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_2_page22.png
+2025-11-09 21:15:40,165 - INFO - root - 成功添加图片 3：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_3_page9.png
+2025-11-09 21:15:40,165 - INFO - root - 成功添加图片 4：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_4_page9.png
+2025-11-09 21:15:40,165 - INFO - root - 成功添加图片 5：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_5_page11.png
+2025-11-09 21:15:40,166 - INFO - root - 成功添加图片 6：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_6_page11.png
+2025-11-09 21:15:40,166 - INFO - root - 成功添加图片 7：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_7_page26.png
+2025-11-09 21:15:40,166 - INFO - root - 成功添加图片 8：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_8_page28.png
+2025-11-09 21:15:40,167 - INFO - root - 成功添加图片 9：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_9_page27.png
+2025-11-09 21:15:40,167 - INFO - root - 成功添加图片 10：./export\images_TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights\figure_10_page21.png
+2025-11-09 21:15:40,171 - INFO - root - 论文《TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge》的分析已保存到 ./export\TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights.md
+2025-11-09 21:15:40,174 - INFO - root - 正在总结论文 8/40: KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group
+2025-11-09 21:15:40,174 - INFO - root - LLMClient: rate limit reached, sleeping 3.6s
+2025-11-09 21:15:52,700 - INFO - root - LLMClient: rate limit reached, sleeping 21.9s
+2025-11-09 21:16:39,943 - INFO - root - LLMClient: rate limit reached, sleeping 3.9s
+2025-11-09 21:17:52,194 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 21:17:52,196 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 21:17:52,199 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 21:17:53,700 - INFO - root - LLMClientManager: 指定使用客户端: Gemini
+2025-11-09 21:17:55,425 - INFO - root - GeminiClient: trying model models/gemini-2.5-flash
+2025-11-09 21:17:57,334 - INFO - root - GeminiClient: initialized model gemini-2.5-flash
+2025-11-09 21:17:57,334 - INFO - root - LLMClientManager: Gemini 客户端初始化成功
+2025-11-09 21:17:57,334 - INFO - root - LLMClientManager: switched to Gemini client
+2025-11-09 21:17:57,334 - INFO - root - 已手动切换到 LLM 客户端: Gemini
+2025-11-09 21:17:57,334 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 21:17:57,336 - INFO - root - 可用客户端: ['Gemini']
+2025-11-09 21:17:57,337 - INFO - root - === 运行配置 ===
+2025-11-09 21:17:57,337 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 21:17:57,338 - INFO - root - 关键词: QAT
+2025-11-09 21:17:57,338 - INFO - root - 查询: Quantization-Aware-Training
+2025-11-09 21:17:57,339 - INFO - root - 排序: None
+2025-11-09 21:17:57,354 - INFO - root - 最近天数: 180
+2025-11-09 21:17:57,355 - INFO - root - 最大处理数量: 40
+2025-11-09 21:17:57,356 - INFO - root - 保存图片: 是
+2025-11-09 21:17:57,357 - INFO - root - 输出语言: 中文
+2025-11-09 21:17:57,357 - INFO - root - 强制重新处理: 否
+2025-11-09 21:17:57,358 - INFO - root - ====================
+2025-11-09 21:17:57,358 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 21:17:57,358 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 21:18:04,307 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:04,310 - INFO - root - Page:0, Index:0, A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies, https://arxiv.org/pdf/2511.03201, 2025-11-05
+2025-11-09 21:18:04,311 - INFO - root - Page:0, Index:1, FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error, https://arxiv.org/pdf/2511.02302, 2025-11-04
+2025-11-09 21:18:04,312 - INFO - root - Page:0, Index:2, Outlier-Aware Post-Training Quantization for Image Super-Resolution, https://arxiv.org/pdf/2511.00682, 2025-11-01
+2025-11-09 21:18:04,313 - INFO - root - Page:0, Index:3, Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications, https://arxiv.org/pdf/2510.25853, 2025-11-03
+2025-11-09 21:18:04,331 - INFO - root - Page:0, Index:4, Improving the Straight-Through Estimator with Zeroth-Order Information, https://arxiv.org/pdf/2510.23926, 2025-10-27
+2025-11-09 21:18:04,339 - INFO - root - Page:0, Index:5, Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework, https://arxiv.org/pdf/2510.22243, 2025-10-25
+2025-11-09 21:18:04,343 - INFO - root - Page:0, Index:6, TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge, https://arxiv.org/pdf/2510.21879, 2025-10-23
+2025-11-09 21:18:04,347 - INFO - root - Page:0, Index:7, KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group, https://arxiv.org/pdf/2510.21844, 2025-10-22
+2025-11-09 21:18:04,349 - INFO - root - Page:0, Index:8, A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization, https://arxiv.org/pdf/2510.21314, 2025-10-24
+2025-11-09 21:18:04,351 - INFO - root - Page:0, Index:9, Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks, https://arxiv.org/pdf/2510.19760, 2025-10-22
+2025-11-09 21:18:04,352 - INFO - root - Page:0, Index:10, CAGE: Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Training, https://arxiv.org/pdf/2510.18784, 2025-10-21
+2025-11-09 21:18:04,353 - INFO - root - Page:0, Index:11, Mixed-Precision Quantization for Language Models: Techniques and Prospects, https://arxiv.org/pdf/2510.16805, 2025-10-19
+2025-11-09 21:18:04,373 - INFO - root - Page:0, Index:12, SPLite Hand: Sparsity-Aware Lightweight 3D Hand Pose Estimation, https://arxiv.org/pdf/2510.16396, 2025-10-30
+2025-11-09 21:18:04,378 - INFO - root - Page:0, Index:13, CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models, https://arxiv.org/pdf/2510.15962, 2025-10-11
+2025-11-09 21:18:04,380 - INFO - root - Page:0, Index:14, SANR: Scene-Aware Neural Representation for Light Field Image Compression with Rate-Distortion Optimization, https://arxiv.org/pdf/2510.15775, 2025-10-17
+2025-11-09 21:18:04,380 - INFO - root - Page:0, Index:15, SpikeFit: Towards Optimal Deployment of Spiking Networks on Neuromorphic Hardware, https://arxiv.org/pdf/2510.15542, 2025-10-31
+2025-11-09 21:18:04,380 - INFO - root - Page:0, Index:16, GRank: Towards Target-Aware and Streamlined Industrial Retrieval with a Generate-Rank Framework, https://arxiv.org/pdf/2510.15299, 2025-10-17
+2025-11-09 21:18:04,381 - INFO - root - Page:0, Index:17, SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images, https://arxiv.org/pdf/2510.15072, 2025-10-16
+2025-11-09 21:18:04,381 - INFO - root - Page:0, Index:18, FraQAT: Quantization Aware Training with Fractional bits, https://arxiv.org/pdf/2510.14823, 2025-10-16
+2025-11-09 21:18:04,382 - INFO - root - Page:0, Index:19, Computing-In-Memory Aware Model Adaption For Edge Devices, https://arxiv.org/pdf/2510.14379, 2025-10-16
+2025-11-09 21:18:04,382 - INFO - root - Page:0, Index:20, Invited Paper: BitMedViT: Ternary-Quantized Vision Transformer for Medical AI Assistants on the Edge, https://arxiv.org/pdf/2510.13760, 2025-11-04
+2025-11-09 21:18:04,383 - INFO - root - Page:0, Index:21, NeuroRVQ: Multi-Scale EEG Tokenization for Generative Large Brainwave Models, https://arxiv.org/pdf/2510.13068, 2025-10-14
+2025-11-09 21:18:04,383 - INFO - root - Page:0, Index:22, Detect Anything via Next Point Prediction, https://arxiv.org/pdf/2510.12798, 2025-10-14
+2025-11-09 21:18:04,393 - INFO - root - Page:0, Index:23, AndesVL Technical Report: An Efficient Mobile-side Multimodal Large Language Model, https://arxiv.org/pdf/2510.11496, 2025-10-14
+2025-11-09 21:18:04,396 - INFO - root - Page:0, Index:24, Rescaling-Aware Training for Efficient Deployment of Deep Learning Models on Full-Integer Hardware, https://arxiv.org/pdf/2510.11484, 2025-10-13
+2025-11-09 21:18:04,398 - INFO - root - Page:0, Index:25, SASER: Stego attacks on open-source LLMs, https://arxiv.org/pdf/2510.10486, 2025-10-12
+2025-11-09 21:18:04,398 - INFO - root - Page:0, Index:26, Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8 and YOLOv5 Object Detectors for Computer Vision and Pattern Recognition, https://arxiv.org/pdf/2510.09653, 2025-10-15
+2025-11-09 21:18:04,398 - INFO - root - Page:0, Index:27, A Theoretically-Grounded Codebook for Digital Semantic Communications, https://arxiv.org/pdf/2510.07108, 2025-10-14
+2025-11-09 21:18:04,398 - INFO - root - Page:0, Index:28, QuantDemoire: Quantization with Outlier Aware for Image Demoiréing, https://arxiv.org/pdf/2510.04066, 2025-10-05
+2025-11-09 21:18:04,399 - INFO - root - Page:0, Index:29, Adaptively Sampling-Reusing-Mixing Decomposed Gradients to Speed Up Sharpness Aware Minimization, https://arxiv.org/pdf/2510.03763, 2025-10-04
+2025-11-09 21:18:04,399 - INFO - root - Page:0, Index:30, Quant-dLLM: Post-Training Extreme Low-Bit Quantization for Diffusion Large Language Models, https://arxiv.org/pdf/2510.03274, 2025-09-27
+2025-11-09 21:18:04,399 - INFO - root - Page:0, Index:31, PT$^2$-LLM: Post-Training Ternarization for Large Language Models, https://arxiv.org/pdf/2510.03267, 2025-09-26
+2025-11-09 21:18:04,401 - INFO - root - Page:0, Index:32, Purrception: Variational Flow Matching for Vector-Quantized Image Generation, https://arxiv.org/pdf/2510.01478, 2025-10-01
+2025-11-09 21:18:04,401 - INFO - root - Page:0, Index:33, Post-Training Quantization for Audio Diffusion Transformers, https://arxiv.org/pdf/2510.00313, 2025-09-30
+2025-11-09 21:18:04,403 - INFO - root - Page:0, Index:34, Rethinking RoPE Scaling in Quantized LLM: Theory, Outlier, and Channel-Band Analysis with Weight Rescaling, https://arxiv.org/pdf/2510.00028, 2025-09-25
+2025-11-09 21:18:04,414 - INFO - root - Page:0, Index:35, Post-Training Quantization via Residual Truncation and Zero Suppression for Diffusion Models, https://arxiv.org/pdf/2509.26436, 2025-09-30
+2025-11-09 21:18:04,415 - INFO - root - Page:0, Index:36, Cat: Post-Training Quantization Error Reduction via Cluster-based Affine Transformation, https://arxiv.org/pdf/2509.26277, 2025-10-07
+2025-11-09 21:18:04,415 - INFO - root - Page:0, Index:37, CAST: Continuous and Differentiable Semi-Structured Sparsity-Aware Training for Large Language Models, https://arxiv.org/pdf/2509.25996, 2025-09-30
+2025-11-09 21:18:04,415 - INFO - root - Page:0, Index:38, Norm-Q: Effective Compression Method for Hidden Markov Models in Neuro-Symbolic Applications, https://arxiv.org/pdf/2509.25439, 2025-09-29
+2025-11-09 21:18:04,416 - INFO - root - Page:0, Index:39, On-the-Fly Adaptation to Quantization: Configuration-Aware LoRA for Efficient Fine-Tuning of Quantized LLMs, https://arxiv.org/pdf/2509.25214, 2025-09-22
+2025-11-09 21:18:04,416 - INFO - root - Page:0, Index:40, VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning, https://arxiv.org/pdf/2509.24650, 2025-09-29
+2025-11-09 21:18:04,416 - INFO - root - Page:0, Index:41, S$^2$NN: Sub-bit Spiking Neural Networks, https://arxiv.org/pdf/2509.24266, 2025-10-24
+2025-11-09 21:18:04,418 - INFO - root - Page:0, Index:42, Tequila: Trapping-free Ternary Quantization for Large Language Models, https://arxiv.org/pdf/2509.23809, 2025-10-17
+2025-11-09 21:18:04,418 - INFO - root - Page:0, Index:43, Texture Vector-Quantization and Reconstruction Aware Prediction for Generative Super-Resolution, https://arxiv.org/pdf/2509.23774, 2025-09-30
+2025-11-09 21:18:04,420 - INFO - root - Page:0, Index:44, RobuQ: Pushing DiTs to W1.58A2 via Robust Activation Quantization, https://arxiv.org/pdf/2509.23582, 2025-09-27
+2025-11-09 21:18:04,434 - INFO - root - Page:0, Index:45, Beyond Outliers: A Study of Optimizers Under Quantization, https://arxiv.org/pdf/2509.23500, 2025-10-02
+2025-11-09 21:18:04,435 - INFO - root - Page:0, Index:46, Compute-Optimal Quantization-Aware Training, https://arxiv.org/pdf/2509.22935, 2025-09-26
+2025-11-09 21:18:04,435 - INFO - root - Page:0, Index:47, COSPADI: Compressing LLMs via Calibration-Guided Sparse Dictionary Learning, https://arxiv.org/pdf/2509.22075, 2025-10-06
+2025-11-09 21:18:04,436 - INFO - root - Page:0, Index:48, SlimDiff: Training-Free, Activation-Guided Hands-free Slimming of Diffusion Models, https://arxiv.org/pdf/2509.21498, 2025-09-25
+2025-11-09 21:18:04,448 - INFO - root - Page:0, Index:49, Quantized Visual Geometry Grounded Transformer, https://arxiv.org/pdf/2509.21302, 2025-09-29
+2025-11-09 21:18:04,449 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 21:18:11,158 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:11,159 - INFO - root - Page:1, Index:0, Can Less Precise Be More Reliable? A Systematic Evaluation of Quantization's Impact on CLIP Beyond Accuracy, https://arxiv.org/pdf/2509.21173, 2025-10-27
+2025-11-09 21:18:11,159 - INFO - root - Page:1, Index:1, Punching Above Precision: Small Quantized Model Distillation with Learnable Regularizer, https://arxiv.org/pdf/2509.20854, 2025-09-25
+2025-11-09 21:18:11,159 - INFO - root - Page:1, Index:2, TinyEcoWeedNet: Edge Efficient Real-Time Aerial Agricultural Weed Detection, https://arxiv.org/pdf/2509.18193, 2025-09-19
+2025-11-09 21:18:11,161 - INFO - root - Page:1, Index:3, SBVR: Summation of BitVector Representation for Efficient LLM Quantization, https://arxiv.org/pdf/2509.18172, 2025-09-17
+2025-11-09 21:18:11,162 - INFO - root - Page:1, Index:4, QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models, https://arxiv.org/pdf/2509.17428, 2025-09-26
+2025-11-09 21:18:11,163 - INFO - root - Page:1, Index:5, PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models, https://arxiv.org/pdf/2509.16989, 2025-10-28
+2025-11-09 21:18:11,164 - INFO - root - Page:1, Index:6, MEC-Quant: Maximum Entropy Coding for Extremely Low Bit Quantization-Aware Training, https://arxiv.org/pdf/2509.15514, 2025-09-18
+2025-11-09 21:18:11,164 - INFO - root - Page:1, Index:7, Q-ROAR: Outlier-Aware Rescaling for RoPE Position Interpolation in Quantized Long-Context LLMs, https://arxiv.org/pdf/2509.14391, 2025-09-17
+2025-11-09 21:18:11,165 - INFO - root - Page:1, Index:8, Efficient Quantization-Aware Neural Receivers: Beyond Post-Training Quantization, https://arxiv.org/pdf/2509.13786, 2025-09-19
+2025-11-09 21:18:11,166 - INFO - root - Page:1, Index:9, Rate-Distortion Limits for Multimodal Retrieval: Theory, Optimal Codes, and Finite-Sample Guarantees, https://arxiv.org/pdf/2509.11054, 2025-09-13
+2025-11-09 21:18:11,166 - INFO - root - Page:1, Index:10, SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework for High-Performance Vision-Language-Action Models, https://arxiv.org/pdf/2509.09090, 2025-09-10
+2025-11-09 21:18:11,167 - INFO - root - Page:1, Index:11, CSI Compression Beyond Latents: End-to-End Hybrid Attention-CNN Networks with Entropy Regularization, https://arxiv.org/pdf/2509.08776, 2025-09-10
+2025-11-09 21:18:11,167 - INFO - root - Page:1, Index:12, Explaining How Quantization Disparately Skews a Model, https://arxiv.org/pdf/2509.07222, 2025-09-08
+2025-11-09 21:18:11,168 - INFO - root - Page:1, Index:13, LoaQ: Layer-wise Output Approximation Quantization, https://arxiv.org/pdf/2509.06297, 2025-09-07
+2025-11-09 21:18:11,168 - INFO - root - Page:1, Index:14, FineServe: Precision-Aware KV Slab and Two-Level Scheduling for Heterogeneous Precision LLM Serving, https://arxiv.org/pdf/2509.06261, 2025-09-14
+2025-11-09 21:18:11,168 - INFO - root - Page:1, Index:15, Sensitivity-Aware Post-Training Quantization for Deep Neural Networks, https://arxiv.org/pdf/2509.05576, 2025-09-05
+2025-11-09 21:18:11,170 - INFO - root - Page:1, Index:16, SuperSNN: A Hardware-Aware Framework for Physically Realizable, High-Performance Superconducting Spiking Neural Network Chips, https://arxiv.org/pdf/2509.05532, 2025-09-05
+2025-11-09 21:18:11,173 - INFO - root - Page:1, Index:17, Data-Augmented Quantization-Aware Knowledge Distillation, https://arxiv.org/pdf/2509.03850, 2025-09-03
+2025-11-09 21:18:11,173 - INFO - root - Page:1, Index:18, DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling, https://arxiv.org/pdf/2509.03472, 2025-09-03
+2025-11-09 21:18:11,174 - INFO - root - Page:1, Index:19, Empowering Large Language Model for Sequential Recommendation via Multimodal Embeddings and Semantic IDs, https://arxiv.org/pdf/2509.02017, 2025-09-02
+2025-11-09 21:18:11,174 - INFO - root - Page:1, Index:20, Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling, https://arxiv.org/pdf/2509.01624, 2025-09-01
+2025-11-09 21:18:11,174 - INFO - root - Page:1, Index:21, Quantization Meets OOD: Generalizable Quantization-aware Training from a Flatness Perspective, https://arxiv.org/pdf/2509.00859, 2025-08-31
+2025-11-09 21:18:11,174 - INFO - root - Page:1, Index:22, Progressive Element-wise Gradient Estimation for Neural Network Quantization, https://arxiv.org/pdf/2509.00097, 2025-08-27
+2025-11-09 21:18:11,175 - INFO - root - Page:1, Index:23, End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost, https://arxiv.org/pdf/2509.00031, 2025-09-29
+2025-11-09 21:18:11,175 - INFO - root - Page:1, Index:24, Quantization Robustness to Input Degradations for Object Detection, https://arxiv.org/pdf/2508.19600, 2025-08-27
+2025-11-09 21:18:11,175 - INFO - root - Page:1, Index:25, Scaling Laws for Task-Stratified Knowledge in Post-Training Quantized Large Language Models, https://arxiv.org/pdf/2508.18609, 2025-08-27
+2025-11-09 21:18:11,176 - INFO - root - Page:1, Index:26, AQ-PCDSys: An Adaptive Quantized Planetary Crater Detection System for Autonomous Space Exploration, https://arxiv.org/pdf/2508.18025, 2025-08-25
+2025-11-09 21:18:11,180 - INFO - root - Page:1, Index:27, TaDiCodec: Text-aware Diffusion Speech Tokenizer for Speech Language Modeling, https://arxiv.org/pdf/2508.16790, 2025-08-22
+2025-11-09 21:18:11,180 - INFO - root - Page:1, Index:28, A Node-Aware Dynamic Quantization Approach for Graph Collaborative Filtering, https://arxiv.org/pdf/2508.16516, 2025-08-22
+2025-11-09 21:18:11,180 - INFO - root - Page:1, Index:29, JEDI-linear: Fast and Efficient Graph Neural Networks for Jet Tagging on FPGAs, https://arxiv.org/pdf/2508.15468, 2025-08-21
+2025-11-09 21:18:11,183 - INFO - root - Page:1, Index:30, MMQ: Multimodal Mixture-of-Quantization Tokenization for Semantic ID Generation and User Behavioral Adaptation, https://arxiv.org/pdf/2508.15281, 2025-08-21
+2025-11-09 21:18:11,183 - INFO - root - Page:1, Index:31, DLLMQuant: Quantizing Diffusion-based Large Language Models, https://arxiv.org/pdf/2508.14090, 2025-08-25
+2025-11-09 21:18:11,184 - INFO - root - Page:1, Index:32, Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management, https://arxiv.org/pdf/2508.13905, 2025-08-19
+2025-11-09 21:18:11,184 - INFO - root - Page:1, Index:33, XR-NPE: High-Throughput Mixed-precision SIMD Neural Processing Engine for Extended Reality Perception Workloads, https://arxiv.org/pdf/2508.13049, 2025-08-18
+2025-11-09 21:18:11,184 - INFO - root - Page:1, Index:34, Exploring Self-Supervised Audio Models for Generalized Anomalous Sound Detection, https://arxiv.org/pdf/2508.12230, 2025-08-17
+2025-11-09 21:18:11,185 - INFO - root - Page:1, Index:35, TriQDef: Disrupting Semantic and Gradient Alignment to Prevent Adversarial Patch Transferability in Quantized Neural Networks, https://arxiv.org/pdf/2508.12132, 2025-08-16
+2025-11-09 21:18:11,185 - INFO - root - Page:1, Index:36, Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion, https://arxiv.org/pdf/2508.12094, 2025-10-13
+2025-11-09 21:18:11,186 - INFO - root - Page:1, Index:37, Extending Straight-Through Estimation for Robust Neural Networks on Analog CIM Hardware, https://arxiv.org/pdf/2508.11940, 2025-08-16
+2025-11-09 21:18:11,186 - INFO - root - Page:1, Index:38, PTQAT: A Hybrid Parameter-Efficient Quantization Algorithm for 3D Perception Tasks, https://arxiv.org/pdf/2508.10557, 2025-08-15
+2025-11-09 21:18:11,187 - INFO - root - Page:1, Index:39, MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI, https://arxiv.org/pdf/2508.09500, 2025-08-13
+2025-11-09 21:18:11,187 - INFO - root - Page:1, Index:40, SPARC: Soft Probabilistic Adaptive multi-interest Retrieval Model via Codebooks for recommender system, https://arxiv.org/pdf/2508.09090, 2025-08-12
+2025-11-09 21:18:11,187 - INFO - root - Page:1, Index:41, Rethinking 1-bit Optimization Leveraging Pre-trained Large Language Models, https://arxiv.org/pdf/2508.06974, 2025-08-09
+2025-11-09 21:18:11,188 - INFO - root - Page:1, Index:42, Efficient Deep Neural Receiver with Post-Training Quantization, https://arxiv.org/pdf/2508.06275, 2025-08-08
+2025-11-09 21:18:11,188 - INFO - root - Page:1, Index:43, iFairy: the First 2-bit Complex LLM with All Parameters in $\{\pm1, \pm i\}$, https://arxiv.org/pdf/2508.05571, 2025-08-16
+2025-11-09 21:18:11,188 - INFO - root - Page:1, Index:44, S$^2$Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation, https://arxiv.org/pdf/2508.04016, 2025-10-27
+2025-11-09 21:18:11,189 - INFO - root - Page:1, Index:45, LRQ-DiT: Log-Rotation Post-Training Quantization of Diffusion Transformers for Image and Video Generation, https://arxiv.org/pdf/2508.03485, 2025-09-23
+2025-11-09 21:18:11,189 - INFO - root - Page:1, Index:46, VLMQ: Efficient Post-Training Quantization for Large Vision-Language Models via Hessian Augmentation, https://arxiv.org/pdf/2508.03351, 2025-08-05
+2025-11-09 21:18:11,189 - INFO - root - Page:1, Index:47, TF-MLPNet: Tiny Real-Time Neural Speech Separation, https://arxiv.org/pdf/2508.03047, 2025-08-04
+2025-11-09 21:18:11,191 - INFO - root - Page:1, Index:48, SaviorRec: Semantic-Behavior Alignment for Cold-Start Recommendation, https://arxiv.org/pdf/2508.01375, 2025-08-02
+2025-11-09 21:18:11,191 - INFO - root - Page:1, Index:49, MixA-Q: Revisiting Activation Sparsity for Vision Transformers from a Mixed-Precision Quantization Perspective, https://arxiv.org/pdf/2507.19131, 2025-07-25
+2025-11-09 21:18:11,192 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 21:18:18,230 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:18,238 - INFO - root - Page:2, Index:0, Enhancing Quantization-Aware Training on Edge Devices via Relative Entropy Coreset Selection and Cascaded Layer Correction, https://arxiv.org/pdf/2507.17768, 2025-07-16
+2025-11-09 21:18:18,239 - INFO - root - Page:2, Index:1, SiLQ: Simple Large Language Model Quantization-Aware Training, https://arxiv.org/pdf/2507.16933, 2025-07-22
+2025-11-09 21:18:18,240 - INFO - root - Page:2, Index:2, Task-Specific Zero-shot Quantization-Aware Training for Object Detection, https://arxiv.org/pdf/2507.16782, 2025-07-22
+2025-11-09 21:18:18,244 - INFO - root - Page:2, Index:3, TorchAO: PyTorch-Native Training-to-Serving Model Optimization, https://arxiv.org/pdf/2507.16099, 2025-07-21
+2025-11-09 21:18:18,245 - INFO - root - Page:2, Index:4, SegQuant: A Semantics-Aware and Generalizable Quantization Framework for Diffusion Models, https://arxiv.org/pdf/2507.14811, 2025-08-27
+2025-11-09 21:18:18,245 - INFO - root - Page:2, Index:5, Apple Intelligence Foundation Language Models: Tech Report 2025, https://arxiv.org/pdf/2507.13575, 2025-08-27
+2025-11-09 21:18:18,245 - INFO - root - Page:2, Index:6, Generative Multi-Target Cross-Domain Recommendation, https://arxiv.org/pdf/2507.12871, 2025-08-07
+2025-11-09 21:18:18,246 - INFO - root - Page:2, Index:7, DAF: An Efficient End-to-End Dynamic Activation Framework for on-Device DNN Training, https://arxiv.org/pdf/2507.07149, 2025-07-09
+2025-11-09 21:18:18,247 - INFO - root - Page:2, Index:8, Opto-ViT: Architecting a Near-Sensor Region of Interest-Aware Vision Transformer Accelerator with Silicon Photonics, https://arxiv.org/pdf/2507.07044, 2025-07-15
+2025-11-09 21:18:18,249 - INFO - root - Page:2, Index:9, QS4D: Quantization-aware training for efficient hardware deployment of structured state-space sequential models, https://arxiv.org/pdf/2507.06079, 2025-07-08
+2025-11-09 21:18:18,249 - INFO - root - Page:2, Index:10, GSVR: 2D Gaussian-based Video Representation for 800+ FPS with Hybrid Deformation Field, https://arxiv.org/pdf/2507.05594, 2025-07-07
+2025-11-09 21:18:18,250 - INFO - root - Page:2, Index:11, Hita: Holistic Tokenizer for Autoregressive Image Generation, https://arxiv.org/pdf/2507.02358, 2025-07-11
+2025-11-09 21:18:18,250 - INFO - root - Page:2, Index:12, QPART: Adaptive Model Quantization and Dynamic Workload Balancing for Accuracy-aware Edge Inference, https://arxiv.org/pdf/2506.23934, 2025-06-30
+2025-11-09 21:18:18,257 - INFO - root - Page:2, Index:13, FedWSQ: Efficient Federated Learning with Weight Standardization and Distribution-Aware Non-Uniform Quantization, https://arxiv.org/pdf/2506.23516, 2025-07-21
+2025-11-09 21:18:18,269 - INFO - root - Page:2, Index:14, Spectra 1.1: Scaling Laws and Efficient Inference for Ternary Language Models, https://arxiv.org/pdf/2506.23025, 2025-06-28
+2025-11-09 21:18:18,344 - INFO - root - Page:2, Index:15, Joint Quantization and Pruning Neural Networks Approach: A Case Study on FSO Receivers, https://arxiv.org/pdf/2506.20084, 2025-06-24
+2025-11-09 21:18:18,375 - INFO - root - Page:2, Index:16, Single-step Diffusion for Image Compression at Ultra-Low Bitrates, https://arxiv.org/pdf/2506.16572, 2025-09-22
+2025-11-09 21:18:18,391 - INFO - root - Page:2, Index:17, LittleBit: Ultra Low-Bit Quantization via Latent Factorization, https://arxiv.org/pdf/2506.13771, 2025-10-28
+2025-11-09 21:18:18,407 - INFO - root - Page:2, Index:18, MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering, https://arxiv.org/pdf/2506.13755, 2025-06-16
+2025-11-09 21:18:18,410 - INFO - root - Page:2, Index:19, EAQuant: Enhancing Post-Training Quantization for MoE Models via Expert-Aware Optimization, https://arxiv.org/pdf/2506.13329, 2025-07-04
+2025-11-09 21:18:18,413 - INFO - root - Page:2, Index:20, Towards Neural Audio Codec Source Parsing, https://arxiv.org/pdf/2506.12627, 2025-06-14
+2025-11-09 21:18:18,416 - INFO - root - Page:2, Index:21, Quantizing Small-Scale State-Space Models for Edge AI, https://arxiv.org/pdf/2506.12480, 2025-06-14
+2025-11-09 21:18:18,420 - INFO - root - Page:2, Index:22, EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction, https://arxiv.org/pdf/2506.12015, 2025-06-13
+2025-11-09 21:18:18,426 - INFO - root - Page:2, Index:23, Compression Aware Certified Training, https://arxiv.org/pdf/2506.11992, 2025-06-13
+2025-11-09 21:18:18,429 - INFO - root - Page:2, Index:24, GPLQ: A General, Practical, and Lightning QAT Method for Vision Transformers, https://arxiv.org/pdf/2506.11784, 2025-06-13
+2025-11-09 21:18:18,433 - INFO - root - Page:2, Index:25, TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision, https://arxiv.org/pdf/2506.11431, 2025-06-12
+2025-11-09 21:18:18,441 - INFO - root - Page:2, Index:26, EfficientQuant: An Efficient Post-Training Quantization for CNN-Transformer Hybrid Models on Edge Devices, https://arxiv.org/pdf/2506.11093, 2025-06-05
+2025-11-09 21:18:18,443 - INFO - root - Page:2, Index:27, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 21:18:18,451 - INFO - root - Page:2, Index:28, AWP: Activation-Aware Weight Pruning and Quantization with Projected Gradient Descent, https://arxiv.org/pdf/2506.10205, 2025-06-11
+2025-11-09 21:18:18,458 - INFO - root - Page:2, Index:29, Q-SAM2: Accurate Quantization for Segment Anything Model 2, https://arxiv.org/pdf/2506.09782, 2025-06-11
+2025-11-09 21:18:18,460 - INFO - root - Page:2, Index:30, Unifying Block-wise PTQ and Distillation-based QAT for Progressive Quantization toward 2-bit Instruction-Tuned LLMs, https://arxiv.org/pdf/2506.09104, 2025-06-10
+2025-11-09 21:18:18,462 - INFO - root - Page:2, Index:31, Implementing Keyword Spotting on the MCUX947 Microcontroller with Integrated NPU, https://arxiv.org/pdf/2506.08911, 2025-06-10
+2025-11-09 21:18:18,469 - INFO - root - Page:2, Index:32, POLARON: Precision-aware On-device Learning and Adaptive Runtime-cONfigurable AI acceleration, https://arxiv.org/pdf/2506.08785, 2025-06-10
+2025-11-09 21:18:18,477 - INFO - root - Page:2, Index:33, MoQAE: Mixed-Precision Quantization for Long-Context LLM Inference via Mixture of Quantization-Aware Experts, https://arxiv.org/pdf/2506.07533, 2025-06-09
+2025-11-09 21:18:18,483 - INFO - root - Page:2, Index:34, BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation, https://arxiv.org/pdf/2506.07530, 2025-06-09
+2025-11-09 21:18:18,487 - INFO - root - Page:2, Index:35, RecGPT: A Foundation Model for Sequential Recommendation, https://arxiv.org/pdf/2506.06270, 2025-06-12
+2025-11-09 21:18:18,492 - INFO - root - Page:2, Index:36, FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion, https://arxiv.org/pdf/2506.04648, 2025-06-05
+2025-11-09 21:18:18,494 - INFO - root - Page:2, Index:37, BitTTS: Highly Compact Text-to-Speech Using 1.58-bit Quantization and Weight Indexing, https://arxiv.org/pdf/2506.03515, 2025-06-03
+2025-11-09 21:18:18,495 - INFO - root - Page:2, Index:38, ShapeLLM-Omni: A Native Multimodal LLM for 3D Generation and Understanding, https://arxiv.org/pdf/2506.01853, 2025-06-02
+2025-11-09 21:18:18,495 - INFO - root - Page:2, Index:39, Movable Antenna Enhanced Federated Fine-Tuning of Large Language Models via Hybrid Client Selection Optimization, https://arxiv.org/pdf/2506.00011, 2025-10-26
+2025-11-09 21:18:18,496 - INFO - root - Page:2, Index:40, Running Conventional Automatic Speech Recognition on Memristor Hardware: A Simulated Approach, https://arxiv.org/pdf/2505.24721, 2025-05-30
+2025-11-09 21:18:18,496 - INFO - root - Page:2, Index:41, GARLIC: GAussian Representation LearnIng for spaCe partitioning, https://arxiv.org/pdf/2505.24608, 2025-10-02
+2025-11-09 21:18:18,496 - INFO - root - Page:2, Index:42, AutoChemSchematic AI: Agentic Physics-Aware Automation for Chemical Manufacturing Scale-Up, https://arxiv.org/pdf/2505.24584, 2025-08-18
+2025-11-09 21:18:18,498 - INFO - root - Page:2, Index:43, Model-Preserving Adaptive Rounding, https://arxiv.org/pdf/2505.22988, 2025-09-25
+2025-11-09 21:18:18,498 - INFO - root - Page:2, Index:44, Highly Efficient and Effective LLMs with Multi-Boolean Architectures, https://arxiv.org/pdf/2505.22811, 2025-10-03
+2025-11-09 21:18:18,498 - INFO - root - Page:2, Index:45, Pioneering 4-Bit FP Quantization for Diffusion Models: Mixup-Sign Quantization and Timestep-Aware Fine-Tuning, https://arxiv.org/pdf/2505.21591, 2025-05-27
+2025-11-09 21:18:18,498 - INFO - root - Page:2, Index:46, Frequency Composition for Compressed and Domain-Adaptive Neural Networks, https://arxiv.org/pdf/2505.20890, 2025-05-27
+2025-11-09 21:18:18,500 - INFO - root - Page:2, Index:47, MoPFormer: Motion-Primitive Transformer for Wearable-Sensor Activity Recognition, https://arxiv.org/pdf/2505.20744, 2025-10-27
+2025-11-09 21:18:18,500 - INFO - root - Page:2, Index:48, Optimizing edge AI models on HPC systems with the edge in the loop, https://arxiv.org/pdf/2505.19995, 2025-05-26
+2025-11-09 21:18:18,501 - INFO - root - Fetching page 4 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=150
+2025-11-09 21:18:24,851 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:24,852 - INFO - root - Page:3, Index:0, DPASyn: Mechanism-Aware Drug Synergy Prediction via Dual Attention and Precision-Aware Quantization, https://arxiv.org/pdf/2505.19144, 2025-09-20
+2025-11-09 21:18:24,852 - INFO - root - Page:3, Index:1, Reducing Storage of Pretrained Neural Networks by Rate-Constrained Quantization and Entropy Coding, https://arxiv.org/pdf/2505.18758, 2025-05-24
+2025-11-09 21:18:24,852 - INFO - root - Page:3, Index:2, Beyond Discreteness: Finite-Sample Analysis of Straight-Through Estimator for Quantization, https://arxiv.org/pdf/2505.18113, 2025-05-23
+2025-11-09 21:18:24,852 - INFO - root - Page:3, Index:3, Automating Versatile Time-Series Analysis with Tiny Transformers on Embedded FPGAs, https://arxiv.org/pdf/2505.17662, 2025-09-19
+2025-11-09 21:18:24,854 - INFO - root - Page:3, Index:4, FPQVAR: Floating Point Quantization for Visual Autoregressive Model with FPGA Hardware Co-design, https://arxiv.org/pdf/2505.16335, 2025-05-22
+2025-11-09 21:18:24,854 - INFO - root - Page:3, Index:5, Saliency-Aware Quantized Imitation Learning for Efficient Robotic Control, https://arxiv.org/pdf/2505.15304, 2025-05-30
+2025-11-09 21:18:24,854 - INFO - root - Page:3, Index:6, Scaling Law for Quantization-Aware Training, https://arxiv.org/pdf/2505.14302, 2025-05-20
+2025-11-09 21:18:24,854 - INFO - root - Page:3, Index:7, Automatic mixed precision for optimizing gained time with constrained loss mean-squared-error based on model partition to sequential sub-graphs, https://arxiv.org/pdf/2505.13060, 2025-05-19
+2025-11-09 21:18:24,855 - INFO - root - Page:3, Index:8, Deep Unfolding with Kernel-based Quantization in MIMO Detection, https://arxiv.org/pdf/2505.12736, 2025-05-19
+2025-11-09 21:18:24,855 - INFO - root - Page:3, Index:9, FedHQ: Hybrid Runtime Quantization for Federated Learning, https://arxiv.org/pdf/2505.11982, 2025-05-17
+2025-11-09 21:18:24,855 - INFO - root - Page:3, Index:10, QVGen: Pushing the Limit of Quantized Video Generative Models, https://arxiv.org/pdf/2505.11497, 2025-09-27
+2025-11-09 21:18:24,855 - INFO - root - Page:3, Index:11, EA-3DGS: Efficient and Adaptive 3D Gaussians with Highly Enhanced Quality for outdoor scenes, https://arxiv.org/pdf/2505.10787, 2025-05-15
+2025-11-09 21:18:24,856 - INFO - root - Page:3, Index:12, ITERA-LLM: Boosting Sub-8-Bit Large Language Model Inference via Iterative Tensor Decomposition, https://arxiv.org/pdf/2505.08981, 2025-05-13
+2025-11-09 21:18:24,856 - INFO - root - Page:3, Index:13, PROM: Prioritize Reduction of Multiplications Over Lower Bit-Widths for Efficient CNNs, https://arxiv.org/pdf/2505.03254, 2025-08-06
+2025-11-09 21:18:24,857 - INFO - root - Page:3, Index:14, ICQuant: Index Coding enables Low-bit LLM Quantization, https://arxiv.org/pdf/2505.00850, 2025-08-24
+2025-11-09 21:18:24,862 - INFO - root - Page:3, Index:15, Enhancing Ultra-Low-Bit Quantization of Large Language Models Through Saliency-Aware Partial Retraining, https://arxiv.org/pdf/2504.13932, 2025-07-30
+2025-11-09 21:18:24,864 - INFO - root - Page:3, Index:16, Achieving binary weight and activation for LLMs using Post-Training Quantization, https://arxiv.org/pdf/2504.05352, 2025-06-30
+2025-11-09 21:18:24,864 - INFO - root - Page:3, Index:17, Wireless Hearables With Programmable Speech AI Accelerators, https://arxiv.org/pdf/2503.18698, 2025-10-21
+2025-11-09 21:18:24,865 - INFO - root - Page:3, Index:18, GranQ: Efficient Channel-wise Quantization via Vectorized Pre-Scaling for Zero-Shot QAT, https://arxiv.org/pdf/2503.18339, 2025-10-15
+2025-11-09 21:18:24,865 - INFO - root - Page:3, Index:19, CompMarkGS: Robust Watermarking for Compressed 3D Gaussian Splatting, https://arxiv.org/pdf/2503.12836, 2025-09-29
+2025-11-09 21:18:24,866 - INFO - root - Page:3, Index:20, AHCPTQ: Accurate and Hardware-Compatible Post-Training Quantization for Segment Anything Model, https://arxiv.org/pdf/2503.03088, 2025-07-11
+2025-11-09 21:18:24,866 - INFO - root - Page:3, Index:21, Teaching Metric Distance to Discrete Autoregressive Language Models, https://arxiv.org/pdf/2503.02379, 2025-10-07
+2025-11-09 21:18:24,866 - INFO - root - Page:3, Index:22, Regularization-based Framework for Quantization-, Fault- and Variability-Aware Training, https://arxiv.org/pdf/2503.01297, 2025-07-12
+2025-11-09 21:18:24,867 - INFO - root - Fetching page 5 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=200
+2025-11-09 21:18:31,718 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:31,718 - INFO - root - Page:4, Index:0, Investigating the Impact of Quantization Methods on the Safety and Reliability of Large Language Models, https://arxiv.org/pdf/2502.15799, 2025-06-29
+2025-11-09 21:18:31,719 - INFO - root - Page:4, Index:1, Rotate, Clip, and Partition: Towards W2A4KV4 Quantization by Integrating Rotation and Learnable Non-uniform Quantizer, https://arxiv.org/pdf/2502.15779, 2025-09-01
+2025-11-09 21:18:31,719 - INFO - root - Page:4, Index:2, RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models, https://arxiv.org/pdf/2502.09003, 2025-06-05
+2025-11-09 21:18:31,719 - INFO - root - Page:4, Index:3, Spatial Degradation-Aware and Temporal Consistent Diffusion Model for Compressed Video Super-Resolution, https://arxiv.org/pdf/2502.07381, 2025-06-27
+2025-11-09 21:18:31,719 - INFO - root - Page:4, Index:4, QuEST: Stable Training of LLMs with 1-Bit Weights and Activations, https://arxiv.org/pdf/2502.05003, 2025-06-10
+2025-11-09 21:18:31,720 - INFO - root - Page:4, Index:5, HALO: Hadamard-Assisted Lower-Precision Optimization for LLMs, https://arxiv.org/pdf/2501.02625, 2025-11-05
+2025-11-09 21:18:31,720 - INFO - root - Page:4, Index:6, TAR3D: Creating High-Quality 3D Assets via Next-Part Prediction, https://arxiv.org/pdf/2412.16919, 2025-08-08
+2025-11-09 21:18:31,720 - INFO - root - Page:4, Index:7, Training Multi-Layer Binary Neural Networks With Local Binary Error Signals, https://arxiv.org/pdf/2412.00119, 2025-08-05
+2025-11-09 21:18:31,721 - INFO - root - Page:4, Index:8, Scaling Large-scale GNN Training to Thousands of Processors on CPU-based Supercomputers, https://arxiv.org/pdf/2411.16025, 2025-05-26
+2025-11-09 21:18:31,721 - INFO - root - Page:4, Index:9, HAFLQ: Heterogeneous Adaptive Federated LoRA Fine-tuned LLM with Quantization, https://arxiv.org/pdf/2411.06581, 2025-05-16
+2025-11-09 21:18:31,721 - INFO - root - Fetching page 6 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=250
+2025-11-09 21:18:38,692 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:38,692 - INFO - root - Page:5, Index:0, Gradient-Free Training of Quantized Neural Networks, https://arxiv.org/pdf/2410.09734, 2025-09-29
+2025-11-09 21:18:38,693 - INFO - root - Page:5, Index:1, QT-DoG: Quantization-aware Training for Domain Generalization, https://arxiv.org/pdf/2410.06020, 2025-06-26
+2025-11-09 21:18:38,693 - INFO - root - Page:5, Index:2, Constraint Guided Model Quantization of Neural Networks, https://arxiv.org/pdf/2409.20138, 2025-09-12
+2025-11-09 21:18:38,693 - INFO - root - Page:5, Index:3, Accumulator-Aware Post-Training Quantization for Large Language Models, https://arxiv.org/pdf/2409.17092, 2025-07-30
+2025-11-09 21:18:38,693 - INFO - root - Page:5, Index:4, DilateQuant: Accurate and Efficient Diffusion Quantization via Weight Dilation, https://arxiv.org/pdf/2409.14307, 2025-07-09
+2025-11-09 21:18:38,693 - INFO - root - Page:5, Index:5, Robust Training of Neural Networks at Arbitrary Precision and Sparsity, https://arxiv.org/pdf/2409.09245, 2025-09-23
+2025-11-09 21:18:38,694 - INFO - root - Page:5, Index:6, VQ-CTAP: Cross-Modal Fine-Grained Sequence Representation Learning for Speech Processing, https://arxiv.org/pdf/2408.05758, 2025-05-27
+2025-11-09 21:18:38,694 - INFO - root - Page:5, Index:7, DopQ-ViT: Towards Distribution-Friendly and Outlier-Aware Post-Training Quantization for Vision Transformers, https://arxiv.org/pdf/2408.03291, 2025-06-19
+2025-11-09 21:18:38,694 - INFO - root - Page:5, Index:8, Temporal Feature Matters: A Framework for Diffusion Model Quantization, https://arxiv.org/pdf/2407.19547, 2025-07-11
+2025-11-09 21:18:38,694 - INFO - root - Page:5, Index:9, EfficientQAT: Efficient Quantization-Aware Training for Large Language Models, https://arxiv.org/pdf/2407.11062, 2025-05-19
+2025-11-09 21:18:38,694 - INFO - root - Page:5, Index:10, Integer-only Quantized Transformers for Embedded FPGA-based Time-series Forecasting in AIoT, https://arxiv.org/pdf/2407.11041, 2025-10-31
+2025-11-09 21:18:38,695 - INFO - root - Fetching page 7 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=300
+2025-11-09 21:18:45,887 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:45,889 - INFO - root - Page:6, Index:0, BoA: Attention-aware Post-training Quantization without Backpropagation, https://arxiv.org/pdf/2406.13474, 2025-06-06
+2025-11-09 21:18:45,889 - INFO - root - Page:6, Index:1, A Rescaling-Invariant Lipschitz Bound Based on Path-Metrics for Modern ReLU Network Parameterizations, https://arxiv.org/pdf/2405.15006, 2025-06-13
+2025-11-09 21:18:45,891 - INFO - root - Page:6, Index:2, Scheduling Weight Transitions for Quantization-Aware Training, https://arxiv.org/pdf/2404.19248, 2025-10-01
+2025-11-09 21:18:45,891 - INFO - root - Page:6, Index:3, GPTVQ: The Blessing of Dimensionality for LLM Quantization, https://arxiv.org/pdf/2402.15319, 2025-06-03
+2025-11-09 21:18:45,893 - INFO - root - Fetching page 8 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=350
+2025-11-09 21:18:53,552 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:18:53,559 - INFO - root - Page:7, Index:0, Squat: Quant Small Language Models on the Edge, https://arxiv.org/pdf/2402.10787, 2025-07-01
+2025-11-09 21:18:53,562 - INFO - root - Page:7, Index:1, L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models, https://arxiv.org/pdf/2402.04902, 2025-07-21
+2025-11-09 21:18:53,563 - INFO - root - Fetching page 9 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=400
+2025-11-09 21:19:00,507 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 21:19:00,508 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.pdf
+2025-11-09 21:19:00,514 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error.pdf
+2025-11-09 21:19:00,516 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Outlier-Aware Post-Training Quantization for Image Super-Resolution.pdf
+2025-11-09 21:19:00,517 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications.pdf
+2025-11-09 21:19:00,517 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Improving the Straight-Through Estimator with Zeroth-Order Information.pdf
+2025-11-09 21:19:00,518 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi.pdf
+2025-11-09 21:19:00,519 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights.pdf
+2025-11-09 21:19:00,523 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us.pdf
+2025-11-09 21:19:00,524 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization.pdf
+2025-11-09 21:19:00,525 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks.pdf
+2025-11-09 21:19:00,525 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\CAGE_ Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Traini.pdf
+2025-11-09 21:19:00,528 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Mixed-Precision Quantization for Language Models_ Techniques and Prospects.pdf
+2025-11-09 21:19:00,531 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation.pdf
+2025-11-09 21:19:00,532 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large.pdf
+2025-11-09 21:19:00,535 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\SANR_ Scene-Aware Neural Representation for Light Field Image Compression with R.pdf
+2025-11-09 21:19:00,538 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\SpikeFit_ Towards Optimal Deployment of Spiking Networks on Neuromorphic Hardwar.pdf
+2025-11-09 21:19:00,539 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\GRank_ Towards Target-Aware and Streamlined Industrial Retrieval with a Generate.pdf
+2025-11-09 21:19:00,540 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\SaLon3R_ Structure-aware Long-term Generalizable 3D Reconstruction from Unposed.pdf
+2025-11-09 21:19:00,542 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\FraQAT_ Quantization Aware Training with Fractional bits.pdf
+2025-11-09 21:19:00,543 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Computing-In-Memory Aware Model Adaption For Edge Devices.pdf
+2025-11-09 21:19:00,547 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Invited Paper_ BitMedViT_ Ternary-Quantized Vision Transformer for Medical AI As.pdf
+2025-11-09 21:19:00,547 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\NeuroRVQ_ Multi-Scale EEG Tokenization for Generative Large Brainwave Models.pdf
+2025-11-09 21:19:00,548 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Detect Anything via Next Point Prediction.pdf
+2025-11-09 21:19:00,550 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\AndesVL Technical Report_ An Efficient Mobile-side Multimodal Large Language Mod.pdf
+2025-11-09 21:19:00,553 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Rescaling-Aware Training for Efficient Deployment of Deep Learning Models on Ful.pdf
+2025-11-09 21:19:00,555 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\SASER_ Stego attacks on open-source LLMs.pdf
+2025-11-09 21:19:00,556 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Ultralytics YOLO Evolution_ An Overview of YOLO26, YOLO11, YOLOv8 and YOLOv5 Obj.pdf
+2025-11-09 21:19:00,556 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\A Theoretically-Grounded Codebook for Digital Semantic Communications.pdf
+2025-11-09 21:19:00,557 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\QuantDemoire_ Quantization with Outlier Aware for Image Demoiréing.pdf
+2025-11-09 21:19:00,558 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Adaptively Sampling-Reusing-Mixing Decomposed Gradients to Speed Up Sharpness Aw.pdf
+2025-11-09 21:19:00,563 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Quant-dLLM_ Post-Training Extreme Low-Bit Quantization for Diffusion Large Langu.pdf
+2025-11-09 21:19:00,564 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\PT$^2$-LLM_ Post-Training Ternarization for Large Language Models.pdf
+2025-11-09 21:19:00,565 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Purrception_ Variational Flow Matching for Vector-Quantized Image Generation.pdf
+2025-11-09 21:19:00,570 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Post-Training Quantization for Audio Diffusion Transformers.pdf
+2025-11-09 21:19:00,572 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Rethinking RoPE Scaling in Quantized LLM_ Theory, Outlier, and Channel-Band Anal.pdf
+2025-11-09 21:19:00,573 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Post-Training Quantization via Residual Truncation and Zero Suppression for Diff.pdf
+2025-11-09 21:19:00,574 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Cat_ Post-Training Quantization Error Reduction via Cluster-based Affine Transfo.pdf
+2025-11-09 21:19:00,575 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\CAST_ Continuous and Differentiable Semi-Structured Sparsity-Aware Training for.pdf
+2025-11-09 21:19:00,576 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\Norm-Q_ Effective Compression Method for Hidden Markov Models in Neuro-Symbolic.pdf
+2025-11-09 21:19:00,580 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\Quantization-Aware-Training\On-the-Fly Adaptation to Quantization_ Configuration-Aware LoRA for Efficient Fi.pdf
+2025-11-09 21:19:00,581 - INFO - root - 跳过已处理论文 A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies：d:\ChatPaper\academic Papers\Quantization-Aware-Training\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.pdf
+2025-11-09 21:19:00,582 - INFO - root - 跳过已处理论文 FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error：d:\ChatPaper\academic Papers\Quantization-Aware-Training\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error.pdf
+2025-11-09 21:19:00,585 - INFO - root - 跳过已处理论文 Outlier-Aware Post-Training Quantization for Image Super-Resolution：d:\ChatPaper\academic Papers\Quantization-Aware-Training\Outlier-Aware Post-Training Quantization for Image Super-Resolution.pdf
+2025-11-09 21:19:00,585 - INFO - root - 跳过已处理论文 Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications：d:\ChatPaper\academic Papers\Quantization-Aware-Training\Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications.pdf
+2025-11-09 21:19:00,586 - INFO - root - 跳过已处理论文 Improving the Straight-Through Estimator with Zeroth-Order Information：d:\ChatPaper\academic Papers\Quantization-Aware-Training\Improving the Straight-Through Estimator with Zeroth-Order Information.pdf
+2025-11-09 21:19:00,587 - INFO - root - 跳过已处理论文 Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework：d:\ChatPaper\academic Papers\Quantization-Aware-Training\Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet wi.pdf
+2025-11-09 21:19:00,587 - INFO - root - 跳过已处理论文 TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge：d:\ChatPaper\academic Papers\Quantization-Aware-Training\TernaryCLIP_ Efficiently Compressing Vision-Language Models with Ternary Weights.pdf
+2025-11-09 21:19:00,587 - INFO - root - 正在总结论文 8/40: KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group
+2025-11-09 21:19:35,806 - INFO - root - LLMClient: rate limit reached, sleeping 24.8s
+2025-11-09 21:20:21,177 - INFO - root - 正在提取论文图片...
+2025-11-09 21:20:21,328 - INFO - root - 已保存图片 1/10：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_1_page3.jpeg
+2025-11-09 21:20:21,403 - INFO - root - 已保存图片 2/10：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_2_page7.png
+2025-11-09 21:20:21,472 - INFO - root - 已保存图片 3/10：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_3_page9.png
+2025-11-09 21:20:21,550 - INFO - root - 已保存图片 4/10：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_4_page8.png
+2025-11-09 21:20:21,552 - INFO - root - 成功添加图片 1：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_1_page3.jpeg
+2025-11-09 21:20:21,552 - INFO - root - 成功添加图片 2：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_2_page7.png
+2025-11-09 21:20:21,552 - INFO - root - 成功添加图片 3：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_3_page9.png
+2025-11-09 21:20:21,553 - INFO - root - 成功添加图片 4：./export\images_KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us\figure_4_page8.png
+2025-11-09 21:20:21,554 - INFO - root - 论文《KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group》的分析已保存到 ./export\KARIPAP_ Quantum-Inspired Tensor Network Compression of Large Language Models Us.md
+2025-11-09 21:20:21,557 - INFO - root - 正在总结论文 9/40: A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization
+2025-11-09 21:20:31,698 - INFO - root - LLMClient: rate limit reached, sleeping 28.9s
+2025-11-09 21:21:50,391 - INFO - root - 正在提取论文图片...
+2025-11-09 21:21:50,458 - INFO - root - 论文《A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization》的分析已保存到 ./export\A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization.md
+2025-11-09 21:21:50,460 - INFO - root - 正在总结论文 10/40: Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks
+2025-11-09 21:21:50,460 - INFO - root - LLMClient: rate limit reached, sleeping 10.1s
+2025-11-09 21:22:11,535 - INFO - root - LLMClient: rate limit reached, sleeping 17.7s
+2025-11-09 21:22:56,386 - INFO - root - LLMClient: rate limit reached, sleeping 4.2s
+2025-11-09 21:23:19,458 - INFO - root - 正在提取论文图片...
+2025-11-09 21:23:19,622 - INFO - root - 已保存图片 1/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_1_page6.png
+2025-11-09 21:23:19,678 - INFO - root - 已保存图片 2/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_2_page13.png
+2025-11-09 21:23:19,735 - INFO - root - 已保存图片 3/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_3_page13.png
+2025-11-09 21:23:19,750 - INFO - root - 已保存图片 4/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_4_page3.jpeg
+2025-11-09 21:23:19,780 - INFO - root - 已保存图片 5/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_5_page3.jpeg
+2025-11-09 21:23:19,808 - INFO - root - 已保存图片 6/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_6_page3.jpeg
+2025-11-09 21:23:19,848 - INFO - root - 已保存图片 7/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_7_page3.jpeg
+2025-11-09 21:23:20,010 - INFO - root - 已保存图片 8/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_8_page2.png
+2025-11-09 21:23:20,123 - INFO - root - 已保存图片 9/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_9_page2.png
+2025-11-09 21:23:20,230 - INFO - root - 已保存图片 10/10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_10_page2.png
+2025-11-09 21:23:20,233 - INFO - root - 成功添加图片 1：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_1_page6.png
+2025-11-09 21:23:20,233 - INFO - root - 成功添加图片 2：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_2_page13.png
+2025-11-09 21:23:20,234 - INFO - root - 成功添加图片 3：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_3_page13.png
+2025-11-09 21:23:20,235 - INFO - root - 成功添加图片 4：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_4_page3.jpeg
+2025-11-09 21:23:20,235 - INFO - root - 成功添加图片 5：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_5_page3.jpeg
+2025-11-09 21:23:20,243 - INFO - root - 成功添加图片 6：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_6_page3.jpeg
+2025-11-09 21:23:20,243 - INFO - root - 成功添加图片 7：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_7_page3.jpeg
+2025-11-09 21:23:20,246 - INFO - root - 成功添加图片 8：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_8_page2.png
+2025-11-09 21:23:20,247 - INFO - root - 成功添加图片 9：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_9_page2.png
+2025-11-09 21:23:20,248 - INFO - root - 成功添加图片 10：./export\images_Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks\figure_10_page2.png
+2025-11-09 21:23:20,266 - INFO - root - 论文《Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks》的分析已保存到 ./export\Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks.md
+2025-11-09 21:23:20,280 - INFO - root - 正在总结论文 11/40: CAGE: Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Training
+2025-11-09 21:23:20,280 - INFO - root - LLMClient: rate limit reached, sleeping 8.9s
+2025-11-09 21:23:39,801 - INFO - root - LLMClient: rate limit reached, sleeping 20.8s
+2025-11-09 21:25:27,247 - INFO - root - 正在提取论文图片...
+2025-11-09 21:25:27,274 - INFO - root - 已保存图片 1/10：./export\images_CAGE_ Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Traini\figure_1_page8.png
+2025-11-09 21:25:27,278 - INFO - root - 成功添加图片 1：./export\images_CAGE_ Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Traini\figure_1_page8.png
+2025-11-09 21:25:27,280 - INFO - root - 论文《CAGE: Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Training》的分析已保存到 ./export\CAGE_ Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Traini.md
+2025-11-09 21:25:27,286 - INFO - root - 正在总结论文 12/40: Mixed-Precision Quantization for Language Models: Techniques and Prospects
+2025-11-09 21:25:38,271 - INFO - root - LLMClient: rate limit reached, sleeping 23.1s
+2025-11-09 21:26:26,869 - INFO - root - LLMClient: rate limit reached, sleeping 0.4s
+2025-11-09 21:26:45,787 - INFO - root - 正在提取论文图片...
+2025-11-09 21:26:50,900 - INFO - root - 已保存图片 1/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_1_page28.png
+2025-11-09 21:26:51,503 - INFO - root - 已保存图片 2/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_2_page4.png
+2025-11-09 21:26:51,627 - INFO - root - 已保存图片 3/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_3_page6.png
+2025-11-09 21:26:51,763 - INFO - root - 已保存图片 4/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_4_page6.png
+2025-11-09 21:26:51,901 - INFO - root - 已保存图片 5/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_5_page6.png
+2025-11-09 21:26:52,008 - INFO - root - 已保存图片 6/10：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_6_page6.png
+2025-11-09 21:26:52,028 - INFO - root - 成功添加图片 1：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_1_page28.png
+2025-11-09 21:26:52,029 - INFO - root - 成功添加图片 2：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_2_page4.png
+2025-11-09 21:26:52,029 - INFO - root - 成功添加图片 3：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_3_page6.png
+2025-11-09 21:26:52,032 - INFO - root - 成功添加图片 4：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_4_page6.png
+2025-11-09 21:26:52,038 - INFO - root - 成功添加图片 5：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_5_page6.png
+2025-11-09 21:26:52,038 - INFO - root - 成功添加图片 6：./export\images_Mixed-Precision Quantization for Language Models_ Techniques and Prospects\figure_6_page6.png
+2025-11-09 21:26:52,060 - INFO - root - 论文《Mixed-Precision Quantization for Language Models: Techniques and Prospects》的分析已保存到 ./export\Mixed-Precision Quantization for Language Models_ Techniques and Prospects.md
+2025-11-09 21:26:52,092 - INFO - root - 正在总结论文 13/40: SPLite Hand: Sparsity-Aware Lightweight 3D Hand Pose Estimation
+2025-11-09 21:26:52,094 - INFO - root - LLMClient: rate limit reached, sleeping 9.4s
+2025-11-09 21:27:11,444 - INFO - root - LLMClient: rate limit reached, sleeping 15.8s
+2025-11-09 21:27:55,394 - INFO - root - LLMClient: rate limit reached, sleeping 6.1s
+2025-11-09 21:28:20,315 - INFO - root - 正在提取论文图片...
+2025-11-09 21:28:23,476 - INFO - root - 已保存图片 1/10：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_1_page3.jpeg
+2025-11-09 21:28:24,254 - INFO - root - 已保存图片 2/10：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_2_page8.png
+2025-11-09 21:28:24,571 - INFO - root - 已保存图片 3/10：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_3_page8.png
+2025-11-09 21:28:24,928 - INFO - root - 已保存图片 4/10：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_4_page10.png
+2025-11-09 21:28:25,221 - INFO - root - 已保存图片 5/10：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_5_page9.png
+2025-11-09 21:28:25,280 - INFO - root - 成功添加图片 1：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_1_page3.jpeg
+2025-11-09 21:28:25,290 - INFO - root - 成功添加图片 2：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_2_page8.png
+2025-11-09 21:28:25,301 - INFO - root - 成功添加图片 3：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_3_page8.png
+2025-11-09 21:28:25,316 - INFO - root - 成功添加图片 4：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_4_page10.png
+2025-11-09 21:28:25,366 - INFO - root - 成功添加图片 5：./export\images_SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation\figure_5_page9.png
+2025-11-09 21:28:25,380 - INFO - root - 论文《SPLite Hand: Sparsity-Aware Lightweight 3D Hand Pose Estimation》的分析已保存到 ./export\SPLite Hand_ Sparsity-Aware Lightweight 3D Hand Pose Estimation.md
+2025-11-09 21:28:25,385 - INFO - root - 正在总结论文 14/40: CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models
+2025-11-09 21:28:25,386 - INFO - root - LLMClient: rate limit reached, sleeping 1.9s
+2025-11-09 21:28:38,613 - INFO - root - LLMClient: rate limit reached, sleeping 22.9s
+2025-11-09 21:29:50,653 - INFO - root - 正在提取论文图片...
+2025-11-09 21:29:51,070 - INFO - root - 已保存图片 1/10：./export\images_CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large\figure_1_page3.png
+2025-11-09 21:29:51,154 - INFO - root - 已保存图片 2/10：./export\images_CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large\figure_2_page1.png
+2025-11-09 21:29:51,158 - INFO - root - 成功添加图片 1：./export\images_CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large\figure_1_page3.png
+2025-11-09 21:29:51,159 - INFO - root - 成功添加图片 2：./export\images_CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large\figure_2_page1.png
+2025-11-09 21:29:51,168 - INFO - root - 论文《CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models》的分析已保存到 ./export\CTR-LoRA_ Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large.md
+2025-11-09 21:29:51,175 - INFO - root - 正在总结论文 15/40: SANR: Scene-Aware Neural Representation for Light Field Image Compression with Rate-Distortion Optimization
+2025-11-09 21:29:51,175 - INFO - root - LLMClient: rate limit reached, sleeping 10.3s
+2025-11-09 21:30:11,215 - INFO - root - LLMClient: rate limit reached, sleeping 20.7s
+2025-11-09 21:32:00,506 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 21:32:00,508 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 21:32:00,512 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 21:32:01,688 - INFO - root - LLMClientManager: 指定使用客户端: Gemini
+2025-11-09 21:32:02,454 - INFO - root - GeminiClient: trying model models/gemini-2.5-flash
+2025-11-09 21:32:04,768 - INFO - root - GeminiClient: initialized model gemini-2.5-flash
+2025-11-09 21:32:04,777 - INFO - root - LLMClientManager: Gemini 客户端初始化成功
+2025-11-09 21:32:04,782 - INFO - root - LLMClientManager: switched to Gemini client
+2025-11-09 21:32:04,785 - INFO - root - 已手动切换到 LLM 客户端: Gemini
+2025-11-09 21:32:04,789 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 21:32:04,792 - INFO - root - 可用客户端: ['Gemini']
+2025-11-09 21:32:04,794 - INFO - root - === 运行配置 ===
+2025-11-09 21:32:04,799 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 21:32:04,803 - INFO - root - 关键词: QAT
+2025-11-09 21:32:04,808 - INFO - root - 查询: Quantization-Aware-Training
+2025-11-09 21:32:04,813 - INFO - root - 排序: None
+2025-11-09 21:32:04,817 - INFO - root - 最近天数: 180
+2025-11-09 21:32:04,819 - INFO - root - 最大处理数量: 40
+2025-11-09 21:32:04,823 - INFO - root - 保存图片: 是
+2025-11-09 21:32:04,825 - INFO - root - 输出语言: 中文
+2025-11-09 21:32:04,828 - INFO - root - 强制重新处理: 否
+2025-11-09 21:32:04,834 - INFO - root - ====================
+2025-11-09 21:32:04,837 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 21:32:04,840 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 21:32:12,412 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:32:12,413 - INFO - root - Page:0, Index:0, A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies, https://arxiv.org/pdf/2511.03201, 2025-11-05
+2025-11-09 21:32:12,413 - INFO - root - Page:0, Index:1, FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error, https://arxiv.org/pdf/2511.02302, 2025-11-04
+2025-11-09 21:32:12,413 - INFO - root - Page:0, Index:2, Outlier-Aware Post-Training Quantization for Image Super-Resolution, https://arxiv.org/pdf/2511.00682, 2025-11-01
+2025-11-09 21:32:12,413 - INFO - root - Page:0, Index:3, Evaluation of Wafer-Scale SOT-MRAM for Analog Crossbar Array Applications, https://arxiv.org/pdf/2510.25853, 2025-11-03
+2025-11-09 21:32:12,414 - INFO - root - Page:0, Index:4, Improving the Straight-Through Estimator with Zeroth-Order Information, https://arxiv.org/pdf/2510.23926, 2025-10-27
+2025-11-09 21:32:12,414 - INFO - root - Page:0, Index:5, Real-Time Semantic Segmentation on FPGA for Autonomous Vehicles Using LMIINet with the CGRA4ML Framework, https://arxiv.org/pdf/2510.22243, 2025-10-25
+2025-11-09 21:32:12,414 - INFO - root - Page:0, Index:6, TernaryCLIP: Efficiently Compressing Vision-Language Models with Ternary Weights and Distilled Knowledge, https://arxiv.org/pdf/2510.21879, 2025-10-23
+2025-11-09 21:32:12,415 - INFO - root - Page:0, Index:7, KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group, https://arxiv.org/pdf/2510.21844, 2025-10-22
+2025-11-09 21:32:12,415 - INFO - root - Page:0, Index:8, A Convergence Analysis of Adaptive Optimizers under Floating-point Quantization, https://arxiv.org/pdf/2510.21314, 2025-10-24
+2025-11-09 21:32:12,415 - INFO - root - Page:0, Index:9, Adaptive Distribution-aware Quantization for Mixed-Precision Neural Networks, https://arxiv.org/pdf/2510.19760, 2025-10-22
+2025-11-09 21:32:12,415 - INFO - root - Page:0, Index:10, CAGE: Curvature-Aware Gradient Estimation For Accurate Quantization-Aware Training, https://arxiv.org/pdf/2510.18784, 2025-10-21
+2025-11-09 21:32:12,416 - INFO - root - Page:0, Index:11, Mixed-Precision Quantization for Language Models: Techniques and Prospects, https://arxiv.org/pdf/2510.16805, 2025-10-19
+2025-11-09 21:32:12,416 - INFO - root - Page:0, Index:12, SPLite Hand: Sparsity-Aware Lightweight 3D Hand Pose Estimation, https://arxiv.org/pdf/2510.16396, 2025-10-30
+2025-11-09 21:32:12,416 - INFO - root - Page:0, Index:13, CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models, https://arxiv.org/pdf/2510.15962, 2025-10-11
+2025-11-09 21:32:12,416 - INFO - root - Page:0, Index:14, SANR: Scene-Aware Neural Representation for Light Field Image Compression with Rate-Distortion Optimization, https://arxiv.org/pdf/2510.15775, 2025-10-17
+2025-11-09 21:32:12,417 - INFO - root - Page:0, Index:15, SpikeFit: Towards Optimal Deployment of Spiking Networks on Neuromorphic Hardware, https://arxiv.org/pdf/2510.15542, 2025-10-31
+2025-11-09 21:32:12,417 - INFO - root - Page:0, Index:16, GRank: Towards Target-Aware and Streamlined Industrial Retrieval with a Generate-Rank Framework, https://arxiv.org/pdf/2510.15299, 2025-10-17
+2025-11-09 21:32:12,417 - INFO - root - Page:0, Index:17, SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images, https://arxiv.org/pdf/2510.15072, 2025-10-16
+2025-11-09 21:32:12,418 - INFO - root - Page:0, Index:18, FraQAT: Quantization Aware Training with Fractional bits, https://arxiv.org/pdf/2510.14823, 2025-10-16
+2025-11-09 21:32:12,418 - INFO - root - Page:0, Index:19, Computing-In-Memory Aware Model Adaption For Edge Devices, https://arxiv.org/pdf/2510.14379, 2025-10-16
+2025-11-09 21:32:12,418 - INFO - root - Page:0, Index:20, Invited Paper: BitMedViT: Ternary-Quantized Vision Transformer for Medical AI Assistants on the Edge, https://arxiv.org/pdf/2510.13760, 2025-11-04
+2025-11-09 21:32:12,418 - INFO - root - Page:0, Index:21, NeuroRVQ: Multi-Scale EEG Tokenization for Generative Large Brainwave Models, https://arxiv.org/pdf/2510.13068, 2025-10-14
+2025-11-09 21:32:12,419 - INFO - root - Page:0, Index:22, Detect Anything via Next Point Prediction, https://arxiv.org/pdf/2510.12798, 2025-10-14
+2025-11-09 21:32:12,420 - INFO - root - Page:0, Index:23, AndesVL Technical Report: An Efficient Mobile-side Multimodal Large Language Model, https://arxiv.org/pdf/2510.11496, 2025-10-14
+2025-11-09 21:32:12,420 - INFO - root - Page:0, Index:24, Rescaling-Aware Training for Efficient Deployment of Deep Learning Models on Full-Integer Hardware, https://arxiv.org/pdf/2510.11484, 2025-10-13
+2025-11-09 21:32:12,421 - INFO - root - Page:0, Index:25, SASER: Stego attacks on open-source LLMs, https://arxiv.org/pdf/2510.10486, 2025-10-12
+2025-11-09 21:32:12,421 - INFO - root - Page:0, Index:26, Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8 and YOLOv5 Object Detectors for Computer Vision and Pattern Recognition, https://arxiv.org/pdf/2510.09653, 2025-10-15
+2025-11-09 21:32:12,422 - INFO - root - Page:0, Index:27, A Theoretically-Grounded Codebook for Digital Semantic Communications, https://arxiv.org/pdf/2510.07108, 2025-10-14
+2025-11-09 21:32:12,423 - INFO - root - Page:0, Index:28, QuantDemoire: Quantization with Outlier Aware for Image Demoiréing, https://arxiv.org/pdf/2510.04066, 2025-10-05
+2025-11-09 21:32:12,423 - INFO - root - Page:0, Index:29, Adaptively Sampling-Reusing-Mixing Decomposed Gradients to Speed Up Sharpness Aware Minimization, https://arxiv.org/pdf/2510.03763, 2025-10-04
+2025-11-09 21:32:12,424 - INFO - root - Page:0, Index:30, Quant-dLLM: Post-Training Extreme Low-Bit Quantization for Diffusion Large Language Models, https://arxiv.org/pdf/2510.03274, 2025-09-27
+2025-11-09 21:32:12,424 - INFO - root - Page:0, Index:31, PT$^2$-LLM: Post-Training Ternarization for Large Language Models, https://arxiv.org/pdf/2510.03267, 2025-09-26
+2025-11-09 21:32:12,424 - INFO - root - Page:0, Index:32, Purrception: Variational Flow Matching for Vector-Quantized Image Generation, https://arxiv.org/pdf/2510.01478, 2025-10-01
+2025-11-09 21:32:12,426 - INFO - root - Page:0, Index:33, Post-Training Quantization for Audio Diffusion Transformers, https://arxiv.org/pdf/2510.00313, 2025-09-30
+2025-11-09 21:32:12,426 - INFO - root - Page:0, Index:34, Rethinking RoPE Scaling in Quantized LLM: Theory, Outlier, and Channel-Band Analysis with Weight Rescaling, https://arxiv.org/pdf/2510.00028, 2025-09-25
+2025-11-09 21:32:12,426 - INFO - root - Page:0, Index:35, Post-Training Quantization via Residual Truncation and Zero Suppression for Diffusion Models, https://arxiv.org/pdf/2509.26436, 2025-09-30
+2025-11-09 21:32:12,427 - INFO - root - Page:0, Index:36, Cat: Post-Training Quantization Error Reduction via Cluster-based Affine Transformation, https://arxiv.org/pdf/2509.26277, 2025-10-07
+2025-11-09 21:32:12,427 - INFO - root - Page:0, Index:37, CAST: Continuous and Differentiable Semi-Structured Sparsity-Aware Training for Large Language Models, https://arxiv.org/pdf/2509.25996, 2025-09-30
+2025-11-09 21:32:12,427 - INFO - root - Page:0, Index:38, Norm-Q: Effective Compression Method for Hidden Markov Models in Neuro-Symbolic Applications, https://arxiv.org/pdf/2509.25439, 2025-09-29
+2025-11-09 21:32:12,427 - INFO - root - Page:0, Index:39, On-the-Fly Adaptation to Quantization: Configuration-Aware LoRA for Efficient Fine-Tuning of Quantized LLMs, https://arxiv.org/pdf/2509.25214, 2025-09-22
+2025-11-09 21:32:12,429 - INFO - root - Page:0, Index:40, VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning, https://arxiv.org/pdf/2509.24650, 2025-09-29
+2025-11-09 21:32:12,429 - INFO - root - Page:0, Index:41, S$^2$NN: Sub-bit Spiking Neural Networks, https://arxiv.org/pdf/2509.24266, 2025-10-24
+2025-11-09 21:32:12,430 - INFO - root - Page:0, Index:42, Tequila: Trapping-free Ternary Quantization for Large Language Models, https://arxiv.org/pdf/2509.23809, 2025-10-17
+2025-11-09 21:32:12,430 - INFO - root - Page:0, Index:43, Texture Vector-Quantization and Reconstruction Aware Prediction for Generative Super-Resolution, https://arxiv.org/pdf/2509.23774, 2025-09-30
+2025-11-09 21:32:12,430 - INFO - root - Page:0, Index:44, RobuQ: Pushing DiTs to W1.58A2 via Robust Activation Quantization, https://arxiv.org/pdf/2509.23582, 2025-09-27
+2025-11-09 21:32:12,430 - INFO - root - Page:0, Index:45, Beyond Outliers: A Study of Optimizers Under Quantization, https://arxiv.org/pdf/2509.23500, 2025-10-02
+2025-11-09 21:32:12,431 - INFO - root - Page:0, Index:46, Compute-Optimal Quantization-Aware Training, https://arxiv.org/pdf/2509.22935, 2025-09-26
+2025-11-09 21:32:12,431 - INFO - root - Page:0, Index:47, COSPADI: Compressing LLMs via Calibration-Guided Sparse Dictionary Learning, https://arxiv.org/pdf/2509.22075, 2025-10-06
+2025-11-09 21:32:12,432 - INFO - root - Page:0, Index:48, SlimDiff: Training-Free, Activation-Guided Hands-free Slimming of Diffusion Models, https://arxiv.org/pdf/2509.21498, 2025-09-25
+2025-11-09 21:32:12,432 - INFO - root - Page:0, Index:49, Quantized Visual Geometry Grounded Transformer, https://arxiv.org/pdf/2509.21302, 2025-09-29
+2025-11-09 21:32:12,432 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 21:32:19,102 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:32:19,102 - INFO - root - Page:1, Index:0, Can Less Precise Be More Reliable? A Systematic Evaluation of Quantization's Impact on CLIP Beyond Accuracy, https://arxiv.org/pdf/2509.21173, 2025-10-27
+2025-11-09 21:32:19,103 - INFO - root - Page:1, Index:1, Punching Above Precision: Small Quantized Model Distillation with Learnable Regularizer, https://arxiv.org/pdf/2509.20854, 2025-09-25
+2025-11-09 21:32:19,103 - INFO - root - Page:1, Index:2, TinyEcoWeedNet: Edge Efficient Real-Time Aerial Agricultural Weed Detection, https://arxiv.org/pdf/2509.18193, 2025-09-19
+2025-11-09 21:32:19,103 - INFO - root - Page:1, Index:3, SBVR: Summation of BitVector Representation for Efficient LLM Quantization, https://arxiv.org/pdf/2509.18172, 2025-09-17
+2025-11-09 21:32:19,103 - INFO - root - Page:1, Index:4, QWHA: Quantization-Aware Walsh-Hadamard Adaptation for Parameter-Efficient Fine-Tuning on Large Language Models, https://arxiv.org/pdf/2509.17428, 2025-09-26
+2025-11-09 21:32:19,104 - INFO - root - Page:1, Index:5, PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models, https://arxiv.org/pdf/2509.16989, 2025-10-28
+2025-11-09 21:32:19,104 - INFO - root - Page:1, Index:6, MEC-Quant: Maximum Entropy Coding for Extremely Low Bit Quantization-Aware Training, https://arxiv.org/pdf/2509.15514, 2025-09-18
+2025-11-09 21:32:19,104 - INFO - root - Page:1, Index:7, Q-ROAR: Outlier-Aware Rescaling for RoPE Position Interpolation in Quantized Long-Context LLMs, https://arxiv.org/pdf/2509.14391, 2025-09-17
+2025-11-09 21:32:19,104 - INFO - root - Page:1, Index:8, Efficient Quantization-Aware Neural Receivers: Beyond Post-Training Quantization, https://arxiv.org/pdf/2509.13786, 2025-09-19
+2025-11-09 21:32:19,105 - INFO - root - Page:1, Index:9, Rate-Distortion Limits for Multimodal Retrieval: Theory, Optimal Codes, and Finite-Sample Guarantees, https://arxiv.org/pdf/2509.11054, 2025-09-13
+2025-11-09 21:32:19,105 - INFO - root - Page:1, Index:10, SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework for High-Performance Vision-Language-Action Models, https://arxiv.org/pdf/2509.09090, 2025-09-10
+2025-11-09 21:32:19,105 - INFO - root - Page:1, Index:11, CSI Compression Beyond Latents: End-to-End Hybrid Attention-CNN Networks with Entropy Regularization, https://arxiv.org/pdf/2509.08776, 2025-09-10
+2025-11-09 21:32:19,105 - INFO - root - Page:1, Index:12, Explaining How Quantization Disparately Skews a Model, https://arxiv.org/pdf/2509.07222, 2025-09-08
+2025-11-09 21:32:19,106 - INFO - root - Page:1, Index:13, LoaQ: Layer-wise Output Approximation Quantization, https://arxiv.org/pdf/2509.06297, 2025-09-07
+2025-11-09 21:32:19,106 - INFO - root - Page:1, Index:14, FineServe: Precision-Aware KV Slab and Two-Level Scheduling for Heterogeneous Precision LLM Serving, https://arxiv.org/pdf/2509.06261, 2025-09-14
+2025-11-09 21:32:19,106 - INFO - root - Page:1, Index:15, Sensitivity-Aware Post-Training Quantization for Deep Neural Networks, https://arxiv.org/pdf/2509.05576, 2025-09-05
+2025-11-09 21:32:19,106 - INFO - root - Page:1, Index:16, SuperSNN: A Hardware-Aware Framework for Physically Realizable, High-Performance Superconducting Spiking Neural Network Chips, https://arxiv.org/pdf/2509.05532, 2025-09-05
+2025-11-09 21:32:19,107 - INFO - root - Page:1, Index:17, Data-Augmented Quantization-Aware Knowledge Distillation, https://arxiv.org/pdf/2509.03850, 2025-09-03
+2025-11-09 21:32:19,107 - INFO - root - Page:1, Index:18, DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling, https://arxiv.org/pdf/2509.03472, 2025-09-03
+2025-11-09 21:32:19,107 - INFO - root - Page:1, Index:19, Empowering Large Language Model for Sequential Recommendation via Multimodal Embeddings and Semantic IDs, https://arxiv.org/pdf/2509.02017, 2025-09-02
+2025-11-09 21:32:19,108 - INFO - root - Page:1, Index:20, Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling, https://arxiv.org/pdf/2509.01624, 2025-09-01
+2025-11-09 21:32:19,108 - INFO - root - Page:1, Index:21, Quantization Meets OOD: Generalizable Quantization-aware Training from a Flatness Perspective, https://arxiv.org/pdf/2509.00859, 2025-08-31
+2025-11-09 21:32:19,108 - INFO - root - Page:1, Index:22, Progressive Element-wise Gradient Estimation for Neural Network Quantization, https://arxiv.org/pdf/2509.00097, 2025-08-27
+2025-11-09 21:32:19,109 - INFO - root - Page:1, Index:23, End-to-End On-Device Quantization-Aware Training for LLMs at Inference Cost, https://arxiv.org/pdf/2509.00031, 2025-09-29
+2025-11-09 21:32:19,109 - INFO - root - Page:1, Index:24, Quantization Robustness to Input Degradations for Object Detection, https://arxiv.org/pdf/2508.19600, 2025-08-27
+2025-11-09 21:32:19,109 - INFO - root - Page:1, Index:25, Scaling Laws for Task-Stratified Knowledge in Post-Training Quantized Large Language Models, https://arxiv.org/pdf/2508.18609, 2025-08-27
+2025-11-09 21:32:19,110 - INFO - root - Page:1, Index:26, AQ-PCDSys: An Adaptive Quantized Planetary Crater Detection System for Autonomous Space Exploration, https://arxiv.org/pdf/2508.18025, 2025-08-25
+2025-11-09 21:32:19,110 - INFO - root - Page:1, Index:27, TaDiCodec: Text-aware Diffusion Speech Tokenizer for Speech Language Modeling, https://arxiv.org/pdf/2508.16790, 2025-08-22
+2025-11-09 21:32:19,112 - INFO - root - Page:1, Index:28, A Node-Aware Dynamic Quantization Approach for Graph Collaborative Filtering, https://arxiv.org/pdf/2508.16516, 2025-08-22
+2025-11-09 21:32:19,113 - INFO - root - Page:1, Index:29, JEDI-linear: Fast and Efficient Graph Neural Networks for Jet Tagging on FPGAs, https://arxiv.org/pdf/2508.15468, 2025-08-21
+2025-11-09 21:32:19,113 - INFO - root - Page:1, Index:30, MMQ: Multimodal Mixture-of-Quantization Tokenization for Semantic ID Generation and User Behavioral Adaptation, https://arxiv.org/pdf/2508.15281, 2025-08-21
+2025-11-09 21:32:19,114 - INFO - root - Page:1, Index:31, DLLMQuant: Quantizing Diffusion-based Large Language Models, https://arxiv.org/pdf/2508.14090, 2025-08-25
+2025-11-09 21:32:19,114 - INFO - root - Page:1, Index:32, Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management, https://arxiv.org/pdf/2508.13905, 2025-08-19
+2025-11-09 21:32:19,115 - INFO - root - Page:1, Index:33, XR-NPE: High-Throughput Mixed-precision SIMD Neural Processing Engine for Extended Reality Perception Workloads, https://arxiv.org/pdf/2508.13049, 2025-08-18
+2025-11-09 21:32:19,115 - INFO - root - Page:1, Index:34, Exploring Self-Supervised Audio Models for Generalized Anomalous Sound Detection, https://arxiv.org/pdf/2508.12230, 2025-08-17
+2025-11-09 21:32:19,115 - INFO - root - Page:1, Index:35, TriQDef: Disrupting Semantic and Gradient Alignment to Prevent Adversarial Patch Transferability in Quantized Neural Networks, https://arxiv.org/pdf/2508.12132, 2025-08-16
+2025-11-09 21:32:19,115 - INFO - root - Page:1, Index:36, Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion, https://arxiv.org/pdf/2508.12094, 2025-10-13
+2025-11-09 21:32:19,116 - INFO - root - Page:1, Index:37, Extending Straight-Through Estimation for Robust Neural Networks on Analog CIM Hardware, https://arxiv.org/pdf/2508.11940, 2025-08-16
+2025-11-09 21:32:19,116 - INFO - root - Page:1, Index:38, PTQAT: A Hybrid Parameter-Efficient Quantization Algorithm for 3D Perception Tasks, https://arxiv.org/pdf/2508.10557, 2025-08-15
+2025-11-09 21:32:19,116 - INFO - root - Page:1, Index:39, MiCo: End-to-End Mixed Precision Neural Network Co-Exploration Framework for Edge AI, https://arxiv.org/pdf/2508.09500, 2025-08-13
+2025-11-09 21:32:19,117 - INFO - root - Page:1, Index:40, SPARC: Soft Probabilistic Adaptive multi-interest Retrieval Model via Codebooks for recommender system, https://arxiv.org/pdf/2508.09090, 2025-08-12
+2025-11-09 21:32:19,117 - INFO - root - Page:1, Index:41, Rethinking 1-bit Optimization Leveraging Pre-trained Large Language Models, https://arxiv.org/pdf/2508.06974, 2025-08-09
+2025-11-09 21:32:19,118 - INFO - root - Page:1, Index:42, Efficient Deep Neural Receiver with Post-Training Quantization, https://arxiv.org/pdf/2508.06275, 2025-08-08
+2025-11-09 21:32:19,118 - INFO - root - Page:1, Index:43, iFairy: the First 2-bit Complex LLM with All Parameters in $\{\pm1, \pm i\}$, https://arxiv.org/pdf/2508.05571, 2025-08-16
+2025-11-09 21:32:19,119 - INFO - root - Page:1, Index:44, S$^2$Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation, https://arxiv.org/pdf/2508.04016, 2025-10-27
+2025-11-09 21:32:19,119 - INFO - root - Page:1, Index:45, LRQ-DiT: Log-Rotation Post-Training Quantization of Diffusion Transformers for Image and Video Generation, https://arxiv.org/pdf/2508.03485, 2025-09-23
+2025-11-09 21:32:19,119 - INFO - root - Page:1, Index:46, VLMQ: Efficient Post-Training Quantization for Large Vision-Language Models via Hessian Augmentation, https://arxiv.org/pdf/2508.03351, 2025-08-05
+2025-11-09 21:32:19,120 - INFO - root - Page:1, Index:47, TF-MLPNet: Tiny Real-Time Neural Speech Separation, https://arxiv.org/pdf/2508.03047, 2025-08-04
+2025-11-09 21:32:19,120 - INFO - root - Page:1, Index:48, SaviorRec: Semantic-Behavior Alignment for Cold-Start Recommendation, https://arxiv.org/pdf/2508.01375, 2025-08-02
+2025-11-09 21:32:19,120 - INFO - root - Page:1, Index:49, MixA-Q: Revisiting Activation Sparsity for Vision Transformers from a Mixed-Precision Quantization Perspective, https://arxiv.org/pdf/2507.19131, 2025-07-25
+2025-11-09 21:32:19,121 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 21:32:26,679 - INFO - root - get_all_titles_from_web 
+2025-11-09 21:32:26,680 - INFO - root - Page:2, Index:0, Enhancing Quantization-Aware Training on Edge Devices via Relative Entropy Coreset Selection and Cascaded Layer Correction, https://arxiv.org/pdf/2507.17768, 2025-07-16
+2025-11-09 21:32:26,680 - INFO - root - Page:2, Index:1, SiLQ: Simple Large Language Model Quantization-Aware Training, https://arxiv.org/pdf/2507.16933, 2025-07-22
+2025-11-09 21:32:26,680 - INFO - root - Page:2, Index:2, Task-Specific Zero-shot Quantization-Aware Training for Object Detection, https://arxiv.org/pdf/2507.16782, 2025-07-22
+2025-11-09 21:32:26,681 - INFO - root - Page:2, Index:3, TorchAO: PyTorch-Native Training-to-Serving Model Optimization, https://arxiv.org/pdf/2507.16099, 2025-07-21
+2025-11-09 21:32:26,681 - INFO - root - Page:2, Index:4, SegQuant: A Semantics-Aware and Generalizable Quantization Framework for Diffusion Models, https://arxiv.org/pdf/2507.14811, 2025-08-27
+2025-11-09 21:32:26,681 - INFO - root - Page:2, Index:5, Apple Intelligence Foundation Language Models: Tech Report 2025, https://arxiv.org/pdf/2507.13575, 2025-08-27
+2025-11-09 21:32:26,681 - INFO - root - Page:2, Index:6, Generative Multi-Target Cross-Domain Recommendation, https://arxiv.org/pdf/2507.12871, 2025-08-07
+2025-11-09 21:32:26,681 - INFO - root - Page:2, Index:7, DAF: An Efficient End-to-End Dynamic Activation Framework for on-Device DNN Training, https://arxiv.org/pdf/2507.07149, 2025-07-09
+2025-11-09 21:32:26,682 - INFO - root - Page:2, Index:8, Opto-ViT: Architecting a Near-Sensor Region of Interest-Aware Vision Transformer Accelerator with Silicon Photonics, https://arxiv.org/pdf/2507.07044, 2025-07-15
+2025-11-09 21:32:26,682 - INFO - root - Page:2, Index:9, QS4D: Quantization-aware training for efficient hardware deployment of structured state-space sequential models, https://arxiv.org/pdf/2507.06079, 2025-07-08
+2025-11-09 21:32:26,682 - INFO - root - Page:2, Index:10, GSVR: 2D Gaussian-based Video Representation for 800+ FPS with Hybrid Deformation Field, https://arxiv.org/pdf/2507.05594, 2025-07-07
+2025-11-09 21:32:26,684 - INFO - root - Page:2, Index:11, Hita: Holistic Tokenizer for Autoregressive Image Generation, https://arxiv.org/pdf/2507.02358, 2025-07-11
+2025-11-09 21:32:26,684 - INFO - root - Page:2, Index:12, QPART: Adaptive Model Quantization and Dynamic Workload Balancing for Accuracy-aware Edge Inference, https://arxiv.org/pdf/2506.23934, 2025-06-30
+2025-11-09 21:32:26,685 - INFO - root - Page:2, Index:13, FedWSQ: Efficient Federated Learning with Weight Standardization and Distribution-Aware Non-Uniform Quantization, https://arxiv.org/pdf/2506.23516, 2025-07-21
+2025-11-09 21:32:26,686 - INFO - root - Page:2, Index:14, Spectra 1.1: Scaling Laws and Efficient Inference for Ternary Language Models, https://arxiv.org/pdf/2506.23025, 2025-06-28
+2025-11-09 21:32:26,687 - INFO - root - Page:2, Index:15, Joint Quantization and Pruning Neural Networks Approach: A Case Study on FSO Receivers, https://arxiv.org/pdf/2506.20084, 2025-06-24
+2025-11-09 21:32:26,687 - INFO - root - Page:2, Index:16, Single-step Diffusion for Image Compression at Ultra-Low Bitrates, https://arxiv.org/pdf/2506.16572, 2025-09-22
+2025-11-09 21:32:26,687 - INFO - root - Page:2, Index:17, LittleBit: Ultra Low-Bit Quantization via Latent Factorization, https://arxiv.org/pdf/2506.13771, 2025-10-28
+2025-11-09 21:32:26,687 - INFO - root - Page:2, Index:18, MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering, https://arxiv.org/pdf/2506.13755, 2025-06-16
+2025-11-09 21:32:26,688 - INFO - root - Page:2, Index:19, EAQuant: Enhancing Post-Training Quantization for MoE Models via Expert-Aware Optimization, https://arxiv.org/pdf/2506.13329, 2025-07-04
+2025-11-09 21:32:26,688 - INFO - root - Page:2, Index:20, Towards Neural Audio Codec Source Parsing, https://arxiv.org/pdf/2506.12627, 2025-06-14
+2025-11-09 21:32:26,688 - INFO - root - Page:2, Index:21, Quantizing Small-Scale State-Space Models for Edge AI, https://arxiv.org/pdf/2506.12480, 2025-06-14
+2025-11-09 21:32:26,689 - INFO - root - Page:2, Index:22, EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction, https://arxiv.org/pdf/2506.12015, 2025-06-13
+2025-11-09 21:32:26,689 - INFO - root - Page:2, Index:23, Compression Aware Certified Training, https://arxiv.org/pdf/2506.11992, 2025-06-13
+2025-11-09 21:32:26,689 - INFO - root - Page:2, Index:24, GPLQ: A General, Practical, and Lightning QAT Method for Vision Transformers, https://arxiv.org/pdf/2506.11784, 2025-06-13
+2025-11-09 21:32:26,690 - INFO - root - Page:2, Index:25, TruncQuant: Truncation-Ready Quantization for DNNs with Flexible Weight Bit Precision, https://arxiv.org/pdf/2506.11431, 2025-06-12
+2025-11-09 21:32:26,690 - INFO - root - Page:2, Index:26, EfficientQuant: An Efficient Post-Training Quantization for CNN-Transformer Hybrid Models on Edge Devices, https://arxiv.org/pdf/2506.11093, 2025-06-05
+2025-11-09 21:32:26,690 - INFO - root - Page:2, Index:27, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 21:32:26,691 - INFO - root - Page:2, Index:28, AWP: Activation-Aware Weight Pruning and Quantization with Projected Gradient Descent, https://arxiv.org/pdf/2506.10205, 2025-06-11
+2025-11-09 21:32:26,691 - INFO - root - Page:2, Index:29, Q-SAM2: Accurate Quantization for Segment Anything Model 2, https://arxiv.org/pdf/2506.09782, 2025-06-11
+2025-11-09 21:32:26,692 - INFO - root - Page:2, Index:30, Unifying Block-wise PTQ and Distillation-based QAT for Progressive Quantization toward 2-bit Instruction-Tuned LLMs, https://arxiv.org/pdf/2506.09104, 2025-06-10
+2025-11-09 21:32:26,692 - INFO - root - Page:2, Index:31, Implementing Keyword Spotting on the MCUX947 Microcontroller with Integrated NPU, https://arxiv.org/pdf/2506.08911, 2025-06-10
+2025-11-09 21:32:26,692 - INFO - root - Page:2, Index:32, POLARON: Precision-aware On-device Learning and Adaptive Runtime-cONfigurable AI acceleration, https://arxiv.org/pdf/2506.08785, 2025-06-10
+2025-11-09 21:32:26,693 - INFO - root - Page:2, Index:33, MoQAE: Mixed-Precision Quantization for Long-Context LLM Inference via Mixture of Quantization-Aware Experts, https://arxiv.org/pdf/2506.07533, 2025-06-09
+2025-11-09 21:32:26,693 - INFO - root - Page:2, Index:34, BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation, https://arxiv.org/pdf/2506.07530, 2025-06-09
+2025-11-09 21:32:26,693 - INFO - root - Page:2, Index:35, RecGPT: A Foundation Model for Sequential Recommendation, https://arxiv.org/pdf/2506.06270, 2025-06-12
+2025-11-09 21:32:26,693 - INFO - root - Page:2, Index:36, FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion, https://arxiv.org/pdf/2506.04648, 2025-06-05
+2025-11-09 21:32:26,695 - INFO - root - Page:2, Index:37, BitTTS: Highly Compact Text-to-Speech Using 1.58-bit Quantization and Weight Indexing, https://arxiv.org/pdf/2506.03515, 2025-06-03
+2025-11-09 21:32:26,695 - INFO - root - Page:2, Index:38, ShapeLLM-Omni: A Native Multimodal LLM for 3D Generation and Understanding, https://arxiv.org/pdf/2506.01853, 2025-06-02
+2025-11-09 21:32:26,695 - INFO - root - Page:2, Index:39, Movable Antenna Enhanced Federated Fine-Tuning of Large Language Models via Hybrid Client Selection Optimization, https://arxiv.org/pdf/2506.00011, 2025-10-26
+2025-11-09 21:32:26,695 - INFO - root - Page:2, Index:40, Running Conventional Automatic Speech Recognition on Memristor Hardware: A Simulated Approach, https://arxiv.org/pdf/2505.24721, 2025-05-30
+2025-11-09 21:32:26,696 - INFO - root - Page:2, Index:41, GARLIC: GAussian Representation LearnIng for spaCe partitioning, https://arxiv.org/pdf/2505.24608, 2025-10-02
+2025-11-09 21:32:26,696 - INFO - root - Page:2, Index:42, AutoChemSchematic AI: Agentic Physics-Aware Automation for Chemical Manufacturing Scale-Up, https://arxiv.org/pdf/2505.24584, 2025-08-18
+2025-11-09 21:32:26,696 - INFO - root - Page:2, Index:43, Model-Preserving Adaptive Rounding, https://arxiv.org/pdf/2505.22988, 2025-09-25
+2025-11-09 21:32:26,697 - INFO - root - Page:2, Index:44, Highly Efficient and Effective LLMs with Multi-Boolean Architectures, https://arxiv.org/pdf/2505.22811, 2025-10-03
+2025-11-09 21:32:26,697 - INFO - root - Page:2, Index:45, Pioneering 4-Bit FP Quantization for Diffusion Models: Mixup-Sign Quantization and Timestep-Aware Fine-Tuning, https://arxiv.org/pdf/2505.21591, 2025-05-27
+2025-11-09 21:32:26,697 - INFO - root - Page:2, Index:46, Frequency Composition for Compressed and Domain-Adaptive Neural Networks, https://arxiv.org/pdf/2505.20890, 2025-05-27
+2025-11-09 21:32:26,698 - INFO - root - Page:2, Index:47, MoPFormer: Motion-Primitive Transformer for Wearable-Sensor Activity Recognition, https://arxiv.org/pdf/2505.20744, 2025-10-27
+2025-11-09 21:32:26,698 - INFO - root - Page:2, Index:48, Optimizing edge AI models on HPC systems with the edge in the loop, https://arxiv.org/pdf/2505.19995, 2025-05-26
+2025-11-09 21:32:26,698 - INFO - root - Fetching page 4 with URL: https://arxiv.org/search/?query=Quantization-Aware-Training&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=150

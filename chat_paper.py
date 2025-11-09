@@ -667,7 +667,7 @@ class Reader:
             full_summary += f"作者: {', '.join(paper.authers)}\n\n"
             # 添加模型信息（从 LLM 客户端）
             if hasattr(self, 'llm') and self.llm:
-                current_model = getattr(self.llm, 'model_name', 'Unknown')
+                current_model = self.llm.current_model_name()
             else:
                 current_model = 'Unknown'
             full_summary += f"使用模型: {current_model}\n\n"

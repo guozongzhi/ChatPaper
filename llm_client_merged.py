@@ -82,10 +82,10 @@ class GeminiClient(BaseLLMClient):
             genai.configure(api_key=api_key)
             
             # 获取可用模型
-            all_models = [m.name.replace('models/', '') for m in genai.list_models()]
+            all_models = [m.name for m in genai.list_models()]
             
-            # 优先级模型列表
-            priority_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-pro"]
+            # 优先级模型列表（完整名称）
+            priority_models = ["models/gemini-2.5-flash", "models/gemini-2.5-pro", "models/gemini-pro"]
             model_queue = []
             for m in priority_models:
                 if m in all_models:
@@ -106,9 +106,9 @@ class GeminiClient(BaseLLMClient):
                         text = getattr(resp, 'text', None)
                         if text:
                             self.model = inst
-                            self.model_name = candidate
+                            self.model_name = candidate.replace('models/', '')
                             self.enabled = True
-                            logging.info("GeminiClient: initialized model %s", candidate)
+                            logging.info("GeminiClient: initialized model %s", self.model_name)
                             return True
                     except Exception:
                         pass
@@ -237,17 +237,19 @@ class DeepSeekClient(BaseLLMClient):
             logging.error("DeepSeekClient: error reading config: %s", e)
             self.api_key = None
 
-        # 在火山引擎模式下，跳过直接API密钥的检查
-        if not self.use_volcengine and (not self.api_key or self.api_key.strip() == 'your_deepseek_api_key_here'):
-            logging.warning("DeepSeekClient: API key not provided or using placeholder. LLM disabled.")
-            self.enabled = False
-            return False
-            
-        # 在火山引擎模式下，检查火山引擎API密钥
-        if self.use_volcengine and (not self.api_key or not self.api_key.strip()):
-            logging.warning("DeepSeekClient: VolcEngine API key not provided. LLM disabled.")
-            self.enabled = False
-            return False
+        # 首先检查火山引擎模式
+        if self.use_volcengine:
+            # 火山引擎模式下，检查火山引擎API密钥
+            if not self.api_key or not self.api_key.strip():
+                logging.warning("DeepSeekClient: VolcEngine API key not provided. LLM disabled.")
+                self.enabled = False
+                return False
+        else:
+            # 直接API模式下，检查直接API密钥
+            if not self.api_key or self.api_key.strip() == 'your_deepseek_api_key_here':
+                logging.warning("DeepSeekClient: API key not provided or using placeholder. LLM disabled.")
+                self.enabled = False
+                return False
 
         try:
             # 初始化OpenAI客户端
@@ -795,13 +797,24 @@ class LLMClientManager:
     
     def switch_client(self, client_name: str) -> bool:
         """切换到指定的客户端"""
-        if client_name in self.clients:
+        # 处理客户端名称的大小写不匹配问题
+        available_clients = self.get_available_clients()
+        
+        # 精确匹配
+        if client_name in available_clients:
             self.current_client = self.clients[client_name]
             logging.info("LLMClientManager: switched to %s client", client_name)
             return True
-        else:
-            logging.warning("LLMClientManager: client %s not available", client_name)
-            return False
+        
+        # 大小写不敏感匹配
+        for available_client in available_clients:
+            if available_client.lower() == client_name.lower():
+                self.current_client = self.clients[available_client]
+                logging.info("LLMClientManager: switched to %s client (case-insensitive match)", available_client)
+                return True
+        
+        logging.warning("LLMClientManager: client %s not available. Available clients: %s", client_name, available_clients)
+        return False
     
     def get_available_clients(self) -> list:
         """获取可用的客户端列表"""
