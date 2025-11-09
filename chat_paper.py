@@ -37,6 +37,7 @@ ArxivParams = namedtuple(
             "batch_size",
             "batch_delay",
             "force",
+            "llm_client",
     ],
 )
 
@@ -372,12 +373,23 @@ class Reader:
                     raise Exception("无法读取配置文件，请确保文件编码正确且内容有效") from e
                 continue  # 尝试下一个编码
 
-        # LLM client centralized initialization (moved to llm_client.py)
+        # LLM client centralized initialization (using merged multi-LLM client)
         try:
-            from llm_client import make_client
+            from llm_client_merged import make_client
             self.llm = make_client(self.config, args)
-            if getattr(self.llm, 'enabled', False):
+            
+            # 如果指定了手动客户端，尝试切换
+            if hasattr(args, 'llm_client') and args.llm_client:
+                client_name = args.llm_client
+                if self.llm.switch_client(client_name):
+                    logging.info("已手动切换到 LLM 客户端: %s", client_name)
+                else:
+                    logging.warning("无法切换到指定的客户端 %s，将使用默认客户端", client_name)
+                    logging.info("可用客户端: %s", self.llm.get_available_clients())
+            
+            if self.llm.current_client:
                 logging.info("使用 LLM 模型: %s", self.llm.current_model_name())
+                logging.info("可用客户端: %s", self.llm.get_available_clients())
             else:
                 logging.info("LLM 未初始化或不可用，后续生成将返回备用消息")
         except Exception as e:
@@ -446,7 +458,10 @@ class Reader:
                 except Exception as e:
                     logging.error("处理PDF文件 %s 时出错：%s", pdf_path, e)
         else:
-            # 处理文件夹：解析目录下的所有 PDF（不再受 self.args.max_results 限制）
+            # 处理文件夹：解析目录下的所有 PDF，但受 max_results 限制
+            max_results = getattr(self.args, 'max_results', 0)
+            processed_count = 0
+            
             for root, _, files in os.walk(pdf_path):
                 for file in files:
                     if file.lower().endswith('.pdf'):
@@ -454,11 +469,16 @@ class Reader:
                         try:
                             paper = Paper(path=pdf_file)
                             paper_list.append(paper)
+                            processed_count += 1
                             logging.info("成功加载PDF文件：%s", file)
+                            
+                            # 如果达到最大处理数量限制，停止加载
+                            if max_results > 0 and processed_count >= max_results:
+                                logging.info("已达到最大处理数量限制 (%s)，停止加载更多PDF文件", max_results)
+                                return paper_list
+                                
                         except Exception as e:
                             logging.error("处理PDF文件 %s 时出错：%s", file, e)
-
-            # 已收集文件夹中所有的 PDF，返回完整列表
 
         return paper_list
 
@@ -537,7 +557,15 @@ class Reader:
         """
         # Delegate LLM generation to centralized LLM client if available
         if hasattr(self, 'llm') and self.llm:
-            return self.llm.generate(prompt)
+            try:
+                result = self.llm.generate(prompt)
+                # 检查返回结果是否为错误消息
+                if result and "抱歉" in result and "未初始化" in result:
+                    logging.error("LLM客户端调用失败：%s", result)
+                return result
+            except Exception as e:
+                logging.error("LLM客户端调用异常：%s", str(e))
+                return f"抱歉，LLM客户端调用失败：{str(e)}"
 
         logging.error("LLM 客户端未初始化，将使用备用响应。")
         return "抱歉，由于 API 初始化问题，我暂时无法生成响应。请检查您的 API 密钥和模型可用性。"
@@ -565,10 +593,20 @@ class Reader:
         total_to_process = len(paper_list)
         for paper_index, paper in enumerate(paper_list):
             abs_path = os.path.abspath(paper.path)
-            # 如果未设置 --force 并且文件在已处理缓存中，则跳过
-            if not getattr(self.args, 'force', False) and abs_path in processed:
+            
+            # 第一步：检查是否应该跳过处理（在开始任何处理之前）
+            output_file = self.get_output_filename(paper.title)
+            skip_conditions = [
+                # 文件已存在且未启用force
+                output_file is None,
+                # 文件在已处理缓存中且未启用force
+                not getattr(self.args, 'force', False) and abs_path in processed
+            ]
+            
+            if any(skip_conditions):
                 logging.info("跳过已处理论文 %s：%s", paper.title, paper.path)
                 continue
+                
             logging.info("正在总结论文 %s/%s: %s", paper_index + 1, len(paper_list), paper.title)
             
             # 收集论文所有部分
@@ -652,9 +690,6 @@ class Reader:
                 saved_images = paper.get_image_path(image_path=image_dir, max_images=10)  # 提取更多图片
                 
                 if saved_images:  # 如果获取到了图片
-                    # 获取输出文件名
-                    output_file = self.get_output_filename(paper.title)
-                    
                     # 准备图片部分（作为附录）
                     images_section = "\n---\n\n# 附录：论文图片\n\n"
                     for i, img_path in enumerate(saved_images, 1):
@@ -868,6 +903,9 @@ if __name__ == '__main__':
     # 强制重新处理，忽略 export/processed.json 缓存
     general_group.add_argument("--force", action='store_true', default=False,
                           help="启用后忽略已处理缓存，重新处理所有论文（默认: False）")
+    # LLM客户端选择
+    general_group.add_argument("--llm-client", type=str, default=None,
+                          help="手动指定LLM客户端：Gemini, DeepSeek, Kimi, Qwen, Doubao。默认自动选择")
 
     # 解析命令行参数
     args = parser.parse_args()

@@ -7,4 +7,3 @@ __pycache__/
 build/
 .idea
 .idea/*
-apikey.ini

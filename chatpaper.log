@@ -2213,3 +2213,866 @@ Please retry in 32.138240581s. [links {
 2025-11-09 11:33:32,864 - INFO - root - 跳过已处理论文 From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators：D:\ChatPaper\academic Papers\block float point\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-1.pdf
 2025-11-09 11:33:32,864 - INFO - root - 跳过已处理论文 INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats：D:\ChatPaper\academic Papers\block float point\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-1.pdf
 2025-11-09 11:33:32,864 - INFO - root - summary time: 236.15 seconds
+2025-11-09 12:02:26,323 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:02:26,323 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:02:26,323 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:02:27,086 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:02:27,922 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:02:28,280 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:02:28,280 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:02:28,281 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:02:28,281 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:02:28,281 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:02:28,281 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:02:28,282 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:02:28,282 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:02:28,282 - WARNING - root - DoubaoClient: API key not provided. LLM disabled.
+2025-11-09 12:02:28,282 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:02:28,283 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:02:28,283 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:02:28,284 - INFO - root - === 运行配置 ===
+2025-11-09 12:02:28,284 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 12:02:28,285 - INFO - root - 关键词: Quant
+2025-11-09 12:02:28,285 - INFO - root - 查询: block float point
+2025-11-09 12:02:28,287 - INFO - root - 排序: None
+2025-11-09 12:02:28,287 - INFO - root - 最近天数: 180
+2025-11-09 12:02:28,288 - INFO - root - 最大处理数量: 2
+2025-11-09 12:02:28,289 - INFO - root - 保存图片: 是
+2025-11-09 12:02:28,289 - INFO - root - 输出语言: 中文
+2025-11-09 12:02:28,289 - INFO - root - 强制重新处理: 否
+2025-11-09 12:02:28,290 - INFO - root - ====================
+2025-11-09 12:02:28,290 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 12:02:28,290 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 12:02:34,854 - INFO - root - get_all_titles_from_web 
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 12:02:34,854 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 12:02:34,857 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 12:02:34,857 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 12:02:34,858 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 12:02:34,858 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 12:02:34,858 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 12:02:34,858 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 12:02:34,859 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 12:02:34,859 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 12:02:34,859 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 12:02:34,860 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 12:02:34,860 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 12:02:34,860 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 12:02:34,861 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 12:02:34,861 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 12:02:34,862 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 12:02:34,862 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 12:02:34,862 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 12:02:34,862 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 12:02:34,863 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 12:02:34,863 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 12:02:34,863 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 12:02:34,863 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 12:02:34,864 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 12:02:41,042 - INFO - root - get_all_titles_from_web 
+2025-11-09 12:02:41,042 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 12:02:41,043 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 12:02:47,533 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 12:02:59,831 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 12:02:59,835 - INFO - root - 正在提取论文图片...
+2025-11-09 12:03:00,382 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 12:03:00,553 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 12:03:00,645 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 12:03:00,721 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 12:03:00,827 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 12:03:00,943 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 12:03:01,103 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 12:03:01,219 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 12:03:01,246 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 12:03:01,272 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 12:03:01,284 - INFO - root - 输出文件已存在，跳过论文 From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators 的处理
+2025-11-09 12:03:01,286 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 12:03:01,287 - INFO - root - 正在提取论文图片...
+2025-11-09 12:03:02,061 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 12:03:02,238 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 12:03:02,291 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 12:03:02,361 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 12:03:02,364 - INFO - root - 输出文件已存在，跳过论文 INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats 的处理
+2025-11-09 12:03:02,364 - INFO - root - summary time: 36.04 seconds
+2025-11-09 12:40:27,534 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:40:27,541 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:40:27,546 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:40:28,502 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:40:29,436 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:40:29,790 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:40:29,791 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:40:29,791 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:40:29,791 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:40:29,791 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:40:29,792 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:40:29,792 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:40:29,792 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:40:29,792 - WARNING - root - DoubaoClient: API key not provided. LLM disabled.
+2025-11-09 12:40:29,793 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:40:29,793 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:40:29,793 - WARNING - root - LLMClientManager: client Gemini not available
+2025-11-09 12:40:29,794 - WARNING - root - 无法切换到指定的客户端 Gemini，将使用默认客户端
+2025-11-09 12:40:29,794 - INFO - root - 可用客户端: []
+2025-11-09 12:40:29,795 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:40:29,795 - INFO - root - === 运行配置 ===
+2025-11-09 12:40:29,795 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 12:40:29,796 - INFO - root - PDF目录: ./myPapers
+2025-11-09 12:40:29,796 - INFO - root - 最大处理数量: 2
+2025-11-09 12:40:29,797 - INFO - root - 保存图片: 是
+2025-11-09 12:40:29,799 - INFO - root - 输出语言: 中文
+2025-11-09 12:40:29,799 - INFO - root - 强制重新处理: 否
+2025-11-09 12:40:29,800 - INFO - root - ====================
+2025-11-09 12:40:29,800 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 12:40:32,678 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:40:35,064 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:40:35,890 - INFO - root - 成功加载PDF文件：An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in.pdf
+2025-11-09 12:42:15,377 - INFO - root - 成功加载PDF文件：Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via.pdf
+2025-11-09 12:42:16,352 - INFO - root - 成功加载PDF文件：Automatic Verification of Floating-Point Accumulation Networks.pdf
+2025-11-09 12:42:17,772 - INFO - root - 成功加载PDF文件：Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati.pdf
+2025-11-09 12:42:20,130 - INFO - root - 成功加载PDF文件：Computationally Efficient Neural Receivers via Axial Self-Attention.pdf
+2025-11-09 12:42:21,023 - INFO - root - 成功加载PDF文件：DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with O.pdf
+2025-11-09 12:42:23,369 - INFO - root - 成功加载PDF文件：Dissecting Transformers_ A CLEAR Perspective towards Green AI.pdf
+2025-11-09 12:42:23,819 - INFO - root - 成功加载PDF文件：Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs.pdf
+2025-11-09 12:42:26,826 - INFO - root - 成功加载PDF文件：F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs.pdf
+2025-11-09 12:42:28,662 - INFO - root - 成功加载PDF文件：Flopping for FLOPs_ Leveraging equivariance for computational efficiency.pdf
+2025-11-09 12:42:29,354 - INFO - root - 成功加载PDF文件：FP4 All the Way_ Fully Quantized Training of LLMs.pdf
+2025-11-09 12:42:30,794 - INFO - root - 成功加载PDF文件：From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural.pdf
+2025-11-09 12:42:31,478 - INFO - root - 成功加载PDF文件：Green Learning for STAR-RIS mmWave Systems with Implicit CSI.pdf
+2025-11-09 12:42:38,123 - INFO - root - 成功加载PDF文件：INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats.pdf
+2025-11-09 12:42:38,686 - INFO - root - 成功加载PDF文件：Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup.pdf
+2025-11-09 12:42:39,128 - INFO - root - 成功加载PDF文件：Microscaling Floating Point Formats for Large Language Models.pdf
+2025-11-09 12:42:39,967 - INFO - root - 成功加载PDF文件：MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod.pdf
+2025-11-09 12:42:40,332 - INFO - root - 成功加载PDF文件：MXDOTP_ A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot.pdf
+2025-11-09 12:42:40,665 - INFO - root - 成功加载PDF文件：Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors.pdf
+2025-11-09 12:42:42,370 - INFO - root - 成功加载PDF文件：Pretraining Large Language Models with NVFP4.pdf
+2025-11-09 12:42:42,773 - INFO - root - 成功加载PDF文件：Recipes for Pre-training LLMs with MXFP8.pdf
+2025-11-09 12:42:44,763 - INFO - root - 成功加载PDF文件：Scaling Probabilistic Circuits via Monarch Matrices.pdf
+2025-11-09 12:42:44,776 - ERROR - root - 处理PDF文件 Silenzio_ Secure Non-Interactive Outsourced MLP Training.pdf 时出错：no such file: './myPapers\Silenzio_ Secure Non-Interactive Outsourced MLP Training.pdf'
+2025-11-09 12:42:44,778 - ERROR - root - 处理PDF文件 SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration.pdf 时出错：no such file: './myPapers\SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration.pdf'
+2025-11-09 12:42:44,909 - ERROR - root - 处理PDF文件 SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration.pdf 时出错：no such file: './myPapers\SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration.pdf'
+2025-11-09 12:42:44,940 - ERROR - root - 处理PDF文件 Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne.pdf 时出错：no such file: './myPapers\Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne.pdf'
+2025-11-09 12:42:44,984 - ERROR - root - 处理PDF文件 Towards Verified Compilation of Floating-point Optimization in Scientific Comput.pdf 时出错：no such file: './myPapers\Towards Verified Compilation of Floating-point Optimization in Scientific Comput.pdf'
+2025-11-09 12:42:44,994 - ERROR - root - 处理PDF文件 TwinLiteNet+_ An Enhanced Multi-Task Segmentation Model for Autonomous Driving.pdf 时出错：no such file: './myPapers\TwinLiteNet+_ An Enhanced Multi-Task Segmentation Model for Autonomous Driving.pdf'
+2025-11-09 12:42:45,008 - INFO - root - 正在总结论文 1/24: A Compute&Memory Efficient Model-Driven Neural
+2025-11-09 12:42:45,010 - INFO - root - 正在提取论文图片...
+2025-11-09 12:42:46,858 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 12:42:47,327 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 12:42:47,562 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 12:42:47,639 - INFO - root - 已保存图片 4/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 12:42:47,689 - INFO - root - 已保存图片 5/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 12:42:47,702 - INFO - root - 成功添加图片 1：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 12:42:47,702 - INFO - root - 成功添加图片 2：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 12:42:47,703 - INFO - root - 成功添加图片 3：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 12:42:47,703 - INFO - root - 成功添加图片 4：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 12:42:47,703 - INFO - root - 成功添加图片 5：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 12:42:47,711 - INFO - root - 论文《A Compute&Memory Efficient Model-Driven Neural》的分析已保存到 ./export\A Compute&Memory Efficient Model-Driven Neural.md
+2025-11-09 12:42:47,729 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:42:47,730 - INFO - root - 正在总结论文 3/24: An Effective UNet Using Feature Interaction and Fusion for Organ
+2025-11-09 12:42:47,737 - INFO - root - 正在提取论文图片...
+2025-11-09 12:42:48,558 - INFO - root - 已保存图片 1/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_1_page14.png
+2025-11-09 12:42:48,712 - INFO - root - 已保存图片 2/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_2_page19.jpeg
+2025-11-09 12:42:48,812 - INFO - root - 已保存图片 3/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_3_page19.jpeg
+2025-11-09 12:42:48,931 - INFO - root - 已保存图片 4/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_4_page19.jpeg
+2025-11-09 12:42:49,105 - INFO - root - 已保存图片 5/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_5_page19.jpeg
+2025-11-09 12:42:49,209 - INFO - root - 已保存图片 6/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_6_page19.jpeg
+2025-11-09 12:42:49,478 - INFO - root - 已保存图片 7/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_7_page19.jpeg
+2025-11-09 12:42:49,706 - INFO - root - 已保存图片 8/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_8_page19.jpeg
+2025-11-09 12:42:49,794 - INFO - root - 已保存图片 9/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_9_page19.jpeg
+2025-11-09 12:42:49,961 - INFO - root - 已保存图片 10/10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_10_page19.jpeg
+2025-11-09 12:42:49,966 - INFO - root - 成功添加图片 1：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_1_page14.png
+2025-11-09 12:42:49,967 - INFO - root - 成功添加图片 2：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_2_page19.jpeg
+2025-11-09 12:42:49,969 - INFO - root - 成功添加图片 3：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_3_page19.jpeg
+2025-11-09 12:42:49,977 - INFO - root - 成功添加图片 4：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_4_page19.jpeg
+2025-11-09 12:42:49,979 - INFO - root - 成功添加图片 5：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_5_page19.jpeg
+2025-11-09 12:42:49,982 - INFO - root - 成功添加图片 6：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_6_page19.jpeg
+2025-11-09 12:42:49,985 - INFO - root - 成功添加图片 7：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_7_page19.jpeg
+2025-11-09 12:42:49,993 - INFO - root - 成功添加图片 8：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_8_page19.jpeg
+2025-11-09 12:42:49,996 - INFO - root - 成功添加图片 9：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_9_page19.jpeg
+2025-11-09 12:42:50,011 - INFO - root - 成功添加图片 10：./export\images_An Effective UNet Using Feature Interaction and Fusion for Organ\figure_10_page19.jpeg
+2025-11-09 12:42:50,030 - INFO - root - 论文《An Effective UNet Using Feature Interaction and Fusion for Organ》的分析已保存到 ./export\An Effective UNet Using Feature Interaction and Fusion for Organ.md
+2025-11-09 12:42:50,076 - INFO - root - 正在总结论文 4/24: Automated and Scalable SEM Image Analysis of Perovskite Solar Cell
+2025-11-09 12:42:50,095 - INFO - root - 正在提取论文图片...
+2025-11-09 12:43:28,803 - INFO - root - 已保存图片 1/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_1_page8.jpeg
+2025-11-09 12:43:29,124 - INFO - root - 已保存图片 2/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_2_page5.jpeg
+2025-11-09 12:43:29,434 - INFO - root - 已保存图片 3/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_3_page9.jpeg
+2025-11-09 12:43:29,639 - INFO - root - 已保存图片 4/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_4_page9.jpeg
+2025-11-09 12:43:29,842 - INFO - root - 已保存图片 5/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_5_page9.jpeg
+2025-11-09 12:43:30,072 - INFO - root - 已保存图片 6/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_6_page9.jpeg
+2025-11-09 12:43:30,284 - INFO - root - 已保存图片 7/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_7_page9.jpeg
+2025-11-09 12:43:30,485 - INFO - root - 已保存图片 8/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_8_page9.jpeg
+2025-11-09 12:43:30,688 - INFO - root - 已保存图片 9/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_9_page9.jpeg
+2025-11-09 12:43:30,896 - INFO - root - 已保存图片 10/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_10_page9.jpeg
+2025-11-09 12:43:30,919 - INFO - root - 成功添加图片 1：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_1_page8.jpeg
+2025-11-09 12:43:30,920 - INFO - root - 成功添加图片 2：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_2_page5.jpeg
+2025-11-09 12:43:30,921 - INFO - root - 成功添加图片 3：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_3_page9.jpeg
+2025-11-09 12:43:30,921 - INFO - root - 成功添加图片 4：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_4_page9.jpeg
+2025-11-09 12:43:30,922 - INFO - root - 成功添加图片 5：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_5_page9.jpeg
+2025-11-09 12:43:30,922 - INFO - root - 成功添加图片 6：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_6_page9.jpeg
+2025-11-09 12:43:30,922 - INFO - root - 成功添加图片 7：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_7_page9.jpeg
+2025-11-09 12:43:30,923 - INFO - root - 成功添加图片 8：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_8_page9.jpeg
+2025-11-09 12:43:30,923 - INFO - root - 成功添加图片 9：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_9_page9.jpeg
+2025-11-09 12:43:30,925 - INFO - root - 成功添加图片 10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell\figure_10_page9.jpeg
+2025-11-09 12:43:30,932 - INFO - root - 论文《Automated and Scalable SEM Image Analysis of Perovskite Solar Cell》的分析已保存到 ./export\Automated and Scalable SEM Image Analysis of Perovskite Solar Cell.md
+2025-11-09 12:43:30,948 - INFO - root - 正在总结论文 5/24: Automatic Verification of
+2025-11-09 12:43:30,950 - INFO - root - 正在提取论文图片...
+2025-11-09 12:43:30,989 - INFO - root - 论文《Automatic Verification of》的分析已保存到 ./export\Automatic Verification of.md
+2025-11-09 12:43:31,005 - INFO - root - 正在总结论文 6/24: 
+2025-11-09 12:43:31,014 - INFO - root - 正在提取论文图片...
+2025-11-09 12:43:31,371 - INFO - root - 已保存图片 1/10：./export\images_untitled\figure_1_page25.png
+2025-11-09 12:43:31,371 - INFO - root - 成功添加图片 1：./export\images_untitled\figure_1_page25.png
+2025-11-09 12:43:31,386 - INFO - root - 论文《》的分析已保存到 ./export\traffic flow prediction.md
+2025-11-09 12:43:31,402 - INFO - root - 正在总结论文 7/24: Computationally Efficient Neural Receivers via
+2025-11-09 12:43:31,409 - INFO - root - 正在提取论文图片...
+2025-11-09 12:43:32,644 - INFO - root - 已保存图片 1/10：./export\images_Computationally Efficient Neural Receivers via\figure_1_page5.png
+2025-11-09 12:43:32,650 - INFO - root - 成功添加图片 1：./export\images_Computationally Efficient Neural Receivers via\figure_1_page5.png
+2025-11-09 12:43:32,655 - INFO - root - 论文《Computationally Efficient Neural Receivers via》的分析已保存到 ./export\Computationally Efficient Neural Receivers via.md
+2025-11-09 12:43:32,660 - INFO - root - 正在总结论文 8/24: DGEMM without FP64 Arithmetic – Using FP64 Emulation and
+2025-11-09 12:43:32,666 - INFO - root - 正在提取论文图片...
+2025-11-09 12:45:56,822 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:45:56,824 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:45:56,826 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:45:57,544 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:45:58,503 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:45:58,863 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:45:58,863 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:45:58,864 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:45:58,864 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:45:58,864 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:45:58,865 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:45:58,865 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:45:58,866 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:45:58,866 - WARNING - root - DoubaoClient: API key not provided. LLM disabled.
+2025-11-09 12:45:58,866 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:45:58,867 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:45:58,867 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:45:58,867 - INFO - root - === 运行配置 ===
+2025-11-09 12:45:58,867 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 12:45:58,868 - INFO - root - PDF目录: ./myPapers
+2025-11-09 12:45:58,869 - INFO - root - 最大处理数量: 2
+2025-11-09 12:45:58,869 - INFO - root - 保存图片: 是
+2025-11-09 12:45:58,869 - INFO - root - 输出语言: 中文
+2025-11-09 12:45:58,870 - INFO - root - 强制重新处理: 否
+2025-11-09 12:45:58,870 - INFO - root - ====================
+2025-11-09 12:45:58,870 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 12:46:00,328 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:46:02,886 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:46:02,886 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 12:46:02,887 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:46:02,889 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:46:02,890 - INFO - root - summary time: 6.07 seconds
+2025-11-09 12:46:38,191 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:46:38,192 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:46:38,194 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:46:38,778 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:46:39,436 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:46:39,558 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:46:39,560 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:46:39,560 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:46:39,561 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:46:39,562 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:46:39,562 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:46:39,563 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:46:39,563 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:46:40,213 - ERROR - root - DoubaoClient: API test failed with status 404
+2025-11-09 12:46:40,215 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:46:40,215 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:46:40,215 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 12:46:40,215 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 12:46:40,217 - INFO - root - 可用客户端: []
+2025-11-09 12:46:40,217 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:46:40,218 - INFO - root - === 运行配置 ===
+2025-11-09 12:46:40,218 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 12:46:40,221 - INFO - root - PDF目录: ./myPapers
+2025-11-09 12:46:40,222 - INFO - root - 最大处理数量: 2
+2025-11-09 12:46:40,223 - INFO - root - 保存图片: 是
+2025-11-09 12:46:40,224 - INFO - root - 输出语言: 中文
+2025-11-09 12:46:40,224 - INFO - root - 强制重新处理: 否
+2025-11-09 12:46:40,224 - INFO - root - ====================
+2025-11-09 12:46:40,226 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 12:46:41,906 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:46:45,400 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:46:45,400 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 12:46:45,401 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:46:45,402 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:46:45,402 - INFO - root - summary time: 7.21 seconds
+2025-11-09 12:49:23,218 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:49:23,219 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:49:23,221 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:49:23,805 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:49:24,666 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:49:25,022 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:49:25,022 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:49:25,022 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:49:25,022 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:49:25,023 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:49:25,023 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:49:25,023 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:49:25,024 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:49:25,491 - ERROR - root - DoubaoClient: API test failed with status 404
+2025-11-09 12:49:25,493 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:49:25,493 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:49:25,494 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 12:49:25,494 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 12:49:25,494 - INFO - root - 可用客户端: []
+2025-11-09 12:49:25,495 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:49:25,495 - INFO - root - === 运行配置 ===
+2025-11-09 12:49:25,495 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 12:49:25,495 - INFO - root - PDF目录: ./myPapers
+2025-11-09 12:49:25,495 - INFO - root - 最大处理数量: 2
+2025-11-09 12:49:25,496 - INFO - root - 保存图片: 是
+2025-11-09 12:49:25,497 - INFO - root - 输出语言: 中文
+2025-11-09 12:49:25,497 - INFO - root - 强制重新处理: 否
+2025-11-09 12:49:25,497 - INFO - root - ====================
+2025-11-09 12:49:25,497 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 12:49:26,935 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:49:28,995 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:49:28,996 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 12:49:28,997 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:49:28,997 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:49:28,999 - INFO - root - summary time: 5.78 seconds
+2025-11-09 12:58:12,607 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 12:58:12,611 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 12:58:12,613 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 12:58:13,285 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 12:58:14,129 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 12:58:14,477 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 12:58:14,478 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 12:58:14,478 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 12:58:14,478 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 12:58:14,479 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 12:58:14,479 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 12:58:14,480 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 12:58:14,480 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 12:58:15,026 - ERROR - root - DoubaoClient: API test failed with status 404
+2025-11-09 12:58:15,030 - WARNING - root - LLMClientManager: Doubao client initialization failed
+2025-11-09 12:58:15,031 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 12:58:15,031 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 12:58:15,031 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 12:58:15,033 - INFO - root - 可用客户端: []
+2025-11-09 12:58:15,033 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 12:58:15,034 - INFO - root - === 运行配置 ===
+2025-11-09 12:58:15,034 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 12:58:15,034 - INFO - root - PDF目录: ./myPapers
+2025-11-09 12:58:15,035 - INFO - root - 最大处理数量: 2
+2025-11-09 12:58:15,035 - INFO - root - 保存图片: 是
+2025-11-09 12:58:15,035 - INFO - root - 输出语言: 中文
+2025-11-09 12:58:15,036 - INFO - root - 强制重新处理: 否
+2025-11-09 12:58:15,036 - INFO - root - ====================
+2025-11-09 12:58:15,036 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 12:58:16,829 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:58:19,740 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:58:19,741 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 12:58:19,747 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 12:58:19,747 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 12:58:19,748 - INFO - root - summary time: 7.14 seconds
+2025-11-09 13:05:28,941 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:05:28,942 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:05:28,944 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:05:28,970 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:05:29,528 - ERROR - root - DoubaoClient: API test failed with status 404
+2025-11-09 13:05:29,529 - ERROR - root - LLMClientManager: 指定的客户端 Doubao 初始化失败
+2025-11-09 13:05:29,529 - WARNING - root - LLMClientManager: 指定的客户端 Doubao 不可用，将尝试其他客户端
+2025-11-09 13:05:30,291 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 13:05:31,203 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 13:05:31,564 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 13:05:31,565 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 13:05:31,565 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 13:05:31,565 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 13:05:31,566 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 13:05:31,566 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 13:05:31,566 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 13:05:31,566 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 13:05:31,567 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 13:05:31,567 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 13:05:31,568 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 13:05:31,568 - INFO - root - 可用客户端: []
+2025-11-09 13:05:31,568 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 13:05:31,568 - INFO - root - === 运行配置 ===
+2025-11-09 13:05:31,569 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:05:31,569 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:05:31,569 - INFO - root - 最大处理数量: 2
+2025-11-09 13:05:31,569 - INFO - root - 保存图片: 是
+2025-11-09 13:05:31,570 - INFO - root - 输出语言: 中文
+2025-11-09 13:05:31,570 - INFO - root - 强制重新处理: 否
+2025-11-09 13:05:31,571 - INFO - root - ====================
+2025-11-09 13:05:31,572 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:05:33,240 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:05:35,435 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:05:35,435 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:05:35,436 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:05:35,437 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:05:35,438 - INFO - root - summary time: 6.50 seconds
+2025-11-09 13:09:04,133 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:09:04,152 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:09:04,154 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:09:04,321 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:09:06,618 - ERROR - root - DoubaoClient: API test failed with status 404
+2025-11-09 13:09:06,631 - ERROR - root - LLMClientManager: 指定的客户端 Doubao 初始化失败
+2025-11-09 13:09:06,644 - WARNING - root - LLMClientManager: 指定的客户端 Doubao 不可用，将尝试其他客户端
+2025-11-09 13:09:08,688 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 13:09:09,712 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 13:09:10,067 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 13:09:10,075 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 13:09:10,076 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 13:09:10,077 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 13:09:10,079 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 13:09:10,080 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 13:09:10,080 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 13:09:10,081 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 13:09:10,082 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 13:09:10,082 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 13:09:10,098 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 13:09:10,101 - INFO - root - 可用客户端: []
+2025-11-09 13:09:10,107 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 13:09:10,117 - INFO - root - === 运行配置 ===
+2025-11-09 13:09:10,123 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:09:10,126 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:09:10,135 - INFO - root - 最大处理数量: 2
+2025-11-09 13:09:10,143 - INFO - root - 保存图片: 是
+2025-11-09 13:09:10,146 - INFO - root - 输出语言: 中文
+2025-11-09 13:09:10,149 - INFO - root - 强制重新处理: 否
+2025-11-09 13:09:10,151 - INFO - root - ====================
+2025-11-09 13:09:10,158 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:09:15,684 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:09:19,567 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:09:19,568 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:09:19,572 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:09:19,573 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:09:19,574 - INFO - root - summary time: 15.44 seconds
+2025-11-09 13:14:46,332 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:14:46,334 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:14:46,337 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:14:49,446 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:14:49,446 - WARNING - root - DoubaoClient: API key not provided. LLM disabled.
+2025-11-09 13:14:49,446 - ERROR - root - LLMClientManager: 指定的客户端 Doubao 初始化失败
+2025-11-09 13:14:49,446 - WARNING - root - LLMClientManager: 指定的客户端 Doubao 不可用，将尝试其他客户端
+2025-11-09 13:14:50,249 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 13:14:51,097 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 13:14:51,453 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 13:14:51,454 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 13:14:51,455 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 13:14:51,455 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 13:14:51,456 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 13:14:51,456 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 13:14:51,456 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 13:14:51,457 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 13:14:51,457 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 13:14:51,458 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 13:14:51,458 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 13:14:51,458 - INFO - root - 可用客户端: []
+2025-11-09 13:14:51,459 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 13:14:51,459 - INFO - root - === 运行配置 ===
+2025-11-09 13:14:51,460 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:14:51,461 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:14:51,461 - INFO - root - 最大处理数量: 2
+2025-11-09 13:14:51,463 - INFO - root - 保存图片: 是
+2025-11-09 13:14:51,463 - INFO - root - 输出语言: 中文
+2025-11-09 13:14:51,464 - INFO - root - 强制重新处理: 否
+2025-11-09 13:14:51,465 - INFO - root - ====================
+2025-11-09 13:14:51,466 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:14:53,801 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:14:57,267 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:14:57,268 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:14:57,277 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:14:57,279 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:14:57,279 - INFO - root - summary time: 10.95 seconds
+2025-11-09 13:15:29,541 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:15:29,543 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:15:29,543 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:15:30,631 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:15:30,636 - WARNING - root - DoubaoClient: API key not provided. LLM disabled.
+2025-11-09 13:15:30,636 - ERROR - root - LLMClientManager: 指定的客户端 Doubao 初始化失败
+2025-11-09 13:15:30,636 - WARNING - root - LLMClientManager: 指定的客户端 Doubao 不可用，将尝试其他客户端
+2025-11-09 13:15:31,714 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 13:15:32,394 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 13:15:32,518 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 13:15:32,519 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 13:15:32,520 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 13:15:32,521 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 13:15:32,522 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 13:15:32,522 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 13:15:32,523 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 13:15:32,523 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 13:15:32,523 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 13:15:32,524 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 13:15:32,524 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 13:15:32,524 - INFO - root - 可用客户端: []
+2025-11-09 13:15:32,525 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 13:15:32,525 - INFO - root - === 运行配置 ===
+2025-11-09 13:15:32,525 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:15:32,526 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:15:32,526 - INFO - root - 最大处理数量: 2
+2025-11-09 13:15:32,527 - INFO - root - 保存图片: 是
+2025-11-09 13:15:32,527 - INFO - root - 输出语言: 中文
+2025-11-09 13:15:32,528 - INFO - root - 强制重新处理: 否
+2025-11-09 13:15:32,528 - INFO - root - ====================
+2025-11-09 13:15:32,529 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:15:34,692 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:15:37,219 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:15:37,219 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:15:37,220 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:15:37,220 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:15:37,222 - INFO - root - summary time: 7.68 seconds
+2025-11-09 13:17:34,011 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:17:34,012 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:17:34,014 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:17:35,164 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:17:35,164 - ERROR - root - DoubaoClient: error reading config: RawConfigParser.get() takes 3 positional arguments but 4 were given
+2025-11-09 13:17:35,165 - WARNING - root - DoubaoClient: API key not provided or using placeholder. LLM disabled.
+2025-11-09 13:17:35,165 - ERROR - root - LLMClientManager: 指定的客户端 Doubao 初始化失败
+2025-11-09 13:17:35,165 - WARNING - root - LLMClientManager: 指定的客户端 Doubao 不可用，将尝试其他客户端
+2025-11-09 13:17:35,805 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 13:17:36,828 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 13:17:37,191 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 13:17:37,191 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 13:17:37,192 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 13:17:37,192 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 13:17:37,193 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 13:17:37,193 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 13:17:37,193 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 13:17:37,194 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 13:17:37,194 - WARNING - root - LLMClientManager: no LLM client available
+2025-11-09 13:17:37,194 - WARNING - root - LLMClientManager: client Doubao not available
+2025-11-09 13:17:37,195 - WARNING - root - 无法切换到指定的客户端 Doubao，将使用默认客户端
+2025-11-09 13:17:37,195 - INFO - root - 可用客户端: []
+2025-11-09 13:17:37,196 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 13:17:37,196 - INFO - root - === 运行配置 ===
+2025-11-09 13:17:37,203 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:17:37,213 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:17:37,219 - INFO - root - 最大处理数量: 2
+2025-11-09 13:17:37,220 - INFO - root - 保存图片: 是
+2025-11-09 13:17:37,224 - INFO - root - 输出语言: 中文
+2025-11-09 13:17:37,225 - INFO - root - 强制重新处理: 否
+2025-11-09 13:17:37,228 - INFO - root - ====================
+2025-11-09 13:17:37,230 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:17:39,662 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:17:42,426 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:17:42,426 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:17:42,426 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:17:42,426 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:17:42,426 - INFO - root - summary time: 8.42 seconds
+2025-11-09 13:19:00,129 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:19:00,131 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:19:00,135 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:19:01,214 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:19:01,214 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 13:19:07,220 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:19:07,240 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 13:19:07,241 - INFO - root - LLMClientManager: Doubao 客户端初始化成功
+2025-11-09 13:19:07,241 - INFO - root - LLMClientManager: switched to Doubao client
+2025-11-09 13:19:07,241 - INFO - root - 已手动切换到 LLM 客户端: Doubao
+2025-11-09 13:19:07,242 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 13:19:07,242 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 13:19:07,242 - INFO - root - === 运行配置 ===
+2025-11-09 13:19:07,243 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:19:07,245 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:19:07,246 - INFO - root - 最大处理数量: 2
+2025-11-09 13:19:07,249 - INFO - root - 保存图片: 是
+2025-11-09 13:19:07,252 - INFO - root - 输出语言: 中文
+2025-11-09 13:19:07,253 - INFO - root - 强制重新处理: 否
+2025-11-09 13:19:07,260 - INFO - root - ====================
+2025-11-09 13:19:07,263 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:19:09,141 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:19:11,769 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:19:11,769 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:19:11,772 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:19:11,772 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:19:11,773 - INFO - root - summary time: 11.65 seconds
+2025-11-09 13:21:37,150 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:21:37,176 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:21:37,179 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:21:38,652 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:21:38,653 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 13:21:43,494 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:21:43,681 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 13:21:43,821 - INFO - root - LLMClientManager: Doubao 客户端初始化成功
+2025-11-09 13:21:43,871 - INFO - root - LLMClientManager: switched to Doubao client
+2025-11-09 13:21:43,897 - INFO - root - 已手动切换到 LLM 客户端: Doubao
+2025-11-09 13:21:43,971 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 13:21:43,993 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 13:21:44,032 - INFO - root - === 运行配置 ===
+2025-11-09 13:21:44,100 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:21:44,117 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:21:44,147 - INFO - root - 最大处理数量: 2
+2025-11-09 13:21:44,186 - INFO - root - 保存图片: 是
+2025-11-09 13:21:44,233 - INFO - root - 输出语言: 中文
+2025-11-09 13:21:44,238 - INFO - root - 强制重新处理: 否
+2025-11-09 13:21:44,244 - INFO - root - ====================
+2025-11-09 13:21:44,250 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:21:46,096 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:21:49,176 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:21:49,178 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:21:49,179 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:21:49,179 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:21:49,179 - INFO - root - summary time: 12.03 seconds
+2025-11-09 13:22:41,686 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:22:41,687 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:22:41,688 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:22:43,552 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:22:43,552 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 13:22:48,878 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:22:48,886 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 13:22:48,886 - INFO - root - LLMClientManager: Doubao 客户端初始化成功
+2025-11-09 13:22:48,887 - INFO - root - LLMClientManager: switched to Doubao client
+2025-11-09 13:22:48,887 - INFO - root - 已手动切换到 LLM 客户端: Doubao
+2025-11-09 13:22:48,888 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 13:22:48,889 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 13:22:48,889 - INFO - root - === 运行配置 ===
+2025-11-09 13:22:48,890 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:22:48,891 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:22:48,891 - INFO - root - 最大处理数量: 2
+2025-11-09 13:22:48,892 - INFO - root - 保存图片: 是
+2025-11-09 13:22:48,892 - INFO - root - 输出语言: 中文
+2025-11-09 13:22:48,892 - INFO - root - 强制重新处理: 否
+2025-11-09 13:22:48,892 - INFO - root - ====================
+2025-11-09 13:22:48,894 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:22:50,256 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:22:52,443 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:22:52,443 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:22:52,443 - INFO - root - 正在总结论文 1/2: A Compute&Memory Efficient Model-Driven Neural
+2025-11-09 13:23:18,467 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:24:47,003 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:25:29,784 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:25:29,788 - INFO - root - 正在提取论文图片...
+2025-11-09 13:25:31,327 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 13:25:31,422 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 13:25:31,518 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 13:25:31,575 - INFO - root - 已保存图片 4/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 13:25:31,625 - INFO - root - 已保存图片 5/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 13:25:31,628 - INFO - root - 成功添加图片 1：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 13:25:31,628 - INFO - root - 成功添加图片 2：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 13:25:31,628 - INFO - root - 成功添加图片 3：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 13:25:31,629 - INFO - root - 成功添加图片 4：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 13:25:31,629 - INFO - root - 成功添加图片 5：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 13:25:31,631 - INFO - root - 论文《A Compute&Memory Efficient Model-Driven Neural》的分析已保存到 ./export\A Compute&Memory Efficient Model-Driven Neural.md
+2025-11-09 13:25:31,639 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:25:31,644 - INFO - root - summary time: 169.96 seconds
+2025-11-09 13:41:09,766 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:41:09,768 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:41:09,770 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:41:10,997 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:41:10,998 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 13:41:16,132 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:41:16,144 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 13:41:16,144 - INFO - root - LLMClientManager: Doubao 客户端初始化成功
+2025-11-09 13:41:16,144 - INFO - root - LLMClientManager: switched to Doubao client
+2025-11-09 13:41:16,145 - INFO - root - 已手动切换到 LLM 客户端: Doubao
+2025-11-09 13:41:16,145 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 13:41:16,146 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 13:41:16,146 - INFO - root - === 运行配置 ===
+2025-11-09 13:41:16,147 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:41:16,147 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:41:16,147 - INFO - root - 最大处理数量: 2
+2025-11-09 13:41:16,148 - INFO - root - 保存图片: 是
+2025-11-09 13:41:16,150 - INFO - root - 输出语言: 中文
+2025-11-09 13:41:16,151 - INFO - root - 强制重新处理: 否
+2025-11-09 13:41:16,152 - INFO - root - ====================
+2025-11-09 13:41:16,153 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:41:18,769 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:41:22,435 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:41:22,435 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:41:22,437 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:41:22,437 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:41:22,437 - INFO - root - summary time: 12.67 seconds
+2025-11-09 13:42:09,313 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 13:42:09,314 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 13:42:09,317 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 13:42:10,708 - INFO - root - LLMClientManager: 指定使用客户端: Doubao
+2025-11-09 13:42:10,709 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 13:42:15,602 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:42:15,620 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 13:42:15,620 - INFO - root - LLMClientManager: Doubao 客户端初始化成功
+2025-11-09 13:42:15,621 - INFO - root - LLMClientManager: switched to Doubao client
+2025-11-09 13:42:15,623 - INFO - root - 已手动切换到 LLM 客户端: Doubao
+2025-11-09 13:42:15,624 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 13:42:15,625 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 13:42:15,627 - INFO - root - === 运行配置 ===
+2025-11-09 13:42:15,628 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 13:42:15,629 - INFO - root - PDF目录: ./myPapers
+2025-11-09 13:42:15,629 - INFO - root - 最大处理数量: 2
+2025-11-09 13:42:15,630 - INFO - root - 保存图片: 是
+2025-11-09 13:42:15,630 - INFO - root - 输出语言: 中文
+2025-11-09 13:42:15,631 - INFO - root - 强制重新处理: 否
+2025-11-09 13:42:15,631 - INFO - root - ====================
+2025-11-09 13:42:15,631 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 13:42:17,181 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 13:42:19,842 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:42:19,843 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 13:42:19,844 - INFO - root - 正在总结论文 1/2: A Compute&Memory Efficient Model-Driven Neural
+2025-11-09 13:42:52,518 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:44:31,832 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:45:09,321 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 13:45:09,322 - INFO - root - 正在提取论文图片...
+2025-11-09 13:45:10,094 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 13:45:10,255 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 13:45:10,346 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 13:45:10,394 - INFO - root - 已保存图片 4/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 13:45:10,451 - INFO - root - 已保存图片 5/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 13:45:10,457 - INFO - root - 成功添加图片 1：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 13:45:10,457 - INFO - root - 成功添加图片 2：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 13:45:10,458 - INFO - root - 成功添加图片 3：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 13:45:10,458 - INFO - root - 成功添加图片 4：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 13:45:10,458 - INFO - root - 成功添加图片 5：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 13:45:10,460 - INFO - root - 论文《A Compute&Memory Efficient Model-Driven Neural》的分析已保存到 ./export\A Compute&Memory Efficient Model-Driven Neural.md
+2025-11-09 13:45:10,473 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 13:45:10,479 - INFO - root - summary time: 181.17 seconds
+2025-11-09 14:04:17,111 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 14:04:17,111 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 14:04:17,111 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 14:04:19,141 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 14:04:20,107 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 14:04:20,489 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 14:04:20,491 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 14:04:20,492 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 14:04:20,492 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 14:04:20,493 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 14:04:20,493 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 14:04:20,493 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 14:04:20,494 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 14:04:20,494 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 14:04:26,872 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:04:26,893 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 14:04:26,894 - INFO - root - LLMClientManager: Doubao client initialized successfully
+2025-11-09 14:04:26,894 - INFO - root - LLMClientManager: using Doubao as default client
+2025-11-09 14:04:26,895 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 14:04:26,896 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 14:04:26,896 - INFO - root - === 运行配置 ===
+2025-11-09 14:04:26,896 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 14:04:26,897 - INFO - root - PDF目录: ./myPapers
+2025-11-09 14:04:26,897 - INFO - root - 最大处理数量: 2
+2025-11-09 14:04:26,897 - INFO - root - 保存图片: 是
+2025-11-09 14:04:26,898 - INFO - root - 输出语言: 中文
+2025-11-09 14:04:26,898 - INFO - root - 强制重新处理: 否
+2025-11-09 14:04:26,899 - INFO - root - ====================
+2025-11-09 14:04:26,900 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 14:04:28,787 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:04:31,792 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:04:31,794 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 14:04:31,795 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:04:31,796 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:04:31,796 - INFO - root - summary time: 14.68 seconds
+2025-11-09 14:12:56,035 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 14:12:56,035 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 14:12:56,049 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 14:12:57,528 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 14:12:58,374 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 14:12:58,745 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 14:12:58,746 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 14:12:58,746 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 14:12:58,746 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 14:12:58,747 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 14:12:58,748 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 14:12:58,748 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 14:12:58,748 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 14:12:58,748 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 14:13:02,872 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:13:02,877 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 14:13:02,877 - INFO - root - LLMClientManager: Doubao client initialized successfully
+2025-11-09 14:13:02,877 - INFO - root - LLMClientManager: using Doubao as default client
+2025-11-09 14:13:02,885 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 14:13:02,885 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 14:13:02,886 - INFO - root - === 运行配置 ===
+2025-11-09 14:13:02,886 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 14:13:02,887 - INFO - root - PDF目录: ./myPapers
+2025-11-09 14:13:02,887 - INFO - root - 最大处理数量: 2
+2025-11-09 14:13:02,890 - INFO - root - 保存图片: 是
+2025-11-09 14:13:02,890 - INFO - root - 输出语言: 中文
+2025-11-09 14:13:02,891 - INFO - root - 强制重新处理: 否
+2025-11-09 14:13:02,891 - INFO - root - ====================
+2025-11-09 14:13:02,891 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 14:13:04,457 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:13:06,450 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:13:06,450 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 14:13:06,450 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:13:06,450 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:13:06,450 - INFO - root - summary time: 10.42 seconds
+2025-11-09 14:13:27,922 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 14:13:27,924 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 14:13:27,926 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 14:13:29,624 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 14:13:30,568 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 14:13:30,695 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 14:13:30,696 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 14:13:30,696 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 14:13:30,696 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 14:13:30,697 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 14:13:30,697 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 14:13:30,697 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 14:13:30,697 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 14:13:30,698 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 14:13:35,993 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:13:36,003 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 14:13:36,003 - INFO - root - LLMClientManager: Doubao client initialized successfully
+2025-11-09 14:13:36,003 - INFO - root - LLMClientManager: using Doubao as default client
+2025-11-09 14:13:36,003 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 14:13:36,004 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 14:13:36,006 - INFO - root - === 运行配置 ===
+2025-11-09 14:13:36,008 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 14:13:36,009 - INFO - root - PDF目录: ./myPapers
+2025-11-09 14:13:36,010 - INFO - root - 最大处理数量: 2
+2025-11-09 14:13:36,010 - INFO - root - 保存图片: 是
+2025-11-09 14:13:36,011 - INFO - root - 输出语言: 中文
+2025-11-09 14:13:36,011 - INFO - root - 强制重新处理: 否
+2025-11-09 14:13:36,011 - INFO - root - ====================
+2025-11-09 14:13:36,011 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 14:13:37,419 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:13:39,410 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:13:39,410 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 14:13:39,410 - INFO - root - 跳过已处理论文 A Compute&Memory Efficient Model-Driven Neural：./myPapers\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:13:39,410 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:13:39,410 - INFO - root - summary time: 11.49 seconds
+2025-11-09 14:14:39,048 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 14:14:39,052 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 14:14:39,054 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 14:14:40,444 - INFO - root - GeminiClient: trying model gemini-2.5-flash
+2025-11-09 14:14:41,291 - INFO - root - GeminiClient: trying model gemini-2.5-pro
+2025-11-09 14:14:41,648 - WARNING - root - GeminiClient: no usable model found
+2025-11-09 14:14:41,648 - WARNING - root - LLMClientManager: Gemini client initialization failed
+2025-11-09 14:14:41,648 - WARNING - root - DeepSeekClient: API key not provided. LLM disabled.
+2025-11-09 14:14:41,649 - WARNING - root - LLMClientManager: DeepSeek client initialization failed
+2025-11-09 14:14:41,649 - WARNING - root - KimiClient: API key not provided. LLM disabled.
+2025-11-09 14:14:41,649 - WARNING - root - LLMClientManager: Kimi client initialization failed
+2025-11-09 14:14:41,650 - WARNING - root - QwenClient: API key not provided. LLM disabled.
+2025-11-09 14:14:41,650 - WARNING - root - LLMClientManager: Qwen client initialization failed
+2025-11-09 14:14:41,650 - INFO - root - DoubaoClient: API key found: 9f9e270e-b...
+2025-11-09 14:14:46,605 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:14:46,616 - INFO - root - DoubaoClient: initialized successfully with model doubao-seed-1-6-lite-251015
+2025-11-09 14:14:46,616 - INFO - root - LLMClientManager: Doubao client initialized successfully
+2025-11-09 14:14:46,616 - INFO - root - LLMClientManager: using Doubao as default client
+2025-11-09 14:14:46,616 - INFO - root - 使用 LLM 模型: doubao-seed-1-6-lite-251015
+2025-11-09 14:14:46,616 - INFO - root - 可用客户端: ['Doubao']
+2025-11-09 14:14:46,619 - INFO - root - === 运行配置 ===
+2025-11-09 14:14:46,619 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 14:14:46,620 - INFO - root - PDF目录: ./myPapers
+2025-11-09 14:14:46,620 - INFO - root - 最大处理数量: 2
+2025-11-09 14:14:46,620 - INFO - root - 保存图片: 是
+2025-11-09 14:14:46,620 - INFO - root - 输出语言: 中文
+2025-11-09 14:14:46,621 - INFO - root - 强制重新处理: 否
+2025-11-09 14:14:46,622 - INFO - root - ====================
+2025-11-09 14:14:46,622 - INFO - root - 从本地目录读取PDF文件：./myPapers
+2025-11-09 14:14:47,983 - INFO - root - 成功加载PDF文件：A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.pdf
+2025-11-09 14:14:49,898 - INFO - root - 成功加载PDF文件：AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:14:49,898 - INFO - root - 已达到最大处理数量限制 (2)，停止加载更多PDF文件
+2025-11-09 14:14:49,898 - INFO - root - 正在总结论文 1/2: A Compute&Memory Efficient Model-Driven Neural
+2025-11-09 14:15:32,728 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:16:45,454 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:17:33,055 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-09 14:17:33,058 - INFO - root - 正在提取论文图片...
+2025-11-09 14:17:33,812 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 14:17:33,915 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 14:17:34,007 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 14:17:34,056 - INFO - root - 已保存图片 4/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 14:17:34,127 - INFO - root - 已保存图片 5/10：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 14:17:34,132 - INFO - root - 成功添加图片 1：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_1_page6.png
+2025-11-09 14:17:34,132 - INFO - root - 成功添加图片 2：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_2_page6.png
+2025-11-09 14:17:34,132 - INFO - root - 成功添加图片 3：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_3_page2.png
+2025-11-09 14:17:34,133 - INFO - root - 成功添加图片 4：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_4_page2.png
+2025-11-09 14:17:34,133 - INFO - root - 成功添加图片 5：./export\images_A Compute&Memory Efficient Model-Driven Neural\figure_5_page3.png
+2025-11-09 14:17:34,138 - INFO - root - 论文《A Compute&Memory Efficient Model-Driven Neural》的分析已保存到 ./export\A Compute&Memory Efficient Model-Driven Neural.md
+2025-11-09 14:17:34,145 - INFO - root - 跳过已处理论文 AMLA: MUL by ADD in FlashAttention Rescaling：./myPapers\AMLA_ MUL by ADD in FlashAttention Rescaling.pdf
+2025-11-09 14:17:34,153 - INFO - root - summary time: 175.10 seconds
