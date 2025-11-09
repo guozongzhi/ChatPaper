@@ -421,7 +421,7 @@ class Reader:
     def download_pdf(self, url, title):
         response = requests.get(url)  # send a GET request to the url
         date_str = str(datetime.datetime.now())[:13].replace(' ', '-')
-        path = self.root_path + 'pdf_files/' + self.validateTitle(self.args.query) + '-' + date_str
+        path = self.root_path + 'academic papers/' + self.validateTitle(self.args.query) + '-' + date_str
         try:
             os.makedirs(path)
         except:

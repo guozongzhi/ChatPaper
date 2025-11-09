@@ -5,6 +5,8 @@ import tenacity
 import tiktoken
 import re
 from functools import lru_cache
+import logging
+import logging_config as logging_config
 
 
 class LazyloadTiktoken(object):
@@ -14,9 +16,9 @@ class LazyloadTiktoken(object):
     @staticmethod
     @lru_cache(maxsize=128)
     def get_encoder(model):
-        print('正在加载tokenizer，如果是第一次运行，可能需要一点时间下载参数')
+        logging.info('正在加载tokenizer，如果是第一次运行，可能需要一点时间下载参数')
         tmp = tiktoken.encoding_for_model(model)
-        print('加载tokenizer完毕')
+        logging.info('加载tokenizer完毕')
         return tmp
     
     def encode(self, *args, **kwargs):
@@ -35,10 +37,8 @@ def parse_pdf(path):
         pdf['section_names'] = [it['heading'] for it in pdf['sections']]
         pdf['section_texts'] = [it['text'] for it in pdf['sections']]
     except Exception as e:
-        print("parse_pdf_to_dict(path:", e)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)     
+        logging.exception("parse_pdf_to_dict failed for %s: %s", path, e)
+        # keep returning pdf if possible
     return pdf
 
 @tenacity.retry(wait=tenacity.wait_exponential(multiplier=1, min=4, max=10),
@@ -112,11 +112,10 @@ def chat_translate_part(text, key, title=False, domain="", tokenizer_gpt35=None,
     result = ''
     for choice in response.choices:
         result += choice.message.content
-    print("summary_result:\n", result)
-    print("prompt_token_used:", response.usage.prompt_tokens,
-            "completion_token_used:", response.usage.completion_tokens,
-            "total_token_used:", response.usage.total_tokens)
-    print("response_time:", response.response_ms / 1000.0, 's')
+    logging.info("summary_result:\n%s", result)
+    logging.info("prompt_token_used: %s completion_token_used: %s total_token_used: %s",
+         response.usage.prompt_tokens, response.usage.completion_tokens, response.usage.total_tokens)
+    logging.info("response_time: %.3fs", response.response_ms / 1000.0)
     info = {}
     info['result'] = result
     info['token_used'] = response.usage.total_tokens
@@ -143,11 +142,10 @@ def chat_check_domain(text, key):
     result = ''
     for choice in response.choices:
         result += choice.message.content
-    print("summary_result:\n", result)
-    print("prompt_token_used:", response.usage.prompt_tokens,
-            "completion_token_used:", response.usage.completion_tokens,
-            "total_token_used:", response.usage.total_tokens)
-    print("response_time:", response.response_ms / 1000.0, 's')
+    logging.info("summary_result:\n%s", result)
+    logging.info("prompt_token_used: %s completion_token_used: %s total_token_used: %s",
+         response.usage.prompt_tokens, response.usage.completion_tokens, response.usage.total_tokens)
+    logging.info("response_time: %.3fs", response.response_ms / 1000.0)
     info = {}
     info['result'] = result
     info['token_used'] = response.usage.total_tokens
@@ -172,7 +170,7 @@ def main(root_path, pdf_path, base_url, key, task="翻译"):
     else:
         domains = ""
         
-    print("这篇文章的domain是：", domains)
+    logging.info("这篇文章的domain是：%s", domains)
     
     # input("继续？")
     openai.api_base = base_url   
@@ -201,7 +199,7 @@ def main(root_path, pdf_path, base_url, key, task="翻译"):
             f.write(cur_str)
             
     for section_index, section_name in enumerate(paper_pdf['section_names']):
-        print(section_index, section_name)
+        logging.info("section %s: %s", section_index, section_name)
         # 判断文本是否为空：
         if len(paper_pdf['section_texts'][section_index])>0:
             text = "Section Name:" + section_name + "\n Section text:" + paper_pdf['section_texts'][section_index]
@@ -219,7 +217,7 @@ def main(root_path, pdf_path, base_url, key, task="翻译"):
             with open(md_file, 'a', encoding="utf-8") as f:
                 f.write(cur_str)
                 
-    print("整篇文章消耗了{}的token！".format(token_consumed))
+    logging.info("整篇文章消耗了 %s 的 token", token_consumed)
         
 
 

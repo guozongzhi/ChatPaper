@@ -11,11 +11,14 @@ import re
 import sys
 import time
 import json
+import logging
 import google.generativeai as genai
 import requests
 import tenacity
 from bs4 import BeautifulSoup
 from PIL import Image
+import chat_arxiv
+import logging_config as logging_config  # configures logging (file + console) on import
 
 ArxivParams = namedtuple(
     "ArxivParams",
@@ -39,7 +42,7 @@ ArxivParams = namedtuple(
 
 
 class Paper:
-    def __init__(self, path, title='', url='', abs='', authers=[]):
+    def __init__(self, path, title='', url='', abs='', authers=None):
         # 初始化函数，根据pdf路径初始化Paper对象                
         self.url = url           # 文章链接
         self.path = path          # pdf路径
@@ -55,7 +58,7 @@ class Paper:
         else:
             self.title = title
             self.section_text_dict = {'Introduction': '', 'Abstract': self.abs}
-        self.authers = authers        
+        self.authers = authers or []        
         self.roman_num = ["I", "II", 'III', "IV", "V", "VI", "VII", "VIII", "IIX", "IX", "X"]
         self.digit_num = [str(d+1) for d in range(10)]
         self.first_image = ''
@@ -66,7 +69,7 @@ class Paper:
             self.text_list = [page.get_text() for page in self.pdf]
             self.all_text = ' '.join(self.text_list)
             self.section_page_dict = self._get_all_page_index() # 段落与页码的对应字典
-            print("section_page_dict", self.section_page_dict)
+            logging.debug("section_page_dict %s", self.section_page_dict)
             self.section_text_dict = self._get_all_page() # 段落与内容的对应字典
             if not self.section_text_dict.get('Abstract'):
                 self.section_text_dict['Abstract'] = self.abs
@@ -120,7 +123,7 @@ class Paper:
                         if image_size > 5000:  # 过滤掉太小的图片
                             image_info_list.append((pil_image, image_size, ext, page_number))
                     except Exception as e:
-                        print(f"警告：处理页面 {page_number+1} 的图片 {img_idx+1} 时出错：{e}")
+                        logging.warning("处理页面 %s 的图片 %s 时出错：%s", page_number+1, img_idx+1, e)
                         continue
 
         # 按图片大小排序
@@ -145,9 +148,9 @@ class Paper:
                 im_path = os.path.join(image_path, image_name)
                 resized_image.save(im_path, quality=95)  # 使用更高的图片质量
                 saved_images.append(im_path)  # 只保存路径
-                print(f"已保存图片 {i+1}/{max_images}：{im_path}")
+                logging.info("已保存图片 %s/%s：%s", i+1, max_images, im_path)
             except Exception as e:
-                print(f"警告：保存图片 {i+1} 时出错：{e}")
+                logging.warning("保存图片 %s 时出错：%s", i+1, e)
                 continue
 
         # 返回所有保存的图片路径
@@ -168,11 +171,11 @@ class Paper:
                 space_split_list = line.split(' ')
                 if 1 < len(space_split_list) < 5:
                     if 1 < len(point_split_list) < 5 and (point_split_list[0] in self.roman_num or point_split_list[0] in self.digit_num):
-                        print("line:", line)
+                        logging.debug("line: %s", line)
                         chapter_names.append(line)      
                     # 这段代码可能会有新的bug，本意是为了消除"Introduction"的问题的！
                     elif 1 < len(point_split_list) < 5:
-                        print("line:", line)
+                        logging.debug("line: %s", line)
                         chapter_names.append(line)     
         
         return chapter_names
@@ -193,8 +196,8 @@ class Paper:
                         if font_size > max_font_size: # 如果字体大小大于当前最大值
                             max_font_size = font_size # 更新最大值
                             max_string = block["lines"][0]["spans"][0]["text"] # 更新最大值对应的字符串
-        max_font_sizes.sort()                
-        print("max_font_sizes", max_font_sizes[-10:])
+        max_font_sizes.sort()
+        logging.debug("max_font_sizes %s", max_font_sizes[-10:])
         cur_title = ''
         for page_index, page in enumerate(doc): # 遍历每一页
             text = page.get_text("dict") # 获取页面上的文本信息
@@ -216,7 +219,8 @@ class Paper:
                                     cur_title += ' ' + cur_string     
                             self.title_page = page_index
                             # break
-        title = cur_title.replace('\n', ' ')                        
+        title = cur_title.replace('\n', ' ')
+        logging.debug("detected title: %s", title)
         return title
 
 
@@ -269,7 +273,7 @@ class Paper:
         # 再处理其他章节：
         text_list = [page.get_text() for page in self.pdf]
         for sec_index, sec_name in enumerate(self.section_page_dict):
-            print(sec_index, sec_name, self.section_page_dict[sec_name])
+            logging.debug("sec_index=%s sec_name=%s page=%s", sec_index, sec_name, self.section_page_dict[sec_name])
             if sec_index <= 0 and self.abs:
                 continue
             else:
@@ -279,7 +283,7 @@ class Paper:
                     end_page = self.section_page_dict[list(self.section_page_dict.keys())[sec_index+1]]
                 else:
                     end_page = len(text_list)
-                print("start_page, end_page:", start_page, end_page)
+                logging.debug("start_page=%s, end_page=%s", start_page, end_page)
                 cur_sec_text = ''
                 if end_page - start_page == 0:
                     if sec_index < len(list(self.section_page_dict.keys()))-1:
@@ -346,9 +350,9 @@ class Reader:
         # 尝试不同的编码读取文件
         for encoding in encodings:
             try:
-                print(f"尝试使用 {encoding} 编码读取配置文件...")
+                logging.info("尝试使用 %s 编码读取配置文件...", encoding)
                 self.config.read(config_file, encoding=encoding)
-                print(f"成功使用 {encoding} 编码读取配置文件")
+                logging.info("成功使用 %s 编码读取配置文件", encoding)
                 
                 # 如果成功读取，尝试将文件转换为UTF-8编码
                 try:
@@ -356,14 +360,14 @@ class Reader:
                         content = f.read()
                     with open(config_file, 'w', encoding='utf-8') as f:
                         f.write(content)
-                    print("已将配置文件转换为 UTF-8 编码")
+                    logging.info("已将配置文件转换为 UTF-8 编码")
                 except Exception as e:
                     print(f"转换文件编码时出错：{e}")
                 
                 break  # 如果成功读取，跳出循环
                 
             except Exception as e:
-                print(f"使用 {encoding} 编码读取失败：{e}")
+                logging.warning("使用 %s 编码读取失败：%s", encoding, e)
                 if encoding == encodings[-1]:  # 如果是最后一个编码
                     raise Exception("无法读取配置文件，请确保文件编码正确且内容有效") from e
                 continue  # 尝试下一个编码
@@ -373,11 +377,11 @@ class Reader:
             from llm_client import make_client
             self.llm = make_client(self.config, args)
             if getattr(self.llm, 'enabled', False):
-                print(f"使用 LLM 模型: {self.llm.current_model_name()}")
+                logging.info("使用 LLM 模型: %s", self.llm.current_model_name())
             else:
-                print("LLM 未初始化或不可用，后续生成将返回备用消息")
+                logging.info("LLM 未初始化或不可用，后续生成将返回备用消息")
         except Exception as e:
-            print(f"初始化 LLM 客户端失败: {e}")
+            logging.warning("初始化 LLM 客户端失败: %s", e)
             self.llm = None
 
         self.file_format = args.file_format
@@ -389,131 +393,35 @@ class Reader:
         else:
             self.gitee_key = ''
 
-    # 定义一个函数，根据关键词和页码生成arxiv搜索链接
+    # arXiv 相关的功能已抽离到 chat_arxiv 模块。下面的方法作为兼容性包装，
+    # 将调用 chat_arxiv 中的实现以避免重复代码。
     def get_url(self, keyword, page):
-        base_url = "https://arxiv.org/search/?"
-        params = {
-            "query": keyword,
-            "searchtype": "all",  # 搜索所有字段
-            "abstracts": "show",  # 显示摘要
-            "order": "-announced_date_first",  # 按日期降序排序
-            "size": 50  # 每页显示50条结果
-        }
-        if page > 0:
-            params["start"] = page * 50  # 设置起始位置
-        return base_url + requests.compat.urlencode(params)
+        return chat_arxiv.get_url(keyword, page)
 
-    # 定义一个函数，根据链接获取网页内容，并解析出论文标题
     def get_titles(self, url, days=1):
-        titles = []
-        # 创建一个空列表来存储论文链接
-        links = []
-        dates = []
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, "html.parser")
-        articles = soup.find_all("li", class_="arxiv-result")  # 找到所有包含论文信息的li标签
-        today = datetime.date.today()
-        last_days = datetime.timedelta(days=days)
-        for article in articles:
-            try:
-                title = article.find("p", class_="title").text  # 找到每篇论文的标题，并去掉多余的空格和换行符
-                title = title.strip()            
-                link = article.find("span").find_all("a")[0].get('href')            
-                date_text = article.find("p", class_="is-size-7").text
-                date_text = date_text.split('\n')[0].split("Submitted ")[-1].split("; ")[0]
-                date_text = datetime.datetime.strptime(date_text, "%d %B, %Y").date()
-                if today - date_text <= last_days:
-                    titles.append(title)
-                    links.append(link)
-                    dates.append(date_text)
-                # print("links:", links)
-            except Exception as e:
-                print("error:", e)
-                print("error_title:", title)
-                exc_type, exc_obj, exc_tb = sys.exc_info()
-                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                print(exc_type, fname, exc_tb.tb_lineno)          
-                
-        return titles, links, dates
+        return chat_arxiv.get_titles(url, days)
 
-    # 定义一个函数，根据关键词获取所有可用的论文标题，并打印出来
     def get_all_titles_from_web(self, keyword, page_num=1, days=1):
-        title_list, link_list, date_list = [], [], []
-        for page in range(page_num):
-            url = self.get_url(keyword, page)  # 根据关键词和页码生成链接
-            print(f"Fetching page {page+1} with URL: {url}")
-            titles, links, dates = self.get_titles(url, days)  # 根据链接获取论文标题
-            if not titles:  # 如果没有获取到任何标题，说明已经到达最后一页，退出循环
-                break
-            print(f"get_all_titles_from_web \r")
-            for title_index, title in enumerate(titles):  # 遍历每个标题，并打印出来
-                print(f"Page:{page}, Index:{title_index}, {title}, {links[title_index]}, {dates[title_index]}")
-            title_list.extend(titles)
-            link_list.extend(links)
-            date_list.extend(dates)
-        print("---" * 40)
-        return title_list, link_list, date_list
+        return chat_arxiv.get_all_titles_from_web(keyword, page_num=page_num, days=days)
 
     def get_arxiv_web(self, args, page_num=1, days=2):
-        titles, links, dates = self.get_all_titles_from_web(args.query, page_num=page_num, days=days)
-        paper_list = []
-        print(f"get_arxiv_web \r")
-        for title_index, title in enumerate(titles):
-            if title_index + 1 > args.max_results:
-                break
-            print(f"Index:{title_index}, {title}, {links[title_index]}, {dates[title_index]}")
-            url = links[title_index] + ".pdf"  # the link of the pdf document
-            filename = self.try_download_pdf(url, title)
-            paper = Paper(path=filename, url=links[title_index], title=title)
-            paper_list.append(paper)
-        return paper_list
+        # chat_arxiv.get_arxiv_papers 已封装抓取与下载并返回 Paper 列表
+        return chat_arxiv.get_arxiv_papers(args)
 
     def validateTitle(self, title):
-        """安全地处理标题，确保其可以用作文件名"""
-        if not title:
-            return "untitled"
-            
-        # 截取前50个字符
-        title = title[:50]
-        
-        # 移除或替换特殊字符
-        rstr = r'[/\\:*?"<>|]'  # 替换非法字符 / \ : * ? " < > |
-        title = re.sub(rstr, "_", title)  # 替换为下划线
-        
-        # 移除多余的空格和下划线
-        title = re.sub(r'\s+', ' ', title)  # 将多个空格替换为单个空格
-        title = re.sub(r'_+', '_', title)   # 将多个下划线替换为单个下划线
-        title = title.strip(' _')  # 移除首尾的空格和下划线
-        
-        # 如果标题为空，使用默认值
-        if not title:
-            title = "untitled"
-            
-        return title
+        return chat_arxiv.validateTitle(title)
 
     def download_pdf(self, url, title):
-        response = requests.get(url)  # send a GET request to the url
-        # 不再在路径中使用时间戳，改为使用基于查询的子目录
-        path = os.path.join(self.root_path, 'pdf_files', self.validateTitle(self.args.query))
-        os.makedirs(path, exist_ok=True)
-        base_name = f"{self.validateTitle(title)[:80]}.pdf"
-        filename = os.path.join(path, base_name)
-        # 如果文件存在且未启用 --force，则添加数字后缀避免覆盖
-        if os.path.exists(filename) and not getattr(self.args, 'force', False):
-            idx = 1
-            while True:
-                candidate = os.path.join(path, f"{self.validateTitle(title)[:80]}-{idx}.pdf")
-                if not os.path.exists(candidate):
-                    filename = candidate
-                    break
-                idx += 1
-        with open(filename, "wb") as f:  # open a file with write and binary mode
-            f.write(response.content)  # write the content of the response to the file
-        return filename
+        # 尽量使用 chat_arxiv 提供的带重试的下载器
+        try:
+            return chat_arxiv.try_download_pdf(url, title, getattr(self.args, 'query', ''))
+        except Exception:
+            # 作为降级，尝试直接调用内部下载函数（如果存在）
+            try:
+                return chat_arxiv._download_pdf_to_path(url, title, getattr(self.args, 'query', ''))
+            except Exception as e:
+                raise
 
-    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=1, min=4, max=10),
-                    stop=tenacity.stop_after_attempt(5),
-                    reraise=True)
     def try_download_pdf(self, url, title):
         return self.download_pdf(url, title)
 
@@ -525,7 +433,7 @@ class Reader:
         """
         paper_list = []
         if not os.path.exists(pdf_path):
-            print(f"错误：路径 {pdf_path} 不存在")
+            logging.error("路径 %s 不存在", pdf_path)
             return paper_list
 
         if os.path.isfile(pdf_path):
@@ -534,9 +442,9 @@ class Reader:
                 try:
                     paper = Paper(path=pdf_path)
                     paper_list.append(paper)
-                    print(f"成功加载PDF文件：{os.path.basename(pdf_path)}")
+                    logging.info("成功加载PDF文件：%s", os.path.basename(pdf_path))
                 except Exception as e:
-                    print(f"处理PDF文件 {pdf_path} 时出错：{e}")
+                    logging.error("处理PDF文件 %s 时出错：%s", pdf_path, e)
         else:
             # 处理文件夹：解析目录下的所有 PDF（不再受 self.args.max_results 限制）
             for root, _, files in os.walk(pdf_path):
@@ -546,9 +454,9 @@ class Reader:
                         try:
                             paper = Paper(path=pdf_file)
                             paper_list.append(paper)
-                            print(f"成功加载PDF文件：{file}")
+                            logging.info("成功加载PDF文件：%s", file)
                         except Exception as e:
-                            print(f"处理PDF文件 {file} 时出错：{e}")
+                            logging.error("处理PDF文件 %s 时出错：%s", file, e)
 
             # 已收集文件夹中所有的 PDF，返回完整列表
 
@@ -574,7 +482,7 @@ class Reader:
         if len(self._api_calls) >= self._max_calls_per_window:
             wait_time = self._api_calls[0] + self._call_window - current_time
             if wait_time > 0:
-                print(f"\n已达到API调用限制，等待 {wait_time:.1f} 秒...")
+                logging.info("已达到API调用限制，等待 %.1f 秒...", wait_time)
                 time.sleep(wait_time)
                 # 递归调用以确保等待后仍然符合限制
                 self._wait_for_rate_limit()
@@ -587,7 +495,7 @@ class Reader:
         """切换到下一个可用的模型"""
         if not self._available_models:
             try:
-                print("\n正在获取可用模型列表...")
+                logging.info("正在获取可用模型列表...")
                 # 获取所有可用模型
                 all_models = [
                     model.name for model in genai.list_models()
@@ -603,12 +511,12 @@ class Reader:
                 # 按照优先级排序：flash > pro
                 self._available_models.sort(key=lambda x: "flash" in x, reverse=True)
                 if not self._available_models:
-                    print("警告：未找到2.5版本的模型，将使用所有可用模型")
+                    logging.warning("未找到2.5版本的模型，将使用所有可用模型")
                     self._available_models = all_models
                 
-                print(f"可用的模型列表: {self._available_models}")
+                logging.info("可用的模型列表: %s", self._available_models)
             except Exception as e:
-                print(f"获取模型列表失败: {e}")
+                logging.warning("获取模型列表失败: %s", e)
                 return False
         
         # 尝试切换到下一个模型
@@ -617,10 +525,10 @@ class Reader:
             model_name = self._available_models[self._current_model_index]
             try:
                 self.model = genai.GenerativeModel(model_name=model_name)
-                print(f"\n已切换到新模型: {model_name}")
+                logging.info("已切换到新模型: %s", model_name)
                 return True
             except Exception as e:
-                print(f"切换到模型 {model_name} 失败: {e}")
+                logging.warning("切换到模型 %s 失败: %s", model_name, e)
         return False
 
     def _call_gemini_api(self, prompt):
@@ -631,7 +539,7 @@ class Reader:
         if hasattr(self, 'llm') and self.llm:
             return self.llm.generate(prompt)
 
-        print("\n错误：LLM 客户端未初始化，将使用备用响应。")
+        logging.error("LLM 客户端未初始化，将使用备用响应。")
         return "抱歉，由于 API 初始化问题，我暂时无法生成响应。请检查您的 API 密钥和模型可用性。"
 
     def summary_with_chat(self, paper_list):
@@ -650,7 +558,7 @@ class Reader:
         batch_size = getattr(self.args, 'batch_size', 0)
         batch_delay = getattr(self.args, 'batch_delay', 60)
         if batch_size and batch_size > 0:
-            print(f"批次处理已启用：每 {batch_size} 篇论文休眠 {batch_delay} 秒")
+            logging.info("批次处理已启用：每 %s 篇论文休眠 %s 秒", batch_size, batch_delay)
 
         # 遍历论文列表
         processed_in_batch = 0
@@ -659,9 +567,9 @@ class Reader:
             abs_path = os.path.abspath(paper.path)
             # 如果未设置 --force 并且文件在已处理缓存中，则跳过
             if not getattr(self.args, 'force', False) and abs_path in processed:
-                print(f"\n跳过已处理论文 {paper.title}：{paper.path}")
+                logging.info("跳过已处理论文 %s：%s", paper.title, paper.path)
                 continue
-            print(f"\n正在总结论文 {paper_index + 1}/{len(paper_list)}: {paper.title}")
+            logging.info("正在总结论文 %s/%s: %s", paper_index + 1, len(paper_list), paper.title)
             
             # 收集论文所有部分
             method_content = (paper.section_text_dict.get('Method', '') or 
@@ -669,52 +577,66 @@ class Reader:
                           paper.section_text_dict.get('Methodology', ''))[:3000]
             conclusion_content = paper.section_text_dict.get('Conclusion', '')[:1500]
             
-            # 构建单一提示
-            prompt = f"""
-作为学术论文分析专家，请对以下论文进行全面分析和总结。回答必须使用{self.language}，并按以下格式组织：
+            # 三轮逐步摘要：借鉴 chat_arxiv.py 的流程，提高分段结构和可解释性
+            # 1) 第一轮：基于标题、摘要与引言，给出核心思想（背景/问题/方法/贡献）
+            prompt1 = f"""
+作为学术论文分析专家，请提供一份简洁的第一轮总结（使用{self.language}）：
+将结果按四个部分组织：Background, Problem, Method (high-level), Contribution。
 
-1. 论文背景与问题:
-   - 研究背景和动机是什么？
-   - 论文要解决什么具体问题？
-
-2. 方法与创新:
-   - 提出了什么核心方法或技术方案？
-   - 相比现有方法有什么创新？
-
-3. 实验与结果:
-   - 采用了什么实验验证方法？
-   - 取得了哪些关键结果？
-
-4. 总体评价:
-   - 论文的主要贡献是什么？
-   - 潜在的应用价值？
-   - 存在什么局限性？
-
-论文信息：
 标题: {paper.title}
 摘要: {paper.abs}
-引言: {paper.section_text_dict.get('Introduction', '')[:2500]}
-方法: {method_content}
-结论: {conclusion_content}
+引言: {paper.section_text_dict.get('Introduction', '')[:3500]}
 """
-            # 只调用一次API获取完整总结
-            summary = self._call_gemini_api(prompt)
+            summary1 = self._call_gemini_api(prompt1)
 
-            # 整合总结
+            # 2) 第二轮：基于第一轮总结和方法章节，展开方法细节和关键创新
+            method_content = method_content[:5000]
+            prompt2 = f"""
+基于以下初步总结和论文的方法章节，请详细说明该论文的方法细节：
+重点描述关键创新、算法/架构细节、关键步骤与整体流程。请使用{self.language}。
+
+初步总结:
+{summary1}
+
+方法节内容:
+{method_content}
+"""
+            summary2 = self._call_gemini_api(prompt2)
+
+            # 3) 第三轮：结合前两轮与结论，给出最终评估（总体总结/优点/缺点/应用）
+            conclusion_content = conclusion_content[:2500]
+            prompt3 = f"""
+结合前两轮返回的信息与论文结论部分，请给出最终的综合评估（使用{self.language}），包含：
+1) Overall Summary
+2) Strengths
+3) Weaknesses / Limitations
+4) Potential Applications / Implications
+
+初步总结:
+{summary1}
+
+方法详述:
+{summary2}
+
+结论节:
+{conclusion_content}
+"""
+            summary3 = self._call_gemini_api(prompt3)
+
+            # 整合三轮总结
             full_summary = f"# {paper.title}\n\n"
             full_summary += f"URL: {paper.url}\n\n"
             full_summary += f"作者: {', '.join(paper.authers)}\n\n"
-            
-            # 添加模型信息
-            # 优先从 LLM 客户端获取当前模型名
+            # 添加模型信息（从 LLM 客户端）
             if hasattr(self, 'llm') and self.llm:
                 current_model = getattr(self.llm, 'model_name', 'Unknown')
             else:
                 current_model = 'Unknown'
             full_summary += f"使用模型: {current_model}\n\n"
-            
-            # 添加论文分析
-            full_summary += f"{summary}\n\n"
+
+            full_summary += f"## 1. 核心思想总结\n{summary1}\n\n"
+            full_summary += f"## 2. 方法详解\n{summary2}\n\n"
+            full_summary += f"## 3. 最终评述与分析\n{summary3}\n\n"
             
             # 图片部分（将在最后作为附录添加）
             images_section = ""
@@ -726,7 +648,7 @@ class Reader:
                 if not os.path.exists(image_dir):
                     os.makedirs(image_dir)
                 
-                print(f"\n正在提取论文图片...")
+                logging.info("正在提取论文图片...")
                 saved_images = paper.get_image_path(image_path=image_dir, max_images=10)  # 提取更多图片
                 
                 if saved_images:  # 如果获取到了图片
@@ -740,7 +662,7 @@ class Reader:
                             if img_path and isinstance(img_path, str):  # 确保是有效的字符串路径
                                 rel_path = os.path.relpath(img_path, os.path.dirname(output_file))
                                 images_section += f"## 图 {i}\n![Figure {i}]({rel_path})\n\n"
-                                print(f"成功添加图片 {i}：{img_path}")
+                                logging.info("成功添加图片 %s：%s", i, img_path)
                         except Exception as e:
                             print(f"警告：处理图片 {i} 时出错：{e}")
                             continue
@@ -760,10 +682,11 @@ class Reader:
             if images_section:
                 full_summary += images_section
             
-            # 导出到文件（强制模式时会删除旧文件）
+            # 导出到文件：根据 --force 决定写入模式（强制模式覆盖，否则追加）
             output_file = self.get_output_filename(paper.title)
-            self.export_to_markdown(full_summary, output_file, mode='a')
-            print(f"论文《{paper.title}》的分析已保存到 {output_file}")
+            write_mode = 'w' if getattr(self.args, 'force', False) else 'a'
+            self.export_to_markdown(full_summary, output_file, mode=write_mode)
+            logging.info("论文《%s》的分析已保存到 %s", paper.title, output_file)
             # 标记为已处理并保存缓存
             try:
                 processed[abs_path] = {
@@ -774,7 +697,7 @@ class Reader:
                 with open(processed_file, 'w', encoding='utf-8') as pf:
                     json.dump(processed, pf, ensure_ascii=False, indent=2)
             except Exception as e:
-                print(f"警告：保存已处理缓存时出错：{e}")
+                logging.warning("保存已处理缓存时出错：%s", e)
             # 批次计数与等待
             if batch_size and batch_size > 0:
                 processed_in_batch += 1
@@ -788,7 +711,7 @@ class Reader:
                         if os.path.abspath(p.path) not in processed:
                             remaining += 1
                     if remaining > 0:
-                        print(f"\n已处理 {batch_size} 篇，剩余 {remaining} 篇，等待 {batch_delay} 秒后继续处理...")
+                        logging.info("已处理 %s 篇，剩余 %s 篇，等待 %s 秒后继续处理...", batch_size, remaining, batch_delay)
                         time.sleep(batch_delay)
 
     def get_output_filename(self, paper_title=None):
@@ -829,9 +752,9 @@ class Reader:
         if getattr(self.args, 'force', False) and os.path.exists(file_name):
             try:
                 os.remove(file_name)
-                print(f"已删除旧文件：{file_name}")
+                logging.info("已删除旧文件：%s", file_name)
             except Exception as e:
-                print(f"警告：删除旧文件时出错：{e}")
+                logging.warning("删除旧文件时出错：%s", e)
         
         # 打开文件写入内容
         with open(file_name, mode, encoding="utf-8") as f:
@@ -839,21 +762,21 @@ class Reader:
 
     # 定义一个方法，打印出读者信息
     def show_info(self):
-        print("\n=== 运行配置 ===")
+        logging.info("=== 运行配置 ===")
         if self.args.use_arxiv:
-            print("处理模式: arxiv在线搜索")
-            print(f"关键词: {self.key_word}")
-            print(f"查询: {self.query}")
-            print(f"排序: {self.sort}")
-            print(f"最近天数: {self.args.days}")
+            logging.info("处理模式: arxiv在线搜索")
+            logging.info("关键词: %s", self.key_word)
+            logging.info("查询: %s", self.query)
+            logging.info("排序: %s", self.sort)
+            logging.info("最近天数: %s", self.args.days)
         else:
-            print("处理模式: 本地PDF文件")
-            print(f"PDF目录: {self.args.pdf_path}")
-        print(f"最大处理数量: {self.args.max_results}")
-        print(f"保存图片: {'是' if self.args.save_image else '否'}")
-        print(f"输出语言: {'中文' if self.args.language == 'zh' else '英文'}")
-        print(f"强制重新处理: {'是' if getattr(self.args, 'force', False) else '否'}")
-        print("="*20)
+            logging.info("处理模式: 本地PDF文件")
+            logging.info("PDF目录: %s", self.args.pdf_path)
+        logging.info("最大处理数量: %s", self.args.max_results)
+        logging.info("保存图片: %s", '是' if self.args.save_image else '否')
+        logging.info("输出语言: %s", '中文' if self.args.language == 'zh' else '英文')
+        logging.info("强制重新处理: %s", '是' if getattr(self.args, 'force', False) else '否')
+        logging.info("%s", "="*20)
 
 
 def chat_arxiv_main(args):
@@ -865,35 +788,40 @@ def chat_arxiv_main(args):
     if not os.path.exists(args.pdf_path):
         try:
             os.makedirs(args.pdf_path)
-            print(f"已创建目录：{args.pdf_path}")
+            logging.info("已创建目录：%s", args.pdf_path)
         except Exception as e:
-            print(f"创建目录失败：{e}")
+            logging.error("创建目录失败：%s", e)
             return
 
     reader1.show_info()
 
     # 根据参数选择处理模式
     if args.use_arxiv:
-        print("\n使用arxiv搜索模式...")
-        paper_list = reader1.get_arxiv_web(args=args, page_num=args.page_num, days=args.days)
+        logging.info("使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）")
+        try:
+            import chat_arxiv
+            paper_list = chat_arxiv.get_arxiv_papers(args)
+        except Exception as e:
+            logging.error("从 chat_arxiv 获取论文列表失败: %s", e)
+            paper_list = []
     else:
         if not os.listdir(args.pdf_path):
-            print(f"\n提示：{args.pdf_path} 目录为空")
-            print("请将要分析的PDF文件放入该目录，或使用 --use_arxiv 参数切换到arxiv搜索模式")
+            logging.info("提示：%s 目录为空", args.pdf_path)
+            logging.info("请将要分析的PDF文件放入该目录，或使用 --use_arxiv 参数切换到arxiv搜索模式")
             return
             
-        print(f"\n从本地目录读取PDF文件：{args.pdf_path}")
+        logging.info("从本地目录读取PDF文件：%s", args.pdf_path)
         paper_list = reader1.get_local_papers(args.pdf_path)
         if not paper_list:
-            print(f"在 {args.pdf_path} 中未找到有效的PDF文件")
-            print("请确保文件具有.pdf扩展名，或使用 --use_arxiv 参数切换到arxiv搜索模式")
+            logging.info("在 %s 中未找到有效的PDF文件", args.pdf_path)
+            logging.info("请确保文件具有.pdf扩展名，或使用 --use_arxiv 参数切换到arxiv搜索模式")
             return
 
     # 处理论文列表
     if paper_list:
         reader1.summary_with_chat(paper_list=paper_list)
     else:
-        print("没有找到要处理的论文，程序退出")
+        logging.info("没有找到要处理的论文，程序退出")
 
 
 if __name__ == '__main__':
@@ -952,4 +880,4 @@ if __name__ == '__main__':
 
     start_time = time.time()
     chat_arxiv_main(args=arxiv_args)
-    print("summary time:", time.time() - start_time)
+    logging.info("summary time: %.2f seconds", time.time() - start_time)

@@ -2,6 +2,8 @@ import time
 import os
 import json
 import configparser
+import logging
+import logging_config as logging_config
 import google.generativeai as genai
 
 
@@ -42,7 +44,7 @@ class LLMClient:
             api_key = None
 
         if not api_key or api_key == 'your_gemini_api_key_here':
-            print("LLMClient: Gemini API key not provided. LLM disabled.")
+            logging.warning("LLMClient: Gemini API key not provided. LLM disabled.")
             self.enabled = False
             return
 
@@ -61,7 +63,7 @@ class LLMClient:
             # try models with limited retries
             for candidate in model_queue:
                 try:
-                    print(f"LLMClient: trying model {candidate}")
+                    logging.info("LLMClient: trying model %s", candidate)
                     inst = genai.GenerativeModel(candidate)
                     # quick smoke test
                     try:
@@ -71,19 +73,19 @@ class LLMClient:
                             self.model = inst
                             self.model_name = candidate
                             self.enabled = True
-                            print(f"LLMClient: initialized model {candidate}")
+                            logging.info("LLMClient: initialized model %s", candidate)
                             break
                     except Exception:
                         # if smoke test fail, still keep trying
                         pass
                 except Exception as e:
-                    print(f"LLMClient: failed to initialize model {candidate}: {e}")
+                    logging.warning("LLMClient: failed to initialize model %s: %s", candidate, e)
 
             if not self.enabled:
-                print("LLMClient: no usable model found, LLM disabled")
+                logging.warning("LLMClient: no usable model found, LLM disabled")
 
         except Exception as e:
-            print(f"LLMClient: error during initialization: {e}")
+            logging.error("LLMClient: error during initialization: %s", e)
             self.enabled = False
 
     def _wait_for_rate_limit(self):
@@ -92,11 +94,11 @@ class LLMClient:
         if len(self._api_calls) >= self._max_calls_per_window:
             wait_time = self._api_calls[0] + self._call_window - current_time
             if wait_time > 0:
-                print(f"LLMClient: rate limit reached, sleeping {wait_time:.1f}s")
+                logging.info("LLMClient: rate limit reached, sleeping %.1fs", wait_time)
                 time.sleep(wait_time)
-                # recursive check
-                self._wait_for_rate_limit()
-                return
+            # recursive check
+            self._wait_for_rate_limit()
+            return
         self._api_calls.append(time.time())
 
     def current_model_name(self):
@@ -109,7 +111,7 @@ class LLMClient:
         for attempt in range(max_retries):
             try:
                 if attempt > 0:
-                    print(f"LLMClient: retry attempt {attempt + 1} for generation")
+                    logging.info("LLMClient: retry attempt %s for generation", attempt + 1)
                 # rate limit check
                 self._wait_for_rate_limit()
                 resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
@@ -127,9 +129,9 @@ class LLMClient:
                 raise Exception('empty response')
             except Exception as e:
                 err = str(e).lower()
-                print(f"LLMClient: generation error: {e}")
+                logging.exception("LLMClient: generation error: %s", e)
                 if any(k in err for k in ('quota', '429', 'rate', 'limit')) and attempt < max_retries - 1:
-                    print(f"LLMClient: quota/rate detected, sleeping {retry_delay}s then retrying")
+                    logging.warning("LLMClient: quota/rate detected, sleeping %s s then retrying", retry_delay)
                     time.sleep(retry_delay)
                     continue
                 if attempt < max_retries - 1:

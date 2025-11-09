@@ -7,8 +7,4 @@ __pycache__/
 build/
 .idea
 .idea/*
-export
-export/*
 apikey.ini
-pdf_files
-pdf_files/*

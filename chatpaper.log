@@ -1,0 +1,770 @@
+2025-11-09 00:54:09,371 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:54:09,374 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:54:09,376 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:54:09,380 - WARNING - root - 初始化 LLM 客户端失败: unexpected indent (llm_client.py, line 96)
+2025-11-09 00:54:09,382 - INFO - root - === 运行配置 ===
+2025-11-09 00:54:09,382 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 00:54:09,382 - INFO - root - PDF目录: d:\ChatPaper\myPapers
+2025-11-09 00:54:09,383 - INFO - root - 最大处理数量: 2
+2025-11-09 00:54:09,384 - INFO - root - 保存图片: 是
+2025-11-09 00:54:09,384 - INFO - root - 输出语言: 中文
+2025-11-09 00:54:09,385 - INFO - root - 强制重新处理: 否
+2025-11-09 00:54:09,385 - INFO - root - ====================
+2025-11-09 00:54:09,386 - INFO - root - 从本地目录读取PDF文件：d:\ChatPaper\myPapers
+2025-11-09 00:54:10,505 - INFO - root - 成功加载PDF文件：demo.pdf
+2025-11-09 00:54:10,510 - INFO - root - 正在总结论文 1/1: “Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer
+2025-11-09 00:54:10,510 - ERROR - root - LLM 客户端未初始化，将使用备用响应。
+2025-11-09 00:54:10,510 - ERROR - root - LLM 客户端未初始化，将使用备用响应。
+2025-11-09 00:54:10,510 - ERROR - root - LLM 客户端未初始化，将使用备用响应。
+2025-11-09 00:54:10,513 - INFO - root - 正在提取论文图片...
+2025-11-09 00:54:10,726 - INFO - root - 已保存图片 1/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_1_page2.jpeg
+2025-11-09 00:54:10,833 - INFO - root - 已保存图片 2/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_2_page1.jpeg
+2025-11-09 00:54:10,920 - INFO - root - 已保存图片 3/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_3_page7.jpeg
+2025-11-09 00:54:10,982 - INFO - root - 已保存图片 4/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_4_page4.jpeg
+2025-11-09 00:54:11,019 - INFO - root - 已保存图片 5/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_5_page4.png
+2025-11-09 00:54:11,053 - INFO - root - 已保存图片 6/10：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_6_page7.jpeg
+2025-11-09 00:54:11,069 - INFO - root - 成功添加图片 1：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_1_page2.jpeg
+2025-11-09 00:54:11,069 - INFO - root - 成功添加图片 2：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_2_page1.jpeg
+2025-11-09 00:54:11,070 - INFO - root - 成功添加图片 3：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_3_page7.jpeg
+2025-11-09 00:54:11,071 - INFO - root - 成功添加图片 4：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_4_page4.jpeg
+2025-11-09 00:54:11,071 - INFO - root - 成功添加图片 5：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_5_page4.png
+2025-11-09 00:54:11,071 - INFO - root - 成功添加图片 6：./export\images_“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with\figure_6_page7.jpeg
+2025-11-09 00:54:11,076 - INFO - root - 论文《“Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer》的分析已保存到 ./export\“Good Robot!”_ Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with.md
+2025-11-09 00:54:11,080 - INFO - root - summary time: 1.71 seconds
+2025-11-09 00:56:18,518 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:56:18,518 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:56:18,518 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:56:18,518 - WARNING - root - 初始化 LLM 客户端失败: unexpected indent (llm_client.py, line 96)
+2025-11-09 00:56:18,524 - INFO - root - === 运行配置 ===
+2025-11-09 00:56:18,524 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 00:56:18,524 - INFO - root - PDF目录: d:\ChatPaper\myPapers
+2025-11-09 00:56:18,525 - INFO - root - 最大处理数量: 2
+2025-11-09 00:56:18,525 - INFO - root - 保存图片: 是
+2025-11-09 00:56:18,525 - INFO - root - 输出语言: 中文
+2025-11-09 00:56:18,525 - INFO - root - 强制重新处理: 否
+2025-11-09 00:56:18,527 - INFO - root - ====================
+2025-11-09 00:56:18,527 - INFO - root - 从本地目录读取PDF文件：d:\ChatPaper\myPapers
+2025-11-09 00:56:19,108 - INFO - root - 成功加载PDF文件：demo.pdf
+2025-11-09 00:56:19,108 - INFO - root - 跳过已处理论文 “Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer：d:\ChatPaper\myPapers\demo.pdf
+2025-11-09 00:56:19,108 - INFO - root - summary time: 0.59 seconds
+2025-11-09 00:56:38,605 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:56:38,606 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:56:38,607 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:56:38,610 - WARNING - root - 初始化 LLM 客户端失败: unexpected indent (llm_client.py, line 96)
+2025-11-09 00:56:38,610 - INFO - root - === 运行配置 ===
+2025-11-09 00:56:38,611 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 00:56:38,611 - INFO - root - PDF目录: d:\ChatPaper\myPapers
+2025-11-09 00:56:38,611 - INFO - root - 最大处理数量: 2
+2025-11-09 00:56:38,611 - INFO - root - 保存图片: 是
+2025-11-09 00:56:38,611 - INFO - root - 输出语言: 中文
+2025-11-09 00:56:38,611 - INFO - root - 强制重新处理: 否
+2025-11-09 00:56:38,611 - INFO - root - ====================
+2025-11-09 00:56:38,611 - INFO - root - 从本地目录读取PDF文件：d:\ChatPaper\myPapers
+2025-11-09 00:56:39,256 - INFO - root - 成功加载PDF文件：demo.pdf
+2025-11-09 00:56:39,257 - INFO - root - 跳过已处理论文 “Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer：d:\ChatPaper\myPapers\demo.pdf
+2025-11-09 00:56:39,257 - INFO - root - summary time: 0.65 seconds
+2025-11-09 00:57:37,925 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:57:37,926 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:57:37,928 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:57:39,179 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 00:57:44,038 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 00:57:44,039 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 00:57:44,040 - INFO - root - === 运行配置 ===
+2025-11-09 00:57:44,041 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 00:57:44,045 - INFO - root - PDF目录: d:\ChatPaper\myPapers
+2025-11-09 00:57:44,049 - INFO - root - 最大处理数量: 2
+2025-11-09 00:57:44,049 - INFO - root - 保存图片: 是
+2025-11-09 00:57:44,051 - INFO - root - 输出语言: 中文
+2025-11-09 00:57:44,052 - INFO - root - 强制重新处理: 否
+2025-11-09 00:57:44,053 - INFO - root - ====================
+2025-11-09 00:57:44,054 - INFO - root - 从本地目录读取PDF文件：d:\ChatPaper\myPapers
+2025-11-09 00:57:45,100 - INFO - root - 成功加载PDF文件：demo.pdf
+2025-11-09 00:57:45,101 - INFO - root - 跳过已处理论文 “Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer：d:\ChatPaper\myPapers\demo.pdf
+2025-11-09 00:57:45,102 - INFO - root - summary time: 7.18 seconds
+2025-11-09 00:57:54,670 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:57:54,670 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:57:54,670 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:57:55,831 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 00:57:58,715 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 00:57:58,716 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 00:57:58,718 - INFO - root - === 运行配置 ===
+2025-11-09 00:57:58,719 - INFO - root - 处理模式: 本地PDF文件
+2025-11-09 00:57:58,720 - INFO - root - PDF目录: d:\ChatPaper\myPapers
+2025-11-09 00:57:58,721 - INFO - root - 最大处理数量: 2
+2025-11-09 00:57:58,722 - INFO - root - 保存图片: 是
+2025-11-09 00:57:58,723 - INFO - root - 输出语言: 中文
+2025-11-09 00:57:58,724 - INFO - root - 强制重新处理: 否
+2025-11-09 00:57:58,726 - INFO - root - ====================
+2025-11-09 00:57:58,727 - INFO - root - 从本地目录读取PDF文件：d:\ChatPaper\myPapers
+2025-11-09 00:57:59,367 - INFO - root - 成功加载PDF文件：demo.pdf
+2025-11-09 00:57:59,367 - INFO - root - 跳过已处理论文 “Good Robot!”: Efﬁcient Reinforcement Learning for Multi-Step Visual Tasks with Sim to Real Transfer：d:\ChatPaper\myPapers\demo.pdf
+2025-11-09 00:57:59,368 - INFO - root - summary time: 4.70 seconds
+2025-11-09 00:58:27,401 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 00:58:27,401 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 00:58:27,405 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 00:58:28,300 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 00:58:33,329 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 00:58:33,330 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 00:58:33,331 - INFO - root - === 运行配置 ===
+2025-11-09 00:58:33,331 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 00:58:33,332 - INFO - root - 关键词: Quant
+2025-11-09 00:58:33,332 - INFO - root - 查询: block float point
+2025-11-09 00:58:33,332 - INFO - root - 排序: None
+2025-11-09 00:58:33,332 - INFO - root - 最近天数: 180
+2025-11-09 00:58:33,332 - INFO - root - 最大处理数量: 2
+2025-11-09 00:58:33,333 - INFO - root - 保存图片: 是
+2025-11-09 00:58:33,333 - INFO - root - 输出语言: 中文
+2025-11-09 00:58:33,334 - INFO - root - 强制重新处理: 否
+2025-11-09 00:58:33,335 - INFO - root - ====================
+2025-11-09 00:58:33,335 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 00:59:13,415 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 00:59:51,953 - INFO - root - LLMClient: rate limit reached, sleeping 21.5s
+2025-11-09 01:00:34,660 - INFO - root - 正在提取论文图片...
+2025-11-09 01:14:08,444 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:14:08,444 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:14:08,449 - WARNING - root - LLMClient: Gemini API key not provided. LLM disabled.
+2025-11-09 01:14:08,449 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 01:14:08,454 - INFO - root - 已创建目录：D:\ChatPaper\src\myPapers
+2025-11-09 01:14:08,454 - INFO - root - === 运行配置 ===
+2025-11-09 01:14:08,455 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:14:08,455 - INFO - root - 关键词: Quant
+2025-11-09 01:14:08,456 - INFO - root - 查询: block float point
+2025-11-09 01:14:08,456 - INFO - root - 排序: None
+2025-11-09 01:14:08,457 - INFO - root - 最近天数: 180
+2025-11-09 01:14:08,458 - INFO - root - 最大处理数量: 2
+2025-11-09 01:14:08,458 - INFO - root - 保存图片: 是
+2025-11-09 01:14:08,460 - INFO - root - 输出语言: 中文
+2025-11-09 01:14:08,460 - INFO - root - 强制重新处理: 否
+2025-11-09 01:14:08,461 - INFO - root - ====================
+2025-11-09 01:14:08,461 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:14:18,810 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 01:14:18,810 - INFO - root - 正在提取论文图片...
+2025-11-09 01:14:19,325 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:14:19,410 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:14:19,483 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:14:19,540 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:14:19,595 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:14:19,662 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:14:19,707 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:14:19,783 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:14:19,793 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:14:19,810 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:14:19,815 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:14:19,815 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:14:19,816 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:14:19,818 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:14:19,820 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:14:19,820 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:14:19,822 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:14:19,825 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:14:19,826 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:14:19,827 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:14:19,829 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural.md
+2025-11-09 01:14:19,836 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 01:14:19,845 - INFO - root - 正在提取论文图片...
+2025-11-09 01:14:20,289 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:14:20,354 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:14:20,388 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:14:20,450 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:14:20,454 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:14:20,454 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:14:20,455 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:14:20,455 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:14:20,457 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats.md
+2025-11-09 01:14:20,461 - INFO - root - summary time: 12.02 seconds
+2025-11-09 01:17:35,499 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:17:35,499 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:17:35,499 - WARNING - root - LLMClient: Gemini API key not provided. LLM disabled.
+2025-11-09 01:17:35,499 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 01:17:35,499 - INFO - root - === 运行配置 ===
+2025-11-09 01:17:35,499 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:17:35,499 - INFO - root - 关键词: Quant
+2025-11-09 01:17:35,499 - INFO - root - 查询: block float point
+2025-11-09 01:17:35,499 - INFO - root - 排序: None
+2025-11-09 01:17:35,499 - INFO - root - 最近天数: 180
+2025-11-09 01:17:35,499 - INFO - root - 最大处理数量: 2
+2025-11-09 01:17:35,499 - INFO - root - 保存图片: 是
+2025-11-09 01:17:35,499 - INFO - root - 输出语言: 中文
+2025-11-09 01:17:35,499 - INFO - root - 强制重新处理: 否
+2025-11-09 01:17:35,499 - INFO - root - ====================
+2025-11-09 01:17:35,499 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:17:59,345 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 01:17:59,346 - INFO - root - 正在提取论文图片...
+2025-11-09 01:17:59,741 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:17:59,811 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:17:59,872 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:17:59,923 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:18:00,011 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:18:00,104 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:18:00,147 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:18:00,211 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:18:00,221 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:18:00,239 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:18:00,241 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:18:00,246 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:18:00,246 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:18:00,247 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:18:00,247 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:18:00,249 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:18:00,249 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:18:00,249 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:18:00,249 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:18:00,250 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:18:00,253 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-1.md
+2025-11-09 01:18:00,268 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 01:18:00,272 - INFO - root - 正在提取论文图片...
+2025-11-09 01:18:00,811 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:18:00,888 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:18:00,915 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:18:00,974 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:18:00,980 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:18:00,981 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:18:00,982 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:18:00,983 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:18:00,985 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-1.md
+2025-11-09 01:18:00,999 - INFO - root - summary time: 25.50 seconds
+2025-11-09 01:18:24,953 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:18:24,953 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:18:24,953 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 01:18:26,047 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 01:18:30,078 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 01:18:30,079 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 01:18:30,080 - INFO - root - === 运行配置 ===
+2025-11-09 01:18:30,081 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:18:30,081 - INFO - root - 关键词: Quant
+2025-11-09 01:18:30,082 - INFO - root - 查询: block float point
+2025-11-09 01:18:30,082 - INFO - root - 排序: None
+2025-11-09 01:18:30,082 - INFO - root - 最近天数: 180
+2025-11-09 01:18:30,083 - INFO - root - 最大处理数量: 2
+2025-11-09 01:18:30,083 - INFO - root - 保存图片: 是
+2025-11-09 01:18:30,083 - INFO - root - 输出语言: 中文
+2025-11-09 01:18:30,083 - INFO - root - 强制重新处理: 否
+2025-11-09 01:18:30,084 - INFO - root - ====================
+2025-11-09 01:18:30,084 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:18:42,682 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 01:19:21,628 - INFO - root - LLMClient: rate limit reached, sleeping 21.1s
+2025-11-09 01:20:03,870 - INFO - root - 正在提取论文图片...
+2025-11-09 01:20:04,695 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:20:04,870 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:20:05,078 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:20:05,256 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:20:05,391 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:20:05,493 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:20:05,603 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:20:05,681 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:20:05,703 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:20:05,726 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:20:05,732 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:20:05,732 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:20:05,734 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:20:05,734 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:20:05,734 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:20:05,737 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:20:05,737 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:20:05,738 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:20:05,739 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:20:05,741 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:20:05,749 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-2.md
+2025-11-09 01:20:05,752 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 01:20:18,101 - INFO - root - LLMClient: rate limit reached, sleeping 24.6s
+2025-11-09 01:21:36,061 - INFO - root - 正在提取论文图片...
+2025-11-09 01:21:36,446 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:21:36,499 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:21:36,546 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:21:36,592 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:21:36,604 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:21:36,604 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:21:36,604 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:21:36,604 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:21:36,613 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-2.md
+2025-11-09 01:21:36,618 - INFO - root - summary time: 191.66 seconds
+2025-11-09 01:26:11,351 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:26:11,351 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:26:11,351 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 01:26:12,198 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 01:26:14,752 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 01:26:14,752 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 01:26:14,753 - INFO - root - === 运行配置 ===
+2025-11-09 01:26:14,754 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:26:14,755 - INFO - root - 关键词: Quant
+2025-11-09 01:26:14,756 - INFO - root - 查询: block float point
+2025-11-09 01:26:14,757 - INFO - root - 排序: None
+2025-11-09 01:26:14,757 - INFO - root - 最近天数: 180
+2025-11-09 01:26:14,759 - INFO - root - 最大处理数量: 2
+2025-11-09 01:26:14,760 - INFO - root - 保存图片: 是
+2025-11-09 01:26:14,760 - INFO - root - 输出语言: 中文
+2025-11-09 01:26:14,761 - INFO - root - 强制重新处理: 否
+2025-11-09 01:26:14,762 - INFO - root - ====================
+2025-11-09 01:26:14,763 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:26:31,982 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 01:27:10,578 - INFO - root - LLMClient: rate limit reached, sleeping 21.4s
+2025-11-09 01:27:51,208 - INFO - root - 正在提取论文图片...
+2025-11-09 01:27:51,587 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:27:51,674 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:27:51,738 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:27:51,809 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:27:51,866 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:27:51,923 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:27:51,979 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:27:52,046 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:27:52,057 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:27:52,073 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:27:52,081 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:27:52,081 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:27:52,083 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:27:52,083 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:27:52,083 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:27:52,085 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:27:52,086 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:27:52,087 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:27:52,088 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:27:52,089 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:27:52,094 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural.md
+2025-11-09 01:27:52,099 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 01:28:03,710 - INFO - root - LLMClient: rate limit reached, sleeping 28.3s
+2025-11-09 01:29:19,818 - INFO - root - 正在提取论文图片...
+2025-11-09 01:29:20,248 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:29:20,306 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:29:20,332 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:29:20,412 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:29:20,416 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:29:20,417 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:29:20,419 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:29:20,419 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:29:20,424 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats.md
+2025-11-09 01:29:20,428 - INFO - root - summary time: 189.08 seconds
+2025-11-09 01:32:09,191 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:32:09,191 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:32:09,191 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 01:32:10,153 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 01:32:14,357 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 01:32:14,358 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 01:32:14,359 - INFO - root - === 运行配置 ===
+2025-11-09 01:32:14,359 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:32:14,359 - INFO - root - 关键词: Quant
+2025-11-09 01:32:14,360 - INFO - root - 查询: block float point quant
+2025-11-09 01:32:14,361 - INFO - root - 排序: None
+2025-11-09 01:32:14,361 - INFO - root - 最近天数: 180
+2025-11-09 01:32:14,362 - INFO - root - 最大处理数量: 50
+2025-11-09 01:32:14,363 - INFO - root - 保存图片: 是
+2025-11-09 01:32:14,364 - INFO - root - 输出语言: 中文
+2025-11-09 01:32:14,364 - INFO - root - 强制重新处理: 否
+2025-11-09 01:32:14,365 - INFO - root - ====================
+2025-11-09 01:32:14,366 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:32:15,526 - INFO - root - 没有找到要处理的论文，程序退出
+2025-11-09 01:32:15,526 - INFO - root - summary time: 6.34 seconds
+2025-11-09 01:33:18,608 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 01:33:18,608 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 01:33:18,608 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 01:33:19,613 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 01:33:22,894 - INFO - root - LLMClient: initialized model gemini-2.5-flash
+2025-11-09 01:33:22,895 - INFO - root - 使用 LLM 模型: gemini-2.5-flash
+2025-11-09 01:33:22,896 - INFO - root - === 运行配置 ===
+2025-11-09 01:33:22,896 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 01:33:22,897 - INFO - root - 关键词: Quant
+2025-11-09 01:33:22,898 - INFO - root - 查询: block float point
+2025-11-09 01:33:22,899 - INFO - root - 排序: None
+2025-11-09 01:33:22,899 - INFO - root - 最近天数: 180
+2025-11-09 01:33:22,900 - INFO - root - 最大处理数量: 50
+2025-11-09 01:33:22,901 - INFO - root - 保存图片: 是
+2025-11-09 01:33:22,902 - INFO - root - 输出语言: 中文
+2025-11-09 01:33:22,903 - INFO - root - 强制重新处理: 否
+2025-11-09 01:33:22,904 - INFO - root - ====================
+2025-11-09 01:33:22,904 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 01:35:28,889 - INFO - root - 正在总结论文 1/30: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 01:36:07,843 - INFO - root - LLMClient: rate limit reached, sleeping 21.0s
+2025-11-09 01:36:46,512 - INFO - root - 正在提取论文图片...
+2025-11-09 01:36:46,941 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:36:47,012 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:36:47,088 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:36:47,156 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:36:47,208 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:36:47,265 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:36:47,312 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:36:47,369 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:36:47,382 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:36:47,403 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:36:47,408 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 01:36:47,408 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 01:36:47,410 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 01:36:47,410 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 01:36:47,410 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 01:36:47,411 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 01:36:47,411 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 01:36:47,411 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 01:36:47,411 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 01:36:47,412 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 01:36:47,418 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural.md
+2025-11-09 01:36:47,423 - INFO - root - 正在总结论文 2/30: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 01:36:58,155 - INFO - root - LLMClient: rate limit reached, sleeping 30.7s
+2025-11-09 01:38:16,887 - INFO - root - 正在提取论文图片...
+2025-11-09 01:38:17,284 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:38:17,342 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:38:17,375 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:38:17,449 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:38:17,451 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 01:38:17,452 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 01:38:17,452 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 01:38:17,453 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 01:38:17,459 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats.md
+2025-11-09 01:38:17,460 - INFO - root - 正在总结论文 3/30: MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving
+2025-11-09 01:38:17,464 - INFO - root - LLMClient: rate limit reached, sleeping 11.4s
+2025-11-09 01:38:39,386 - INFO - root - LLMClient: rate limit reached, sleeping 17.3s
+2025-11-09 01:39:27,594 - INFO - root - LLMClient: rate limit reached, sleeping 1.3s
+2025-11-09 01:39:49,790 - INFO - root - 正在提取论文图片...
+2025-11-09 01:39:49,913 - INFO - root - 已保存图片 1/10：./export\images_MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod\figure_1_page3.png
+2025-11-09 01:39:49,913 - INFO - root - 成功添加图片 1：./export\images_MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod\figure_1_page3.png
+2025-11-09 01:39:49,919 - INFO - root - 论文《MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving》的分析已保存到 ./export\MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod.md
+2025-11-09 01:39:49,920 - INFO - root - 正在总结论文 4/30: F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs
+2025-11-09 01:39:49,924 - INFO - root - LLMClient: rate limit reached, sleeping 6.8s
+2025-11-09 01:40:08,222 - INFO - root - LLMClient: rate limit reached, sleeping 20.7s
+2025-11-09 01:41:47,120 - INFO - root - 正在提取论文图片...
+2025-11-09 01:41:47,964 - INFO - root - 已保存图片 1/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_1_page4.png
+2025-11-09 01:41:48,120 - INFO - root - 已保存图片 2/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_2_page3.png
+2025-11-09 01:41:48,183 - INFO - root - 已保存图片 3/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_3_page2.png
+2025-11-09 01:41:48,190 - INFO - root - 成功添加图片 1：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_1_page4.png
+2025-11-09 01:41:48,190 - INFO - root - 成功添加图片 2：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_2_page3.png
+2025-11-09 01:41:48,191 - INFO - root - 成功添加图片 3：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_3_page2.png
+2025-11-09 01:41:48,197 - INFO - root - 论文《F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs》的分析已保存到 ./export\F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs.md
+2025-11-09 01:41:48,204 - INFO - root - 正在总结论文 5/30: Computationally Efficient Neural Receivers via Axial Self-Attention
+2025-11-09 01:41:56,029 - INFO - root - LLMClient: rate limit reached, sleeping 30.6s
+2025-11-09 01:43:18,247 - INFO - root - 正在提取论文图片...
+2025-11-09 01:43:19,213 - INFO - root - 已保存图片 1/10：./export\images_Computationally Efficient Neural Receivers via Axial Self-Attention\figure_1_page5.png
+2025-11-09 01:43:19,215 - INFO - root - 成功添加图片 1：./export\images_Computationally Efficient Neural Receivers via Axial Self-Attention\figure_1_page5.png
+2025-11-09 01:43:19,222 - INFO - root - 论文《Computationally Efficient Neural Receivers via Axial Self-Attention》的分析已保存到 ./export\Computationally Efficient Neural Receivers via Axial Self-Attention.md
+2025-11-09 01:43:19,222 - INFO - root - 正在总结论文 6/30: Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs
+2025-11-09 01:43:19,229 - INFO - root - LLMClient: rate limit reached, sleeping 7.4s
+2025-11-09 01:43:37,171 - INFO - root - LLMClient: rate limit reached, sleeping 22.5s
+2025-11-09 01:44:49,455 - INFO - root - 正在提取论文图片...
+2025-11-09 01:44:49,522 - INFO - root - 已保存图片 1/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_1_page3.png
+2025-11-09 01:44:49,560 - INFO - root - 已保存图片 2/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_2_page3.png
+2025-11-09 01:44:49,671 - INFO - root - 已保存图片 3/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_3_page3.png
+2025-11-09 01:44:49,671 - INFO - root - 成功添加图片 1：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_1_page3.png
+2025-11-09 01:44:49,671 - INFO - root - 成功添加图片 2：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_2_page3.png
+2025-11-09 01:44:49,671 - INFO - root - 成功添加图片 3：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_3_page3.png
+2025-11-09 01:44:49,671 - INFO - root - 论文《Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs》的分析已保存到 ./export\Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs.md
+2025-11-09 01:44:49,684 - INFO - root - 正在总结论文 7/30: Dissecting Transformers: A CLEAR Perspective towards Green AI
+2025-11-09 01:44:49,685 - INFO - root - LLMClient: rate limit reached, sleeping 10.0s
+2025-11-09 01:45:09,772 - INFO - root - LLMClient: rate limit reached, sleeping 19.1s
+2025-11-09 09:31:54,038 - ERROR - root - LLMClient: generation error: 504 Deadline Exceeded
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.DeadlineExceeded: 504 Deadline Exceeded
+2025-11-09 09:32:55,151 - INFO - root - LLMClient: retry attempt 2 for generation
+2025-11-09 09:33:40,009 - INFO - root - 正在提取论文图片...
+2025-11-09 09:33:40,070 - WARNING - root - 处理页面 19 的图片 1 时出错：Image size (360000000 pixels) exceeds limit of 178956970 pixels, could be decompression bomb DOS attack.
+2025-11-09 09:33:40,180 - INFO - root - 已保存图片 1/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_1_page3.png
+2025-11-09 09:33:40,254 - INFO - root - 已保存图片 2/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_2_page3.png
+2025-11-09 09:33:40,317 - INFO - root - 已保存图片 3/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_3_page3.png
+2025-11-09 09:33:40,398 - INFO - root - 已保存图片 4/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_4_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 已保存图片 5/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_5_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 成功添加图片 1：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_1_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 成功添加图片 2：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_2_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 成功添加图片 3：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_3_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 成功添加图片 4：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_4_page3.png
+2025-11-09 09:33:40,475 - INFO - root - 成功添加图片 5：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_5_page3.png
+2025-11-09 09:33:40,482 - INFO - root - 论文《Dissecting Transformers: A CLEAR Perspective towards Green AI》的分析已保存到 ./export\Dissecting Transformers_ A CLEAR Perspective towards Green AI.md
+2025-11-09 09:33:40,490 - INFO - root - 正在总结论文 8/30: Microscaling Floating Point Formats for Large Language Models
+2025-11-09 09:33:40,490 - INFO - root - LLMClient: rate limit reached, sleeping 14.7s
+2025-11-09 09:34:05,948 - INFO - root - LLMClient: rate limit reached, sleeping 16.8s
+2025-11-09 09:34:49,182 - INFO - root - LLMClient: rate limit reached, sleeping 6.0s
+2025-11-09 09:35:12,373 - INFO - root - 正在提取论文图片...
+2025-11-09 09:35:12,402 - INFO - root - 论文《Microscaling Floating Point Formats for Large Language Models》的分析已保存到 ./export\Microscaling Floating Point Formats for Large Language Models.md
+2025-11-09 09:35:12,406 - INFO - root - 正在总结论文 9/30: Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework
+2025-11-09 09:35:12,414 - INFO - root - LLMClient: rate limit reached, sleeping 10.4s
+2025-11-09 09:35:31,867 - INFO - root - LLMClient: rate limit reached, sleeping 23.3s
+2025-11-09 09:36:20,645 - INFO - root - LLMClient: rate limit reached, sleeping 2.1s
+2025-11-09 09:36:42,880 - INFO - root - 正在提取论文图片...
+2025-11-09 09:37:17,872 - INFO - root - 已保存图片 1/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_1_page8.jpeg
+2025-11-09 09:37:18,126 - INFO - root - 已保存图片 2/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_2_page5.jpeg
+2025-11-09 09:37:18,414 - INFO - root - 已保存图片 3/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_3_page9.jpeg
+2025-11-09 09:37:18,633 - INFO - root - 已保存图片 4/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_4_page9.jpeg
+2025-11-09 09:37:18,850 - INFO - root - 已保存图片 5/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_5_page9.jpeg
+2025-11-09 09:37:19,059 - INFO - root - 已保存图片 6/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_6_page9.jpeg
+2025-11-09 09:37:19,336 - INFO - root - 已保存图片 7/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_7_page9.jpeg
+2025-11-09 09:37:19,590 - INFO - root - 已保存图片 8/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_8_page9.jpeg
+2025-11-09 09:37:19,794 - INFO - root - 已保存图片 9/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_9_page9.jpeg
+2025-11-09 09:37:20,022 - INFO - root - 已保存图片 10/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_10_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 1：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_1_page8.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 2：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_2_page5.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 3：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_3_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 4：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_4_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 5：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_5_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 6：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_6_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 7：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_7_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 8：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_8_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 9：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_9_page9.jpeg
+2025-11-09 09:37:20,055 - INFO - root - 成功添加图片 10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_10_page9.jpeg
+2025-11-09 09:37:20,063 - INFO - root - 论文《Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework》的分析已保存到 ./export\Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via.md
+2025-11-09 09:37:20,067 - INFO - root - 正在总结论文 10/30: AMLA: MUL by ADD in FlashAttention Rescaling
+2025-11-09 09:38:03,534 - INFO - root - LLMClient: rate limit reached, sleeping 16.5s
+2025-11-09 09:38:39,999 - INFO - root - 正在提取论文图片...
+2025-11-09 09:38:40,977 - INFO - root - 已保存图片 1/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_1_page15.png
+2025-11-09 09:38:41,030 - INFO - root - 已保存图片 2/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_2_page4.jpeg
+2025-11-09 09:38:41,059 - INFO - root - 已保存图片 3/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_3_page8.jpeg
+2025-11-09 09:38:41,077 - INFO - root - 成功添加图片 1：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_1_page15.png
+2025-11-09 09:38:41,077 - INFO - root - 成功添加图片 2：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_2_page4.jpeg
+2025-11-09 09:38:41,078 - INFO - root - 成功添加图片 3：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_3_page8.jpeg
+2025-11-09 09:38:41,082 - INFO - root - 论文《AMLA: MUL by ADD in FlashAttention Rescaling》的分析已保存到 ./export\AMLA_ MUL by ADD in FlashAttention Rescaling.md
+2025-11-09 09:38:41,086 - INFO - root - 正在总结论文 11/30: Pretraining Large Language Models with NVFP4
+2025-11-09 09:38:51,473 - INFO - root - LLMClient: rate limit reached, sleeping 28.6s
+2025-11-09 09:40:00,161 - INFO - root - 正在提取论文图片...
+2025-11-09 09:40:00,308 - INFO - root - 已保存图片 1/10：./export\images_Pretraining Large Language Models with NVFP4\figure_1_page7.png
+2025-11-09 09:40:00,337 - INFO - root - 已保存图片 2/10：./export\images_Pretraining Large Language Models with NVFP4\figure_2_page7.jpeg
+2025-11-09 09:40:00,356 - INFO - root - 已保存图片 3/10：./export\images_Pretraining Large Language Models with NVFP4\figure_3_page1.png
+2025-11-09 09:40:00,378 - INFO - root - 已保存图片 4/10：./export\images_Pretraining Large Language Models with NVFP4\figure_4_page7.jpeg
+2025-11-09 09:40:00,398 - INFO - root - 已保存图片 5/10：./export\images_Pretraining Large Language Models with NVFP4\figure_5_page7.jpeg
+2025-11-09 09:40:00,422 - INFO - root - 已保存图片 6/10：./export\images_Pretraining Large Language Models with NVFP4\figure_6_page7.jpeg
+2025-11-09 09:40:00,440 - INFO - root - 已保存图片 7/10：./export\images_Pretraining Large Language Models with NVFP4\figure_7_page7.png
+2025-11-09 09:40:00,472 - INFO - root - 已保存图片 8/10：./export\images_Pretraining Large Language Models with NVFP4\figure_8_page7.jpeg
+2025-11-09 09:40:00,487 - INFO - root - 已保存图片 9/10：./export\images_Pretraining Large Language Models with NVFP4\figure_9_page7.jpeg
+2025-11-09 09:40:00,532 - INFO - root - 已保存图片 10/10：./export\images_Pretraining Large Language Models with NVFP4\figure_10_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 1：./export\images_Pretraining Large Language Models with NVFP4\figure_1_page7.png
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 2：./export\images_Pretraining Large Language Models with NVFP4\figure_2_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 3：./export\images_Pretraining Large Language Models with NVFP4\figure_3_page1.png
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 4：./export\images_Pretraining Large Language Models with NVFP4\figure_4_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 5：./export\images_Pretraining Large Language Models with NVFP4\figure_5_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 6：./export\images_Pretraining Large Language Models with NVFP4\figure_6_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 7：./export\images_Pretraining Large Language Models with NVFP4\figure_7_page7.png
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 8：./export\images_Pretraining Large Language Models with NVFP4\figure_8_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 9：./export\images_Pretraining Large Language Models with NVFP4\figure_9_page7.jpeg
+2025-11-09 09:40:00,535 - INFO - root - 成功添加图片 10：./export\images_Pretraining Large Language Models with NVFP4\figure_10_page7.jpeg
+2025-11-09 09:40:00,543 - INFO - root - 论文《Pretraining Large Language Models with NVFP4》的分析已保存到 ./export\Pretraining Large Language Models with NVFP4.md
+2025-11-09 09:40:00,543 - INFO - root - 正在总结论文 12/30: Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization
+2025-11-09 09:40:00,543 - INFO - root - LLMClient: rate limit reached, sleeping 19.5s
+2025-11-09 09:40:28,694 - INFO - root - LLMClient: rate limit reached, sleeping 13.9s
+2025-11-09 09:41:10,576 - INFO - root - LLMClient: rate limit reached, sleeping 9.5s
+2025-11-09 09:41:40,505 - INFO - root - 正在提取论文图片...
+2025-11-09 09:41:40,613 - INFO - root - 已保存图片 1/10：./export\images_Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati\figure_1_page25.png
+2025-11-09 09:41:40,615 - INFO - root - 成功添加图片 1：./export\images_Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati\figure_1_page25.png
+2025-11-09 09:41:40,619 - INFO - root - 论文《Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization》的分析已保存到 ./export\Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati.md
+2025-11-09 09:41:40,631 - INFO - root - 正在总结论文 13/30: Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs
+2025-11-09 09:41:40,635 - INFO - root - LLMClient: rate limit reached, sleeping 1.9s
+2025-11-09 09:41:51,136 - INFO - root - LLMClient: rate limit reached, sleeping 28.9s
+2025-11-09 09:43:15,225 - INFO - root - 正在提取论文图片...
+2025-11-09 09:43:15,235 - INFO - root - 论文《Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs》的分析已保存到 ./export\Towards Verified Compilation of Floating-point Optimization in Scientific Comput.md
+2025-11-09 09:43:15,242 - INFO - root - 正在总结论文 14/30: Green Learning for STAR-RIS mmWave Systems with Implicit CSI
+2025-11-09 09:43:15,246 - INFO - root - LLMClient: rate limit reached, sleeping 4.8s
+2025-11-09 09:43:29,726 - INFO - root - LLMClient: rate limit reached, sleeping 25.1s
+2025-11-09 09:44:20,033 - INFO - root - LLMClient: rate limit reached, sleeping 0.0s
+2025-11-09 09:44:39,745 - INFO - root - 正在提取论文图片...
+2025-11-09 09:44:39,853 - INFO - root - 已保存图片 1/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_1_page2.jpeg
+2025-11-09 09:44:39,931 - INFO - root - 已保存图片 2/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_2_page2.png
+2025-11-09 09:44:39,987 - INFO - root - 已保存图片 3/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_3_page2.png
+2025-11-09 09:44:40,042 - INFO - root - 已保存图片 4/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_4_page2.png
+2025-11-09 09:44:40,044 - INFO - root - 成功添加图片 1：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_1_page2.jpeg
+2025-11-09 09:44:40,044 - INFO - root - 成功添加图片 2：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_2_page2.png
+2025-11-09 09:44:40,045 - INFO - root - 成功添加图片 3：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_3_page2.png
+2025-11-09 09:44:40,045 - INFO - root - 成功添加图片 4：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_4_page2.png
+2025-11-09 09:44:40,048 - INFO - root - 论文《Green Learning for STAR-RIS mmWave Systems with Implicit CSI》的分析已保存到 ./export\Green Learning for STAR-RIS mmWave Systems with Implicit CSI.md
+2025-11-09 09:44:40,055 - INFO - root - 正在总结论文 15/30: A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN
+2025-11-09 09:44:40,055 - INFO - root - LLMClient: rate limit reached, sleeping 14.7s
+2025-11-09 09:45:05,784 - INFO - root - LLMClient: rate limit reached, sleeping 14.3s
+2025-11-09 09:45:47,148 - INFO - root - LLMClient: rate limit reached, sleeping 7.6s
+2025-11-09 09:46:13,321 - INFO - root - 正在提取论文图片...
+2025-11-09 09:46:14,102 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_1_page6.png
+2025-11-09 09:46:14,216 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_2_page6.png
+2025-11-09 09:46:14,299 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_3_page2.png
+2025-11-09 09:46:14,351 - INFO - root - 已保存图片 4/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_4_page2.png
+2025-11-09 09:46:14,398 - INFO - root - 已保存图片 5/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_5_page3.png
+2025-11-09 09:46:14,401 - INFO - root - 成功添加图片 1：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_1_page6.png
+2025-11-09 09:46:14,401 - INFO - root - 成功添加图片 2：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_2_page6.png
+2025-11-09 09:46:14,401 - INFO - root - 成功添加图片 3：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_3_page2.png
+2025-11-09 09:46:14,401 - INFO - root - 成功添加图片 4：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_4_page2.png
+2025-11-09 09:46:14,401 - INFO - root - 成功添加图片 5：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_5_page3.png
+2025-11-09 09:46:14,401 - INFO - root - 论文《A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN》的分析已保存到 ./export\A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted.md
+2025-11-09 09:46:14,413 - INFO - root - 正在总结论文 16/30: SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration
+2025-11-09 09:46:14,414 - INFO - root - LLMClient: rate limit reached, sleeping 5.7s
+2025-11-09 09:46:28,571 - INFO - root - LLMClient: rate limit reached, sleeping 26.2s
+2025-11-09 09:47:42,531 - INFO - root - 正在提取论文图片...
+2025-11-09 09:47:47,298 - INFO - root - 已保存图片 1/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_1_page8.jpeg
+2025-11-09 09:47:47,342 - INFO - root - 已保存图片 2/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_2_page7.jpeg
+2025-11-09 09:47:47,388 - INFO - root - 已保存图片 3/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_3_page7.jpeg
+2025-11-09 09:47:47,418 - INFO - root - 已保存图片 4/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_4_page7.jpeg
+2025-11-09 09:47:47,447 - INFO - root - 已保存图片 5/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_5_page7.jpeg
+2025-11-09 09:47:47,576 - INFO - root - 已保存图片 6/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_6_page8.png
+2025-11-09 09:47:47,711 - INFO - root - 已保存图片 7/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_7_page8.png
+2025-11-09 09:47:47,837 - INFO - root - 已保存图片 8/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_8_page8.png
+2025-11-09 09:47:47,970 - INFO - root - 已保存图片 9/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_9_page8.png
+2025-11-09 09:47:48,087 - INFO - root - 已保存图片 10/10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_10_page8.png
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 1：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_1_page8.jpeg
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 2：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_2_page7.jpeg
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 3：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_3_page7.jpeg
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 4：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_4_page7.jpeg
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 5：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_5_page7.jpeg
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 6：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_6_page8.png
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 7：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_7_page8.png
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 8：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_8_page8.png
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 9：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_9_page8.png
+2025-11-09 09:47:48,104 - INFO - root - 成功添加图片 10：./export\images_SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration\figure_10_page8.png
+2025-11-09 09:47:48,112 - INFO - root - 论文《SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration》的分析已保存到 ./export\SNNSIR_ A Simple Spiking Neural Network for Stereo Image Restoration.md
+2025-11-09 09:47:48,121 - INFO - root - 正在总结论文 17/30: SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration
+2025-11-09 09:47:48,121 - INFO - root - LLMClient: rate limit reached, sleeping 6.7s
+2025-11-09 09:48:05,407 - INFO - root - LLMClient: rate limit reached, sleeping 17.7s
+2025-11-09 09:48:48,016 - INFO - root - LLMClient: rate limit reached, sleeping 6.8s
+2025-11-09 09:49:14,621 - INFO - root - 正在提取论文图片...
+2025-11-09 09:49:15,026 - INFO - root - 已保存图片 1/10：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_1_page4.png
+2025-11-09 09:49:15,087 - INFO - root - 已保存图片 2/10：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_2_page2.png
+2025-11-09 09:49:15,163 - INFO - root - 已保存图片 3/10：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_3_page7.png
+2025-11-09 09:49:15,233 - INFO - root - 已保存图片 4/10：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_4_page4.png
+2025-11-09 09:49:15,237 - INFO - root - 成功添加图片 1：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_1_page4.png
+2025-11-09 09:49:15,237 - INFO - root - 成功添加图片 2：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_2_page2.png
+2025-11-09 09:49:15,237 - INFO - root - 成功添加图片 3：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_3_page7.png
+2025-11-09 09:49:15,237 - INFO - root - 成功添加图片 4：./export\images_SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration\figure_4_page4.png
+2025-11-09 09:49:15,243 - INFO - root - 论文《SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration》的分析已保存到 ./export\SpikeSTAG_ Spatial-Temporal Forecasting via GNN-SNN Collaboration.md
+2025-11-09 09:49:15,254 - INFO - root - 正在总结论文 18/30: DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme
+2025-11-09 09:49:15,257 - INFO - root - LLMClient: rate limit reached, sleeping 7.8s
+2025-11-09 09:49:32,140 - INFO - root - LLMClient: rate limit reached, sleeping 22.6s
+2025-11-09 09:50:22,400 - INFO - root - LLMClient: rate limit reached, sleeping 0.7s
+2025-11-09 09:50:42,963 - INFO - root - 正在提取论文图片...
+2025-11-09 09:50:42,976 - INFO - root - 论文《DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme》的分析已保存到 ./export\DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with O.md
+2025-11-09 09:50:42,979 - INFO - root - 正在总结论文 19/30: Scaling Probabilistic Circuits via Monarch Matrices
+2025-11-09 09:50:42,985 - INFO - root - LLMClient: rate limit reached, sleeping 11.8s
+2025-11-09 09:51:03,291 - INFO - root - LLMClient: rate limit reached, sleeping 19.8s
+2025-11-09 09:51:48,985 - INFO - root - LLMClient: rate limit reached, sleeping 5.8s
+2025-11-09 09:52:13,915 - INFO - root - 正在提取论文图片...
+2025-11-09 09:52:14,011 - INFO - root - 已保存图片 1/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_1_page5.png
+2025-11-09 09:52:14,075 - INFO - root - 已保存图片 2/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_2_page5.png
+2025-11-09 09:52:14,132 - INFO - root - 已保存图片 3/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_3_page5.png
+2025-11-09 09:52:14,193 - INFO - root - 已保存图片 4/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_4_page5.png
+2025-11-09 09:52:14,253 - INFO - root - 已保存图片 5/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_5_page13.png
+2025-11-09 09:52:14,319 - INFO - root - 已保存图片 6/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_6_page13.png
+2025-11-09 09:52:14,379 - INFO - root - 已保存图片 7/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_7_page13.png
+2025-11-09 09:52:14,429 - INFO - root - 已保存图片 8/10：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_8_page13.png
+2025-11-09 09:52:14,429 - INFO - root - 成功添加图片 1：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_1_page5.png
+2025-11-09 09:52:14,429 - INFO - root - 成功添加图片 2：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_2_page5.png
+2025-11-09 09:52:14,429 - INFO - root - 成功添加图片 3：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_3_page5.png
+2025-11-09 09:52:14,429 - INFO - root - 成功添加图片 4：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_4_page5.png
+2025-11-09 09:52:14,442 - INFO - root - 成功添加图片 5：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_5_page13.png
+2025-11-09 09:52:14,442 - INFO - root - 成功添加图片 6：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_6_page13.png
+2025-11-09 09:52:14,442 - INFO - root - 成功添加图片 7：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_7_page13.png
+2025-11-09 09:52:14,442 - INFO - root - 成功添加图片 8：./export\images_Scaling Probabilistic Circuits via Monarch Matrices\figure_8_page13.png
+2025-11-09 09:52:14,447 - INFO - root - 论文《Scaling Probabilistic Circuits via Monarch Matrices》的分析已保存到 ./export\Scaling Probabilistic Circuits via Monarch Matrices.md
+2025-11-09 09:52:14,458 - INFO - root - 正在总结论文 20/30: Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization
+2025-11-09 09:52:14,461 - INFO - root - LLMClient: rate limit reached, sleeping 8.6s
+2025-11-09 09:52:32,733 - INFO - root - LLMClient: rate limit reached, sleeping 22.1s
+2025-11-09 09:53:43,563 - INFO - root - 正在提取论文图片...
+2025-11-09 09:53:44,074 - INFO - root - 已保存图片 1/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_1_page10.png
+2025-11-09 09:53:44,111 - INFO - root - 已保存图片 2/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_2_page5.png
+2025-11-09 09:53:44,215 - INFO - root - 已保存图片 3/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_3_page7.png
+2025-11-09 09:53:44,295 - INFO - root - 已保存图片 4/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_4_page7.png
+2025-11-09 09:53:44,362 - INFO - root - 已保存图片 5/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_5_page7.png
+2025-11-09 09:53:44,433 - INFO - root - 已保存图片 6/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_6_page7.png
+2025-11-09 09:53:44,500 - INFO - root - 已保存图片 7/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_7_page9.png
+2025-11-09 09:53:44,567 - INFO - root - 已保存图片 8/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_8_page9.png
+2025-11-09 09:53:44,634 - INFO - root - 已保存图片 9/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_9_page8.png
+2025-11-09 09:53:44,701 - INFO - root - 已保存图片 10/10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_10_page8.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 1：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_1_page10.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 2：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_2_page5.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 3：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_3_page7.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 4：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_4_page7.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 5：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_5_page7.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 6：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_6_page7.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 7：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_7_page9.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 8：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_8_page9.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 9：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_9_page8.png
+2025-11-09 09:53:44,703 - INFO - root - 成功添加图片 10：./export\images_Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne\figure_10_page8.png
+2025-11-09 09:53:44,710 - INFO - root - 论文《Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization》的分析已保存到 ./export\Starting Positions Matter_ A Study on Better Weight Initialization for Neural Ne.md
+2025-11-09 09:53:44,717 - INFO - root - 正在总结论文 21/30: Recipes for Pre-training LLMs with MXFP8
+2025-11-09 09:53:44,719 - INFO - root - LLMClient: rate limit reached, sleeping 10.1s
+2025-11-09 09:54:05,661 - INFO - root - LLMClient: rate limit reached, sleeping 18.6s
+2025-11-09 09:54:50,756 - INFO - root - LLMClient: rate limit reached, sleeping 4.0s
+2025-11-09 09:55:13,138 - INFO - root - 正在提取论文图片...
+2025-11-09 09:55:13,159 - INFO - root - 论文《Recipes for Pre-training LLMs with MXFP8》的分析已保存到 ./export\Recipes for Pre-training LLMs with MXFP8.md
+2025-11-09 09:55:13,166 - INFO - root - 正在总结论文 22/30: FP4 All the Way: Fully Quantized Training of LLMs
+2025-11-09 09:55:13,166 - INFO - root - LLMClient: rate limit reached, sleeping 11.1s
+2025-11-09 09:55:32,581 - INFO - root - LLMClient: rate limit reached, sleeping 22.2s
+2025-11-09 09:56:22,886 - INFO - root - LLMClient: rate limit reached, sleeping 1.3s
+2025-11-09 09:56:41,959 - INFO - root - 正在提取论文图片...
+2025-11-09 09:56:41,981 - INFO - root - 论文《FP4 All the Way: Fully Quantized Training of LLMs》的分析已保存到 ./export\FP4 All the Way_ Fully Quantized Training of LLMs.md
+2025-11-09 09:56:41,981 - INFO - root - 正在总结论文 23/30: Automatic Verification of Floating-Point Accumulation Networks
+2025-11-09 09:56:41,981 - INFO - root - LLMClient: rate limit reached, sleeping 12.8s
+2025-11-09 09:57:05,462 - INFO - root - LLMClient: rate limit reached, sleeping 18.8s
+2025-11-09 09:57:52,739 - INFO - root - LLMClient: rate limit reached, sleeping 2.1s
+2025-11-09 09:58:13,141 - INFO - root - 正在提取论文图片...
+2025-11-09 09:58:13,169 - INFO - root - 论文《Automatic Verification of Floating-Point Accumulation Networks》的分析已保存到 ./export\Automatic Verification of Floating-Point Accumulation Networks.md
+2025-11-09 09:58:13,174 - INFO - root - 正在总结论文 24/30: MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products
+2025-11-09 09:58:13,176 - INFO - root - LLMClient: rate limit reached, sleeping 11.0s
+2025-11-09 09:58:33,881 - INFO - root - LLMClient: rate limit reached, sleeping 20.9s
+2025-11-09 09:59:21,837 - INFO - root - LLMClient: rate limit reached, sleeping 2.4s
+2025-11-09 09:59:44,166 - INFO - root - 正在提取论文图片...
+2025-11-09 09:59:44,188 - INFO - root - 论文《MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products》的分析已保存到 ./export\MXDOTP_ A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot.md
+2025-11-09 09:59:44,195 - INFO - root - 正在总结论文 25/30: Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors
+2025-11-09 09:59:44,197 - INFO - root - LLMClient: rate limit reached, sleeping 10.6s
+2025-11-09 10:00:04,187 - INFO - root - LLMClient: rate limit reached, sleeping 20.1s
+2025-11-09 10:01:54,954 - INFO - root - 正在提取论文图片...
+2025-11-09 10:01:54,964 - INFO - root - 论文《Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors》的分析已保存到 ./export\Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors.md
+2025-11-09 10:01:54,969 - INFO - root - 正在总结论文 26/30: Silenzio: Secure Non-Interactive Outsourced MLP Training
+2025-11-09 10:02:07,552 - INFO - root - LLMClient: rate limit reached, sleeping 29.5s
+2025-11-09 10:03:31,905 - INFO - root - 正在提取论文图片...
+2025-11-09 10:03:32,162 - INFO - root - 已保存图片 1/10：./export\images_Silenzio_ Secure Non-Interactive Outsourced MLP Training\figure_1_page11.png
+2025-11-09 10:03:32,162 - INFO - root - 成功添加图片 1：./export\images_Silenzio_ Secure Non-Interactive Outsourced MLP Training\figure_1_page11.png
+2025-11-09 10:03:32,167 - INFO - root - 论文《Silenzio: Secure Non-Interactive Outsourced MLP Training》的分析已保存到 ./export\Silenzio_ Secure Non-Interactive Outsourced MLP Training.md
+2025-11-09 10:03:32,175 - INFO - root - 正在总结论文 27/30: Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution
+2025-11-09 10:03:32,175 - INFO - root - LLMClient: rate limit reached, sleeping 4.8s
+2025-11-09 10:03:48,557 - INFO - root - LLMClient: rate limit reached, sleeping 22.9s
+2025-11-09 10:04:58,538 - INFO - root - 正在提取论文图片...
+2025-11-09 10:04:58,608 - INFO - root - 已保存图片 1/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_1_page4.jpeg
+2025-11-09 10:04:58,624 - INFO - root - 已保存图片 2/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_2_page3.jpeg
+2025-11-09 10:04:58,688 - INFO - root - 已保存图片 3/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_3_page1.png
+2025-11-09 10:04:58,764 - INFO - root - 已保存图片 4/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_4_page5.png
+2025-11-09 10:04:58,797 - INFO - root - 已保存图片 5/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_5_page7.jpeg
+2025-11-09 10:04:58,842 - INFO - root - 已保存图片 6/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_6_page7.jpeg
+2025-11-09 10:04:58,876 - INFO - root - 已保存图片 7/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_7_page7.jpeg
+2025-11-09 10:04:58,912 - INFO - root - 已保存图片 8/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_8_page7.jpeg
+2025-11-09 10:04:58,940 - INFO - root - 已保存图片 9/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_9_page7.jpeg
+2025-11-09 10:04:58,977 - INFO - root - 已保存图片 10/10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_10_page7.jpeg
+2025-11-09 10:04:58,983 - INFO - root - 成功添加图片 1：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_1_page4.jpeg
+2025-11-09 10:04:58,984 - INFO - root - 成功添加图片 2：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_2_page3.jpeg
+2025-11-09 10:04:58,984 - INFO - root - 成功添加图片 3：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_3_page1.png
+2025-11-09 10:04:58,985 - INFO - root - 成功添加图片 4：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_4_page5.png
+2025-11-09 10:04:58,985 - INFO - root - 成功添加图片 5：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_5_page7.jpeg
+2025-11-09 10:04:58,985 - INFO - root - 成功添加图片 6：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_6_page7.jpeg
+2025-11-09 10:04:58,986 - INFO - root - 成功添加图片 7：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_7_page7.jpeg
+2025-11-09 10:04:58,986 - INFO - root - 成功添加图片 8：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_8_page7.jpeg
+2025-11-09 10:04:58,987 - INFO - root - 成功添加图片 9：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_9_page7.jpeg
+2025-11-09 10:04:58,987 - INFO - root - 成功添加图片 10：./export\images_Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup\figure_10_page7.jpeg
+2025-11-09 10:04:58,994 - INFO - root - 论文《Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution》的分析已保存到 ./export\Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Sup.md
+2025-11-09 10:04:59,001 - INFO - root - 正在总结论文 28/30: Flopping for FLOPs: Leveraging equivariance for computational efficiency
+2025-11-09 10:04:59,002 - INFO - root - LLMClient: rate limit reached, sleeping 12.5s
+2025-11-09 10:05:22,017 - INFO - root - LLMClient: rate limit reached, sleeping 18.0s
+2025-11-09 10:06:03,248 - INFO - root - LLMClient: rate limit reached, sleeping 8.2s
+2025-11-09 10:06:27,546 - INFO - root - 正在提取论文图片...
+2025-11-09 10:06:27,990 - INFO - root - 已保存图片 1/10：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_1_page3.png
+2025-11-09 10:06:28,075 - INFO - root - 已保存图片 2/10：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_2_page5.png
+2025-11-09 10:06:28,170 - INFO - root - 已保存图片 3/10：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_3_page1.png
+2025-11-09 10:06:28,170 - INFO - root - 成功添加图片 1：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_1_page3.png
+2025-11-09 10:06:28,170 - INFO - root - 成功添加图片 2：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_2_page5.png
+2025-11-09 10:06:28,170 - INFO - root - 成功添加图片 3：./export\images_Flopping for FLOPs_ Leveraging equivariance for computational efficiency\figure_3_page1.png
+2025-11-09 10:06:28,185 - INFO - root - 论文《Flopping for FLOPs: Leveraging equivariance for computational efficiency》的分析已保存到 ./export\Flopping for FLOPs_ Leveraging equivariance for computational efficiency.md
+2025-11-09 10:06:28,191 - INFO - root - 正在总结论文 29/30: An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image
+2025-11-09 10:06:28,191 - INFO - root - LLMClient: rate limit reached, sleeping 11.8s
+2025-11-09 10:06:49,350 - INFO - root - LLMClient: rate limit reached, sleeping 22.1s
+2025-11-09 10:07:35,800 - INFO - root - LLMClient: rate limit reached, sleeping 4.2s

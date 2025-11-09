@@ -13,6 +13,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
+import logging
+import logging_config as logging_config
 
 now = datetime.datetime.now()
 current_year = now.year
@@ -121,8 +123,8 @@ def setup_driver():
         from selenium.common.exceptions import StaleElementReferenceException
         from selenium.webdriver.chrome.options import Options
     except Exception as e:
-        print(e)
-        print("Please install Selenium and chrome webdriver for manual checking of captchas")
+        logging.exception("selenium setup error: %s", e)
+        logging.error("Please install Selenium and chrome webdriver for manual checking of captchas")
 
     # print('Loading...')
     chrome_options = Options()
@@ -146,7 +148,7 @@ def get_element(driver, xpath, attempts=5, count=0):
             sleep(1)
             get_element(driver, xpath, attempts=attempts, count=count + 1)
         else:
-            print("Element not found")
+            logging.warning("Element not found: %s", xpath)
 
 
 def get_content_with_selenium(url):
@@ -205,19 +207,18 @@ def fetch_data(GoogleScholarConfig: GoogleScholarConfig, session: requests.Sessi
 
         url = gscholar_main_url.format(str(n), GoogleScholarConfig.keyword.replace(' ', '+'))
         if GoogleScholarConfig.debug:
-            print("Opening URL:", url)
+            logging.debug("Opening URL: %s", url)
 
         # print("Loading next {} results".format(n + 10))
         page = session.get(url)
         c = page.content
 
         if any(kw in c.decode('ISO-8859-1') for kw in ROBOT_KW):
-            print("Robot checking detected, handling with selenium (if installed)")
+            logging.warning("Robot checking detected, handling with selenium (if installed)")
             try:
                 c = get_content_with_selenium(url)
             except Exception as e:
-                print("No success. The following error was raised:")
-                print(e)
+                logging.error("No success fetching with selenium: %s", e)
 
         # Create parser
         soup = BeautifulSoup(c, 'html.parser', from_encoding='utf-8')
@@ -283,9 +284,9 @@ def process_data(data: pd.DataFrame, end_year: int, sortby: str) -> pd.DataFrame
     try:
         data_ranked = data.sort_values(by=sortby, ascending=False)
     except Exception as e:
-        print('Column name to be sorted not found. Sorting by the number of citations...')
+        logging.warning('Column name to be sorted not found. Sorting by the number of citations...')
         data_ranked = data.sort_values(by='Citations', ascending=False)
-        print(e)
+        logging.exception(e)
 
     return data_ranked
 
@@ -307,14 +308,14 @@ def save_data_to_csv(data: pd.DataFrame, path: str, keyword: str) -> None:
 
 
 if __name__ == '__main__':
-    print("Getting command line arguments...")
+    logging.info("Getting command line arguments...")
     start = time.time()
     GoogleScholarConfig = get_command_line_args()
-    print("Running Google Scholar spider...")
+    logging.info("Running Google Scholar spider...")
     google_scholar_spider(GoogleScholarConfig=GoogleScholarConfig)
     # with tqdm(total=GoogleScholarConfig.nresults) as pbar:
     #     google_scholar_spider(GoogleScholarConfig=GoogleScholarConfig, pbar=pbar)
 
     end = time.time()
-    print("Finished running Google Scholar spider!")
-    print(f"Time taken: {end - start:.2f} seconds")
+    logging.info("Finished running Google Scholar spider!")
+    logging.info("Time taken: %.2f seconds", end - start)
