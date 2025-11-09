@@ -121,16 +121,18 @@ def _download_pdf_to_path(url: str, title: str, query: str):
     base_name = f"{validateTitle(title)[:80]}.pdf"
     filename = os.path.join(path, base_name)
     if os.path.exists(filename):
-        idx = 1
-        while True:
-            candidate = os.path.join(path, f"{validateTitle(title)[:80]}-{idx}.pdf")
-            if not os.path.exists(candidate):
-                filename = candidate
-                break
-            idx += 1
-    r = requests.get(url)
-    with open(filename, 'wb') as f:
-        f.write(r.content)
+        # idx = 1
+        # while True:
+        #     candidate = os.path.join(path, f"{validateTitle(title)[:80]}-{idx}.pdf")
+        #     if not os.path.exists(candidate):
+        #         filename = candidate
+        #         break
+        #     idx += 1
+        logging.info("File already exists, skipping download: %s", filename)
+    else:
+        r = requests.get(url)
+        with open(filename, 'wb') as f:
+            f.write(r.content)
     return filename
 
 

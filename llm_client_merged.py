@@ -186,47 +186,89 @@ class GeminiClient(BaseLLMClient):
 
 
 class DeepSeekClient(BaseLLMClient):
-    """DeepSeek客户端"""
+    """DeepSeek客户端 - 支持直接API和火山引擎两种方式"""
     
     def __init__(self, config: configparser.ConfigParser, args=None):
         super().__init__(config, args)
         self.api_key = None
+        self.client = None
         self.base_url = "https://api.deepseek.com/v1"
+        self.use_volcengine = False
     
     def initialize(self) -> bool:
         """初始化DeepSeek客户端"""
+        if OpenAI is None:
+            logging.error("DeepSeekClient: OpenAI SDK not installed. Please run: pip install --upgrade 'openai>=1.0'")
+            self.enabled = False
+            return False
+            
         try:
             self.api_key = self.config.get('DeepSeek', 'API_KEY')
-        except Exception:
+            # 使用get方法的安全版本，提供默认值
+            try:
+                self.model_name = self.config.get('DeepSeek', 'MODEL_NAME')
+            except:
+                self.model_name = 'deepseek-chat'
+            
+            # 检查是否使用火山引擎
+            try:
+                self.use_volcengine = self.config.getboolean('DeepSeek', 'USE_VOLCENGINE')
+            except:
+                self.use_volcengine = False
+                
+            # 如果使用火山引擎，读取火山引擎配置
+            if self.use_volcengine:
+                try:
+                    self.volcengine_base_url = self.config.get('DeepSeek', 'VOLCENGINE_BASE_URL', fallback='https://ark.cn-beijing.volces.com/api/v3')
+                    self.volcengine_api_key = self.config.get('DeepSeek', 'VOLCENGINE_API_KEY', fallback='')
+                    self.base_url = self.volcengine_base_url
+                    self.api_key = self.volcengine_api_key
+                    # 火山引擎使用特定的模型名称
+                    self.model_name = 'deepseek-v3-1-terminus'
+                except Exception as e:
+                    logging.warning("DeepSeekClient: 火山引擎配置读取失败: %s", e)
+                    self.use_volcengine = False
+                    
+            logging.info("DeepSeekClient: API key found: %s", self.api_key[:10] + "..." if self.api_key else "None")
+            logging.info("DeepSeekClient: 使用模式: %s", "火山引擎" if self.use_volcengine else "直接API")
+            logging.info("DeepSeekClient: 模型名称: %s", self.model_name)
+            
+        except Exception as e:
+            logging.error("DeepSeekClient: error reading config: %s", e)
             self.api_key = None
 
-        if not self.api_key or self.api_key == 'your_deepseek_api_key_here':
-            logging.warning("DeepSeekClient: API key not provided. LLM disabled.")
+        # 在火山引擎模式下，跳过直接API密钥的检查
+        if not self.use_volcengine and (not self.api_key or self.api_key.strip() == 'your_deepseek_api_key_here'):
+            logging.warning("DeepSeekClient: API key not provided or using placeholder. LLM disabled.")
+            self.enabled = False
+            return False
+            
+        # 在火山引擎模式下，检查火山引擎API密钥
+        if self.use_volcengine and (not self.api_key or not self.api_key.strip()):
+            logging.warning("DeepSeekClient: VolcEngine API key not provided. LLM disabled.")
             self.enabled = False
             return False
 
         try:
+            # 初始化OpenAI客户端
+            self.client = OpenAI(
+                base_url=self.base_url,
+                api_key=self.api_key,
+            )
+            
             # 测试API连接
-            headers = {
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json"
-            }
-            data = {
-                "model": "deepseek-chat",
-                "messages": [{"role": "user", "content": "test"}],
-                "max_tokens": 10
-            }
+            completion = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": "test"}],
+                max_tokens=10
+            )
             
-            response = requests.post(f"{self.base_url}/chat/completions", 
-                                   headers=headers, json=data, timeout=30)
-            
-            if response.status_code == 200:
+            if completion.choices[0].message.content:
                 self.enabled = True
-                self.model_name = "deepseek-chat"
-                logging.info("DeepSeekClient: initialized successfully")
+                logging.info("DeepSeekClient: initialized successfully with model %s", self.model_name)
                 return True
             else:
-                logging.error("DeepSeekClient: API test failed with status %s", response.status_code)
+                logging.error("DeepSeekClient: API test failed - no content returned")
                 self.enabled = False
                 return False
                 
@@ -236,7 +278,7 @@ class DeepSeekClient(BaseLLMClient):
             return False
     
     def generate(self, prompt: str, max_retries: int = 3, retry_delay: int = 60) -> str:
-        if not self.enabled or not self.api_key:
+        if not self.enabled or not self.client:
             error_msg = "抱歉，DeepSeek客户端未初始化或不可用。"
             logging.error("DeepSeekClient: %s", error_msg)
             return error_msg
@@ -248,28 +290,24 @@ class DeepSeekClient(BaseLLMClient):
                 
                 self._wait_for_rate_limit()
                 
-                headers = {
-                    "Authorization": f"Bearer {self.api_key}",
-                    "Content-Type": "application/json"
-                }
-                data = {
-                    "model": "deepseek-chat",
-                    "messages": [{"role": "user", "content": prompt}],
-                    "max_tokens": 4000,
-                    "temperature": 0.7
-                }
+                # 使用OpenAI SDK调用DeepSeek API
+                completion = self.client.chat.completions.create(
+                    model=self.model_name,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=4000,
+                    temperature=0.7
+                )
                 
-                response = requests.post(f"{self.base_url}/chat/completions", 
-                                       headers=headers, json=data, timeout=120)
+                # 获取响应内容
+                content = completion.choices[0].message.content
                 
-                if response.status_code == 200:
-                    result = response.json()
-                    return result["choices"][0]["message"]["content"]
-                else:
-                    error_msg = f"API error: {response.status_code}"
-                    if response.text:
-                        error_msg += f" - {response.text}"
-                    raise Exception(error_msg)
+                # 如果有推理内容，也一并返回
+                if hasattr(completion.choices[0].message, 'reasoning_content'):
+                    reasoning_content = completion.choices[0].message.reasoning_content
+                    if reasoning_content:
+                        content = f"推理过程：{reasoning_content}\n\n最终回答：{content}"
+                
+                return content
                     
             except Exception as e:
                 err = str(e).lower()

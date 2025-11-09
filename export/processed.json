@@ -148,5 +148,15 @@
     "title": "TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving",
     "output": "D:\\ChatPaper\\export\\TwinLiteNet+_ An Enhanced Multi-Task Segmentation Model for Autonomous Driving.md",
     "time": "2025-11-09 10:11:15.030610"
+  },
+  "D:\\ChatPaper\\academic Papers\\Quantization-Aware-Training\\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.pdf": {
+    "title": "A Quantized VAE-MLP Botnet Detection Model: A Systematic Evaluation of Quantization-Aware Training and Post-Training Quantization Strategies",
+    "output": "D:\\ChatPaper\\export\\A Quantized VAE-MLP Botnet Detection Model_ A Systematic Evaluation of Quantizat.md",
+    "time": "2025-11-09 16:56:19.395836"
+  },
+  "D:\\ChatPaper\\academic Papers\\Quantization-Aware-Training\\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error-2.pdf": {
+    "title": "FP8-Flow-MoE: A Casting-Free FP8 Recipe without Double Quantization Error",
+    "output": "D:\\ChatPaper\\export\\FP8-Flow-MoE_ A Casting-Free FP8 Recipe without Double Quantization Error.md",
+    "time": "2025-11-09 19:47:02.183610"
   }
 }
