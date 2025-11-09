@@ -95,16 +95,22 @@ def get_titles(url: str, days: int = 1):
     return titles, links, dates
 
 
+# 定义一个函数，根据关键词获取所有可用的论文标题，并打印出来
 def get_all_titles_from_web(keyword: str, page_num: int = 1, days: int = 1):
     title_list, link_list, date_list = [], [], []
     for page in range(page_num):
-        url = get_url(keyword, page)
-        titles, links, dates = get_titles(url, days)
-        if not titles:
+        url = get_url(keyword, page)  # 根据关键词和页码生成链接
+        logging.info(f"Fetching page {page+1} with URL: {url}")
+        titles, links, dates = get_titles(url, days)  # 根据链接获取论文标题
+        if not titles:  # 如果没有获取到任何标题，说明已经到达最后一页，退出循环
             break
+        logging.info(f"get_all_titles_from_web \r")
+        for title_index, title in enumerate(titles):  # 遍历每个标题，并打印出来
+            logging.info(f"Page:{page}, Index:{title_index}, {title}, {links[title_index]}, {dates[title_index]}")
         title_list.extend(titles)
         link_list.extend(links)
         date_list.extend(dates)
+    logging.info("---" * 40)
     return title_list, link_list, date_list
 
 

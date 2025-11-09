@@ -684,6 +684,12 @@ class Reader:
             
             # 导出到文件：根据 --force 决定写入模式（强制模式覆盖，否则追加）
             output_file = self.get_output_filename(paper.title)
+            
+            # 如果输出文件为None，表示文件已存在且未启用force，跳过处理
+            if output_file is None:
+                logging.info("输出文件已存在，跳过论文 %s 的处理", paper.title)
+                continue
+            
             write_mode = 'w' if getattr(self.args, 'force', False) else 'a'
             self.export_to_markdown(full_summary, output_file, mode=write_mode)
             logging.info("论文《%s》的分析已保存到 %s", paper.title, output_file)
@@ -715,7 +721,7 @@ class Reader:
                         time.sleep(batch_delay)
 
     def get_output_filename(self, paper_title=None):
-        """获取输出文件的完整路径"""
+        """获取输出文件的完整路径，如果文件已存在且未启用force，则返回None表示跳过"""
         export_path = os.path.join(self.root_path, "export")
         if not os.path.exists(export_path):
             os.makedirs(export_path)
@@ -729,15 +735,9 @@ class Reader:
         filename = f"{base}.{self.args.file_format}"
         full = os.path.join(export_path, filename)
 
-        # 如果文件存在且未启用 --force，则添加数字后缀避免覆盖
+        # 如果文件存在且未启用 --force，则返回None表示跳过处理
         if os.path.exists(full) and not getattr(self.args, 'force', False):
-            idx = 1
-            while True:
-                candidate = os.path.join(export_path, f"{base}-{idx}.{self.args.file_format}")
-                if not os.path.exists(candidate):
-                    full = candidate
-                    break
-                idx += 1
+            return None
 
         return full
 

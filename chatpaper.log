@@ -1046,3 +1046,1170 @@ Please retry in 44.666304166s. [links {
 2025-11-09 10:11:15,017 - INFO - root - 成功添加图片 10：./export\images_TwinLiteNet+_ An Enhanced Multi-Task Segmentation Model for Autonomous Driving\figure_10_page17.jpeg
 2025-11-09 10:11:15,028 - INFO - root - 论文《TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving》的分析已保存到 ./export\TwinLiteNet+_ An Enhanced Multi-Task Segmentation Model for Autonomous Driving.md
 2025-11-09 10:11:15,034 - INFO - root - summary time: 31076.43 seconds
+2025-11-09 10:23:21,960 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:23:21,960 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:23:21,960 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:23:22,718 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 10:23:23,714 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 10:23:34,497 - INFO - root - LLMClient: initialized model gemini-2.5-pro
+2025-11-09 10:23:34,497 - INFO - root - 使用 LLM 模型: gemini-2.5-pro
+2025-11-09 10:23:34,498 - INFO - root - === 运行配置 ===
+2025-11-09 10:23:34,498 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:23:34,499 - INFO - root - 关键词: Quant
+2025-11-09 10:23:34,499 - INFO - root - 查询: block float point
+2025-11-09 10:23:34,499 - INFO - root - 排序: None
+2025-11-09 10:23:34,500 - INFO - root - 最近天数: 180
+2025-11-09 10:23:34,500 - INFO - root - 最大处理数量: 50
+2025-11-09 10:23:34,500 - INFO - root - 保存图片: 是
+2025-11-09 10:23:34,501 - INFO - root - 输出语言: 中文
+2025-11-09 10:23:34,501 - INFO - root - 强制重新处理: 否
+2025-11-09 10:23:34,501 - INFO - root - ====================
+2025-11-09 10:23:34,501 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:24:22,578 - INFO - root - 正在总结论文 1/30: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 10:24:22,751 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 35.947403049s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 35
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 35.947403049s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-11-09 10:24:22,758 - WARNING - root - LLMClient: quota/rate detected, sleeping 60 s then retrying
+2025-11-09 10:25:22,762 - INFO - root - LLMClient: retry attempt 2 for generation
+2025-11-09 10:25:23,508 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 35.205752668s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 35
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 35.205752668s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-11-09 10:25:23,511 - WARNING - root - LLMClient: quota/rate detected, sleeping 60 s then retrying
+2025-11-09 10:26:23,511 - INFO - root - LLMClient: retry attempt 3 for generation
+2025-11-09 10:26:24,694 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 34.01837253s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 34
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 34.01837253s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 34
+}
+]
+2025-11-09 10:26:24,828 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 33.879301367s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 33
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 33.879301367s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-11-09 10:26:24,830 - WARNING - root - LLMClient: quota/rate detected, sleeping 60 s then retrying
+2025-11-09 10:27:24,831 - INFO - root - LLMClient: retry attempt 2 for generation
+2025-11-09 10:27:25,705 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.998956656s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.998956656s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-11-09 10:27:25,707 - WARNING - root - LLMClient: quota/rate detected, sleeping 60 s then retrying
+2025-11-09 10:28:25,708 - INFO - root - LLMClient: retry attempt 3 for generation
+2025-11-09 10:28:26,444 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.258710193s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.258710193s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-11-09 10:28:26,558 - ERROR - root - LLMClient: generation error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.138240581s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+Traceback (most recent call last):
+  File "D:\ChatPaper\llm_client.py", line 117, in generate
+    resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ChatPaper\.venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 32.138240581s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-11-09 10:28:26,561 - WARNING - root - LLMClient: quota/rate detected, sleeping 60 s then retrying
+2025-11-09 10:34:14,529 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:34:14,529 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:34:14,529 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:34:15,175 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 10:34:16,017 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 10:34:16,375 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 10:34:16,375 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 10:34:16,375 - INFO - root - === 运行配置 ===
+2025-11-09 10:34:16,376 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:34:16,376 - INFO - root - 关键词: Quant
+2025-11-09 10:34:16,376 - INFO - root - 查询: block float point
+2025-11-09 10:34:16,376 - INFO - root - 排序: None
+2025-11-09 10:34:16,377 - INFO - root - 最近天数: 180
+2025-11-09 10:34:16,377 - INFO - root - 最大处理数量: 50
+2025-11-09 10:34:16,377 - INFO - root - 保存图片: 是
+2025-11-09 10:34:16,378 - INFO - root - 输出语言: 中文
+2025-11-09 10:34:16,378 - INFO - root - 强制重新处理: 否
+2025-11-09 10:34:16,379 - INFO - root - ====================
+2025-11-09 10:34:16,379 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:34:16,380 - ERROR - root - 从 chat_arxiv 获取论文列表失败: name 'get_all_titles_from_web' is not defined
+2025-11-09 10:34:16,384 - INFO - root - 没有找到要处理的论文，程序退出
+2025-11-09 10:34:16,384 - INFO - root - summary time: 1.85 seconds
+2025-11-09 10:40:38,168 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:40:38,176 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:40:38,176 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:40:38,993 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 10:40:39,838 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 10:40:40,189 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 10:40:40,190 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 10:40:40,190 - INFO - root - === 运行配置 ===
+2025-11-09 10:40:40,190 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:40:40,190 - INFO - root - 关键词: Quant
+2025-11-09 10:40:40,191 - INFO - root - 查询: block float point
+2025-11-09 10:40:40,191 - INFO - root - 排序: None
+2025-11-09 10:40:40,191 - INFO - root - 最近天数: 180
+2025-11-09 10:40:40,192 - INFO - root - 最大处理数量: 50
+2025-11-09 10:40:40,192 - INFO - root - 保存图片: 是
+2025-11-09 10:40:40,192 - INFO - root - 输出语言: 中文
+2025-11-09 10:40:40,193 - INFO - root - 强制重新处理: 否
+2025-11-09 10:40:40,193 - INFO - root - ====================
+2025-11-09 10:40:40,193 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:40:40,193 - ERROR - root - 从 chat_arxiv 获取论文列表失败: get_all_titles_from_web() missing 1 required positional argument: 'keyword'
+2025-11-09 10:40:40,195 - INFO - root - 没有找到要处理的论文，程序退出
+2025-11-09 10:40:40,195 - INFO - root - summary time: 2.03 seconds
+2025-11-09 10:43:10,381 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:43:10,381 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:43:10,381 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:43:10,983 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 10:43:11,896 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 10:43:12,334 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 10:43:12,335 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 10:43:12,335 - INFO - root - === 运行配置 ===
+2025-11-09 10:43:12,335 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:43:12,335 - INFO - root - 关键词: Quant
+2025-11-09 10:43:12,336 - INFO - root - 查询: block float point
+2025-11-09 10:43:12,336 - INFO - root - 排序: None
+2025-11-09 10:43:12,336 - INFO - root - 最近天数: 180
+2025-11-09 10:43:12,336 - INFO - root - 最大处理数量: 50
+2025-11-09 10:43:12,337 - INFO - root - 保存图片: 是
+2025-11-09 10:43:12,337 - INFO - root - 输出语言: 中文
+2025-11-09 10:43:12,338 - INFO - root - 强制重新处理: 否
+2025-11-09 10:43:12,338 - INFO - root - ====================
+2025-11-09 10:43:12,338 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:43:12,338 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 10:43:14,471 - INFO - root - get_all_titles_from_web 
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 10:43:14,471 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 10:43:14,476 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 10:43:14,476 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 10:43:14,476 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 10:43:14,476 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 10:43:14,477 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 10:43:14,477 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 10:43:14,477 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 10:43:14,477 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 10:43:14,478 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 10:43:14,478 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 10:43:14,478 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 10:43:14,480 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 10:43:14,480 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 10:43:14,480 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 10:43:14,481 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 10:43:14,481 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 10:43:15,874 - INFO - root - get_all_titles_from_web 
+2025-11-09 10:43:15,874 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 10:43:15,874 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 10:43:17,159 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 10:43:57,319 - INFO - root - 正在总结论文 1/30: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 10:43:57,319 - INFO - root - 正在提取论文图片...
+2025-11-09 10:43:57,752 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 10:43:57,814 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 10:43:57,914 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 10:43:57,978 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 10:43:58,046 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 10:43:58,121 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 10:43:58,206 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 10:43:58,277 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 10:43:58,296 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 10:43:58,307 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 10:43:58,313 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 10:43:58,313 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 10:43:58,313 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 10:43:58,313 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 10:43:58,315 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 10:43:58,315 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 10:43:58,315 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 10:43:58,317 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 10:43:58,317 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 10:43:58,317 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 10:43:58,321 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-1.md
+2025-11-09 10:43:58,335 - INFO - root - 正在总结论文 2/30: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 10:43:58,336 - INFO - root - 正在提取论文图片...
+2025-11-09 10:43:58,817 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 10:43:58,884 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 10:43:58,918 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 10:43:58,989 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 10:43:58,995 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 10:43:58,995 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 10:43:58,997 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 10:43:58,997 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 10:43:59,009 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-1.md
+2025-11-09 10:43:59,018 - INFO - root - 正在总结论文 3/30: MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving
+2025-11-09 10:43:59,020 - INFO - root - 正在提取论文图片...
+2025-11-09 10:43:59,133 - INFO - root - 已保存图片 1/10：./export\images_MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod\figure_1_page3.png
+2025-11-09 10:43:59,133 - INFO - root - 成功添加图片 1：./export\images_MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod\figure_1_page3.png
+2025-11-09 10:43:59,137 - INFO - root - 论文《MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving》的分析已保存到 ./export\MX+_ Pushing the Limits of Microscaling Formats for Efficient Large Language Mod-1.md
+2025-11-09 10:43:59,150 - INFO - root - 正在总结论文 4/30: F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs
+2025-11-09 10:43:59,151 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:00,097 - INFO - root - 已保存图片 1/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_1_page4.png
+2025-11-09 10:44:00,242 - INFO - root - 已保存图片 2/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_2_page3.png
+2025-11-09 10:44:00,286 - INFO - root - 已保存图片 3/10：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_3_page2.png
+2025-11-09 10:44:00,298 - INFO - root - 成功添加图片 1：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_1_page4.png
+2025-11-09 10:44:00,298 - INFO - root - 成功添加图片 2：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_2_page3.png
+2025-11-09 10:44:00,299 - INFO - root - 成功添加图片 3：./export\images_F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs\figure_3_page2.png
+2025-11-09 10:44:00,304 - INFO - root - 论文《F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs》的分析已保存到 ./export\F-BFQ_ Flexible Block Floating-Point Quantization Accelerator for LLMs-1.md
+2025-11-09 10:44:00,310 - INFO - root - 正在总结论文 5/30: Computationally Efficient Neural Receivers via Axial Self-Attention
+2025-11-09 10:44:00,314 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:01,593 - INFO - root - 已保存图片 1/10：./export\images_Computationally Efficient Neural Receivers via Axial Self-Attention\figure_1_page5.png
+2025-11-09 10:44:01,601 - INFO - root - 成功添加图片 1：./export\images_Computationally Efficient Neural Receivers via Axial Self-Attention\figure_1_page5.png
+2025-11-09 10:44:01,608 - INFO - root - 论文《Computationally Efficient Neural Receivers via Axial Self-Attention》的分析已保存到 ./export\Computationally Efficient Neural Receivers via Axial Self-Attention-1.md
+2025-11-09 10:44:01,617 - INFO - root - 正在总结论文 6/30: Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs
+2025-11-09 10:44:01,619 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:01,703 - INFO - root - 已保存图片 1/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_1_page3.png
+2025-11-09 10:44:01,769 - INFO - root - 已保存图片 2/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_2_page3.png
+2025-11-09 10:44:01,909 - INFO - root - 已保存图片 3/10：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_3_page3.png
+2025-11-09 10:44:01,910 - INFO - root - 成功添加图片 1：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_1_page3.png
+2025-11-09 10:44:01,910 - INFO - root - 成功添加图片 2：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_2_page3.png
+2025-11-09 10:44:01,912 - INFO - root - 成功添加图片 3：./export\images_Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs\figure_3_page3.png
+2025-11-09 10:44:01,921 - INFO - root - 论文《Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs》的分析已保存到 ./export\Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs-1.md
+2025-11-09 10:44:01,932 - INFO - root - 正在总结论文 7/30: Dissecting Transformers: A CLEAR Perspective towards Green AI
+2025-11-09 10:44:01,934 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:02,051 - WARNING - root - 处理页面 19 的图片 1 时出错：Image size (360000000 pixels) exceeds limit of 178956970 pixels, could be decompression bomb DOS attack.
+2025-11-09 10:44:02,223 - INFO - root - 已保存图片 1/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_1_page3.png
+2025-11-09 10:44:02,317 - INFO - root - 已保存图片 2/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_2_page3.png
+2025-11-09 10:44:02,443 - INFO - root - 已保存图片 3/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_3_page3.png
+2025-11-09 10:44:02,555 - INFO - root - 已保存图片 4/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_4_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 已保存图片 5/10：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_5_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 成功添加图片 1：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_1_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 成功添加图片 2：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_2_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 成功添加图片 3：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_3_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 成功添加图片 4：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_4_page3.png
+2025-11-09 10:44:02,691 - INFO - root - 成功添加图片 5：./export\images_Dissecting Transformers_ A CLEAR Perspective towards Green AI\figure_5_page3.png
+2025-11-09 10:44:02,699 - INFO - root - 论文《Dissecting Transformers: A CLEAR Perspective towards Green AI》的分析已保存到 ./export\Dissecting Transformers_ A CLEAR Perspective towards Green AI-1.md
+2025-11-09 10:44:02,711 - INFO - root - 正在总结论文 8/30: Microscaling Floating Point Formats for Large Language Models
+2025-11-09 10:44:02,718 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:02,737 - INFO - root - 论文《Microscaling Floating Point Formats for Large Language Models》的分析已保存到 ./export\Microscaling Floating Point Formats for Large Language Models-1.md
+2025-11-09 10:44:02,760 - INFO - root - 正在总结论文 9/30: Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework
+2025-11-09 10:44:02,762 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:32,563 - INFO - root - 已保存图片 1/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_1_page8.jpeg
+2025-11-09 10:44:32,843 - INFO - root - 已保存图片 2/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_2_page5.jpeg
+2025-11-09 10:44:33,156 - INFO - root - 已保存图片 3/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_3_page9.jpeg
+2025-11-09 10:44:33,411 - INFO - root - 已保存图片 4/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_4_page9.jpeg
+2025-11-09 10:44:33,641 - INFO - root - 已保存图片 5/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_5_page9.jpeg
+2025-11-09 10:44:33,837 - INFO - root - 已保存图片 6/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_6_page9.jpeg
+2025-11-09 10:44:34,057 - INFO - root - 已保存图片 7/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_7_page9.jpeg
+2025-11-09 10:44:34,251 - INFO - root - 已保存图片 8/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_8_page9.jpeg
+2025-11-09 10:44:34,453 - INFO - root - 已保存图片 9/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_9_page9.jpeg
+2025-11-09 10:44:34,645 - INFO - root - 已保存图片 10/10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_10_page9.jpeg
+2025-11-09 10:44:34,678 - INFO - root - 成功添加图片 1：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_1_page8.jpeg
+2025-11-09 10:44:34,679 - INFO - root - 成功添加图片 2：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_2_page5.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 3：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_3_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 4：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_4_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 5：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_5_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 6：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_6_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 7：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_7_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 8：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_8_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 9：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_9_page9.jpeg
+2025-11-09 10:44:34,680 - INFO - root - 成功添加图片 10：./export\images_Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via\figure_10_page9.jpeg
+2025-11-09 10:44:34,689 - INFO - root - 论文《Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework》的分析已保存到 ./export\Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via-1.md
+2025-11-09 10:44:34,695 - INFO - root - 正在总结论文 10/30: AMLA: MUL by ADD in FlashAttention Rescaling
+2025-11-09 10:44:34,698 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:35,653 - INFO - root - 已保存图片 1/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_1_page15.png
+2025-11-09 10:44:35,705 - INFO - root - 已保存图片 2/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_2_page4.jpeg
+2025-11-09 10:44:35,752 - INFO - root - 已保存图片 3/10：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_3_page8.jpeg
+2025-11-09 10:44:35,752 - INFO - root - 成功添加图片 1：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_1_page15.png
+2025-11-09 10:44:35,752 - INFO - root - 成功添加图片 2：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_2_page4.jpeg
+2025-11-09 10:44:35,752 - INFO - root - 成功添加图片 3：./export\images_AMLA_ MUL by ADD in FlashAttention Rescaling\figure_3_page8.jpeg
+2025-11-09 10:44:35,766 - INFO - root - 论文《AMLA: MUL by ADD in FlashAttention Rescaling》的分析已保存到 ./export\AMLA_ MUL by ADD in FlashAttention Rescaling-1.md
+2025-11-09 10:44:35,774 - INFO - root - 正在总结论文 11/30: Pretraining Large Language Models with NVFP4
+2025-11-09 10:44:35,774 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:35,975 - INFO - root - 已保存图片 1/10：./export\images_Pretraining Large Language Models with NVFP4\figure_1_page7.png
+2025-11-09 10:44:36,036 - INFO - root - 已保存图片 2/10：./export\images_Pretraining Large Language Models with NVFP4\figure_2_page7.jpeg
+2025-11-09 10:44:36,072 - INFO - root - 已保存图片 3/10：./export\images_Pretraining Large Language Models with NVFP4\figure_3_page1.png
+2025-11-09 10:44:36,097 - INFO - root - 已保存图片 4/10：./export\images_Pretraining Large Language Models with NVFP4\figure_4_page7.jpeg
+2025-11-09 10:44:36,128 - INFO - root - 已保存图片 5/10：./export\images_Pretraining Large Language Models with NVFP4\figure_5_page7.jpeg
+2025-11-09 10:44:36,220 - INFO - root - 已保存图片 6/10：./export\images_Pretraining Large Language Models with NVFP4\figure_6_page7.jpeg
+2025-11-09 10:44:36,277 - INFO - root - 已保存图片 7/10：./export\images_Pretraining Large Language Models with NVFP4\figure_7_page7.png
+2025-11-09 10:44:36,307 - INFO - root - 已保存图片 8/10：./export\images_Pretraining Large Language Models with NVFP4\figure_8_page7.jpeg
+2025-11-09 10:44:36,340 - INFO - root - 已保存图片 9/10：./export\images_Pretraining Large Language Models with NVFP4\figure_9_page7.jpeg
+2025-11-09 10:44:36,387 - INFO - root - 已保存图片 10/10：./export\images_Pretraining Large Language Models with NVFP4\figure_10_page7.jpeg
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 1：./export\images_Pretraining Large Language Models with NVFP4\figure_1_page7.png
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 2：./export\images_Pretraining Large Language Models with NVFP4\figure_2_page7.jpeg
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 3：./export\images_Pretraining Large Language Models with NVFP4\figure_3_page1.png
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 4：./export\images_Pretraining Large Language Models with NVFP4\figure_4_page7.jpeg
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 5：./export\images_Pretraining Large Language Models with NVFP4\figure_5_page7.jpeg
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 6：./export\images_Pretraining Large Language Models with NVFP4\figure_6_page7.jpeg
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 7：./export\images_Pretraining Large Language Models with NVFP4\figure_7_page7.png
+2025-11-09 10:44:36,389 - INFO - root - 成功添加图片 8：./export\images_Pretraining Large Language Models with NVFP4\figure_8_page7.jpeg
+2025-11-09 10:44:36,397 - INFO - root - 成功添加图片 9：./export\images_Pretraining Large Language Models with NVFP4\figure_9_page7.jpeg
+2025-11-09 10:44:36,397 - INFO - root - 成功添加图片 10：./export\images_Pretraining Large Language Models with NVFP4\figure_10_page7.jpeg
+2025-11-09 10:44:36,406 - INFO - root - 论文《Pretraining Large Language Models with NVFP4》的分析已保存到 ./export\Pretraining Large Language Models with NVFP4-1.md
+2025-11-09 10:44:36,416 - INFO - root - 正在总结论文 12/30: Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization
+2025-11-09 10:44:36,418 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:36,558 - INFO - root - 已保存图片 1/10：./export\images_Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati\figure_1_page25.png
+2025-11-09 10:44:36,559 - INFO - root - 成功添加图片 1：./export\images_Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati\figure_1_page25.png
+2025-11-09 10:44:36,577 - INFO - root - 论文《Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization》的分析已保存到 ./export\Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantizati-1.md
+2025-11-09 10:44:36,589 - INFO - root - 正在总结论文 13/30: Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs
+2025-11-09 10:44:36,591 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:36,597 - INFO - root - 论文《Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs》的分析已保存到 ./export\Towards Verified Compilation of Floating-point Optimization in Scientific Comput-1.md
+2025-11-09 10:44:36,608 - INFO - root - 正在总结论文 14/30: Green Learning for STAR-RIS mmWave Systems with Implicit CSI
+2025-11-09 10:44:36,609 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:36,795 - INFO - root - 已保存图片 1/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_1_page2.jpeg
+2025-11-09 10:44:36,926 - INFO - root - 已保存图片 2/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_2_page2.png
+2025-11-09 10:44:36,977 - INFO - root - 已保存图片 3/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_3_page2.png
+2025-11-09 10:44:37,035 - INFO - root - 已保存图片 4/10：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_4_page2.png
+2025-11-09 10:44:37,037 - INFO - root - 成功添加图片 1：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_1_page2.jpeg
+2025-11-09 10:44:37,039 - INFO - root - 成功添加图片 2：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_2_page2.png
+2025-11-09 10:44:37,039 - INFO - root - 成功添加图片 3：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_3_page2.png
+2025-11-09 10:44:37,041 - INFO - root - 成功添加图片 4：./export\images_Green Learning for STAR-RIS mmWave Systems with Implicit CSI\figure_4_page2.png
+2025-11-09 10:44:37,055 - INFO - root - 论文《Green Learning for STAR-RIS mmWave Systems with Implicit CSI》的分析已保存到 ./export\Green Learning for STAR-RIS mmWave Systems with Implicit CSI-1.md
+2025-11-09 10:44:37,064 - INFO - root - 正在总结论文 15/30: A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN
+2025-11-09 10:44:37,065 - INFO - root - 正在提取论文图片...
+2025-11-09 10:44:37,775 - INFO - root - 已保存图片 1/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_1_page6.png
+2025-11-09 10:44:37,872 - INFO - root - 已保存图片 2/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_2_page6.png
+2025-11-09 10:44:37,969 - INFO - root - 已保存图片 3/10：./export\images_A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted\figure_3_page2.png
+2025-11-09 10:54:15,017 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:54:15,033 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:54:15,033 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:55:08,572 - ERROR - root - LLMClient: error during initialization: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.251.34.202:443: socket is null
+2025-11-09 10:55:08,574 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 10:55:08,574 - INFO - root - === 运行配置 ===
+2025-11-09 10:55:08,575 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:55:08,576 - INFO - root - 关键词: Quant
+2025-11-09 10:55:08,576 - INFO - root - 查询: block float point
+2025-11-09 10:55:08,578 - INFO - root - 排序: None
+2025-11-09 10:55:08,578 - INFO - root - 最近天数: 180
+2025-11-09 10:55:08,578 - INFO - root - 最大处理数量: 50
+2025-11-09 10:55:08,578 - INFO - root - 保存图片: 是
+2025-11-09 10:55:08,578 - INFO - root - 输出语言: 中文
+2025-11-09 10:55:08,578 - INFO - root - 强制重新处理: 否
+2025-11-09 10:55:08,578 - INFO - root - ====================
+2025-11-09 10:55:08,590 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:55:08,590 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 10:55:39,943 - INFO - root - get_all_titles_from_web 
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 10:55:39,943 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 10:55:39,949 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 10:55:39,949 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 10:59:20,251 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 10:59:20,252 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 10:59:20,254 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 10:59:21,780 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 10:59:22,916 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 10:59:23,284 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 10:59:23,284 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 10:59:23,285 - INFO - root - === 运行配置 ===
+2025-11-09 10:59:23,285 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 10:59:23,286 - INFO - root - 关键词: Quant
+2025-11-09 10:59:23,286 - INFO - root - 查询: block float point
+2025-11-09 10:59:23,286 - INFO - root - 排序: None
+2025-11-09 10:59:23,287 - INFO - root - 最近天数: 180
+2025-11-09 10:59:23,287 - INFO - root - 最大处理数量: 50
+2025-11-09 10:59:23,288 - INFO - root - 保存图片: 是
+2025-11-09 10:59:23,288 - INFO - root - 输出语言: 中文
+2025-11-09 10:59:23,288 - INFO - root - 强制重新处理: 否
+2025-11-09 10:59:23,288 - INFO - root - ====================
+2025-11-09 10:59:23,289 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 10:59:23,290 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 10:59:29,441 - INFO - root - get_all_titles_from_web 
+2025-11-09 10:59:29,441 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 10:59:29,442 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 10:59:29,442 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 10:59:29,442 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 10:59:29,442 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 10:59:29,444 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 10:59:29,444 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 10:59:29,444 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 10:59:29,444 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 10:59:29,445 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 10:59:29,445 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 10:59:29,445 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 10:59:29,446 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 10:59:29,446 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 10:59:29,446 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 10:59:29,447 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 10:59:29,447 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 10:59:29,450 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 10:59:29,451 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 10:59:29,452 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 10:59:29,452 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 10:59:29,452 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 10:59:29,453 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 10:59:29,454 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 10:59:29,455 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 10:59:29,455 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 10:59:29,455 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 10:59:29,456 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 10:59:29,457 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 10:59:29,458 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 10:59:35,891 - INFO - root - get_all_titles_from_web 
+2025-11-09 10:59:35,892 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 10:59:35,892 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 10:59:42,083 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 11:02:42,840 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 11:02:42,841 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 11:02:42,846 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 11:02:43,393 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 11:02:44,233 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 11:02:44,596 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 11:02:44,596 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 11:02:44,596 - INFO - root - === 运行配置 ===
+2025-11-09 11:02:44,597 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 11:02:44,597 - INFO - root - 关键词: Quant
+2025-11-09 11:02:44,598 - INFO - root - 查询: block float point
+2025-11-09 11:02:44,598 - INFO - root - 排序: None
+2025-11-09 11:02:44,598 - INFO - root - 最近天数: 180
+2025-11-09 11:02:44,599 - INFO - root - 最大处理数量: 50
+2025-11-09 11:02:44,599 - INFO - root - 保存图片: 是
+2025-11-09 11:02:44,600 - INFO - root - 输出语言: 中文
+2025-11-09 11:02:44,600 - INFO - root - 强制重新处理: 否
+2025-11-09 11:02:44,600 - INFO - root - ====================
+2025-11-09 11:02:44,600 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 11:02:44,601 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 11:02:50,748 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:02:50,750 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 11:02:50,750 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 11:02:50,751 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 11:02:50,755 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 11:02:50,755 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 11:02:50,755 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 11:02:50,756 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 11:02:50,758 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 11:02:50,759 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 11:02:50,759 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 11:02:50,760 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 11:02:50,760 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 11:02:50,760 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 11:02:50,762 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 11:02:50,762 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 11:02:50,762 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 11:14:07,152 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 11:14:07,154 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 11:14:07,155 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 11:14:07,953 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 11:14:08,826 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 11:14:09,206 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 11:14:09,206 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 11:14:09,207 - INFO - root - === 运行配置 ===
+2025-11-09 11:14:09,207 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 11:14:09,207 - INFO - root - 关键词: Quant
+2025-11-09 11:14:09,207 - INFO - root - 查询: block float point
+2025-11-09 11:14:09,208 - INFO - root - 排序: None
+2025-11-09 11:14:09,208 - INFO - root - 最近天数: 180
+2025-11-09 11:14:09,208 - INFO - root - 最大处理数量: 50
+2025-11-09 11:14:09,209 - INFO - root - 保存图片: 是
+2025-11-09 11:14:09,209 - INFO - root - 输出语言: 中文
+2025-11-09 11:14:09,209 - INFO - root - 强制重新处理: 否
+2025-11-09 11:14:09,209 - INFO - root - ====================
+2025-11-09 11:14:09,210 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 11:14:09,210 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 11:14:15,463 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 11:14:15,463 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 11:14:15,473 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 11:14:15,475 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 11:14:15,475 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 11:14:15,477 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 11:14:15,477 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 11:14:21,869 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:14:21,869 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 11:14:21,869 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 11:14:28,257 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 11:18:03,978 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 11:18:03,979 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 11:18:03,981 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 11:18:04,669 - INFO - root - LLMClient: trying model gemini-2.5-flash
+2025-11-09 11:18:05,549 - INFO - root - LLMClient: trying model gemini-2.5-pro
+2025-11-09 11:18:05,899 - WARNING - root - LLMClient: no usable model found, LLM disabled
+2025-11-09 11:18:05,899 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 11:18:05,900 - INFO - root - === 运行配置 ===
+2025-11-09 11:18:05,901 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 11:18:05,901 - INFO - root - 关键词: Quant
+2025-11-09 11:18:05,901 - INFO - root - 查询: block float point
+2025-11-09 11:18:05,901 - INFO - root - 排序: None
+2025-11-09 11:18:05,902 - INFO - root - 最近天数: 180
+2025-11-09 11:18:05,902 - INFO - root - 最大处理数量: 2
+2025-11-09 11:18:05,903 - INFO - root - 保存图片: 是
+2025-11-09 11:18:05,903 - INFO - root - 输出语言: 中文
+2025-11-09 11:18:05,903 - INFO - root - 强制重新处理: 否
+2025-11-09 11:18:05,903 - INFO - root - ====================
+2025-11-09 11:18:05,904 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 11:18:05,904 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 11:18:12,193 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:18:12,193 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 11:18:12,194 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 11:18:12,194 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 11:18:12,194 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 11:18:12,194 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 11:18:12,196 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 11:18:12,204 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 11:18:12,204 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 11:18:18,346 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:18:18,347 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 11:18:18,347 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 11:18:24,765 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 11:18:36,427 - INFO - root - 正在总结论文 1/2: From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators
+2025-11-09 11:18:36,429 - INFO - root - 正在提取论文图片...
+2025-11-09 11:18:36,905 - INFO - root - 已保存图片 1/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 11:18:36,981 - INFO - root - 已保存图片 2/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 11:18:37,084 - INFO - root - 已保存图片 3/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 11:18:37,161 - INFO - root - 已保存图片 4/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 11:18:37,262 - INFO - root - 已保存图片 5/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 11:18:37,350 - INFO - root - 已保存图片 6/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 11:18:37,428 - INFO - root - 已保存图片 7/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 11:18:37,564 - INFO - root - 已保存图片 8/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 11:18:37,585 - INFO - root - 已保存图片 9/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 11:18:37,612 - INFO - root - 已保存图片 10/10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 11:18:37,619 - INFO - root - 成功添加图片 1：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_1_page3.png
+2025-11-09 11:18:37,621 - INFO - root - 成功添加图片 2：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_2_page8.png
+2025-11-09 11:18:37,625 - INFO - root - 成功添加图片 3：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_3_page8.png
+2025-11-09 11:18:37,626 - INFO - root - 成功添加图片 4：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_4_page9.png
+2025-11-09 11:18:37,627 - INFO - root - 成功添加图片 5：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_5_page9.png
+2025-11-09 11:18:37,627 - INFO - root - 成功添加图片 6：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_6_page4.png
+2025-11-09 11:18:37,628 - INFO - root - 成功添加图片 7：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_7_page4.png
+2025-11-09 11:18:37,629 - INFO - root - 成功添加图片 8：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_8_page16.png
+2025-11-09 11:18:37,630 - INFO - root - 成功添加图片 9：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_9_page4.png
+2025-11-09 11:18:37,631 - INFO - root - 成功添加图片 10：./export\images_From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural\figure_10_page4.png
+2025-11-09 11:18:37,634 - INFO - root - 论文《From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators》的分析已保存到 ./export\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-2.md
+2025-11-09 11:18:37,645 - INFO - root - 正在总结论文 2/2: INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats
+2025-11-09 11:18:37,646 - INFO - root - 正在提取论文图片...
+2025-11-09 11:18:38,452 - INFO - root - 已保存图片 1/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 11:18:38,533 - INFO - root - 已保存图片 2/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 11:18:38,563 - INFO - root - 已保存图片 3/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 11:18:38,638 - INFO - root - 已保存图片 4/10：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 11:18:38,648 - INFO - root - 成功添加图片 1：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_1_page9.png
+2025-11-09 11:18:38,648 - INFO - root - 成功添加图片 2：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_2_page1.png
+2025-11-09 11:18:38,650 - INFO - root - 成功添加图片 3：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_3_page1.jpeg
+2025-11-09 11:18:38,650 - INFO - root - 成功添加图片 4：./export\images_INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats\figure_4_page9.png
+2025-11-09 11:18:38,652 - INFO - root - 论文《INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats》的分析已保存到 ./export\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-2.md
+2025-11-09 11:18:38,667 - INFO - root - summary time: 34.69 seconds
+2025-11-09 11:29:36,716 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-09 11:29:36,721 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-09 11:29:36,737 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-09 11:30:37,916 - ERROR - root - LLMClient: error during initialization: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.73.138:443: tcp handshaker shutdown
+2025-11-09 11:30:37,917 - INFO - root - LLM 未初始化或不可用，后续生成将返回备用消息
+2025-11-09 11:30:37,917 - INFO - root - === 运行配置 ===
+2025-11-09 11:30:37,918 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-09 11:30:37,918 - INFO - root - 关键词: Quant
+2025-11-09 11:30:37,918 - INFO - root - 查询: block float point
+2025-11-09 11:30:37,919 - INFO - root - 排序: None
+2025-11-09 11:30:37,919 - INFO - root - 最近天数: 180
+2025-11-09 11:30:37,919 - INFO - root - 最大处理数量: 2
+2025-11-09 11:30:37,919 - INFO - root - 保存图片: 是
+2025-11-09 11:30:37,920 - INFO - root - 输出语言: 中文
+2025-11-09 11:30:37,920 - INFO - root - 强制重新处理: 否
+2025-11-09 11:30:37,920 - INFO - root - ====================
+2025-11-09 11:30:37,921 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-09 11:30:37,921 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-09 11:31:05,549 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:0, From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators, https://arxiv.org/pdf/2511.00032, 2025-11-04
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:1, INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats, https://arxiv.org/pdf/2510.25602, 2025-10-29
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:2, MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving, https://arxiv.org/pdf/2510.14557, 2025-10-16
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:3, F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs, https://arxiv.org/pdf/2510.13401, 2025-10-15
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:4, Computationally Efficient Neural Receivers via Axial Self-Attention, https://arxiv.org/pdf/2510.12941, 2025-10-14
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:5, Efficient In-Memory Acceleration of Sparse Block Diagonal LLMs, https://arxiv.org/pdf/2510.11192, 2025-10-13
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:6, Dissecting Transformers: A CLEAR Perspective towards Green AI, https://arxiv.org/pdf/2510.02810, 2025-10-03
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:7, Microscaling Floating Point Formats for Large Language Models, https://arxiv.org/pdf/2510.01863, 2025-10-02
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:8, Automated and Scalable SEM Image Analysis of Perovskite Solar Cell Materials via a Deep Segmentation Framework, https://arxiv.org/pdf/2509.26548, 2025-09-30
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:9, AMLA: MUL by ADD in FlashAttention Rescaling, https://arxiv.org/pdf/2509.25224, 2025-09-24
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:10, Pretraining Large Language Models with NVFP4, https://arxiv.org/pdf/2509.25149, 2025-09-29
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:11, Bridging the Gap Between Promise and Performance for Microscaling FP4 Quantization, https://arxiv.org/pdf/2509.23202, 2025-10-16
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:12, Towards Verified Compilation of Floating-point Optimization in Scientific Computing Programs, https://arxiv.org/pdf/2509.09019, 2025-09-10
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:13, Green Learning for STAR-RIS mmWave Systems with Implicit CSI, https://arxiv.org/pdf/2509.06820, 2025-09-08
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:14, A Compute&Memory Efficient Model-Driven Neural 5G Receiver for Edge AI-assisted RAN, https://arxiv.org/pdf/2508.12892, 2025-10-22
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:15, SNNSIR: A Simple Spiking Neural Network for Stereo Image Restoration, https://arxiv.org/pdf/2508.12271, 2025-08-17
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:16, SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration, https://arxiv.org/pdf/2508.02069, 2025-08-18
+2025-11-09 11:31:05,549 - INFO - root - Page:0, Index:17, DGEMM without FP64 Arithmetic - Using FP64 Emulation and FP8 Tensor Cores with Ozaki Scheme, https://arxiv.org/pdf/2508.00441, 2025-09-25
+2025-11-09 11:31:05,556 - INFO - root - Page:0, Index:18, Scaling Probabilistic Circuits via Monarch Matrices, https://arxiv.org/pdf/2506.12383, 2025-06-14
+2025-11-09 11:31:05,557 - INFO - root - Page:0, Index:19, Starting Positions Matter: A Study on Better Weight Initialization for Neural Network Quantization, https://arxiv.org/pdf/2506.10463, 2025-06-12
+2025-11-09 11:31:05,559 - INFO - root - Page:0, Index:20, Recipes for Pre-training LLMs with MXFP8, https://arxiv.org/pdf/2506.08027, 2025-08-18
+2025-11-09 11:31:05,560 - INFO - root - Page:0, Index:21, FP4 All the Way: Fully Quantized Training of LLMs, https://arxiv.org/pdf/2505.19115, 2025-08-10
+2025-11-09 11:31:05,560 - INFO - root - Page:0, Index:22, Automatic Verification of Floating-Point Accumulation Networks, https://arxiv.org/pdf/2505.18791, 2025-05-24
+2025-11-09 11:31:05,560 - INFO - root - Page:0, Index:23, MXDOTP: A RISC-V ISA Extension for Enabling Microscaling (MX) Floating-Point Dot Products, https://arxiv.org/pdf/2505.13159, 2025-05-19
+2025-11-09 11:31:05,561 - INFO - root - Page:0, Index:24, Parameter-Efficient Fine-Tuning with Circulant and Diagonal Vectors, https://arxiv.org/pdf/2505.00580, 2025-07-15
+2025-11-09 11:31:05,561 - INFO - root - Page:0, Index:25, Silenzio: Secure Non-Interactive Outsourced MLP Training, https://arxiv.org/pdf/2504.17785, 2025-09-18
+2025-11-09 11:31:05,561 - INFO - root - Page:0, Index:26, Involution and BSConv Multi-Depth Distillation Network for Lightweight Image Super-Resolution, https://arxiv.org/pdf/2503.14779, 2025-09-08
+2025-11-09 11:31:05,562 - INFO - root - Page:0, Index:27, Flopping for FLOPs: Leveraging equivariance for computational efficiency, https://arxiv.org/pdf/2502.05169, 2025-06-24
+2025-11-09 11:31:05,562 - INFO - root - Page:0, Index:28, An Effective UNet Using Feature Interaction and Fusion for Organ Segmentation in Medical Image, https://arxiv.org/pdf/2409.05324, 2025-07-26
+2025-11-09 11:31:05,563 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-09 11:31:30,452 - INFO - root - get_all_titles_from_web 
+2025-11-09 11:31:30,453 - INFO - root - Page:1, Index:0, TwinLiteNet+: An Enhanced Multi-Task Segmentation Model for Autonomous Driving, https://arxiv.org/pdf/2403.16958, 2025-08-30
+2025-11-09 11:31:30,453 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=block+float+point&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-09 11:32:32,097 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-09 11:33:32,864 - INFO - root - 跳过已处理论文 From Uniform to Adaptive: General Skip-Block Mechanisms for Efficient PDE Neural Operators：D:\ChatPaper\academic Papers\block float point\From Uniform to Adaptive_ General Skip-Block Mechanisms for Efficient PDE Neural-1.pdf
+2025-11-09 11:33:32,864 - INFO - root - 跳过已处理论文 INT v.s. FP: A Comprehensive Study of Fine-Grained Low-bit Quantization Formats：D:\ChatPaper\academic Papers\block float point\INT v.s. FP_ A Comprehensive Study of Fine-Grained Low-bit Quantization Formats-1.pdf
+2025-11-09 11:33:32,864 - INFO - root - summary time: 236.15 seconds
