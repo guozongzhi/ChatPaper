@@ -19,6 +19,7 @@ from bs4 import BeautifulSoup
 from PIL import Image
 import chat_arxiv
 import logging_config as logging_config  # configures logging (file + console) on import
+from paper_enhancer import PaperEnhancer
 
 ArxivParams = namedtuple(
     "ArxivParams",
@@ -404,6 +405,9 @@ class Reader:
                 self.gitee_key = ''
         else:
             self.gitee_key = ''
+        
+        # 初始化PaperEnhancer
+        self.paper_enhancer = PaperEnhancer()
 
     # arXiv 相关的功能已抽离到 chat_arxiv 模块。下面的方法作为兼容性包装，
     # 将调用 chat_arxiv 中的实现以避免重复代码。
@@ -681,13 +685,14 @@ class Reader:
             
             # 如果开启了保存图片功能，提取并保存图片
             if self.args.save_image:
-                # 创建图片保存目录（不再在目录名中使用时间戳）
-                image_dir = os.path.join(self.root_path, "export", f"images_{self.validateTitle(paper.title)}")
-                if not os.path.exists(image_dir):
-                    os.makedirs(image_dir)
+                # 创建按关键词分类的图片目录
+                keyword_dir = os.path.join(self.root_path, "export", self.validateTitle(self.key_word))
+                images_dir = os.path.join(keyword_dir, "images")
+                if not os.path.exists(images_dir):
+                    os.makedirs(images_dir)
                 
                 logging.info("正在提取论文图片...")
-                saved_images = paper.get_image_path(image_path=image_dir, max_images=10)  # 提取更多图片
+                saved_images = paper.get_image_path(image_path=images_dir, max_images=10)  # 直接保存到最终目录
                 
                 if saved_images:  # 如果获取到了图片
                     # 准备图片部分（作为附录）
@@ -695,7 +700,9 @@ class Reader:
                     for i, img_path in enumerate(saved_images, 1):
                         try:
                             if img_path and isinstance(img_path, str):  # 确保是有效的字符串路径
-                                rel_path = os.path.relpath(img_path, os.path.dirname(output_file))
+                                # 使用相对于Markdown文件的路径
+                                filename = os.path.basename(img_path)
+                                rel_path = f"images/{filename}"
                                 images_section += f"## 图 {i}\n![Figure {i}]({rel_path})\n\n"
                                 logging.info("成功添加图片 %s：%s", i, img_path)
                         except Exception as e:
@@ -716,6 +723,14 @@ class Reader:
             # 在最后添加图片部分（如果有）
             if images_section:
                 full_summary += images_section
+            
+            # 使用PaperEnhancer更新图片链接，按文献标题存储图片
+            if self.args.save_image and saved_images:
+                try:
+                    full_summary = self.paper_enhancer.update_image_links(full_summary, paper.title, self.key_word)
+                    logging.info("已按文献标题重新组织图片存储")
+                except Exception as e:
+                    logging.warning("更新图片链接失败: %s", e)
             
             # 导出到文件：根据 --force 决定写入模式（强制模式覆盖，否则追加）
             output_file = self.get_output_filename(paper.title)
@@ -754,12 +769,38 @@ class Reader:
                     if remaining > 0:
                         logging.info("已处理 %s 篇，剩余 %s 篇，等待 %s 秒后继续处理...", batch_size, remaining, batch_delay)
                         time.sleep(batch_delay)
+        
+        # 在所有论文处理完成后，生成汇总Excel表格
+        if paper_list:
+            try:
+                papers_data = []
+                for paper in paper_list:
+                    paper_data = {
+                        "title": paper.title,
+                        "url": paper.url,
+                        "authors": paper.authers,
+                        "keyword": self.key_word,
+                        "published_date": "",
+                        "citation_count": 0,
+                        "arxiv_id": "",
+                        "categories": [],
+                        "processed_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    }
+                    papers_data.append(paper_data)
+                
+                # 生成汇总Excel表格
+                excel_path = self.paper_enhancer.generate_summary_excel(papers_data, self.key_word)
+                logging.info("已生成汇总Excel表格: %s", excel_path)
+                
+            except Exception as e:
+                logging.warning("生成汇总Excel表格失败: %s", e)
 
     def get_output_filename(self, paper_title=None):
         """获取输出文件的完整路径，如果文件已存在且未启用force，则返回None表示跳过"""
-        export_path = os.path.join(self.root_path, "export")
-        if not os.path.exists(export_path):
-            os.makedirs(export_path)
+        # 按照关键词分类存储
+        keyword_dir = os.path.join(self.root_path, "export", self.validateTitle(self.key_word))
+        if not os.path.exists(keyword_dir):
+            os.makedirs(keyword_dir)
         
         # 如果提供了论文标题，使用论文标题作为文件名的一部分（不再包含时间戳）
         if paper_title:
@@ -768,7 +809,7 @@ class Reader:
             base = self.validateTitle(self.args.query)
 
         filename = f"{base}.{self.args.file_format}"
-        full = os.path.join(export_path, filename)
+        full = os.path.join(keyword_dir, filename)
 
         # 如果文件存在且未启用 --force，则返回None表示跳过处理
         if os.path.exists(full) and not getattr(self.args, 'force', False):
