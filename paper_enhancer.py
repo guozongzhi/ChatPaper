@@ -29,9 +29,8 @@ class PaperEnhancer:
         keyword_dir = os.path.join(self.export_base_path, keyword)
         os.makedirs(keyword_dir, exist_ok=True)
         
-        # 按文献标题创建图片目录
-        paper_safe_title = self._validate_filename(paper_title)
-        images_dir = os.path.join(keyword_dir, "images", paper_safe_title)
+        # 创建图片目录（直接放在images下，不按文献建子文件夹）
+        images_dir = os.path.join(keyword_dir, "images")
         os.makedirs(images_dir, exist_ok=True)
         
         # 更新图片链接
@@ -40,6 +39,29 @@ class PaperEnhancer:
         # 查找并更新所有图片链接
         image_pattern = r'(!\[.*?\]\()(.*?)(\))'
         matches = list(re.finditer(image_pattern, markdown_content))
+        
+        # 首先修复所有错误的图片路径格式（images_xxx\filename -> images/xxx/filename）
+        # 处理错误的路径格式：images_论文标题\文件名
+        wrong_pattern = r'(!\[.*?\]\()(images_[^\\]+)\\([^)]+)(\))'
+        wrong_matches = list(re.finditer(wrong_pattern, markdown_content))
+        
+        for match in reversed(wrong_matches):
+            full_match = match.group(0)
+            prefix = match.group(1)  # ![...](
+            wrong_dir = match.group(2)  # images_论文标题
+            filename = match.group(3)  # 文件名
+            suffix = match.group(4)  # )
+            
+            # 提取论文标题（去掉images_前缀）
+            paper_title_from_path = wrong_dir.replace('images_', '')
+            paper_safe_title_from_path = self._validate_filename(paper_title_from_path)
+            
+            # 创建正确的路径
+            correct_path = f"images/{paper_safe_title_from_path}/{filename}"
+            new_image_link = f"{prefix}{correct_path}{suffix}"
+            
+            # 替换错误的图片链接
+            markdown_content = markdown_content[:match.start()] + new_image_link + markdown_content[match.end():]
         
         # 从后往前替换，避免索引变化影响替换
         for match in reversed(matches):
@@ -53,29 +75,8 @@ class PaperEnhancer:
                 # 提取文件名
                 filename = os.path.basename(old_path)
                 
-                # 检查图片文件是否存在
-                if os.path.exists(old_path):
-                    logging.info(f"找到图片文件: {old_path}")
-                    # 检查图片是否已经在正确的目录中
-                    expected_path = os.path.join(images_dir, filename)
-                    if not os.path.exists(expected_path):
-                        # 如果图片不在正确位置，复制到文献图片目录
-                        try:
-                            shutil.copy2(old_path, expected_path)
-                            logging.info(f"复制图片到文献目录: {old_path} -> {expected_path}")
-                        except Exception as e:
-                            logging.warning(f"复制图片失败: {e}")
-                else:
-                    logging.warning(f"图片文件不存在: {old_path}")
-                    # 检查是否在文献图片目录中
-                    images_path = os.path.join(images_dir, filename)
-                    if os.path.exists(images_path):
-                        logging.info(f"图片存在于文献目录: {images_path}")
-                    else:
-                        logging.warning(f"图片在任何位置都不存在: {filename}")
-                
                 # 创建新的相对路径（相对于Markdown文件）
-                new_relative_path = f"images/{paper_safe_title}/{filename}"
+                new_relative_path = f"images/{filename}"
                 
                 # 构建新的图片链接
                 new_image_link = f"{prefix}{new_relative_path}{suffix}"

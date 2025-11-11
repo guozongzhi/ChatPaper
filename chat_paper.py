@@ -685,14 +685,14 @@ class Reader:
             
             # 如果开启了保存图片功能，提取并保存图片
             if self.args.save_image:
-                # 创建按关键词分类的图片目录
+                # 创建按关键词分类的图片目录（直接放在images下，不按文献建子文件夹）
                 keyword_dir = os.path.join(self.root_path, "export", self.validateTitle(self.key_word))
                 images_dir = os.path.join(keyword_dir, "images")
                 if not os.path.exists(images_dir):
                     os.makedirs(images_dir)
                 
-                logging.info("正在提取论文图片...")
-                saved_images = paper.get_image_path(image_path=images_dir, max_images=10)  # 直接保存到最终目录
+                logging.info("正在提取论文图片到目录: %s", images_dir)
+                saved_images = paper.get_image_path(image_path=images_dir, max_images=10)  # 直接保存到images目录
                 
                 if saved_images:  # 如果获取到了图片
                     # 准备图片部分（作为附录）
@@ -727,8 +727,30 @@ class Reader:
             # 使用PaperEnhancer更新图片链接，按文献标题存储图片
             if self.args.save_image and saved_images:
                 try:
+                    # 确保论文标题在Markdown和图片目录中保持一致
+                    paper_safe_title = self.validateTitle(paper.title)
+                    
+                    # 检查是否存在不一致的目录名问题
+                    keyword_dir = os.path.join(self.root_path, "export", self.validateTitle(self.key_word))
+                    images_root_dir = os.path.join(keyword_dir, "images")
+                    
+                    # 查找实际存在的图片目录
+                    actual_images_dir = None
+                    if os.path.exists(images_root_dir):
+                        for item in os.listdir(images_root_dir):
+                            item_path = os.path.join(images_root_dir, item)
+                            if os.path.isdir(item_path) and paper_safe_title in item:
+                                # 检查目录中是否有图片文件
+                                for file in os.listdir(item_path):
+                                    if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+                                        actual_images_dir = item_path
+                                        break
+                                if actual_images_dir:
+                                    break
+                    
+                    # 更新图片链接
                     full_summary = self.paper_enhancer.update_image_links(full_summary, paper.title, self.key_word)
-                    logging.info("已按文献标题重新组织图片存储")
+                    logging.info("已更新图片链接")
                 except Exception as e:
                     logging.warning("更新图片链接失败: %s", e)
             
