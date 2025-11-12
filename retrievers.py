@@ -174,9 +174,7 @@ class GoogleScholarRetriever(RetrieverStrategy):
             if "arxiv.org/abs" in url:
                 pdf_url = url.replace("/abs/", "/pdf/") + ".pdf"
                 try:
-                    # 复用 chat_arxiv 的下载器
-                    #
-                    # 我们使用 args.key_word (用于保存) 而不是 args.query (用于搜索)
+                    # (!!!) 已修正：使用 args.key_word 而不是 args.query (!!!)
                     filename = chat_arxiv.try_download_pdf(pdf_url, title, args.key_word)
                     
                     # (!!!) 将引用次数传递给 Paper 对象 (!!!)
@@ -194,6 +192,7 @@ class GoogleScholarRetriever(RetrieverStrategy):
                 except Exception as e:
                     logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
             else:
-                logging.info(f"跳过 (非ArXiv链接): {title} @ {url}")
+                # (!!!) 优化日志记录 (!!!)
+                logging.warning(f"【手动下载提示】(非ArXiv链接): {title} @ {url}")
 
         return paper_list
