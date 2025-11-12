@@ -3,6 +3,7 @@ import os
 import sys
 import requests
 import time
+import datetime # <--- (!!!) 新增导入 (!!!)
 from typing import List
 
 # --- 路径设置 ---
@@ -116,12 +117,13 @@ class ArxivRetriever(RetrieverStrategy):
         return paper_list
 
 # ---------------------------------------------------------------------
-# 策略三：Google Scholar 高引用论文检索
+# 策略三：Google Scholar 高引用论文检索 (爬虫)
 # ---------------------------------------------------------------------
 class GoogleScholarRetriever(RetrieverStrategy):
     """
     检索策略：使用 google_scholar_spider 模块从 Google Scholar 
     获取高引用论文，并尝试下载它们（如果链接指向 arXiv）。
+    (!!!) 警告：此方法依赖网页爬虫，不稳定 (!!!)
    
     """
     
@@ -130,7 +132,7 @@ class GoogleScholarRetriever(RetrieverStrategy):
             raise ImportError("Google Scholar 依赖 (pandas, requests, bs4) 未安装，或 'others/google_scholar_spider.py' 未找到。")
     
     def retrieve(self, args) -> List[Paper]:
-        logging.info("使用 Google Scholar 高引用搜索模式")
+        logging.info("使用 Google Scholar 高引用搜索模式 (爬虫)")
         
         # 1. 映射参数到 GoogleScholarConfig
         #
@@ -195,4 +197,107 @@ class GoogleScholarRetriever(RetrieverStrategy):
                 # (!!!) 优化日志记录 (!!!)
                 logging.warning(f"【手动下载提示】(非ArXiv链接): {title} @ {url}")
 
+        return paper_list
+
+# ---------------------------------------------------------------------
+# (!!!) 策略四：Semantic Scholar 高引用论文检索 (API) (!!!)
+# ---------------------------------------------------------------------
+class SemanticScholarRetriever(RetrieverStrategy):
+    """
+    检索策略：使用 Semantic Scholar 官方 API 
+    获取高引用论文，并尝试下载开放存取(OA) PDF。
+    (!!!) 推荐：此方法稳定且功能强大 (!!!)
+    """
+    
+    API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
+    
+    def _parse_date(self, pub_date_str: str) -> datetime.date | None:
+        """健壮地解析 Semantic Scholar 返回的日期字符串"""
+        if not pub_date_str:
+            return None
+        try:
+            # 尝试解析完整日期, e.g., "2023-10-27"
+            return datetime.date.fromisoformat(pub_date_str)
+        except (ValueError, TypeError):
+            try:
+                # 尝试仅解析年份, e.g., "2023"
+                return datetime.date(int(pub_date_str[:4]), 1, 1)
+            except (ValueError, TypeError):
+                logging.warning(f"无法解析日期字符串: {pub_date_str}")
+                return None
+
+    def retrieve(self, args) -> List[Paper]:
+        logging.info("使用 Semantic Scholar 高引用搜索模式 (API)")
+        
+        # 1. 构建 API 请求参数
+        params = {
+            'query': args.query,
+            'limit': args.max_results,
+            'sort': args.sort or 'citationCount:desc', # 默认按引用数排序
+            'fields': 'title,url,abstract,authors,publicationDate,citationCount,openAccessPdf'
+        }
+        
+        logging.info(f"Semantic API 查询: query={params['query']}, limit={params['limit']}, sort={params['sort']}")
+        
+        paper_list = []
+        try:
+            # 2. 发起 API 请求
+            response = requests.get(self.API_URL, params=params, timeout=30)
+            response.raise_for_status() # 请求失败则抛出异常
+            
+            data = response.json()
+            
+            if not data.get('data') or len(data['data']) == 0:
+                logging.info("Semantic Scholar API 未返回结果。")
+                return []
+                
+            # 3. 遍历结果并尝试下载
+            for result in data['data']:
+                if not result:
+                    continue
+                
+                title = result.get('title')
+                sem_url = result.get('url')
+                abstract = result.get('abstract')
+                citations = result.get('citationCount')
+                pub_date_str = result.get('publicationDate')
+                authors = [a.get('name') for a in result.get('authors', []) if a.get('name')]
+                pub_date = self._parse_date(pub_date_str)
+                
+                pdf_url = None
+                if result.get('openAccessPdf') and result['openAccessPdf'].get('url'):
+                    pdf_url = result['openAccessPdf']['url']
+                    
+                if pdf_url:
+                    try:
+                        # 4. 复用下载器
+                        filename = chat_arxiv.try_download_pdf(pdf_url, title, args.key_word)
+                        
+                        # 5. 创建 Paper 对象
+                        paper = Paper(
+                            path=filename,
+                            title=title,
+                            url=sem_url,
+                            abs=abstract or "摘要不可用",
+                            authers=authors,
+                            published_date=pub_date,
+                            citations=citations
+                            # arxiv_id 默认为 None
+                        )
+                        paper_list.append(paper)
+                        logging.info(f"成功下载 (Semantic Scholar): {title}")
+                        
+                    except Exception as e:
+                        logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
+                else:
+                    # 6. 记录无法下载的论文 (符合用户要求)
+                    logging.warning(f"【手动下载提示】(Semantic Scholar 未提供开放 PDF): {title} @ {sem_url}")
+
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Semantic Scholar API 请求失败: {e}", exc_info=True)
+            return []
+        except Exception as e:
+            logging.error(f"处理 Semantic Scholar 结果时出错: {e}", exc_info=True)
+            return []
+            
         return paper_list
