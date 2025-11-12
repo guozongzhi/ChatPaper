@@ -8,41 +8,50 @@ import datetime # 确保导入 datetime
 
 class Paper:
     def __init__(self, path, title='', url='', abs='', authers=None, 
-                 published_date=None, arxiv_id=None, citations=None): # <--- (!!!) 新增 citations
-        # 初始化函数，根据pdf路径初始化Paper对象                
-        self.url = url           # 文章链接 (arXiv 页面 URL)
-        self.path = path         # pdf路径
-        self.section_names = []  # 段落标题
-        self.section_texts = {}  # 段落内容
-        self.section_text_dict = {}  # 段落内容字典    
+                 published_date=None, arxiv_id=None, citations=None, 
+                 manual_download_required=False): # <--- (!!!) 新增 manual_download_required
+        
+        self.path = path         # pdf路径 (!!!) (现在可以为 None) (!!!)
+        self.title = title
+        self.url = url           # 文章链接
         self.abs = abs
+        self.authers = authers or []
+        self.published_date = published_date
+        self.arxiv_id = arxiv_id
+        self.citations = citations
+        self.manual_download_required = manual_download_required # <--- (!!!) 新增标志 (!!!)
+        
+        self.section_names = []
+        self.section_texts = {}
+        self.section_text_dict = {}
         self.title_page = 0
         
-        # --- 新增元数据 (用于 API 检索) ---
-        self.published_date = published_date # 提交日期 (datetime.date)
-        self.arxiv_id = arxiv_id           # ArXiv ID (str)
-        self.authers = authers or []       # 作者列表 (List[str])
-        self.citations = citations         # (!!!) 引用次数 (int or None)
-        # ---
-        
-        if title == '':
-            # 本地文件模式：需要解析标题和内容
-            try:
-                self.pdf = fitz.open(self.path) # pdf文档
-                self.title = self.get_title()
-                self.parse_pdf()
-            except Exception as e:
-                logging.error(f"打开或解析PDF失败: {self.path} - {e}")
-                self.title = self.title or "无法解析的标题"
-                self.section_text_dict = {'Abstract': f"PDF文件打开失败: {e}"}
-            finally:
-                if hasattr(self, 'pdf') and self.pdf:
-                    self.pdf.close()
-        else:
-            # API 模式：元数据已传入
-            self.title = title
-            # 预先填充摘要
+        # (!!!) 仅在 path 存在时 (本地文件或已下载) 才尝试打开 PDF (!!!)
+        if self.path and os.path.exists(self.path):
+            if title == '':
+                # 本地文件模式：需要解析标题和内容
+                try:
+                    self.pdf = fitz.open(self.path) # pdf文档
+                    self.title = self.get_title()
+                    self.parse_pdf()
+                except Exception as e:
+                    logging.error(f"打开或解析PDF失败: {self.path} - {e}")
+                    self.title = self.title or "无法解析的标题"
+                    self.section_text_dict = {'Abstract': f"PDF文件打开失败: {e}"}
+                finally:
+                    if hasattr(self, 'pdf') and self.pdf:
+                        self.pdf.close()
+            else:
+                # API 模式（已下载）：预填充摘要
+                self.section_text_dict = {'Introduction': '', 'Abstract': self.abs}
+        elif self.manual_download_required:
+            # API 模式（未下载）：预填充摘要，不尝试打开 PDF
             self.section_text_dict = {'Introduction': '', 'Abstract': self.abs}
+        else:
+            if not self.path:
+                logging.warning(f"Paper 对象 '{self.title}' 被创建时没有路径且未标记为手动下载。")
+            else:
+                logging.warning(f"Paper 对象 '{self.title}' 路径不存在: {self.path}")
         
         self.roman_num = ["I", "II", 'III', "IV", "V", "VI", "VII", "VIII", "IIX", "IX", "X"]
         self.digit_num = [str(d+1) for d in range(10)]
@@ -52,6 +61,10 @@ class Paper:
         """
         解析 PDF 内容，填充 self.section_text_dict
         """
+        if not self.path or not os.path.exists(self.path):
+            logging.warning(f"尝试解析一个不存在的 PDF: {self.path}")
+            return
+            
         try:
             # 确保 PDF 是打开的 (主要为本地模式)
             if not hasattr(self, 'pdf') or not self.pdf or self.pdf.is_closed:
@@ -89,13 +102,12 @@ class Paper:
 
     def get_paper_info(self):
         first_page_text = ""
+        if not self.path or not os.path.exists(self.path): return "PDF 路径不存在"
         try:
             if not hasattr(self, 'pdf') or self.pdf.is_closed:
                 self.pdf = fitz.open(self.path)
             
-            # 确保 self.pdf 真的被打开了
-            if not self.pdf:
-                 raise Exception("PDF 对象未初始化")
+            if not self.pdf: raise Exception("PDF 对象未初始化")
                  
             first_page_text = self.pdf[self.title_page].get_text()
             
@@ -118,10 +130,11 @@ class Paper:
     def get_image_path(self, image_path='', max_images=3):
         """
         从PDF中提取并保存重要图片
-        :param image_path: 图片保存路径
-        :param max_images: 最大保存图片数量
-        :return: 返回所有保存的图片路径和扩展名的列表 [(path, ext), ...]
         """
+        if not self.path or not os.path.exists(self.path):
+            logging.warning(f"无法提取图片：PDF 路径不存在 {self.path}")
+            return []
+            
         if not os.path.exists(image_path):
             os.makedirs(image_path)
 
@@ -140,14 +153,11 @@ class Paper:
                             image_bytes = base_image["image"]
                             ext = base_image["ext"]
                             
-                            # 加载图片并计算大小
                             pil_image = Image.open(io.BytesIO(image_bytes))
-                            # 转换RGBA为RGB
                             if pil_image.mode == 'RGBA':
                                 pil_image = pil_image.convert('RGB')
                             image_size = pil_image.size[0] * pil_image.size[1]
                             
-                            # 只保存大于特定大小的图片
                             if image_size > 5000:  # 过滤掉太小的图片
                                 image_info_list.append((pil_image, image_size, ext, page_number))
                         except Exception as e:
@@ -160,8 +170,7 @@ class Paper:
             # 保存排序后的图片
             for i, (image, size, ext, page_num) in enumerate(image_info_list[:max_images]):
                 try:
-                    # 调整图片大小，保持更好的质量
-                    max_pix = 1000  # 增加最大像素
+                    max_pix = 1000
                     if image.size[0] > image.size[1]:
                         min_pix = int(image.size[1] * (max_pix/image.size[0]))
                         newsize = (max_pix, min_pix)
@@ -171,11 +180,10 @@ class Paper:
                     
                     resized_image = image.resize(newsize, Image.Resampling.LANCZOS)
                             
-                            # 保存图片，包含页码信息
                     image_name = f"figure_{i+1}_page{page_num+1}.{ext}"
                     im_path = os.path.join(image_path, image_name)
-                    resized_image.save(im_path, quality=95)  # 使用更高的图片质量
-                    saved_images.append(im_path)  # 只保存路径
+                    resized_image.save(im_path, quality=95)
+                    saved_images.append(im_path)
                     logging.info("已保存图片 %s/%s：%s", i+1, max_images, im_path)
                 except Exception as e:
                     logging.warning("保存图片 %s 时出错：%s", i+1, e)
@@ -183,12 +191,11 @@ class Paper:
         except Exception as e:
             logging.error(f"提取图片失败 {self.path}: {e}")
             
-        # 返回所有保存的图片路径
         return saved_images if saved_images else []
         
-    # 定义一个函数，根据字体的大小，识别每个章节名称，并返回一个列表
     def get_chapter_names(self,):
         all_text = ''
+        if not self.path or not os.path.exists(self.path): return []
         try:
             doc = fitz.open(self.path) # pdf文档        
             text_list = [page.get_text() for page in doc]
@@ -200,7 +207,6 @@ class Paper:
             logging.warning(f"获取章节名失败: {e}")
             return []
         
-        # # 创建一个空列表，用于存储章节名称
         chapter_names = []
         for line in all_text.split('\n'):
             line_list = line.split(' ')
@@ -218,14 +224,13 @@ class Paper:
         return chapter_names
         
     def get_title(self):
-        # doc = self.pdf # (pdf 已在 __init__ 中打开)
         doc = self.pdf
         if not doc:
             logging.error("PDF 对象在 get_title 中未初始化")
             return "PDF 未初始化"
             
-        max_font_size = 0 # 初始化最大字体大小为0
-        max_string = "" # 初始化最大字体大小对应的字符串为空
+        max_font_size = 0
+        max_string = ""
         max_font_sizes = [0]
         for page_index, page in enumerate(doc): # 遍历每一页
             try:
@@ -276,7 +281,6 @@ class Paper:
 
 
     def _get_all_page_index(self):
-        # ... (此方法保持不变) ...
         section_list = ["Abstract", 
                         'Introduction', 'Related Work', 'Background', 
                         "Preliminary", "Problem Formulation",
@@ -288,13 +292,13 @@ class Paper:
                         "Discussion", "Results and Discussion", "Conclusion",
                         'References']
         section_page_dict = {}
+        if not self.path or not os.path.exists(self.path): return section_page_dict
         try:
             if not hasattr(self, 'pdf') or self.pdf.is_closed:
                 logging.warning("PDF 在 _get_all_page_index 中关闭，重新打开")
                 self.pdf = fitz.open(self.path)
             
-            if not self.pdf:
-                raise Exception("PDF 对象未初始化")
+            if not self.pdf: raise Exception("PDF 对象未初始化")
 
             for page_index, page in enumerate(self.pdf):
                 cur_text = page.get_text()
@@ -312,12 +316,13 @@ class Paper:
         return section_page_dict
 
     def _get_all_page(self):
-        # ... (此方法保持不变) ...
         text = ''
         text_list = []
         section_dict = {}
         
-        # 确保 text_list 已被填充
+        if not self.path or not os.path.exists(self.path):
+            return {'Abstract': 'PDF 路径不存在'}
+
         if not hasattr(self, 'text_list') or not self.text_list:
             if hasattr(self, 'pdf') and self.pdf and not self.pdf.is_closed:
                 self.text_list = [page.get_text() for page in self.pdf]
@@ -330,17 +335,15 @@ class Paper:
                     logging.error(f"无法在 _get_all_page 中读取PDF: {e}")
                     return {'Abstract': 'PDF读取失败'}
         
-        text_list = self.text_list # 使用已填充的 text_list
+        text_list = self.text_list 
 
         for sec_index, sec_name in enumerate(self.section_page_dict):
             logging.debug("sec_index=%s sec_name=%s page=%s", sec_index, sec_name, self.section_page_dict[sec_name])
             if sec_index <= 0 and self.abs:
-                # API 模式下，如果已有 abs，跳过 Abstract 的文本解析
                 if sec_name == "Abstract":
                     section_dict[sec_name] = self.abs
                     continue
             
-            # 直接考虑后面的内容：
             start_page = self.section_page_dict.get(sec_name)
             if start_page is None:
                 logging.warning(f"章节 {sec_name} 在 page_dict 中未找到，跳过")
@@ -352,7 +355,7 @@ class Paper:
             else:
                 end_page = len(text_list)
                 
-            if end_page is None: # 处理 next_sec_name 不在 dict 中的情况
+            if end_page is None:
                 end_page = len(text_list)
                 
             logging.debug("start_page=%s, end_page=%s", start_page, end_page)

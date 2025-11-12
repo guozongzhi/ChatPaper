@@ -4,7 +4,7 @@ import sys
 import requests
 import time
 import datetime 
-import tenacity # <--- (!!!) 新增导入 (!!!)
+import tenacity 
 from typing import List
 
 # --- 路径设置 ---
@@ -196,8 +196,12 @@ class GoogleScholarRetriever(RetrieverStrategy):
                 except Exception as e:
                     logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
             else:
-                # (!!!) 优化日志记录 (!!!)
-                logging.warning(f"【手动下载提示】(非ArXiv链接): {title} @ {url}")
+                # (!!!) 增强日志：按用户要求添加引用次数 (!!!)
+                logging.warning(
+                    f"【手动下载提示】(非ArXiv链接): {title}\n"
+                    f"\t  URL: {url}\n"
+                    f"\t  Citations: {citations}"
+                )
 
         return paper_list
 
@@ -309,8 +313,14 @@ class SemanticScholarRetriever(RetrieverStrategy):
                     except Exception as e:
                         logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
                 else:
-                    # 6. 记录无法下载的论文 (符合用户要求)
-                    logging.warning(f"【手动下载提示】(Semantic Scholar 未提供开放 PDF): {title} @ {sem_url}")
+                    # 6. (!!!) 增强日志：按用户要求添加详细元数据 (!!!)
+                    authors_str = ', '.join(authors) if authors else 'N/A'
+                    date_str = pub_date.strftime('%Y-%m-%d') if pub_date else 'N/A'
+                    logging.warning(
+                        f"【手动下载提示】(无PDF): {title}\n"
+                        f"\t  URL: {sem_url}\n"
+                        f"\t  Citations: {citations} | Authors: {authors_str} | Date: {date_str}"
+                    )
 
         except requests.exceptions.HTTPError as e:
             # (!!!) 捕获 429 错误 (!!!)

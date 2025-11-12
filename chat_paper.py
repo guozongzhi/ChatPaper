@@ -203,6 +203,9 @@ class Reader:
         # 遍历论文列表
         processed_in_batch = 0
         total_to_process = len(paper_list)
+        
+        # (!!!) 修正：第一部分：仅总结已下载的论文 (!!!)
+        logging.info("--- 开始论文总结阶段 ---")
         for paper_index, paper in enumerate(paper_list):
             
             # 确保 paper 对象有效
@@ -210,10 +213,11 @@ class Reader:
                 logging.warning(f"跳过无效的 paper 对象 (索引 {paper_index})")
                 continue
             
-            if not paper.path:
-                logging.warning(f"跳过缺少路径的 paper 对象: {paper.title}")
+            # (!!!) 修正：如果论文需要手动下载(path为None)，则跳过总结 (!!!)
+            if not paper.path or paper.manual_download_required:
+                logging.info(f"跳过总结 (手动下载): {paper.title}")
                 continue
-                
+            
             abs_path = os.path.abspath(paper.path)
             
             # 第一步：检查是否应该跳过处理（在开始任何处理之前）
@@ -336,18 +340,25 @@ class Reader:
             full_summary += f"## 2. 方法详解\n{summary2}\n\n"
             full_summary += f"## 3. 最终评述与分析\n{summary3}\n\n"
             
-            # (后续图片处理部分不变)
-            # ...
+            # (!!!) 修正：图片保存路径和链接 (!!!)
             images_section = ""
             
             if self.args.save_image:
+                # (!!!) 修正：为每篇论文创建唯一的图片子目录 (!!!)
                 keyword_dir = os.path.join(self.root_path, "export", chat_arxiv.validateTitle(self.key_word))
-                images_dir = os.path.join(keyword_dir, "images")
-                if not os.path.exists(images_dir):
-                    os.makedirs(images_dir)
                 
-                logging.info("正在提取论文图片到目录: %s", images_dir)
-                saved_images = paper.get_image_path(image_path=images_dir, max_images=10)
+                # (!!!) 使用 paper.title 创建一个安全的子目录名 (!!!)
+                paper_safe_title = chat_arxiv.validateTitle(paper.title)
+                
+                # (!!!) 路径现在是 paper-specific (!!!)
+                paper_images_dir = os.path.join(keyword_dir, "images", paper_safe_title)
+                
+                if not os.path.exists(paper_images_dir):
+                    os.makedirs(paper_images_dir)
+                
+                logging.info("正在提取论文图片到目录: %s", paper_images_dir)
+                # (!!!) 传递 paper-specific 路径 (!!!)
+                saved_images = paper.get_image_path(image_path=paper_images_dir, max_images=10)
                 
                 if saved_images:
                     images_section = "\n---\n\n# 附录：论文图片\n\n"
@@ -355,7 +366,8 @@ class Reader:
                         try:
                             if img_path and isinstance(img_path, str):
                                 filename = os.path.basename(img_path)
-                                rel_path = f"images/{filename}"
+                                # (!!!) 修正：Markdown 链接现在必须包含子目录 (!!!)
+                                rel_path = f"images/{paper_safe_title}/{filename}"
                                 images_section += f"## 图 {i}\n![Figure {i}]({rel_path})\n\n"
                                 logging.info("成功添加图片 %s：%s", i, img_path)
                         except Exception as e:
@@ -365,12 +377,13 @@ class Reader:
             if images_section:
                 full_summary += images_section
             
-            if self.args.save_image and saved_images:
-                try:
-                    full_summary = self.paper_enhancer.update_image_links(full_summary, paper.title, self.key_word)
-                    logging.info("已更新图片链接")
-                except Exception as e:
-                    logging.warning("更新图片链接失败: %s", e)
+            # (!!!) 修正：此调用现在是多余的，因为链接已正确生成 (!!!)
+            # if self.args.save_image and saved_images:
+            #     try:
+            #         full_summary = self.paper_enhancer.update_image_links(full_summary, paper.title, self.key_word)
+            #         logging.info("已更新图片链接")
+            #     except Exception as e:
+            #         logging.warning("更新图片链接失败: %s", e)
             
             output_file = self.get_output_filename(paper.title)
             
@@ -405,31 +418,39 @@ class Reader:
                         logging.info("已处理 %s 篇，剩余 %s 篇，等待 %s 秒后继续处理...", batch_size, remaining, batch_delay)
                         time.sleep(batch_delay)
         
-        # (生成 Excel 部分不变)
+        logging.info("--- 论文总结阶段结束 ---")
+
+        # (!!!) 修正：第二部分：生成包含 *所有* 论文的 Excel (!!!)
         if paper_list:
+            logging.info(f"--- 开始生成 Excel 报告 (包含 {len(paper_list)} 篇论文) ---")
             try:
                 papers_data = []
-                for paper in paper_list:
+                for paper in paper_list: # (!!!) 遍历完整的 paper_list (!!!)
                     if not paper: continue # 跳过空 paper
+                    
+                    # (!!!) 修正：添加 Manual Download 标志 (!!!)
+                    manual_download_flag = "Yes" if paper.manual_download_required else "No"
+                    
                     paper_data = {
                         "title": paper.title,
                         "url": paper.url,
-                        "authors": paper.authers,
+                        "authors": '; '.join(paper.authers) if paper.authers else '', # 确保作者是字符串
                         "keyword": self.key_word,
                         "published_date": paper.published_date.strftime("%Y-%m-%d") if paper.published_date else "",
-                        "citation_count": paper.citations if paper.citations is not None else 0, # (!!!) 更新 Excel
+                        "citation_count": paper.citations if paper.citations is not None else 0,
                         "arxiv_id": paper.arxiv_id,
-                        "categories": [],
+                        "manual_download": manual_download_flag, # (!!!) 新增列 (!!!)
                         "processed_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        # "categories" 字段被移除，因为它未被填充
                     }
                     papers_data.append(paper_data)
                 
-                # 生成汇总Excel表格
+                # (!!!) 调用重构后的 Excel 生成器 (!!!)
                 excel_path = self.paper_enhancer.generate_summary_excel(papers_data, self.key_word)
-                logging.info("已生成汇总Excel表格: %s", excel_path)
+                logging.info("已生成或更新汇总 Excel 表格: %s", excel_path)
                 
             except Exception as e:
-                logging.warning("生成汇总Excel表格失败: %s", e)
+                logging.warning("生成汇总Excel表格失败: %s", e, exc_info=True)
 
     def get_output_filename(self, paper_title=None):
         """
@@ -564,7 +585,7 @@ def chat_arxiv_main(args):
 
     # 4. 后续处理 (保持不变)
     if paper_list:
-        logging.info(f"检索到 {len(paper_list)} 篇论文，开始总结...")
+        logging.info(f"检索到 {len(paper_list)} 篇论文（包括待手动下载的），开始总结...")
         reader1.summary_with_chat(paper_list=paper_list)
     else:
         logging.info("没有找到要处理的论文，程序退出")
