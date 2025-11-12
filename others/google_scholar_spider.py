@@ -7,7 +7,7 @@ import warnings
 from dataclasses import dataclass
 from time import sleep
 from typing import List, Optional
-
+from selenium.webdriver.common.by import By
 import matplotlib.pyplot as plt
 import pandas as pd
 import requests
@@ -129,7 +129,8 @@ def setup_driver():
     # print('Loading...')
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    # driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 
@@ -141,7 +142,7 @@ def get_author(content):
 def get_element(driver, xpath, attempts=5, count=0):
     '''Safe get_element method with multiple attempts'''
     try:
-        element = driver.find_element_by_xpath(xpath)
+        element = driver.find_element(By.XPATH, xpath)
         return element
     except Exception as e:
         if count < attempts:

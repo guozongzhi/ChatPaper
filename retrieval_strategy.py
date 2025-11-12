@@ -1,14 +1,8 @@
 import logging
 from abc import ABC, abstractmethod
 from typing import List
-# chat_paper.py 定义了 Paper 类，这里我们直接导入它
-try:
-    from chat_paper import Paper 
-except ImportError:
-    logging.warning("在 retrieval_strategy.py 中导入 Paper 类失败。")
-    # 定义一个占位符
-    class Paper:
-        pass
+# (!!!) 导入已修复，不再从 chat_paper 导入 (!!!)
+from paper_class import Paper 
 
 class RetrieverStrategy(ABC):
     """

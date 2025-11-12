@@ -3,7 +3,8 @@ import os
 import sys
 import requests
 import time
-import datetime # <--- (!!!) 新增导入 (!!!)
+import datetime 
+import tenacity # <--- (!!!) 新增导入 (!!!)
 from typing import List
 
 # --- 路径设置 ---
@@ -16,7 +17,8 @@ if others_dir not in sys.path:
 
 # --- 导入策略接口和 Paper 类 ---
 from retrieval_strategy import RetrieverStrategy
-from chat_paper import Paper #
+# (!!!) 导入已修复，不再从 chat_paper 导入 (!!!)
+from paper_class import Paper 
 
 # --- 导入特定策略的辅助模块 ---
 import chat_arxiv #
@@ -226,6 +228,24 @@ class SemanticScholarRetriever(RetrieverStrategy):
                 logging.warning(f"无法解析日期字符串: {pub_date_str}")
                 return None
 
+    # (!!!) 新增：带重试的 API 调用 (!!!)
+    @tenacity.retry(
+        wait=tenacity.wait_exponential(multiplier=1, min=4, max=10), # 自动等待
+        stop=tenacity.stop_after_attempt(5), # 最多重试5次
+        retry=tenacity.retry_if_exception_type(requests.exceptions.HTTPError), # 仅在 HTTP 错误时重试
+        reraise=True # 重试失败后，抛出原始异常
+    )
+    def _call_api(self, params: dict) -> requests.Response:
+        """
+        使用 tenacity 重试逻辑包装 API 请求。
+        如果 API 返回 429 (Too Many Requests) 或 504 (Gateway Timeout)，
+        此函数将自动等待并重试。
+        """
+        logging.info("正在调用 Semantic Scholar API...")
+        response = requests.get(self.API_URL, params=params, timeout=30)
+        response.raise_for_status() # 请求失败(如 429)则抛出异常，触发重试
+        return response
+
     def retrieve(self, args) -> List[Paper]:
         logging.info("使用 Semantic Scholar 高引用搜索模式 (API)")
         
@@ -241,9 +261,8 @@ class SemanticScholarRetriever(RetrieverStrategy):
         
         paper_list = []
         try:
-            # 2. 发起 API 请求
-            response = requests.get(self.API_URL, params=params, timeout=30)
-            response.raise_for_status() # 请求失败则抛出异常
+            # 2. 发起 API 请求 (!!!) (已更新为调用 _call_api) (!!!)
+            response = self._call_api(params)
             
             data = response.json()
             
@@ -293,8 +312,12 @@ class SemanticScholarRetriever(RetrieverStrategy):
                     # 6. 记录无法下载的论文 (符合用户要求)
                     logging.warning(f"【手动下载提示】(Semantic Scholar 未提供开放 PDF): {title} @ {sem_url}")
 
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Semantic Scholar API 请求失败: {e}", exc_info=True)
+        except requests.exceptions.HTTPError as e:
+            # (!!!) 捕获 429 错误 (!!!)
+            if e.response.status_code == 429:
+                logging.error(f"Semantic Scholar API 速率限制：重试 5 次后仍然失败。请等待几分钟后再试。")
+            else:
+                logging.error(f"Semantic Scholar API 请求失败: {e}", exc_info=True)
             return []
         except Exception as e:
             logging.error(f"处理 Semantic Scholar 结果时出错: {e}", exc_info=True)

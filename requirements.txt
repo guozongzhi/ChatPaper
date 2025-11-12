@@ -18,3 +18,5 @@ sphinxemoji
 recommonmark
 sphinx-book-theme
 pandas
+matplotlib
+selenium

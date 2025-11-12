@@ -1,13 +1,13 @@
 1. (推荐) Semantic Scholar API 检索（高引用）
-此命令使用新的 semantic 策略，通过官方 API 检索关于 "graph neural network" 引用次数最高的 2 篇论文，并尝试下载它们的开放存取 PDF
+此命令使用新的 semantic 策略，通过官方 API 检索关于 "hybrid attention" 引用次数最高的 2 篇论文，并尝试下载它们的开放存取 PDF
 
-python chat_paper.py --retriever semantic --query "graph neural network" --key_word "GNN_HighCite" --max_results 2 --sort "citationCount:desc"
+python chat_paper.py --llm-client Deepseek --retriever semantic --query "hybrid attention" --key_word "hybrid attention" --max_results 2 --sort "citationCount:desc" --save_image
 
 
 2. ArXiv API 检索（最新论文）
 此命令使用 arxiv 策略，通过官方 API 检索过去 7 天内关于 "large language model" 的 3 篇最新论文，并使用并发下载。
 
-python chat_paper.py --retriever arxiv --query "all:large language model" --key_word "LLM_Recent" --max_results 3 --days 7
+python chat_paper.py --llm-client Deepseek --retriever arxiv --query "all:hybrid attention" --key_word "hybrid attention_Recent" --max_results 3 --days 7 --save_image
 
 3. 本地文件检索
 此命令使用默认的 local 策略，它会读取您在 myPapers 文件夹（或 --pdf_path 指定的路径）中的 PDF 文件，并处理其中 2 篇
@@ -17,4 +17,4 @@ python chat_paper.py --retriever local --key_word "My_Local_Papers" --max_result
 4. (备用) Google Scholar 爬虫检索（高引用）
 此命令使用旧的 scholar 策略（依赖网页爬虫），检索 2017-2020 年间关于 "transformer attention" 引用次数最高的 2 篇论文
 
-python chat_paper.py --retriever scholar --query "transformer attention" --key_word "Transformer_Legacy" --max_results 2 --sort "Citations" --start_year 2017 --end_year 2020
+python chat_paper.py --retriever scholar --query "transformer attention" --key_word "Transformer_Legacy" --max_results 2 --sort "Citations" --start_year 2017 --end_year 2020 --save_image

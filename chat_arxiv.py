@@ -21,10 +21,11 @@ except ImportError:
 # 动态导入 Paper 类，以避免循环依赖
 # 我们只在类型提示和函数内部导入它
 try:
-    from chat_paper import Paper
+    # (!!!) 导入已修复，从 paper_class 导入 (!!!)
+    from paper_class import Paper
 except ImportError:
     # 如果单独运行此文件，定义一个临时的 Paper 占位符
-    logging.warning("无法导入 'chat_paper.Paper'，将使用临时占位符。")
+    logging.warning("无法导入 'paper_class.Paper'，将使用临时占位符。")
     class Paper:
         def __init__(self, **kwargs):
             logging.info(f"临时 Paper 对象创建: {kwargs.get('title')}")
@@ -46,10 +47,13 @@ def validateTitle(title: str) -> str:
     return title.strip(' _') or "untitled"
 
 def _get_save_path(query: str) -> str:
-    """获取论文保存的根目录。"""
+    """
+    (!!!) 修正：获取 API 论文保存的根目录 (!!!)
+    """
     root_path = os.path.abspath(os.path.dirname(__file__))
-    # 路径现在统一在 'myPapers' 下，并按 query 关键词分子目录
-    path = os.path.join(root_path, 'myPapers', validateTitle(query))
+    # (!!!) 修正：API下载的论文保存到 'api_downloads' 目录 (!!!)
+    # 'myPapers' 目录保留给 --retriever local 模式使用。
+    path = os.path.join(root_path, 'api_downloads', validateTitle(query))
     os.makedirs(path, exist_ok=True)
     return path
 
@@ -60,7 +64,7 @@ def try_download_pdf(pdf_url: str, title: str, query: str) -> str:
     带重试的下载函数。
    
     """
-    path = _get_save_path(query)
+    path = _get_save_path(query) # (!!!) 此函数现在指向 'api_downloads' (!!!)
     base_name = f"{validateTitle(title)}.pdf"
     filename = os.path.join(path, base_name)
     
@@ -114,7 +118,10 @@ def search_arxiv_api(query: str, max_fetch_results: int = 200) -> List[arxiv.Res
         return []
 
 def _filter_papers_by_days(results: List[arxiv.Result], days: int) -> List[arxiv.Result]:
-    """根据 'days' 参数过滤 API 结果。"""
+    """
+    (!!!) 修正：根据 'days' 参数过滤 API 结果 (!!!)
+    (移除了错误的 'break' 逻辑)
+    """
     if days <= 0:
         return results # days <= 0 表示不过滤
 
@@ -123,6 +130,8 @@ def _filter_papers_by_days(results: List[arxiv.Result], days: int) -> List[arxiv
     today = datetime.datetime.now(datetime.timezone.utc)
     day_limit = today - datetime.timedelta(days=days)
     
+    logging.info(f"开始按 {days} 天过滤 (检查 {len(results)} 篇论文)...")
+    
     for result in results:
         # result.published 和 result.updated 都是 aware datetime
         submission_time = result.published
@@ -130,9 +139,10 @@ def _filter_papers_by_days(results: List[arxiv.Result], days: int) -> List[arxiv
         if submission_time >= day_limit:
             filtered_list.append(result)
         else:
-            # 因为列表已按日期排序，一旦遇到一篇过期的，后面的都会过期
-            logging.info(f"论文 '{result.title}' (日期: {submission_time.date()}) 已超出 {days} 天范围，停止过滤。")
-            break
+            # (!!!) 修正：不再 'break' (!!!)
+            # API 可能返回相关性排序，我们必须检查所有论文
+            logging.debug(f"论文 '{result.title}' (日期: {submission_time.date()}) 已超出 {days} 天范围，已跳过。")
+            pass # 继续检查下一篇论文
             
     logging.info(f"经过 'days={days}' 过滤后，剩余 {len(filtered_list)} 篇论文。")
     return filtered_list
@@ -143,10 +153,22 @@ def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
     - 新增
     """
     try:
+        # (!!!) 修正：从 entry_id 派生 PDF URL (!!!)
+        pdf_url = result.pdf_url
+        entry_id = result.entry_id
+        
+        if not pdf_url:
+            if entry_id and entry_id.startswith('http://arxiv.org/abs/'):
+                pdf_url = entry_id.replace('/abs/', '/pdf/') + '.pdf'
+            else:
+                logging.warning(f"无法为 {entry_id or '未知条目'} 构建 PDF URL。跳过下载。")
+                return None
+        
         # 1. 下载 PDF
         #
-        # file_path = try_download_pdf(result.pdf_url, result.title, query)
-        filename = chat_arxiv.try_download_pdf(pdf_url, title, args.key_word)
+        # (!!!) 修正：移除了 'chat_arxiv.' 前缀 (!!!)
+        file_path = try_download_pdf(pdf_url, result.title, query)
+        
         # 2. 提取所有元数据 (解决用户痛点)
         arxiv_id = result.get_short_id() # 例如 '2310.06825' (不含版本)
         authors = [str(a) for a in result.authors]
