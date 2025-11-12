@@ -32,6 +32,7 @@ try:
         LocalFileRetriever, 
         ArxivRetriever, 
         GoogleScholarRetriever, 
+        SemanticScholarRetriever, # <--- (!!!) 新增导入 (!!!)
         HAS_SCHOLAR
     )
 except ImportError as e:
@@ -867,11 +868,16 @@ class Reader:
             logging.info("排序: %s", self.sort or "SubmittedDate") # API 默认
             logging.info("最近天数: %s", self.args.days)
         elif self.args.retriever == 'scholar':
-            logging.info("处理模式: Google Scholar 高引用搜索")
+            logging.info("处理模式: Google Scholar 高引用搜索 (爬虫)")
             logging.info("查询 (关键词): %s", self.query)
             logging.info("关键词 (用于保存): %s", self.key_word)
             logging.info("排序: %s", self.sort or "Citations") # Scholar 排序
             logging.info("年份范围: %s - %s", getattr(self.args, 'start_year', 'None'), getattr(self.args, 'end_year', 'Default'))
+        elif self.args.retriever == 'semantic':
+            logging.info("处理模式: Semantic Scholar 高引用搜索 (API)")
+            logging.info("查询 (关键词): %s", self.query)
+            logging.info("关键词 (用于保存): %s", self.key_word)
+            logging.info("排序: %s", self.sort or "citationCount:desc") # API 默认
         else: # 默认 'local'
             logging.info("处理模式: 本地PDF文件")
             logging.info("PDF目录: %s", self.args.pdf_path)
@@ -895,7 +901,8 @@ def chat_arxiv_main(args):
     # 1. 定义策略映射
     retrievers = {
         "local": LocalFileRetriever(),
-        "arxiv": ArxivRetriever()
+        "arxiv": ArxivRetriever(),
+        "semantic": SemanticScholarRetriever() # <--- (!!!) 新增策略 (!!!)
     }
     # 仅当 Scholar 依赖成功加载时才添加它
     if HAS_SCHOLAR:
@@ -923,7 +930,7 @@ def chat_arxiv_main(args):
                 return
         if not os.listdir(args.pdf_path) and not os.path.isfile(args.pdf_path):
             logging.info("提示：%s 目录为空或路径非文件。", args.pdf_path)
-            logging.info("请将PDF放入该目录，或使用 --retriever 'arxiv'/'scholar' 切换模式。")
+            logging.info("请将PDF放入该目录，或使用 --retriever 'arxiv'/'scholar'/'semantic' 切换模式。")
             return
             
     # 3. 执行检索
@@ -953,13 +960,13 @@ if __name__ == '__main__':
     mode_group.add_argument("--pdf_path", type=str, default=default_papers_dir, 
                       help="指定要分析的PDF文件或文件夹的路径 (仅在 --retriever='local' 时生效)")
     mode_group.add_argument("--retriever", type=str, default="local", 
-                      choices=["local", "arxiv", "scholar"],
-                      help="选择检索策略: 'local' (默认, 本地PDF), 'arxiv' (arXiv最新论文), 'scholar' (Google Scholar高引用)")
+                      choices=["local", "arxiv", "scholar", "semantic"], # <--- (!!!) 新增选项 (!!!)
+                      help="选择检索策略: 'local'(本地), 'arxiv'(arXiv最新), 'scholar'(Google Scholar高引用-爬虫), 'semantic'(Semantic Scholar高引用-API)")
     
     # 检索参数组 (arXiv 和 Scholar 共用)
-    search_group = parser.add_argument_group('检索选项 (arXiv / Scholar)')
+    search_group = parser.add_argument_group('检索选项 (arXiv / Scholar / Semantic)')
     search_group.add_argument("--query", type=str, default='large language model', 
-                         help="搜索查询字符串 (arXiv格式 或 Google Scholar 关键词)")
+                         help="搜索查询字符串 (arXiv格式 或 Google/Semantic Scholar 关键词)")
     search_group.add_argument("--key_word", type=str, default='LLM', 
                          help="用于分类和保存文件的关键词 (例如 'LLM')")
     search_group.add_argument("--page_num", type=int, default=1, 
@@ -967,7 +974,7 @@ if __name__ == '__main__':
     search_group.add_argument("--days", type=int, default=30, 
                          help="arXiv搜索时的最近天数限制 (仅 'arxiv' 模式)")
     search_group.add_argument("--sort", type=str, default=None, 
-                         help="排序方式: arXiv (例如 'LastUpdatedDate') 或 Scholar (例如 'Citations')")
+                         help="排序方式: arXiv (例如 'LastUpdatedDate') 或 Scholar (例如 'Citations') 或 Semantic (例如 'citationCount:desc')")
     search_group.add_argument('--start_year', type=int, default=None, 
                          help="Google Scholar 搜索的开始年份 (仅 'scholar' 模式)")
     search_group.add_argument('--end_year', type=int, default=datetime.datetime.now().year, 
