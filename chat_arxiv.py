@@ -145,8 +145,8 @@ def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
     try:
         # 1. 下载 PDF
         #
-        file_path = try_download_pdf(result.pdf_url, result.title, query)
-        
+        # file_path = try_download_pdf(result.pdf_url, result.title, query)
+        filename = chat_arxiv.try_download_pdf(pdf_url, title, args.key_word)
         # 2. 提取所有元数据 (解决用户痛点)
         arxiv_id = result.get_short_id() # 例如 '2310.06825' (不含版本)
         authors = [str(a) for a in result.authors]
