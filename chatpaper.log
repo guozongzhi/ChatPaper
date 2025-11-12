@@ -14829,3 +14829,1154 @@ openai.APIConnectionError: Connection error.
 2025-11-12 01:03:14,360 - INFO - root - Page:10, Index:0, PromptHMR: Promptable Human Mesh Recovery, https://arxiv.org/pdf/2504.06397, 2025-05-23
 2025-11-12 01:03:14,360 - INFO - root - Page:10, Index:1, SCAM: A Real-World Typographic Robustness Evaluation for Multimodal Foundation Models, https://arxiv.org/pdf/2504.04893, 2025-09-26
 2025-11-12 01:03:14,361 - INFO - root - Fetching page 12 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=550
+2025-11-12 01:03:22,718 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:03:22,719 - INFO - root - Page:11, Index:0, T*: Re-thinking Temporal Search for Long-Form Video Understanding, https://arxiv.org/pdf/2504.02259, 2025-08-24
+2025-11-12 01:03:22,719 - INFO - root - Page:11, Index:1, CoMatcher: Multi-View Collaborative Feature Matching, https://arxiv.org/pdf/2504.01872, 2025-08-20
+2025-11-12 01:03:22,719 - INFO - root - Page:11, Index:2, Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation, https://arxiv.org/pdf/2504.00420, 2025-06-01
+2025-11-12 01:03:22,721 - INFO - root - Fetching page 13 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=600
+2025-11-12 01:03:30,007 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:03:30,007 - INFO - root - Page:12, Index:0, It's a (Blind) Match! Towards Vision-Language Correspondence without Parallel Data, https://arxiv.org/pdf/2503.24129, 2025-05-29
+2025-11-12 01:03:30,009 - INFO - root - Page:12, Index:1, ReferDINO-Plus: 2nd Solution for 4th PVUW MeViS Challenge at CVPR 2025, https://arxiv.org/pdf/2503.23509, 2025-05-29
+2025-11-12 01:03:30,009 - INFO - root - Page:12, Index:2, A Unified Image-Dense Annotation Generation Model for Underwater Scenes, https://arxiv.org/pdf/2503.21771, 2025-07-27
+2025-11-12 01:03:30,009 - INFO - root - Fetching page 14 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=650
+2025-11-12 01:03:36,602 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:03:36,602 - INFO - root - Page:13, Index:0, Learning Class Prototypes for Unified Sparse Supervised 3D Object Detection, https://arxiv.org/pdf/2503.21099, 2025-06-13
+2025-11-12 01:03:36,603 - INFO - root - Page:13, Index:1, LATTE-MV: Learning to Anticipate Table Tennis Hits from Monocular Videos, https://arxiv.org/pdf/2503.20936, 2025-09-01
+2025-11-12 01:03:36,604 - INFO - root - Page:13, Index:2, BizGen: Advancing Article-level Visual Text Rendering for Infographics Generation, https://arxiv.org/pdf/2503.20672, 2025-07-02
+2025-11-12 01:03:36,604 - INFO - root - Page:13, Index:3, ITA-MDT: Image-Timestep-Adaptive Masked Diffusion Transformer Framework for Image-Based Virtual Try-On, https://arxiv.org/pdf/2503.20418, 2025-06-01
+2025-11-12 01:03:36,605 - INFO - root - Page:13, Index:4, Faster Parameter-Efficient Tuning with Token Redundancy Reduction, https://arxiv.org/pdf/2503.20282, 2025-08-26
+2025-11-12 01:03:36,605 - INFO - root - Page:13, Index:5, DINeMo: Learning Neural Mesh Models with no 3D Annotations, https://arxiv.org/pdf/2503.20220, 2025-06-09
+2025-11-12 01:03:36,605 - INFO - root - Page:13, Index:6, Scaling Vision Pre-Training to 4K Resolution, https://arxiv.org/pdf/2503.19903, 2025-08-03
+2025-11-12 01:03:36,606 - INFO - root - Page:13, Index:7, GENIUS: A Generative Framework for Universal Multimodal Search, https://arxiv.org/pdf/2503.19868, 2025-06-05
+2025-11-12 01:03:36,606 - INFO - root - Fetching page 15 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=700
+2025-11-12 01:03:44,798 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:03:44,798 - INFO - root - Page:14, Index:0, Galaxy Walker: Geometry-aware VLMs For Galaxy-scale Understanding, https://arxiv.org/pdf/2503.18578, 2025-05-25
+2025-11-12 01:03:44,798 - INFO - root - Page:14, Index:1, LookCloser: Frequency-aware Radiance Field for Tiny-Detail Scene, https://arxiv.org/pdf/2503.18513, 2025-07-29
+2025-11-12 01:03:44,798 - INFO - root - Fetching page 16 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=750
+2025-11-12 01:03:55,296 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:03:55,298 - INFO - root - Page:15, Index:0, LoTUS: Large-Scale Machine Unlearning with a Taste of Uncertainty, https://arxiv.org/pdf/2503.18314, 2025-05-29
+2025-11-12 01:03:55,298 - INFO - root - Page:15, Index:1, MammAlps: A multi-view video behavior monitoring dataset of wild mammals in the Swiss Alps, https://arxiv.org/pdf/2503.18223, 2025-06-04
+2025-11-12 01:03:55,298 - INFO - root - Page:15, Index:2, Progressive Prompt Detailing for Improved Alignment in Text-to-Image Generative Models, https://arxiv.org/pdf/2503.17794, 2025-05-30
+2025-11-12 01:03:55,299 - INFO - root - Page:15, Index:3, CountLLM: Towards Generalizable Repetitive Action Counting via Large Language Model, https://arxiv.org/pdf/2503.17690, 2025-06-29
+2025-11-12 01:03:55,299 - INFO - root - Page:15, Index:4, TaoAvatar: Real-Time Lifelike Full-Body Talking Avatars for Augmented Reality via 3D Gaussian Splatting, https://arxiv.org/pdf/2503.17032, 2025-07-23
+2025-11-12 01:03:55,299 - INFO - root - Page:15, Index:5, Generalized Few-shot 3D Point Cloud Segmentation with Vision-Language Model, https://arxiv.org/pdf/2503.16282, 2025-05-20
+2025-11-12 01:03:55,300 - INFO - root - Fetching page 17 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=800
+2025-11-12 01:04:04,906 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:04:04,908 - INFO - root - Page:16, Index:0, High Temporal Consistency through Semantic Similarity Propagation in Semi-Supervised Video Semantic Segmentation for Autonomous Flight, https://arxiv.org/pdf/2503.15676, 2025-06-26
+2025-11-12 01:04:04,908 - INFO - root - Page:16, Index:1, DPFlow: Adaptive Optical Flow Estimation with a Dual-Pyramid Framework, https://arxiv.org/pdf/2503.14880, 2025-09-29
+2025-11-12 01:04:04,908 - INFO - root - Fetching page 18 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=850
+2025-11-12 01:04:20,660 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:04:20,661 - INFO - root - Page:17, Index:0, From Head to Tail: Towards Balanced Representation in Large Vision-Language Models through Adaptive Data Calibration, https://arxiv.org/pdf/2503.12821, 2025-05-29
+2025-11-12 01:04:20,662 - INFO - root - Page:17, Index:1, MambaIC: State Space Models for High-Performance Learned Image Compression, https://arxiv.org/pdf/2503.12461, 2025-08-22
+2025-11-12 01:04:20,662 - INFO - root - Page:17, Index:2, Localized Concept Erasure for Text-to-Image Diffusion Models Using Training-Free Gated Low-Rank Adaptation, https://arxiv.org/pdf/2503.12356, 2025-07-09
+2025-11-12 01:04:20,662 - INFO - root - Page:17, Index:3, TASTE-Rob: Advancing Video Generation of Task-Oriented Hand-Object Interaction for Generalizable Robotic Manipulation, https://arxiv.org/pdf/2503.11423, 2025-06-05
+2025-11-12 01:04:20,662 - INFO - root - Page:17, Index:4, Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation, https://arxiv.org/pdf/2503.10845, 2025-08-01
+2025-11-12 01:04:20,663 - INFO - root - Page:17, Index:5, Transformers without Normalization, https://arxiv.org/pdf/2503.10622, 2025-06-14
+2025-11-12 01:04:20,663 - INFO - root - Page:17, Index:6, dFLMoE: Decentralized Federated Learning via Mixture of Experts for Medical Data Analysis, https://arxiv.org/pdf/2503.10412, 2025-05-19
+2025-11-12 01:04:20,664 - INFO - root - Fetching page 19 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=900
+2025-11-12 01:04:30,184 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:04:30,184 - INFO - root - Page:18, Index:0, Project-Probe-Aggregate: Efficient Fine-Tuning for Group Robustness, https://arxiv.org/pdf/2503.09487, 2025-08-26
+2025-11-12 01:04:30,185 - INFO - root - Page:18, Index:1, VLog: Video-Language Models by Generative Retrieval of Narration Vocabulary, https://arxiv.org/pdf/2503.09402, 2025-06-09
+2025-11-12 01:04:30,185 - INFO - root - Fetching page 20 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=950
+2025-11-12 01:04:47,022 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:04:47,023 - INFO - root - Page:19, Index:0, Escaping Plato's Cave: Towards the Alignment of 3D and Text Latent Spaces, https://arxiv.org/pdf/2503.05283, 2025-06-04
+2025-11-12 01:04:47,027 - INFO - root - Page:19, Index:1, FluidNexus: 3D Fluid Reconstruction and Prediction from a Single Video, https://arxiv.org/pdf/2503.04720, 2025-07-09
+2025-11-12 01:04:47,028 - INFO - root - Page:19, Index:2, Question-Aware Gaussian Experts for Audio-Visual Question Answering, https://arxiv.org/pdf/2503.04459, 2025-06-11
+2025-11-12 01:04:47,029 - INFO - root - Page:19, Index:3, Q-Eval-100K: Evaluating Visual Quality and Alignment Level for Text-to-Vision Content, https://arxiv.org/pdf/2503.02357, 2025-06-15
+2025-11-12 01:04:47,030 - INFO - root - Fetching page 21 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=1000
+2025-11-12 01:04:56,215 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:04:56,216 - INFO - root - Page:20, Index:0, Data Distributional Properties As Inductive Bias for Systematic Generalization, https://arxiv.org/pdf/2502.20499, 2025-06-17
+2025-11-12 01:04:56,217 - INFO - root - Page:20, Index:1, Knowledge Bridger: Towards Training-free Missing Modality Completion, https://arxiv.org/pdf/2502.19834, 2025-06-17
+2025-11-12 01:04:56,217 - INFO - root - Fetching page 22 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=1050
+2025-11-12 01:05:06,127 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:05:06,127 - INFO - root - Page:21, Index:0, MALT Diffusion: Memory-Augmented Latent Transformers for Any-Length Video Generation, https://arxiv.org/pdf/2502.12632, 2025-07-08
+2025-11-12 01:05:06,127 - INFO - root - Page:21, Index:1, ILIAS: Instance-Level Image retrieval At Scale, https://arxiv.org/pdf/2502.11748, 2025-06-23
+2025-11-12 01:05:06,128 - INFO - root - Page:21, Index:2, Distraction is All You Need for Multimodal Large Language Model Jailbreaking, https://arxiv.org/pdf/2502.10794, 2025-06-16
+2025-11-12 01:05:06,128 - INFO - root - Page:21, Index:3, Spatial457: A Diagnostic Benchmark for 6D Spatial Reasoning of Large Multimodal Models, https://arxiv.org/pdf/2502.08636, 2025-06-08
+2025-11-12 01:05:06,129 - INFO - root - Page:21, Index:4, TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation, https://arxiv.org/pdf/2502.07306, 2025-06-09
+2025-11-12 01:05:06,129 - INFO - root - Page:21, Index:5, DiTASK: Multi-Task Fine-Tuning with Diffeomorphic Transformations, https://arxiv.org/pdf/2502.06029, 2025-06-01
+2025-11-12 01:05:06,129 - INFO - root - Page:21, Index:6, ConceptAttention: Diffusion Transformers Learn Highly Interpretable Features, https://arxiv.org/pdf/2502.04320, 2025-07-01
+2025-11-12 01:05:06,130 - INFO - root - Page:21, Index:7, GCE-Pose: Global Context Enhancement for Category-level Object Pose Estimation, https://arxiv.org/pdf/2502.04293, 2025-06-24
+2025-11-12 01:05:06,130 - INFO - root - Page:21, Index:8, Calibrated Multi-Preference Optimization for Aligning Diffusion Models, https://arxiv.org/pdf/2502.02588, 2025-09-26
+2025-11-12 01:05:06,131 - INFO - root - Page:21, Index:9, Instruct-4DGS: Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation, https://arxiv.org/pdf/2502.02091, 2025-07-01
+2025-11-12 01:05:06,131 - INFO - root - Page:21, Index:10, Low-Resource Video Super-Resolution using Memory, Wavelets, and Deformable Convolutions, https://arxiv.org/pdf/2502.01816, 2025-06-19
+2025-11-12 01:05:06,131 - INFO - root - Page:21, Index:11, Bridging Text and Crystal Structures: Literature-driven Contrastive Learning for Materials Science, https://arxiv.org/pdf/2501.12919, 2025-06-18
+2025-11-12 01:05:06,132 - INFO - root - Page:21, Index:12, T2ISafety: Benchmark for Assessing Fairness, Toxicity, and Privacy in Image Generation, https://arxiv.org/pdf/2501.12612, 2025-07-25
+2025-11-12 01:05:06,134 - INFO - root - Page:21, Index:13, Fine-Grained Image-Text Correspondence with Cost Aggregation for Open-Vocabulary Part Segmentation, https://arxiv.org/pdf/2501.09688, 2025-08-08
+2025-11-12 01:05:06,135 - INFO - root - Fetching page 23 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=1100
+2025-11-12 01:05:14,972 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:05:14,974 - INFO - root - Page:22, Index:0, Bias for Action: Video Implicit Neural Representations with Bias Modulation, https://arxiv.org/pdf/2501.09277, 2025-06-06
+2025-11-12 01:05:14,974 - INFO - root - Page:22, Index:1, MonSter++: Unified Stereo Matching, Multi-view Stereo, and Real-time Stereo with Monodepth Priors, https://arxiv.org/pdf/2501.08643, 2025-09-25
+2025-11-12 01:05:14,974 - INFO - root - Page:22, Index:2, Go-with-the-Flow: Motion-Controllable Video Diffusion Models Using Real-Time Warped Noise, https://arxiv.org/pdf/2501.08331, 2025-08-06
+2025-11-12 01:05:14,974 - INFO - root - Page:22, Index:3, Nonisotropic Gaussian Diffusion for Realistic 3D Human Motion Prediction, https://arxiv.org/pdf/2501.06035, 2025-07-08
+2025-11-12 01:05:14,975 - INFO - root - Page:22, Index:4, Discovering Hidden Visual Concepts Beyond Linguistic Input in Infant Learning, https://arxiv.org/pdf/2501.05205, 2025-06-13
+2025-11-12 01:05:14,975 - INFO - root - Page:22, Index:5, PERSE: Personalized 3D Generative Avatars from A Single Portrait, https://arxiv.org/pdf/2412.21206, 2025-09-28
+2025-11-12 01:05:14,975 - INFO - root - Page:22, Index:6, MaskGaussian: Adaptive 3D Gaussian Representation from Probabilistic Masks, https://arxiv.org/pdf/2412.20522, 2025-06-14
+2025-11-12 01:05:14,976 - INFO - root - Page:22, Index:7, SimLTD: Simple Supervised and Semi-Supervised Long-Tailed Object Detection, https://arxiv.org/pdf/2412.20047, 2025-06-09
+2025-11-12 01:05:14,976 - INFO - root - Page:22, Index:8, Conditional Balance: Improving Multi-Conditioning Trade-Offs in Image Generation, https://arxiv.org/pdf/2412.19853, 2025-08-03
+2025-11-12 01:05:14,976 - INFO - root - Fetching page 24 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=1150
+2025-11-12 01:05:23,985 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:05:23,985 - INFO - root - Page:23, Index:0, EnergyMoGen: Compositional Human Motion Generation with Energy-Based Diffusion Model in Latent Space, https://arxiv.org/pdf/2412.14706, 2025-06-04
+2025-11-12 01:05:23,985 - INFO - root - Page:23, Index:1, DarkIR: Robust Low-Light Image Restoration, https://arxiv.org/pdf/2412.13443, 2025-10-14
+2025-11-12 01:05:23,986 - INFO - root - Page:23, Index:2, Real-time Free-view Human Rendering from Sparse-view RGB Videos using Double Unprojected Textures, https://arxiv.org/pdf/2412.13183, 2025-06-20
+2025-11-12 01:05:23,986 - INFO - root - Page:23, Index:3, CondiMen: Conditional Multi-Person Mesh Recovery, https://arxiv.org/pdf/2412.13058, 2025-06-04
+2025-11-12 01:05:23,986 - INFO - root - Page:23, Index:4, MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors, https://arxiv.org/pdf/2412.12392, 2025-06-02
+2025-11-12 01:05:23,986 - INFO - root - Page:23, Index:5, DynamicScaler: Seamless and Scalable Video Generation for Panoramic Scenes, https://arxiv.org/pdf/2412.11100, 2025-10-04
+2025-11-12 01:05:23,987 - INFO - root - Page:23, Index:6, SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device, https://arxiv.org/pdf/2412.10494, 2025-06-09
+2025-11-12 01:05:23,987 - INFO - root - Page:23, Index:7, Mr. DETR++: Instructive Multi-Route Training for Detection Transformers with Mixture-of-Experts, https://arxiv.org/pdf/2412.10028, 2025-06-26
+2025-11-12 01:05:23,987 - INFO - root - Page:23, Index:8, LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity, https://arxiv.org/pdf/2412.09856, 2025-05-24
+2025-11-12 01:05:23,988 - INFO - root - Page:23, Index:9, Gaze-LLE: Gaze Target Estimation via Large-Scale Learned Encoders, https://arxiv.org/pdf/2412.09586, 2025-06-03
+2025-11-12 01:05:23,988 - INFO - root - Fetching page 25 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=1200
+2025-11-12 01:05:44,021 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:0, From Slow Bidirectional to Fast Autoregressive Video Diffusion Models, https://arxiv.org/pdf/2412.07772, 2025-09-23
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:1, Rate-In: Information-Driven Adaptive Dropout Rates for Improved Inference-Time Uncertainty Estimation, https://arxiv.org/pdf/2412.07169, 2025-06-03
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:2, FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error, https://arxiv.org/pdf/2412.07140, 2025-11-03
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:3, Birth and Death of a Rose, https://arxiv.org/pdf/2412.05278, 2025-06-05
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:4, DualPM: Dual Posed-Canonical Point Maps for 3D Shape and Pose Reconstruction, https://arxiv.org/pdf/2412.04464, 2025-08-14
+2025-11-12 01:05:44,021 - INFO - root - Page:24, Index:5, SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding, https://arxiv.org/pdf/2412.04383, 2025-05-29
+2025-11-12 01:05:44,021 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-12 01:05:44,101 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Learning to Seek Evidence_ A Verifiable Reasoning Agent with Causal Faithfulness.pdf
+2025-11-12 01:05:44,180 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\OmniTrack++_ Omnidirectional Multi-Object Tracking by Learning Large-FoV Traject.pdf
+2025-11-12 01:10:36,425 - INFO - root - 跳过已处理论文 Learning to Seek Evidence: A Verifiable Reasoning Agent with Causal Faithfulness Analysis：d:\ChatPaper\academic Papers\CVPR 2025\Learning to Seek Evidence_ A Verifiable Reasoning Agent with Causal Faithfulness.pdf
+2025-11-12 01:10:36,426 - INFO - root - 正在总结论文 2/30: OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback
+2025-11-12 01:13:39,644 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:13:40,348 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page13.jpeg
+2025-11-12 01:13:40,421 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page13.jpeg
+2025-11-12 01:13:40,493 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page13.jpeg
+2025-11-12 01:13:40,562 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page2.jpeg
+2025-11-12 01:13:40,633 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page5.png
+2025-11-12 01:13:40,667 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page13.jpeg
+2025-11-12 01:13:40,713 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page2.jpeg
+2025-11-12 01:13:40,751 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page8.jpeg
+2025-11-12 01:13:40,767 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page1.jpeg
+2025-11-12 01:13:40,788 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 01:13:40,797 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page13.jpeg
+2025-11-12 01:13:40,797 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page13.jpeg
+2025-11-12 01:13:40,799 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page13.jpeg
+2025-11-12 01:13:40,799 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page2.jpeg
+2025-11-12 01:13:40,800 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page5.png
+2025-11-12 01:13:40,800 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page13.jpeg
+2025-11-12 01:13:40,800 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page2.jpeg
+2025-11-12 01:13:40,801 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page8.jpeg
+2025-11-12 01:13:40,801 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page1.jpeg
+2025-11-12 01:13:40,801 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 01:13:40,803 - INFO - root - 已更新图片链接
+2025-11-12 01:13:40,807 - INFO - root - 论文《OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback》的分析已保存到 ./export\CVPR 2026\OmniTrack++_ Omnidirectional Multi-Object Tracking by Learning Large-FoV Traject.md
+2025-11-12 01:13:40,812 - INFO - root - 正在总结论文 3/30: NeuCo-Bench: A Novel Benchmark Framework for Neural Embeddings in Earth Observation
+2025-11-12 01:13:54,665 - INFO - root - LLMClient: rate limit reached, sleeping 22.7s
+2025-11-12 01:15:25,838 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:15:27,884 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page30.png
+2025-11-12 01:15:28,085 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page33.png
+2025-11-12 01:15:28,288 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page33.png
+2025-11-12 01:15:28,483 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page30.jpeg
+2025-11-12 01:15:28,753 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page24.png
+2025-11-12 01:15:29,237 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page34.png
+2025-11-12 01:15:29,535 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page32.png
+2025-11-12 01:15:29,742 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page29.jpeg
+2025-11-12 01:15:29,927 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page29.jpeg
+2025-11-12 01:15:30,109 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page29.jpeg
+2025-11-12 01:15:30,174 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page30.png
+2025-11-12 01:15:30,233 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page33.png
+2025-11-12 01:15:30,271 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page33.png
+2025-11-12 01:15:30,279 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page30.jpeg
+2025-11-12 01:15:30,281 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page24.png
+2025-11-12 01:15:30,282 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page34.png
+2025-11-12 01:15:30,290 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page32.png
+2025-11-12 01:15:30,297 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page29.jpeg
+2025-11-12 01:15:30,304 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page29.jpeg
+2025-11-12 01:15:30,309 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page29.jpeg
+2025-11-12 01:15:30,312 - INFO - root - 已更新图片链接
+2025-11-12 01:15:30,324 - INFO - root - 论文《NeuCo-Bench: A Novel Benchmark Framework for Neural Embeddings in Earth Observation》的分析已保存到 ./export\CVPR 2026\NeuCo-Bench_ A Novel Benchmark Framework for Neural Embeddings in Earth Observat.md
+2025-11-12 01:15:30,327 - INFO - root - 正在总结论文 4/30: NTIRE 2025 Challenge on Low Light Image Enhancement: Methods and Results
+2025-11-12 01:15:42,357 - INFO - root - LLMClient: rate limit reached, sleeping 10.6s
+2025-11-12 01:17:26,438 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:17:31,703 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page16.png
+2025-11-12 01:17:32,180 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page17.jpeg
+2025-11-12 01:17:32,332 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page16.png
+2025-11-12 01:17:32,464 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page17.png
+2025-11-12 01:17:32,571 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page16.png
+2025-11-12 01:17:32,687 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page18.png
+2025-11-12 01:17:32,815 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page18.png
+2025-11-12 01:17:32,916 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page18.png
+2025-11-12 01:17:33,013 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page17.png
+2025-11-12 01:17:33,099 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page15.jpeg
+2025-11-12 01:17:33,150 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page16.png
+2025-11-12 01:17:33,151 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page17.jpeg
+2025-11-12 01:17:33,155 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page16.png
+2025-11-12 01:17:33,156 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page17.png
+2025-11-12 01:17:33,159 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page16.png
+2025-11-12 01:17:33,161 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page18.png
+2025-11-12 01:17:33,163 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page18.png
+2025-11-12 01:17:33,164 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page18.png
+2025-11-12 01:17:33,166 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page17.png
+2025-11-12 01:17:33,166 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page15.jpeg
+2025-11-12 01:17:33,169 - INFO - root - 已更新图片链接
+2025-11-12 01:17:33,178 - INFO - root - 论文《NTIRE 2025 Challenge on Low Light Image Enhancement: Methods and Results》的分析已保存到 ./export\CVPR 2026\NTIRE 2025 Challenge on Low Light Image Enhancement_ Methods and Results.md
+2025-11-12 01:17:33,182 - INFO - root - 正在总结论文 5/30: Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine-Grained Educational Videos
+2025-11-12 01:18:17,142 - INFO - root - LLMClient: rate limit reached, sleeping 16.0s
+2025-11-12 01:18:55,908 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:18:56,145 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page12.png
+2025-11-12 01:18:56,186 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.jpeg
+2025-11-12 01:18:56,224 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page3.jpeg
+2025-11-12 01:18:56,268 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page3.jpeg
+2025-11-12 01:18:56,317 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page10.jpeg
+2025-11-12 01:18:56,359 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page10.jpeg
+2025-11-12 01:18:56,413 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page10.jpeg
+2025-11-12 01:18:56,460 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page10.jpeg
+2025-11-12 01:18:56,510 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page10.jpeg
+2025-11-12 01:18:56,556 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page10.jpeg
+2025-11-12 01:18:56,561 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page12.png
+2025-11-12 01:18:56,562 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.jpeg
+2025-11-12 01:18:56,562 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page3.jpeg
+2025-11-12 01:18:56,564 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page3.jpeg
+2025-11-12 01:18:56,565 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page10.jpeg
+2025-11-12 01:18:56,565 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page10.jpeg
+2025-11-12 01:18:56,565 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page10.jpeg
+2025-11-12 01:18:56,566 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page10.jpeg
+2025-11-12 01:18:56,566 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page10.jpeg
+2025-11-12 01:18:56,566 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page10.jpeg
+2025-11-12 01:18:56,569 - INFO - root - 已更新图片链接
+2025-11-12 01:18:56,572 - INFO - root - 论文《Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine-Grained Educational Videos》的分析已保存到 ./export\CVPR 2026\Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine.md
+2025-11-12 01:18:56,576 - INFO - root - 正在总结论文 6/30: MIMO: A medical vision language model with visual referring multimodal input and pixel grounding multimodal output
+2025-11-12 01:19:12,657 - INFO - root - LLMClient: rate limit reached, sleeping 20.5s
+2025-11-12 01:21:28,398 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:21:40,084 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page20.png
+2025-11-12 01:21:40,679 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page21.png
+2025-11-12 01:21:41,358 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page22.png
+2025-11-12 01:21:41,837 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page19.png
+2025-11-12 01:21:42,284 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page19.png
+2025-11-12 01:21:42,350 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page1.jpeg
+2025-11-12 01:21:42,420 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page1.jpeg
+2025-11-12 01:21:42,492 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page3.jpeg
+2025-11-12 01:21:42,565 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page3.jpeg
+2025-11-12 01:21:42,889 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page24.png
+2025-11-12 01:21:42,977 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page20.png
+2025-11-12 01:21:42,977 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page21.png
+2025-11-12 01:21:42,977 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page22.png
+2025-11-12 01:21:42,978 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page19.png
+2025-11-12 01:21:42,978 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page19.png
+2025-11-12 01:21:42,978 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page1.jpeg
+2025-11-12 01:21:42,979 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page1.jpeg
+2025-11-12 01:21:42,979 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page3.jpeg
+2025-11-12 01:21:42,980 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page3.jpeg
+2025-11-12 01:21:42,980 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page24.png
+2025-11-12 01:21:42,983 - INFO - root - 已更新图片链接
+2025-11-12 01:21:42,994 - INFO - root - 论文《MIMO: A medical vision language model with visual referring multimodal input and pixel grounding multimodal output》的分析已保存到 ./export\CVPR 2026\MIMO_ A medical vision language model with visual referring multimodal input and.md
+2025-11-12 01:21:42,996 - INFO - root - 正在总结论文 7/30: Vision Language Models: A Survey of 26K Papers
+2025-11-12 01:22:28,543 - INFO - root - LLMClient: rate limit reached, sleeping 14.5s
+2025-11-12 01:23:09,599 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:23:10,421 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page2.png
+2025-11-12 01:23:10,525 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page5.png
+2025-11-12 01:23:10,660 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 01:23:10,668 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page2.png
+2025-11-12 01:23:10,675 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page5.png
+2025-11-12 01:23:10,675 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 01:23:10,682 - INFO - root - 已更新图片链接
+2025-11-12 01:23:10,684 - INFO - root - 论文《Vision Language Models: A Survey of 26K Papers》的分析已保存到 ./export\CVPR 2026\Vision Language Models_ A Survey of 26K Papers.md
+2025-11-12 01:23:10,685 - INFO - root - 正在总结论文 8/30: DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing
+2025-11-12 01:23:30,488 - INFO - root - LLMClient: rate limit reached, sleeping 12.5s
+2025-11-12 01:24:59,115 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:25:20,361 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:25:20,888 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page12.png
+2025-11-12 01:25:21,273 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page19.png
+2025-11-12 01:25:21,637 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page2.png
+2025-11-12 01:25:22,034 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:25:22,423 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page17.png
+2025-11-12 01:25:22,690 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page6.png
+2025-11-12 01:25:23,253 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page17.png
+2025-11-12 01:25:23,970 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page15.png
+2025-11-12 01:25:24,889 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page14.png
+2025-11-12 01:25:24,948 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:25:24,950 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page12.png
+2025-11-12 01:25:24,950 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page19.png
+2025-11-12 01:25:24,950 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page2.png
+2025-11-12 01:25:24,951 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:25:24,951 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page17.png
+2025-11-12 01:25:24,952 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page6.png
+2025-11-12 01:25:24,952 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page17.png
+2025-11-12 01:25:24,952 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page15.png
+2025-11-12 01:25:24,953 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page14.png
+2025-11-12 01:25:24,956 - INFO - root - 已更新图片链接
+2025-11-12 01:25:24,958 - INFO - root - 论文《DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing》的分析已保存到 ./export\CVPR 2026\DiT-VTON_ Diffusion Transformer Framework for Unified Multi-Category Virtual Try.md
+2025-11-12 01:25:24,965 - INFO - root - 正在总结论文 9/30: PatchVSR: Breaking Video Diffusion Resolution Limits with Patch-wise Video Super-Resolution
+2025-11-12 01:26:07,696 - INFO - root - LLMClient: rate limit reached, sleeping 17.3s
+2025-11-12 01:26:53,868 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:26:55,346 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page16.jpeg
+2025-11-12 01:26:56,028 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page16.jpeg
+2025-11-12 01:26:57,662 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page16.jpeg
+2025-11-12 01:26:58,069 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page16.jpeg
+2025-11-12 01:26:58,915 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page15.jpeg
+2025-11-12 01:26:59,915 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page15.jpeg
+2025-11-12 01:27:00,972 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page5.jpeg
+2025-11-12 01:27:01,914 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page5.jpeg
+2025-11-12 01:27:03,170 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page17.jpeg
+2025-11-12 01:27:04,172 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page14.jpeg
+2025-11-12 01:27:04,337 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page16.jpeg
+2025-11-12 01:27:04,411 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page16.jpeg
+2025-11-12 01:27:04,534 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page16.jpeg
+2025-11-12 01:27:04,624 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page16.jpeg
+2025-11-12 01:27:04,739 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page15.jpeg
+2025-11-12 01:27:04,970 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page15.jpeg
+2025-11-12 01:27:05,072 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page5.jpeg
+2025-11-12 01:27:05,211 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page5.jpeg
+2025-11-12 01:27:05,326 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page17.jpeg
+2025-11-12 01:27:05,423 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page14.jpeg
+2025-11-12 01:27:05,559 - INFO - root - 已更新图片链接
+2025-11-12 01:27:05,705 - INFO - root - 论文《PatchVSR: Breaking Video Diffusion Resolution Limits with Patch-wise Video Super-Resolution》的分析已保存到 ./export\CVPR 2026\PatchVSR_ Breaking Video Diffusion Resolution Limits with Patch-wise Video Super.md
+2025-11-12 01:27:05,710 - INFO - root - 正在总结论文 10/30: FreqDebias: Towards Generalizable Deepfake Detection via Consistency-Driven Frequency Debiasing
+2025-11-12 01:27:17,136 - INFO - root - LLMClient: rate limit reached, sleeping 7.8s
+2025-11-12 01:27:58,628 - INFO - root - LLMClient: rate limit reached, sleeping 7.1s
+2025-11-12 01:28:45,120 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:28:48,932 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page8.png
+2025-11-12 01:28:49,482 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:28:50,078 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:28:51,074 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page4.png
+2025-11-12 01:28:52,253 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:28:53,486 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page8.png
+2025-11-12 01:28:54,783 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page8.png
+2025-11-12 01:28:55,660 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page8.png
+2025-11-12 01:28:56,264 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page8.png
+2025-11-12 01:28:56,707 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page8.png
+2025-11-12 01:28:56,763 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page8.png
+2025-11-12 01:28:56,779 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:28:56,785 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:28:56,796 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page4.png
+2025-11-12 01:28:56,802 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:28:56,815 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page8.png
+2025-11-12 01:28:56,822 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page8.png
+2025-11-12 01:28:56,831 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page8.png
+2025-11-12 01:28:56,836 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page8.png
+2025-11-12 01:28:56,848 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page8.png
+2025-11-12 01:28:56,866 - INFO - root - 已更新图片链接
+2025-11-12 01:28:56,914 - INFO - root - 论文《FreqDebias: Towards Generalizable Deepfake Detection via Consistency-Driven Frequency Debiasing》的分析已保存到 ./export\CVPR 2026\FreqDebias_ Towards Generalizable Deepfake Detection via Consistency-Driven Freq.md
+2025-11-12 01:28:56,927 - INFO - root - 正在总结论文 11/30: A Mutual Learning Method for Salient Object Detection with intertwined Multi-Supervision--Revised
+2025-11-12 01:31:29,694 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:31:29,760 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page1.jpeg
+2025-11-12 01:31:29,798 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 01:31:29,824 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 01:31:29,859 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page1.png
+2025-11-12 01:31:29,889 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page1.png
+2025-11-12 01:31:29,890 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page1.jpeg
+2025-11-12 01:31:29,890 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 01:31:29,890 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 01:31:29,891 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page1.png
+2025-11-12 01:31:29,891 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page1.png
+2025-11-12 01:31:29,893 - INFO - root - 已更新图片链接
+2025-11-12 01:31:29,897 - INFO - root - 论文《A Mutual Learning Method for Salient Object Detection with intertwined Multi-Supervision--Revised》的分析已保存到 ./export\CVPR 2026\A Mutual Learning Method for Salient Object Detection with intertwined Multi-Sup.md
+2025-11-12 01:31:29,899 - INFO - root - 正在总结论文 12/30: InstructVTON: Optimal Auto-Masking and Natural-Language-Guided Interactive Style Control for Inpainting-Based Virtual Try-On
+2025-11-12 01:32:25,935 - INFO - root - LLMClient: rate limit reached, sleeping 4.0s
+2025-11-12 01:32:56,161 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:33:01,856 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page7.png
+2025-11-12 01:33:02,191 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page2.png
+2025-11-12 01:33:02,580 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:33:02,843 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page9.png
+2025-11-12 01:33:03,160 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page9.png
+2025-11-12 01:33:03,267 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page5.png
+2025-11-12 01:33:03,353 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page6.png
+2025-11-12 01:33:03,449 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page4.png
+2025-11-12 01:33:03,490 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page7.png
+2025-11-12 01:33:03,491 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page2.png
+2025-11-12 01:33:03,491 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:33:03,491 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page9.png
+2025-11-12 01:33:03,492 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page9.png
+2025-11-12 01:33:03,492 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page5.png
+2025-11-12 01:33:03,493 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page6.png
+2025-11-12 01:33:03,493 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page4.png
+2025-11-12 01:33:03,498 - INFO - root - 已更新图片链接
+2025-11-12 01:33:03,500 - INFO - root - 论文《InstructVTON: Optimal Auto-Masking and Natural-Language-Guided Interactive Style Control for Inpainting-Based Virtual Try-On》的分析已保存到 ./export\CVPR 2026\InstructVTON_ Optimal Auto-Masking and Natural-Language-Guided Interactive Style.md
+2025-11-12 01:33:03,502 - INFO - root - 正在总结论文 13/30: Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On
+2025-11-12 01:35:05,450 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:35:09,356 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page2.png
+2025-11-12 01:35:09,585 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:35:09,764 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:35:09,893 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page6.png
+2025-11-12 01:35:10,045 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page9.png
+2025-11-12 01:35:10,214 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page10.png
+2025-11-12 01:35:10,303 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page4.png
+2025-11-12 01:35:10,415 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page3.png
+2025-11-12 01:35:10,471 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page6.png
+2025-11-12 01:35:10,495 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page2.png
+2025-11-12 01:35:10,495 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:35:10,495 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 01:35:10,496 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page6.png
+2025-11-12 01:35:10,496 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page9.png
+2025-11-12 01:35:10,496 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page10.png
+2025-11-12 01:35:10,497 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page4.png
+2025-11-12 01:35:10,497 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page3.png
+2025-11-12 01:35:10,497 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page6.png
+2025-11-12 01:35:10,504 - INFO - root - 已更新图片链接
+2025-11-12 01:35:10,505 - INFO - root - 论文《Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On》的分析已保存到 ./export\CVPR 2026\Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On.md
+2025-11-12 01:35:10,507 - INFO - root - 正在总结论文 14/30: The Photographer Eye: Teaching Multimodal Large Language Models to Understand Image Aesthetics like Photographers
+2025-11-12 01:35:20,805 - INFO - root - LLMClient: rate limit reached, sleeping 21.8s
+2025-11-12 01:36:37,771 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:36:38,179 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page7.jpeg
+2025-11-12 01:36:38,293 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page1.jpeg
+2025-11-12 01:36:38,392 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 01:36:38,684 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page1.jpeg
+2025-11-12 01:36:38,850 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page1.jpeg
+2025-11-12 01:36:38,969 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page1.jpeg
+2025-11-12 01:36:39,294 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page5.jpeg
+2025-11-12 01:36:39,521 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page5.jpeg
+2025-11-12 01:36:39,704 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page5.jpeg
+2025-11-12 01:36:39,963 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page5.jpeg
+2025-11-12 01:36:39,974 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page7.jpeg
+2025-11-12 01:36:39,974 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page1.jpeg
+2025-11-12 01:36:39,974 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 01:36:39,974 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page1.jpeg
+2025-11-12 01:36:39,975 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page1.jpeg
+2025-11-12 01:36:39,976 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page1.jpeg
+2025-11-12 01:36:39,976 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page5.jpeg
+2025-11-12 01:36:39,977 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page5.jpeg
+2025-11-12 01:36:39,978 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page5.jpeg
+2025-11-12 01:36:39,978 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page5.jpeg
+2025-11-12 01:36:39,983 - INFO - root - 已更新图片链接
+2025-11-12 01:36:39,988 - INFO - root - 论文《The Photographer Eye: Teaching Multimodal Large Language Models to Understand Image Aesthetics like Photographers》的分析已保存到 ./export\CVPR 2026\The Photographer Eye_ Teaching Multimodal Large Language Models to Understand Im.md
+2025-11-12 01:36:39,997 - INFO - root - 正在总结论文 15/30: ENSAM: an efficient foundation model for interactive segmentation of 3D medical images
+2025-11-12 01:36:39,997 - INFO - root - LLMClient: rate limit reached, sleeping 2.6s
+2025-11-12 01:36:51,407 - INFO - root - LLMClient: rate limit reached, sleeping 19.3s
+2025-11-12 01:38:15,922 - INFO - root - 尝试使用 utf-8 编码读取配置文件...
+2025-11-12 01:38:15,924 - INFO - root - 成功使用 utf-8 编码读取配置文件
+2025-11-12 01:38:15,927 - INFO - root - 已将配置文件转换为 UTF-8 编码
+2025-11-12 01:38:17,775 - INFO - root - LLMClientManager: 指定使用客户端: DeepSeek
+2025-11-12 01:38:17,779 - INFO - root - DeepSeekClient: API key found: 9f9e270e-b...
+2025-11-12 01:38:17,780 - INFO - root - DeepSeekClient: 使用模式: 火山引擎
+2025-11-12 01:38:17,781 - INFO - root - DeepSeekClient: 模型名称: deepseek-v3-1-terminus
+2025-11-12 01:38:27,160 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:38:27,202 - INFO - root - DeepSeekClient: initialized successfully with model deepseek-v3-1-terminus
+2025-11-12 01:38:27,203 - INFO - root - LLMClientManager: DeepSeek 客户端初始化成功
+2025-11-12 01:38:27,203 - INFO - root - LLMClientManager: switched to DeepSeek client
+2025-11-12 01:38:27,204 - INFO - root - 已手动切换到 LLM 客户端: DeepSeek
+2025-11-12 01:38:27,204 - INFO - root - 使用 LLM 模型: deepseek-v3-1-terminus
+2025-11-12 01:38:27,204 - INFO - root - 可用客户端: ['DeepSeek']
+2025-11-12 01:38:27,204 - INFO - root - === 运行配置 ===
+2025-11-12 01:38:27,205 - INFO - root - 处理模式: arxiv在线搜索
+2025-11-12 01:38:27,205 - INFO - root - 关键词: CVPR 2026
+2025-11-12 01:38:27,205 - INFO - root - 查询: CVPR 2025
+2025-11-12 01:38:27,205 - INFO - root - 排序: None
+2025-11-12 01:38:27,207 - INFO - root - 最近天数: 180
+2025-11-12 01:38:27,207 - INFO - root - 最大处理数量: 30
+2025-11-12 01:38:27,207 - INFO - root - 保存图片: 是
+2025-11-12 01:38:27,207 - INFO - root - 输出语言: 中文
+2025-11-12 01:38:27,207 - INFO - root - 强制重新处理: 否
+2025-11-12 01:38:27,208 - INFO - root - ====================
+2025-11-12 01:38:27,208 - INFO - root - 使用 arXiv 搜索模式（通过 chat_arxiv 模块获取）
+2025-11-12 01:38:27,208 - INFO - root - Fetching page 1 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50
+2025-11-12 01:38:55,317 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:38:55,323 - INFO - root - Page:0, Index:0, Learning to Seek Evidence: A Verifiable Reasoning Agent with Causal Faithfulness Analysis, https://arxiv.org/pdf/2511.01425, 2025-11-03
+2025-11-12 01:38:55,331 - INFO - root - Page:0, Index:1, OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback, https://arxiv.org/pdf/2511.00510, 2025-11-01
+2025-11-12 01:38:55,336 - INFO - root - Page:0, Index:2, NeuCo-Bench: A Novel Benchmark Framework for Neural Embeddings in Earth Observation, https://arxiv.org/pdf/2510.17914, 2025-10-19
+2025-11-12 01:38:55,340 - INFO - root - Page:0, Index:3, NTIRE 2025 Challenge on Low Light Image Enhancement: Methods and Results, https://arxiv.org/pdf/2510.13670, 2025-10-15
+2025-11-12 01:38:55,352 - INFO - root - Page:0, Index:4, Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine-Grained Educational Videos, https://arxiv.org/pdf/2510.11204, 2025-10-13
+2025-11-12 01:38:55,380 - INFO - root - Page:0, Index:5, MIMO: A medical vision language model with visual referring multimodal input and pixel grounding multimodal output, https://arxiv.org/pdf/2510.10011, 2025-10-11
+2025-11-12 01:38:55,386 - INFO - root - Page:0, Index:6, Vision Language Models: A Survey of 26K Papers, https://arxiv.org/pdf/2510.09586, 2025-10-10
+2025-11-12 01:38:55,389 - INFO - root - Page:0, Index:7, DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing, https://arxiv.org/pdf/2510.04797, 2025-10-03
+2025-11-12 01:38:55,398 - INFO - root - Page:0, Index:8, PatchVSR: Breaking Video Diffusion Resolution Limits with Patch-wise Video Super-Resolution, https://arxiv.org/pdf/2509.26025, 2025-09-30
+2025-11-12 01:38:55,401 - INFO - root - Page:0, Index:9, FreqDebias: Towards Generalizable Deepfake Detection via Consistency-Driven Frequency Debiasing, https://arxiv.org/pdf/2509.22412, 2025-09-26
+2025-11-12 01:38:55,402 - INFO - root - Page:0, Index:10, A Mutual Learning Method for Salient Object Detection with intertwined Multi-Supervision--Revised, https://arxiv.org/pdf/2509.21363, 2025-09-21
+2025-11-12 01:38:55,404 - INFO - root - Page:0, Index:11, InstructVTON: Optimal Auto-Masking and Natural-Language-Guided Interactive Style Control for Inpainting-Based Virtual Try-On, https://arxiv.org/pdf/2509.20524, 2025-09-24
+2025-11-12 01:38:55,411 - INFO - root - Page:0, Index:12, Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On, https://arxiv.org/pdf/2509.20343, 2025-09-24
+2025-11-12 01:38:55,415 - INFO - root - Page:0, Index:13, The Photographer Eye: Teaching Multimodal Large Language Models to Understand Image Aesthetics like Photographers, https://arxiv.org/pdf/2509.18582, 2025-10-22
+2025-11-12 01:38:55,416 - INFO - root - Page:0, Index:14, ENSAM: an efficient foundation model for interactive segmentation of 3D medical images, https://arxiv.org/pdf/2509.15874, 2025-09-19
+2025-11-12 01:38:55,418 - INFO - root - Page:0, Index:15, DEFT-VTON: Efficient Virtual Try-On with Consistent Generalised H-Transform, https://arxiv.org/pdf/2509.13506, 2025-09-16
+2025-11-12 01:38:55,422 - INFO - root - Page:0, Index:16, Weakly and Self-Supervised Class-Agnostic Motion Prediction for Autonomous Driving, https://arxiv.org/pdf/2509.13116, 2025-09-16
+2025-11-12 01:38:55,429 - INFO - root - Page:0, Index:17, Domain-Adaptive Pretraining Improves Primate Behavior Recognition, https://arxiv.org/pdf/2509.12193, 2025-09-15
+2025-11-12 01:38:55,438 - INFO - root - Page:0, Index:18, The System Description of CPS Team for Track on Driving with Language of CVPR 2024 Autonomous Grand Challenge, https://arxiv.org/pdf/2509.11071, 2025-09-13
+2025-11-12 01:38:55,448 - INFO - root - Page:0, Index:19, An HMM-based framework for identity-aware long-term multi-object tracking from sparse and uncertain identification: use case on long-term tracking in livestock, https://arxiv.org/pdf/2509.09962, 2025-09-12
+2025-11-12 01:38:55,455 - INFO - root - Page:0, Index:20, InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation, https://arxiv.org/pdf/2509.09555, 2025-09-11
+2025-11-12 01:38:55,464 - INFO - root - Page:0, Index:21, Geospatial Foundational Embedder: Top-1 Winning Solution on EarthVision Embed2Scale Challenge (CVPR 2025), https://arxiv.org/pdf/2509.06993, 2025-09-03
+2025-11-12 01:38:55,468 - INFO - root - Page:0, Index:22, 2nd Place Solution for CVPR2024 E2E Challenge: End-to-End Autonomous Driving Using Vision Language Model, https://arxiv.org/pdf/2509.02659, 2025-09-02
+2025-11-12 01:38:55,470 - INFO - root - Page:0, Index:23, Unsupervised Training of Vision Transformers with Synthetic Negatives, https://arxiv.org/pdf/2509.02024, 2025-09-02
+2025-11-12 01:38:55,473 - INFO - root - Page:0, Index:24, MV-SSM: Multi-View State Space Modeling for 3D Human Pose Estimation, https://arxiv.org/pdf/2509.00649, 2025-08-30
+2025-11-12 01:38:55,475 - INFO - root - Page:0, Index:25, CryptoFace: End-to-End Encrypted Face Recognition, https://arxiv.org/pdf/2509.00332, 2025-08-29
+2025-11-12 01:38:55,483 - INFO - root - Page:0, Index:26, ControlEchoSynth: Boosting Ejection Fraction Estimation Models via Controlled Video Diffusion, https://arxiv.org/pdf/2508.17631, 2025-08-26
+2025-11-12 01:38:55,484 - INFO - root - Page:0, Index:27, Explain Before You Answer: A Survey on Compositional Visual Reasoning, https://arxiv.org/pdf/2508.17298, 2025-08-27
+2025-11-12 01:38:55,486 - INFO - root - Page:0, Index:28, Investigating Different Geo Priors for Image Classification, https://arxiv.org/pdf/2508.15946, 2025-08-21
+2025-11-12 01:38:55,487 - INFO - root - Page:0, Index:29, Towards Source-Free Machine Unlearning, https://arxiv.org/pdf/2508.15127, 2025-08-20
+2025-11-12 01:38:55,488 - INFO - root - Page:0, Index:30, MR6D: Benchmarking 6D Pose Estimation for Mobile Robots, https://arxiv.org/pdf/2508.13775, 2025-08-19
+2025-11-12 01:38:55,489 - INFO - root - Page:0, Index:31, Calibrating Biased Distribution in VFM-derived Latent Space via Cross-Domain Geometric Consistency, https://arxiv.org/pdf/2508.13518, 2025-08-19
+2025-11-12 01:38:55,489 - INFO - root - Page:0, Index:32, SIS-Challenge: Event-based Spatio-temporal Instance Segmentation Challenge at the CVPR 2025 Event-based Vision Workshop, https://arxiv.org/pdf/2508.12813, 2025-08-18
+2025-11-12 01:38:55,490 - INFO - root - Page:0, Index:33, Multi-Level Knowledge Distillation and Dynamic Self-Supervised Learning for Continual Learning, https://arxiv.org/pdf/2508.12692, 2025-08-22
+2025-11-12 01:38:55,490 - INFO - root - Page:0, Index:34, Stochastic-based Patch Filtering for Few-Shot Learning, https://arxiv.org/pdf/2508.10066, 2025-08-13
+2025-11-12 01:38:55,491 - INFO - root - Page:0, Index:35, Slot Attention-based Feature Filtering for Few-Shot Learning, https://arxiv.org/pdf/2508.09699, 2025-08-13
+2025-11-12 01:38:55,497 - INFO - root - Page:0, Index:36, Comparison Reveals Commonality: Customized Image Generation through Contrastive Inversion, https://arxiv.org/pdf/2508.07755, 2025-08-11
+2025-11-12 01:38:55,498 - INFO - root - Page:0, Index:37, SLRTP2025 Sign Language Production Challenge: Methodology, Results, and Future Work, https://arxiv.org/pdf/2508.06951, 2025-08-09
+2025-11-12 01:38:55,498 - INFO - root - Page:0, Index:38, Exploring Fairness across Fine-Grained Attributes in Large Vision-Language Models, https://arxiv.org/pdf/2508.03079, 2025-08-05
+2025-11-12 01:38:55,499 - INFO - root - Page:0, Index:39, Devil is in the Detail: Towards Injecting Fine Details of Image Prompt in Image Generation via Conflict-free Guidance and Stratified Attention, https://arxiv.org/pdf/2508.02004, 2025-08-03
+2025-11-12 01:38:55,500 - INFO - root - Page:0, Index:40, IAUNet: Instance-Aware U-Net, https://arxiv.org/pdf/2508.01928, 2025-08-03
+2025-11-12 01:38:55,500 - INFO - root - Page:0, Index:41, Gaussian Splatting Feature Fields for Privacy-Preserving Visual Localization, https://arxiv.org/pdf/2507.23569, 2025-08-26
+2025-11-12 01:38:55,500 - INFO - root - Page:0, Index:42, From Scan to Action: Leveraging Realistic Scans for Embodied Scene Understanding, https://arxiv.org/pdf/2507.17585, 2025-07-23
+2025-11-12 01:38:55,500 - INFO - root - Page:0, Index:43, LEAD: Exploring Logit Space Evolution for Model Selection, https://arxiv.org/pdf/2507.14559, 2025-07-19
+2025-11-12 01:38:55,501 - INFO - root - Page:0, Index:44, HeCoFuse: Cross-Modal Complementary V2X Cooperative Perception with Heterogeneous Sensors, https://arxiv.org/pdf/2507.13677, 2025-07-18
+2025-11-12 01:38:55,502 - INFO - root - Page:0, Index:45, OmniVec2 -- A Novel Transformer based Network for Large Scale Multimodal and Multitask Learning, https://arxiv.org/pdf/2507.13364, 2025-07-06
+2025-11-12 01:38:55,502 - INFO - root - Page:0, Index:46, A Training-Free, Task-Agnostic Framework for Enhancing MLLM Performance on High-Resolution Images, https://arxiv.org/pdf/2507.10202, 2025-07-14
+2025-11-12 01:38:55,502 - INFO - root - Page:0, Index:47, Quantum Federated Learning for Multimodal Data: A Modality-Agnostic Approach, https://arxiv.org/pdf/2507.08217, 2025-07-10
+2025-11-12 01:38:55,505 - INFO - root - Page:0, Index:48, CuriosAI Submission to the EgoExo4D Proficiency Estimation Challenge 2025, https://arxiv.org/pdf/2507.08022, 2025-07-08
+2025-11-12 01:38:55,505 - INFO - root - Page:0, Index:49, Rethinking Query-based Transformer for Continual Image Segmentation, https://arxiv.org/pdf/2507.07831, 2025-07-10
+2025-11-12 01:38:55,506 - INFO - root - Fetching page 2 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=50
+2025-11-12 01:39:26,391 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:39:26,391 - INFO - root - Page:1, Index:0, Scalable and Realistic Virtual Try-on Application for Foundation Makeup with Kubelka-Munk Theory, https://arxiv.org/pdf/2507.07333, 2025-07-09
+2025-11-12 01:39:26,393 - INFO - root - Page:1, Index:1, Free on the Fly: Enhancing Flexibility in Test-Time Adaptation with Online EM, https://arxiv.org/pdf/2507.06973, 2025-07-09
+2025-11-12 01:39:26,393 - INFO - root - Page:1, Index:2, Adaptive Part Learning for Fine-Grained Generalized Category Discovery: A Plug-and-Play Enhancement, https://arxiv.org/pdf/2507.06928, 2025-07-09
+2025-11-12 01:39:26,394 - INFO - root - Page:1, Index:3, Grounded Gesture Generation: Language, Motion, and Space, https://arxiv.org/pdf/2507.04522, 2025-07-06
+2025-11-12 01:39:26,394 - INFO - root - Page:1, Index:4, Comprehensive Information Bottleneck for Unveiling Universal Attribution to Interpret Vision Transformers, https://arxiv.org/pdf/2507.04388, 2025-07-06
+2025-11-12 01:39:26,395 - INFO - root - Page:1, Index:5, ZERO: Industry-ready Vision Foundation Model with Multi-modal Prompts, https://arxiv.org/pdf/2507.04270, 2025-11-07
+2025-11-12 01:39:26,395 - INFO - root - Page:1, Index:6, Beyond Accuracy: Metrics that Uncover What Makes a 'Good' Visual Descriptor, https://arxiv.org/pdf/2507.03542, 2025-07-08
+2025-11-12 01:39:26,396 - INFO - root - Page:1, Index:7, ConceptMix++: Leveling the Playing Field in Text-to-Image Benchmarking via Iterative Prompt Optimization, https://arxiv.org/pdf/2507.03275, 2025-07-03
+2025-11-12 01:39:26,396 - INFO - root - Page:1, Index:8, APT: Adaptive Personalized Training for Diffusion Models with Limited Data, https://arxiv.org/pdf/2507.02687, 2025-07-03
+2025-11-12 01:39:26,396 - INFO - root - Page:1, Index:9, DreamComposer++: Empowering Diffusion Models with Multi-View Conditions for 3D Content Generation, https://arxiv.org/pdf/2507.02299, 2025-07-03
+2025-11-12 01:39:26,397 - INFO - root - Page:1, Index:10, Soft Self-labeling and Potts Relaxations for Weakly-Supervised Segmentation, https://arxiv.org/pdf/2507.01721, 2025-07-02
+2025-11-12 01:39:26,397 - INFO - root - Page:1, Index:11, Interpolation-Based Event Visual Data Filtering Algorithms, https://arxiv.org/pdf/2507.01557, 2025-07-02
+2025-11-12 01:39:26,397 - INFO - root - Page:1, Index:12, AVC-DPO: Aligned Video Captioning via Direct Preference Optimization, https://arxiv.org/pdf/2507.01492, 2025-07-02
+2025-11-12 01:39:26,398 - INFO - root - Page:1, Index:13, NN-Former: Rethinking Graph Structure in Neural Architecture Representation, https://arxiv.org/pdf/2507.00880, 2025-07-01
+2025-11-12 01:39:26,398 - INFO - root - Page:1, Index:14, Instant Particle Size Distribution Measurement Using CNNs Trained on Synthetic Data, https://arxiv.org/pdf/2507.00822, 2025-07-01
+2025-11-12 01:39:26,399 - INFO - root - Page:1, Index:15, Moment Sampling in Video LLMs for Long-Form Video QA, https://arxiv.org/pdf/2507.00033, 2025-06-17
+2025-11-12 01:39:26,400 - INFO - root - Page:1, Index:16, Revisiting Audio-Visual Segmentation with Vision-Centric Transformer, https://arxiv.org/pdf/2506.23623, 2025-06-30
+2025-11-12 01:39:26,410 - INFO - root - Page:1, Index:17, MTADiffusion: Mask Text Alignment Diffusion Model for Object Inpainting, https://arxiv.org/pdf/2506.23482, 2025-06-29
+2025-11-12 01:39:26,411 - INFO - root - Page:1, Index:18, Benchmarking Generalizable Bimanual Manipulation: RoboTwin Dual-Arm Collaboration Challenge at CVPR 2025 MEIS Workshop, https://arxiv.org/pdf/2506.23351, 2025-07-02
+2025-11-12 01:39:26,413 - INFO - root - Page:1, Index:19, Prompting without Panic: Attribute-aware, Zero-shot, Test-Time Calibration, https://arxiv.org/pdf/2506.22819, 2025-06-28
+2025-11-12 01:39:26,413 - INFO - root - Page:1, Index:20, Analyzing and Fine-Tuning Whisper Models for Multilingual Pilot Speech Transcription in the Cockpit, https://arxiv.org/pdf/2506.21990, 2025-06-27
+2025-11-12 01:39:26,413 - INFO - root - Page:1, Index:21, SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model, https://arxiv.org/pdf/2506.21976, 2025-06-27
+2025-11-12 01:39:26,414 - INFO - root - Page:1, Index:22, DIVE: Deep-search Iterative Video Exploration A Technical Report for the CVRR Challenge at CVPR 2025, https://arxiv.org/pdf/2506.21891, 2025-06-27
+2025-11-12 01:39:26,414 - INFO - root - Page:1, Index:23, End-to-End RGB-IR Joint Image Compression With Channel-wise Cross-modality Entropy Model, https://arxiv.org/pdf/2506.21851, 2025-06-26
+2025-11-12 01:39:26,415 - INFO - root - Page:1, Index:24, Distilling Normalizing Flows, https://arxiv.org/pdf/2506.21003, 2025-06-26
+2025-11-12 01:39:26,417 - INFO - root - Page:1, Index:25, Joint attitude estimation and 3D neural reconstruction of non-cooperative space objects, https://arxiv.org/pdf/2506.20638, 2025-06-25
+2025-11-12 01:39:26,419 - INFO - root - Page:1, Index:26, Accept More, Reject Less: Reducing up to 19% Unnecessary Desk-Rejections over 11 Years of ICLR Data, https://arxiv.org/pdf/2506.20141, 2025-06-25
+2025-11-12 01:39:26,420 - INFO - root - Page:1, Index:27, SceneCrafter: Controllable Multi-View Driving Scene Editing, https://arxiv.org/pdf/2506.19488, 2025-06-24
+2025-11-12 01:39:26,420 - INFO - root - Page:1, Index:28, Emergence of Text Readability in Vision Language Models, https://arxiv.org/pdf/2506.19389, 2025-06-24
+2025-11-12 01:39:26,421 - INFO - root - Page:1, Index:29, MedErr-CT: A Visual Question Answering Benchmark for Identifying and Correcting Errors in CT Reports, https://arxiv.org/pdf/2506.19217, 2025-06-23
+2025-11-12 01:39:26,421 - INFO - root - Page:1, Index:30, RareSpot: Spotting Small and Rare Wildlife in Aerial Imagery with Multi-Scale Consistency and Context-Aware Augmentation, https://arxiv.org/pdf/2506.19087, 2025-06-23
+2025-11-12 01:39:26,421 - INFO - root - Page:1, Index:31, Object-aware Sound Source Localization via Audio-Visual Scene Understanding, https://arxiv.org/pdf/2506.18557, 2025-06-23
+2025-11-12 01:39:26,427 - INFO - root - Page:1, Index:32, Rethinking Decoder Design: Improving Biomarker Segmentation Using Depth-to-Space Restoration and Residual Linear Attention, https://arxiv.org/pdf/2506.18335, 2025-06-23
+2025-11-12 01:39:26,427 - INFO - root - Page:1, Index:33, Relation3D: Enhancing Relation Modeling for Point Cloud Instance Segmentation, https://arxiv.org/pdf/2506.17891, 2025-06-21
+2025-11-12 01:39:26,428 - INFO - root - Page:1, Index:34, HIRE: Lightweight High-Resolution Image Feature Enrichment for Multimodal LLMs, https://arxiv.org/pdf/2506.17608, 2025-06-21
+2025-11-12 01:39:26,429 - INFO - root - Page:1, Index:35, Spatially-Aware Evaluation of Segmentation Uncertainty, https://arxiv.org/pdf/2506.16589, 2025-06-19
+2025-11-12 01:39:26,429 - INFO - root - Page:1, Index:36, Tripartite Weight-Space Ensemble for Few-Shot Class-Incremental Learning, https://arxiv.org/pdf/2506.15720, 2025-06-03
+2025-11-12 01:39:26,429 - INFO - root - Page:1, Index:37, PARC: A Quantitative Framework Uncovering the Symmetries within Vision Language Models, https://arxiv.org/pdf/2506.14808, 2025-06-03
+2025-11-12 01:39:26,430 - INFO - root - Page:1, Index:38, Self-supervised Representation Learning with Local Aggregation for Image-based Profiling, https://arxiv.org/pdf/2506.14265, 2025-10-27
+2025-11-12 01:39:26,430 - INFO - root - Page:1, Index:39, Towards Robust Learning to Optimize with Theoretical Guarantees, https://arxiv.org/pdf/2506.14263, 2025-06-17
+2025-11-12 01:39:26,430 - INFO - root - Page:1, Index:40, Hidden Bias in the Machine: Stereotypes in Text-to-Image Models, https://arxiv.org/pdf/2506.13780, 2025-06-09
+2025-11-12 01:39:26,431 - INFO - root - Page:1, Index:41, SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models, https://arxiv.org/pdf/2506.12992, 2025-06-15
+2025-11-12 01:39:26,432 - INFO - root - Page:1, Index:42, Generative 4D Scene Gaussian Splatting with Object View-Synthesis Priors, https://arxiv.org/pdf/2506.12716, 2025-06-15
+2025-11-12 01:39:26,433 - INFO - root - Page:1, Index:43, DejaVid: Encoder-Agnostic Learned Temporal Matching for Video Classification, https://arxiv.org/pdf/2506.12585, 2025-06-14
+2025-11-12 01:39:26,434 - INFO - root - Page:1, Index:44, Pushing the Limits of Safety: A Technical Report on the ATLAS Challenge 2025, https://arxiv.org/pdf/2506.12430, 2025-07-10
+2025-11-12 01:39:26,434 - INFO - root - Page:1, Index:45, FIMA-Q: Post-Training Quantization for Vision Transformers by Fisher Information Matrix Approximation, https://arxiv.org/pdf/2506.11543, 2025-06-13
+2025-11-12 01:39:26,434 - INFO - root - Page:1, Index:46, Stop learning it all to mitigate visual hallucination, Focus on the hallucination target, https://arxiv.org/pdf/2506.11417, 2025-06-12
+2025-11-12 01:39:26,435 - INFO - root - Page:1, Index:47, EfficientQuant: An Efficient Post-Training Quantization for CNN-Transformer Hybrid Models on Edge Devices, https://arxiv.org/pdf/2506.11093, 2025-06-05
+2025-11-12 01:39:26,436 - INFO - root - Page:1, Index:48, HalLoc: Token-level Localization of Hallucinations for Vision Language Models, https://arxiv.org/pdf/2506.10286, 2025-06-11
+2025-11-12 01:39:26,436 - INFO - root - Page:1, Index:49, DySS: Dynamic Queries and State-Space Learning for Efficient 3D Object Detection from Multi-Camera Videos, https://arxiv.org/pdf/2506.10242, 2025-06-11
+2025-11-12 01:39:26,437 - INFO - root - Fetching page 3 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=100
+2025-11-12 01:39:59,646 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:0, Improving Personalized Search with Regularized Low-Rank Parameter Updates, https://arxiv.org/pdf/2506.10182, 2025-06-11
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:1, Hearing Hands: Generating Sounds from Physical Interactions in 3D Scenes, https://arxiv.org/pdf/2506.09989, 2025-06-11
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:2, UniPre3D: Unified Pre-training of 3D Point Cloud Models with Cross-Modal Gaussian Splatting, https://arxiv.org/pdf/2506.09952, 2025-06-11
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:3, Provoking Multi-modal Few-Shot LVLM via Exploration-Exploitation In-Context Learning, https://arxiv.org/pdf/2506.09473, 2025-06-11
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:4, Synthetic Human Action Video Data Generation with Pose Transfer, https://arxiv.org/pdf/2506.09411, 2025-06-11
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:5, ScaleLSD: Scalable Deep Line Segment Detection Streamlined, https://arxiv.org/pdf/2506.09369, 2025-06-10
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:6, CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation, https://arxiv.org/pdf/2506.09343, 2025-06-10
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:7, PatchGuard: Adversarially Robust Anomaly Detection and Localization through Vision Transformers and Pseudo Anomalies, https://arxiv.org/pdf/2506.09237, 2025-10-24
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:8, SILK: Smooth InterpoLation frameworK for motion in-betweening A Simplified Computational Approach, https://arxiv.org/pdf/2506.09075, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:9, BG-HOP: A Bimanual Generative Hand-Object Prior, https://arxiv.org/pdf/2506.09068, 2025-06-08
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:10, ORIDa: Object-centric Real-world Image Composition Dataset, https://arxiv.org/pdf/2506.08964, 2025-06-10
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:11, DiscoVLA: Discrepancy Reduction in Vision, Language, and Alignment for Parameter-Efficient Video-Text Retrieval, https://arxiv.org/pdf/2506.08887, 2025-06-10
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:12, A Comprehensive Study of Decoder-Only LLMs for Text-to-Image Generation, https://arxiv.org/pdf/2506.08210, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:13, Open World Scene Graph Generation using Vision Language Models, https://arxiv.org/pdf/2506.08189, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:14, Aligning Proteins and Language: A Foundation Model for Protein Retrieval, https://arxiv.org/pdf/2506.08023, 2025-05-27
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:15, UA-Pose: Uncertainty-Aware 6D Object Pose Estimation and Online Object Completion with Partial References, https://arxiv.org/pdf/2506.07996, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:16, Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compression of Dynamic Scenes, https://arxiv.org/pdf/2506.07917, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:17, GaussianVAE: Adaptive Learning Dynamics of 3D Gaussians for High-Fidelity Super-Resolution, https://arxiv.org/pdf/2506.07897, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:18, Spatio-Temporal State Space Model For Efficient Event-Based Optical Flow, https://arxiv.org/pdf/2506.07878, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:19, FreeGave: 3D Physics Learning from Dynamic Videos by Gaussian Velocity, https://arxiv.org/pdf/2506.07865, 2025-06-09
+2025-11-12 01:39:59,646 - INFO - root - Page:2, Index:20, LogoSP: Local-global Grouping of Superpoints for Unsupervised Semantic Segmentation of 3D Point Clouds, https://arxiv.org/pdf/2506.07857, 2025-06-09
+2025-11-12 01:39:59,698 - INFO - root - Page:2, Index:21, Difference Inversion: Interpolate and Isolate the Difference with Token Consistency for Image Analogy Generation, https://arxiv.org/pdf/2506.07750, 2025-06-09
+2025-11-12 01:39:59,745 - INFO - root - Page:2, Index:22, Synthetic Visual Genome, https://arxiv.org/pdf/2506.07643, 2025-06-09
+2025-11-12 01:39:59,763 - INFO - root - Page:2, Index:23, Fractional Collisions: A Framework for Risk Estimation of Counterfactual Conflicts using Autonomous Driving Behavior Simulations, https://arxiv.org/pdf/2506.07540, 2025-06-09
+2025-11-12 01:39:59,765 - INFO - root - Page:2, Index:24, Multi-Step Guided Diffusion for Image Restoration on Edge Devices: Toward Lightweight Perception in Embodied AI, https://arxiv.org/pdf/2506.07286, 2025-06-08
+2025-11-12 01:39:59,765 - INFO - root - Page:2, Index:25, LLM-Enhanced Rapid-Reflex Async-Reflect Embodied Agent for Real-Time Decision-Making in Dynamically Changing Environments, https://arxiv.org/pdf/2506.07223, 2025-06-08
+2025-11-12 01:39:59,767 - INFO - root - Page:2, Index:26, UCOD-DPL: Unsupervised Camouflaged Object Detection via Dynamic Pseudo-label Learning, https://arxiv.org/pdf/2506.07087, 2025-06-08
+2025-11-12 01:39:59,767 - INFO - root - Page:2, Index:27, BePo: Leveraging Birds Eye View and Sparse Points for Efficient and Accurate 3D Occupancy Prediction, https://arxiv.org/pdf/2506.07002, 2025-06-08
+2025-11-12 01:39:59,768 - INFO - root - Page:2, Index:28, Reading in the Dark with Foveated Event Vision, https://arxiv.org/pdf/2506.06918, 2025-06-07
+2025-11-12 01:39:59,768 - INFO - root - Page:2, Index:29, NSD-Imagery: A benchmark dataset for extending fMRI vision decoding methods to mental imagery, https://arxiv.org/pdf/2506.06898, 2025-06-07
+2025-11-12 01:39:59,768 - INFO - root - Page:2, Index:30, Continuous-Time SO(3) Forecasting with Savitzky--Golay Neural Controlled Differential Equations, https://arxiv.org/pdf/2506.06780, 2025-06-07
+2025-11-12 01:39:59,770 - INFO - root - Page:2, Index:31, Generalized Trajectory Scoring for End-to-end Multimodal Planning, https://arxiv.org/pdf/2506.06664, 2025-06-07
+2025-11-12 01:39:59,774 - INFO - root - Page:2, Index:32, EV-LayerSegNet: Self-supervised Motion Segmentation using Event Cameras, https://arxiv.org/pdf/2506.06596, 2025-06-06
+2025-11-12 01:39:59,775 - INFO - root - Page:2, Index:33, Vid2Sim: Generalizable, Video-based Reconstruction of Appearance, Geometry and Physics for Mesh-free Simulation, https://arxiv.org/pdf/2506.06440, 2025-06-06
+2025-11-12 01:39:59,776 - INFO - root - Page:2, Index:34, FADE: Frequency-Aware Diffusion Model Factorization for Video Editing, https://arxiv.org/pdf/2506.05934, 2025-06-06
+2025-11-12 01:39:59,777 - INFO - root - Page:2, Index:35, Unleashing the Potential of Consistency Learning for Detecting and Grounding Multi-Modal Media Manipulation, https://arxiv.org/pdf/2506.05890, 2025-06-06
+2025-11-12 01:39:59,778 - INFO - root - Page:2, Index:36, DeformCL: Learning Deformable Centerline Representation for Vessel Extraction in 3D Medical Image, https://arxiv.org/pdf/2506.05820, 2025-06-06
+2025-11-12 01:39:59,779 - INFO - root - Page:2, Index:37, NTIRE 2025 Challenge on HR Depth from Images of Specular and Transparent Surfaces, https://arxiv.org/pdf/2506.05815, 2025-06-06
+2025-11-12 01:39:59,780 - INFO - root - Page:2, Index:38, GazeNLQ @ Ego4D Natural Language Queries Challenge 2025, https://arxiv.org/pdf/2506.05782, 2025-06-06
+2025-11-12 01:39:59,780 - INFO - root - Page:2, Index:39, Robust sensor fusion against on-vehicle sensor staleness, https://arxiv.org/pdf/2506.05780, 2025-06-06
+2025-11-12 01:39:59,781 - INFO - root - Page:2, Index:40, Where Is The Ball: 3D Ball Trajectory Estimation From 2D Monocular Tracking, https://arxiv.org/pdf/2506.05763, 2025-06-06
+2025-11-12 01:39:59,782 - INFO - root - Page:2, Index:41, VoxelSplat: Dynamic Gaussian Splatting as an Effective Loss for Occupancy and Flow Prediction, https://arxiv.org/pdf/2506.05563, 2025-06-05
+2025-11-12 01:39:59,803 - INFO - root - Page:2, Index:42, Gen4D: Synthesizing Humans and Scenes in the Wild, https://arxiv.org/pdf/2506.05397, 2025-06-03
+2025-11-12 01:39:59,804 - INFO - root - Page:2, Index:43, Attacking Attention of Foundation Models Disrupts Downstream Tasks, https://arxiv.org/pdf/2506.05394, 2025-09-12
+2025-11-12 01:39:59,804 - INFO - root - Page:2, Index:44, FreeTimeGS: Free Gaussian Primitives at Anytime and Anywhere for Dynamic Scene Reconstruction, https://arxiv.org/pdf/2506.05348, 2025-06-06
+2025-11-12 01:39:59,804 - INFO - root - Page:2, Index:45, LotusFilter: Fast Diverse Nearest Neighbor Search via a Learned Cutoff Table, https://arxiv.org/pdf/2506.04790, 2025-06-05
+2025-11-12 01:39:59,805 - INFO - root - Page:2, Index:46, Towards Holistic Visual Quality Assessment of AI-Generated Videos: A LLM-Based Multi-Dimensional Evaluation Model, https://arxiv.org/pdf/2506.04715, 2025-06-11
+2025-11-12 01:39:59,805 - INFO - root - Page:2, Index:47, Gradient Inversion Attacks on Parameter-Efficient Fine-Tuning, https://arxiv.org/pdf/2506.04453, 2025-06-04
+2025-11-12 01:39:59,805 - INFO - root - Page:2, Index:48, HMAR: Efficient Hierarchical Masked Auto-Regressive Image Generation, https://arxiv.org/pdf/2506.04421, 2025-06-04
+2025-11-12 01:39:59,806 - INFO - root - Page:2, Index:49, Visualizing and Controlling Cortical Responses Using Voxel-Weighted Activation Maximization, https://arxiv.org/pdf/2506.04379, 2025-06-04
+2025-11-12 01:39:59,807 - INFO - root - Fetching page 4 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=150
+2025-11-12 01:40:37,863 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:40:37,863 - INFO - root - Page:3, Index:0, FlexGS: Train Once, Deploy Everywhere with Many-in-One Flexible 3D Gaussian Splatting, https://arxiv.org/pdf/2506.04174, 2025-06-04
+2025-11-12 01:40:37,863 - INFO - root - Page:3, Index:1, Multi-view Surface Reconstruction Using Normal and Reflectance Cues, https://arxiv.org/pdf/2506.04115, 2025-06-04
+2025-11-12 01:40:37,864 - INFO - root - Page:3, Index:2, Vocabulary-free few-shot learning for Vision-Language Models, https://arxiv.org/pdf/2506.04005, 2025-06-04
+2025-11-12 01:40:37,864 - INFO - root - Page:3, Index:3, Learning from Noise: Enhancing DNNs for Event-Based Vision through Controlled Noise Injection, https://arxiv.org/pdf/2506.03918, 2025-06-04
+2025-11-12 01:40:37,864 - INFO - root - Page:3, Index:4, Video, How Do Your Tokens Merge?, https://arxiv.org/pdf/2506.03885, 2025-06-04
+2025-11-12 01:40:37,864 - INFO - root - Page:3, Index:5, OSGNet @ Ego4D Episodic Memory Challenge 2025, https://arxiv.org/pdf/2506.03710, 2025-06-04
+2025-11-12 01:40:37,864 - INFO - root - Page:3, Index:6, AetherVision-Bench: An Open-Vocabulary RGB-Infrared Benchmark for Multi-Angle Segmentation across Aerial and Ground Perspectives, https://arxiv.org/pdf/2506.03709, 2025-06-04
+2025-11-12 01:40:37,865 - INFO - root - Page:3, Index:7, OV-COAST: Cost Aggregation with Optimal Transport for Open-Vocabulary Semantic Segmentation, https://arxiv.org/pdf/2506.03706, 2025-06-04
+2025-11-12 01:40:37,865 - INFO - root - Page:3, Index:8, Generating 6DoF Object Manipulation Trajectories from Action Description in Egocentric Vision, https://arxiv.org/pdf/2506.03605, 2025-06-04
+2025-11-12 01:40:37,865 - INFO - root - Page:3, Index:9, SemNav: A Model-Based Planner for Zero-Shot Object Goal Navigation Using Vision-Foundation Models, https://arxiv.org/pdf/2506.03516, 2025-06-03
+2025-11-12 01:40:37,866 - INFO - root - Page:3, Index:10, Heterogeneous Skeleton-Based Action Representation Learning, https://arxiv.org/pdf/2506.03481, 2025-06-03
+2025-11-12 01:40:37,866 - INFO - root - Page:3, Index:11, Hybrid Ensemble of Segmentation-Assisted Classification and GBDT for Skin Cancer Detection with Engineered Metadata and Synthetic Lesions from ISIC 2024 Non-Dermoscopic 3D-TBP Images, https://arxiv.org/pdf/2506.03420, 2025-06-03
+2025-11-12 01:40:37,867 - INFO - root - Page:3, Index:12, Self-Supervised Spatial Correspondence Across Modalities, https://arxiv.org/pdf/2506.03148, 2025-06-03
+2025-11-12 01:40:37,867 - INFO - root - Page:3, Index:13, Dense Match Summarization for Faster Two-view Estimation, https://arxiv.org/pdf/2506.02893, 2025-06-03
+2025-11-12 01:40:37,867 - INFO - root - Page:3, Index:14, NTIRE 2025 XGC Quality Assessment Challenge: Methods and Results, https://arxiv.org/pdf/2506.02875, 2025-06-03
+2025-11-12 01:40:37,867 - INFO - root - Page:3, Index:15, FreeScene: Mixed Graph Diffusion for 3D Scene Synthesis from Free Prompts, https://arxiv.org/pdf/2506.02781, 2025-06-03
+2025-11-12 01:40:37,868 - INFO - root - Page:3, Index:16, Technical Report for Ego4D Long-Term Action Anticipation Challenge 2025, https://arxiv.org/pdf/2506.02550, 2025-06-11
+2025-11-12 01:40:37,868 - INFO - root - Page:3, Index:17, Probabilistic Online Event Downsampling, https://arxiv.org/pdf/2506.02547, 2025-09-23
+2025-11-12 01:40:37,868 - INFO - root - Page:3, Index:18, Towards In-the-wild 3D Plane Reconstruction from a Single Image, https://arxiv.org/pdf/2506.02493, 2025-06-03
+2025-11-12 01:40:37,869 - INFO - root - Page:3, Index:19, Efficient Test-time Adaptive Object Detection via Sensitivity-Guided Pruning, https://arxiv.org/pdf/2506.02462, 2025-06-03
+2025-11-12 01:40:37,869 - INFO - root - Page:3, Index:20, EgoVIS@CVPR: PAIR-Net: Enhancing Egocentric Speaker Detection via Pretrained Audio-Visual Fusion and Alignment Loss, https://arxiv.org/pdf/2506.02247, 2025-09-26
+2025-11-12 01:40:37,869 - INFO - root - Page:3, Index:21, Diff2Flow: Training Flow Matching Models via Diffusion Model Alignment, https://arxiv.org/pdf/2506.02221, 2025-06-02
+2025-11-12 01:40:37,869 - INFO - root - Page:3, Index:22, NTIRE 2025 Challenge on RAW Image Restoration and Super-Resolution, https://arxiv.org/pdf/2506.02197, 2025-06-04
+2025-11-12 01:40:37,869 - INFO - root - Page:3, Index:23, RAW Image Reconstruction from RGB on Smartphones. NTIRE 2025 Challenge Report, https://arxiv.org/pdf/2506.01947, 2025-06-02
+2025-11-12 01:40:37,875 - INFO - root - Page:3, Index:24, Silence is Golden: Leveraging Adversarial Examples to Nullify Audio Control in LDM-based Talking-Head Generation, https://arxiv.org/pdf/2506.01591, 2025-06-02
+2025-11-12 01:40:37,882 - INFO - root - Page:3, Index:25, SAM2-LOVE: Segment Anything Model 2 in Language-aided Audio-Visual Scenes, https://arxiv.org/pdf/2506.01558, 2025-06-02
+2025-11-12 01:40:37,890 - INFO - root - Page:3, Index:26, Neural shape reconstruction from multiple views with static pattern projection, https://arxiv.org/pdf/2506.01389, 2025-06-02
+2025-11-12 01:40:37,905 - INFO - root - Page:3, Index:27, SAM-I2V: Upgrading SAM to Support Promptable Video Segmentation with Less than 0.2% Training Cost, https://arxiv.org/pdf/2506.01304, 2025-06-02
+2025-11-12 01:40:37,925 - INFO - root - Page:3, Index:28, Perceptual Inductive Bias Is What You Need Before Contrastive Learning, https://arxiv.org/pdf/2506.01201, 2025-06-01
+2025-11-12 01:40:37,943 - INFO - root - Page:3, Index:29, Test Automation for Interactive Scenarios via Promptable Traffic Simulation, https://arxiv.org/pdf/2506.01199, 2025-06-04
+2025-11-12 01:40:37,971 - INFO - root - Page:3, Index:30, GraphPad: Inference-Time 3D Scene Graph Updates for Embodied Question Answering, https://arxiv.org/pdf/2506.01174, 2025-06-01
+2025-11-12 01:40:37,979 - INFO - root - Page:3, Index:31, Aligned Contrastive Loss for Long-Tailed Recognition, https://arxiv.org/pdf/2506.01071, 2025-06-01
+2025-11-12 01:40:37,985 - INFO - root - Page:3, Index:32, Self-supervised ControlNet with Spatio-Temporal Mamba for Real-world Video Super-resolution, https://arxiv.org/pdf/2506.01037, 2025-06-01
+2025-11-12 01:40:37,987 - INFO - root - Page:3, Index:33, ArtiScene: Language-Driven Artistic 3D Scene Generation Through Image Intermediary, https://arxiv.org/pdf/2506.00742, 2025-05-31
+2025-11-12 01:40:37,992 - INFO - root - Page:3, Index:34, 3D Gaussian Splat Vulnerabilities, https://arxiv.org/pdf/2506.00280, 2025-05-30
+2025-11-12 01:40:37,998 - INFO - root - Page:3, Index:35, EgoVIS@CVPR: What Changed and What Could Have Changed? State-Change Counterfactuals for Procedure-Aware Video Representation Learning, https://arxiv.org/pdf/2506.00101, 2025-09-26
+2025-11-12 01:40:37,999 - INFO - root - Page:3, Index:36, CL-LoRA: Continual Low-Rank Adaptation for Rehearsal-Free Class-Incremental Learning, https://arxiv.org/pdf/2505.24816, 2025-05-30
+2025-11-12 01:40:38,001 - INFO - root - Page:3, Index:37, PatchDEMUX: A Certifiably Robust Framework for Multi-label Classifiers Against Adversarial Patches, https://arxiv.org/pdf/2505.24703, 2025-05-30
+2025-11-12 01:40:38,001 - INFO - root - Page:3, Index:38, Conformal Prediction for Zero-Shot Models, https://arxiv.org/pdf/2505.24693, 2025-05-30
+2025-11-12 01:40:38,001 - INFO - root - Page:3, Index:39, Learning reusable concepts across different egocentric video understanding tasks, https://arxiv.org/pdf/2505.24690, 2025-05-30
+2025-11-12 01:40:38,002 - INFO - root - Page:3, Index:40, Period-LLM: Extending the Periodic Capability of Multimodal Large Language Model, https://arxiv.org/pdf/2505.24476, 2025-05-30
+2025-11-12 01:40:38,002 - INFO - root - Page:3, Index:41, PCIE_Interaction Solution for Ego4D Social Interaction Challenge, https://arxiv.org/pdf/2505.24404, 2025-05-30
+2025-11-12 01:40:38,003 - INFO - root - Page:3, Index:42, Leadership Assessment in Pediatric Intensive Care Unit Team Training, https://arxiv.org/pdf/2505.24389, 2025-08-28
+2025-11-12 01:40:38,003 - INFO - root - Page:3, Index:43, Interpreting Large Text-to-Image Diffusion Models with Dictionary Learning, https://arxiv.org/pdf/2505.24360, 2025-07-10
+2025-11-12 01:40:38,003 - INFO - root - Page:3, Index:44, InteractAnything: Zero-shot Human Object Interaction Synthesis via LLM Feedback and Object Affordance Parsing, https://arxiv.org/pdf/2505.24315, 2025-05-30
+2025-11-12 01:40:38,005 - INFO - root - Page:3, Index:45, MaskAdapt: Unsupervised Geometry-Aware Domain Adaptation Using Multimodal Contextual Learning and RGB-Depth Masking, https://arxiv.org/pdf/2505.24026, 2025-05-29
+2025-11-12 01:40:38,005 - INFO - root - Page:3, Index:46, Argus: Vision-Centric Reasoning with Grounded Chain-of-Thought, https://arxiv.org/pdf/2505.23766, 2025-05-29
+2025-11-12 01:40:38,005 - INFO - root - Page:3, Index:47, Sketch Down the FLOPs: Towards Efficient Networks for Human Sketch, https://arxiv.org/pdf/2505.23763, 2025-05-29
+2025-11-12 01:40:38,006 - INFO - root - Page:3, Index:48, Boosting Domain Incremental Learning: Selecting the Optimal Parameters is All You Need, https://arxiv.org/pdf/2505.23744, 2025-05-29
+2025-11-12 01:40:38,006 - INFO - root - Page:3, Index:49, DA-VPT: Semantic-Guided Visual Prompt Tuning for Vision Transformers, https://arxiv.org/pdf/2505.23694, 2025-06-01
+2025-11-12 01:40:38,006 - INFO - root - Fetching page 5 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=200
+2025-11-12 01:41:09,137 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:41:09,137 - INFO - root - Page:4, Index:0, Bridging Classical and Modern Computer Vision: PerceptiveNet for Tree Crown Semantic Segmentation, https://arxiv.org/pdf/2505.23597, 2025-05-29
+2025-11-12 01:41:09,137 - INFO - root - Page:4, Index:1, Synthetic Generation and Latent Projection Denoising of Rim Lesions in Multiple Sclerosis, https://arxiv.org/pdf/2505.23353, 2025-05-29
+2025-11-12 01:41:09,138 - INFO - root - Page:4, Index:2, Wav2Sem: Plug-and-Play Audio Semantic Decoupling for 3D Speech-Driven Facial Animation, https://arxiv.org/pdf/2505.23290, 2025-05-29
+2025-11-12 01:41:09,138 - INFO - root - Page:4, Index:3, Proximal Algorithm Unrolling: Flexible and Efficient Reconstruction Networks for Single-Pixel Imaging, https://arxiv.org/pdf/2505.23180, 2025-05-29
+2025-11-12 01:41:09,138 - INFO - root - Page:4, Index:4, HMAD: Advancing E2E Driving with Anchored Offset Proposals and Simulation-Supervised Multi-target Scoring, https://arxiv.org/pdf/2505.23129, 2025-05-29
+2025-11-12 01:41:09,138 - INFO - root - Page:4, Index:5, URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration, https://arxiv.org/pdf/2505.23068, 2025-05-29
+2025-11-12 01:41:09,139 - INFO - root - Page:4, Index:6, 4DTAM: Non-Rigid Tracking and Mapping via Dynamic Surface Gaussians, https://arxiv.org/pdf/2505.22859, 2025-05-28
+2025-11-12 01:41:09,139 - INFO - root - Page:4, Index:7, A Probabilistic Jump-Diffusion Framework for Open-World Egocentric Activity Recognition, https://arxiv.org/pdf/2505.22858, 2025-05-28
+2025-11-12 01:41:09,139 - INFO - root - Page:4, Index:8, PS4PRO: Pixel-to-pixel Supervision for Photorealistic Rendering and Optimization, https://arxiv.org/pdf/2505.22616, 2025-05-28
+2025-11-12 01:41:09,139 - INFO - root - Page:4, Index:9, Universal Domain Adaptation for Semantic Segmentation, https://arxiv.org/pdf/2505.22458, 2025-06-05
+2025-11-12 01:41:09,140 - INFO - root - Page:4, Index:10, Zero-Shot 3D Visual Grounding from Vision-Language Models, https://arxiv.org/pdf/2505.22429, 2025-05-28
+2025-11-12 01:41:09,140 - INFO - root - Page:4, Index:11, RC-AutoCalib: An End-to-End Radar-Camera Automatic Calibration Network, https://arxiv.org/pdf/2505.22427, 2025-05-28
+2025-11-12 01:41:09,140 - INFO - root - Page:4, Index:12, Bringing CLIP to the Clinic: Dynamic Soft Labels and Negation-Aware Learning for Medical Analysis, https://arxiv.org/pdf/2505.22079, 2025-05-28
+2025-11-12 01:41:09,140 - INFO - root - Page:4, Index:13, Point-to-Region Loss for Semi-Supervised Point-Based Crowd Counting, https://arxiv.org/pdf/2505.21943, 2025-05-27
+2025-11-12 01:41:09,141 - INFO - root - Page:4, Index:14, FRAMES-VQA: Benchmarking Fine-Tuning Robustness across Multi-Modal Shifts in Visual Question Answering, https://arxiv.org/pdf/2505.21755, 2025-06-20
+2025-11-12 01:41:09,142 - INFO - root - Page:4, Index:15, Knowledge Distillation Approach for SOS Fusion Staging: Towards Fully Automated Skeletal Maturity Assessment, https://arxiv.org/pdf/2505.21561, 2025-05-26
+2025-11-12 01:41:09,142 - INFO - root - Page:4, Index:16, Enhancing Vision Transformer Explainability Using Artificial Astrocytes, https://arxiv.org/pdf/2505.21513, 2025-05-20
+2025-11-12 01:41:09,143 - INFO - root - Page:4, Index:17, Empowering Vector Graphics with Consistently Arbitrary Viewing and View-dependent Visibility, https://arxiv.org/pdf/2505.21377, 2025-05-27
+2025-11-12 01:41:09,143 - INFO - root - Page:4, Index:18, Structure from Collision, https://arxiv.org/pdf/2505.21335, 2025-05-27
+2025-11-12 01:41:09,143 - INFO - root - Page:4, Index:19, Boosting Adversarial Transferability via High-Frequency Augmentation and Hierarchical-Gradient Fusion, https://arxiv.org/pdf/2505.21181, 2025-05-27
+2025-11-12 01:41:09,144 - INFO - root - Page:4, Index:20, RefAV: Towards Planning-Centric Scenario Mining, https://arxiv.org/pdf/2505.20981, 2025-06-18
+2025-11-12 01:41:09,144 - INFO - root - Page:4, Index:21, PMA: Towards Parameter-Efficient Point Cloud Understanding via Point Mamba Adapter, https://arxiv.org/pdf/2505.20941, 2025-05-27
+2025-11-12 01:41:09,144 - INFO - root - Page:4, Index:22, HuMoCon: Concept Discovery for Human Motion Understanding, https://arxiv.org/pdf/2505.20920, 2025-05-27
+2025-11-12 01:41:09,146 - INFO - root - Page:4, Index:23, Exploring Timeline Control for Facial Motion Generation, https://arxiv.org/pdf/2505.20861, 2025-05-27
+2025-11-12 01:41:09,146 - INFO - root - Page:4, Index:24, ConText-CIR: Learning from Concepts in Text for Composed Image Retrieval, https://arxiv.org/pdf/2505.20764, 2025-05-27
+2025-11-12 01:41:09,147 - INFO - root - Page:4, Index:25, HCQA-1.5 @ Ego4D EgoSchema Challenge 2025, https://arxiv.org/pdf/2505.20644, 2025-05-26
+2025-11-12 01:41:09,148 - INFO - root - Page:4, Index:26, Roboflow100-VL: A Multi-Domain Object Detection Benchmark for Vision-Language Models, https://arxiv.org/pdf/2505.20612, 2025-10-22
+2025-11-12 01:41:09,149 - INFO - root - Page:4, Index:27, MotionPro: A Precise Motion Controller for Image-to-Video Generation, https://arxiv.org/pdf/2505.20287, 2025-05-26
+2025-11-12 01:41:09,150 - INFO - root - Page:4, Index:28, Category-Agnostic Neural Object Rigging, https://arxiv.org/pdf/2505.20283, 2025-05-26
+2025-11-12 01:41:09,150 - INFO - root - Page:4, Index:29, Towards Video to Piano Music Generation with Chain-of-Perform Support Benchmarks, https://arxiv.org/pdf/2505.20038, 2025-05-26
+2025-11-12 01:41:09,153 - INFO - root - Page:4, Index:30, Can Visual Encoder Learn to See Arrows?, https://arxiv.org/pdf/2505.19944, 2025-05-26
+2025-11-12 01:41:09,154 - INFO - root - Page:4, Index:31, GoLF-NRT: Integrating Global Context and Local Geometry for Few-Shot View Synthesis, https://arxiv.org/pdf/2505.19813, 2025-05-26
+2025-11-12 01:41:09,155 - INFO - root - Page:4, Index:32, Depth-Guided Bundle Sampling for Efficient Generalizable Neural Radiance Field Reconstruction, https://arxiv.org/pdf/2505.19793, 2025-05-26
+2025-11-12 01:41:09,155 - INFO - root - Page:4, Index:33, SuperAD: A Training-free Anomaly Classification and Segmentation Method for CVPR 2025 VAND 3.0 Workshop Challenge Track 1: Adapt & Detect, https://arxiv.org/pdf/2505.19750, 2025-05-27
+2025-11-12 01:41:09,156 - INFO - root - Page:4, Index:34, Knowledge-Aligned Counterfactual-Enhancement Diffusion Perception for Unsupervised Cross-Domain Visual Emotion Recognition, https://arxiv.org/pdf/2505.19694, 2025-05-26
+2025-11-12 01:41:09,156 - INFO - root - Page:4, Index:35, Rotation-Equivariant Self-Supervised Method in Image Denoising, https://arxiv.org/pdf/2505.19618, 2025-05-26
+2025-11-12 01:41:09,156 - INFO - root - Page:4, Index:36, NTIRE 2025 Challenge on Video Quality Enhancement for Video Conferencing: Datasets, Methods and Results, https://arxiv.org/pdf/2505.18988, 2025-05-25
+2025-11-12 01:41:09,157 - INFO - root - Page:4, Index:37, Geometry-guided Online 3D Video Synthesis with Multi-View Temporal Consistency, https://arxiv.org/pdf/2505.18932, 2025-05-24
+2025-11-12 01:41:09,158 - INFO - root - Page:4, Index:38, Digital Overconsumption and Waste: A Closer Look at the Impacts of Generative AI, https://arxiv.org/pdf/2505.18894, 2025-05-24
+2025-11-12 01:41:09,160 - INFO - root - Page:4, Index:39, VISTA: Vision-Language Inference for Training-Free Stock Time-Series Analysis, https://arxiv.org/pdf/2505.18570, 2025-06-11
+2025-11-12 01:41:09,161 - INFO - root - Page:4, Index:40, Syn3DTxt: Embedding 3D Cues for Scene Text Generation, https://arxiv.org/pdf/2505.18479, 2025-05-23
+2025-11-12 01:41:09,165 - INFO - root - Page:4, Index:41, CTRL-GS: Cascaded Temporal Residue Learning for 4D Gaussian Splatting, https://arxiv.org/pdf/2505.18306, 2025-05-31
+2025-11-12 01:41:09,165 - INFO - root - Page:4, Index:42, DualTalk: Dual-Speaker Interaction for 3D Talking Head Conversations, https://arxiv.org/pdf/2505.18096, 2025-05-26
+2025-11-12 01:41:09,166 - INFO - root - Page:4, Index:43, SeaLion: Semantic Part-Aware Latent Point Diffusion Models for 3D Generation, https://arxiv.org/pdf/2505.17721, 2025-07-07
+2025-11-12 01:41:09,168 - INFO - root - Page:4, Index:44, PoseBH: Prototypical Multi-Dataset Training Beyond Human Pose Estimation, https://arxiv.org/pdf/2505.17475, 2025-05-23
+2025-11-12 01:41:09,168 - INFO - root - Page:4, Index:45, Pursuing Temporal-Consistent Video Virtual Try-On via Dynamic Pose Interaction, https://arxiv.org/pdf/2505.16980, 2025-05-22
+2025-11-12 01:41:09,168 - INFO - root - Page:4, Index:46, UniPhy: Learning a Unified Constitutive Model for Inverse Physics Simulation, https://arxiv.org/pdf/2505.16971, 2025-05-22
+2025-11-12 01:41:09,169 - INFO - root - Page:4, Index:47, Tracking the Flight: Exploring a Computational Framework for Analyzing Escape Responses in Plains Zebra (Equus quagga), https://arxiv.org/pdf/2505.16882, 2025-05-23
+2025-11-12 01:41:09,169 - INFO - root - Page:4, Index:48, Semi-Supervised State-Space Model with Dynamic Stacking Filter for Real-World Video Deraining, https://arxiv.org/pdf/2505.16811, 2025-05-22
+2025-11-12 01:41:09,171 - INFO - root - Page:4, Index:49, SOLVE: Synergy of Language-Vision and End-to-End Networks for Autonomous Driving, https://arxiv.org/pdf/2505.16805, 2025-05-22
+2025-11-12 01:41:09,172 - INFO - root - Fetching page 6 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=250
+2025-11-12 01:41:42,866 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:41:42,866 - INFO - root - Page:5, Index:0, Four Eyes Are Better Than Two: Harnessing the Collaborative Potential of Large Models via Differentiated Thinking and Complementary Ensembles, https://arxiv.org/pdf/2505.16784, 2025-06-07
+2025-11-12 01:41:42,867 - INFO - root - Page:5, Index:1, Single Domain Generalization for Few-Shot Counting via Universal Representation Matching, https://arxiv.org/pdf/2505.16778, 2025-05-22
+2025-11-12 01:41:42,867 - INFO - root - Page:5, Index:2, Seeing Far and Clearly: Mitigating Hallucinations in MLLMs with Attention Causal Decoding, https://arxiv.org/pdf/2505.16652, 2025-06-07
+2025-11-12 01:41:42,867 - INFO - root - Page:5, Index:3, Sketchy Bounding-box Supervision for 3D Instance Segmentation, https://arxiv.org/pdf/2505.16399, 2025-05-22
+2025-11-12 01:41:42,867 - INFO - root - Page:5, Index:4, DeCafNet: Delegate and Conquer for Efficient Temporal Grounding in Long Videos, https://arxiv.org/pdf/2505.16376, 2025-05-22
+2025-11-12 01:41:42,868 - INFO - root - Page:5, Index:5, NTIRE 2025 challenge on Text to Image Generation Model Quality Assessment, https://arxiv.org/pdf/2505.16314, 2025-05-22
+2025-11-12 01:41:42,868 - INFO - root - Page:5, Index:6, Analyzing Hierarchical Structure in Vision Models with Sparse Autoencoders, https://arxiv.org/pdf/2505.15970, 2025-05-21
+2025-11-12 01:41:42,868 - INFO - root - Page:5, Index:7, Efficient Data Driven Mixture-of-Expert Extraction from Trained Networks, https://arxiv.org/pdf/2505.15414, 2025-05-21
+2025-11-12 01:41:42,868 - INFO - root - Page:5, Index:8, Mouse Lockbox Dataset: Behavior Recognition for Mice Solving Lockboxes, https://arxiv.org/pdf/2505.15408, 2025-06-17
+2025-11-12 01:41:42,868 - INFO - root - Page:5, Index:9, Zero-Shot Gaze-based Volumetric Medical Image Segmentation, https://arxiv.org/pdf/2505.15256, 2025-06-10
+2025-11-12 01:41:42,870 - INFO - root - Page:5, Index:10, Dual Precision Quantization for Efficient and Accurate Deep Neural Networks Inference, https://arxiv.org/pdf/2505.14638, 2025-05-20
+2025-11-12 01:41:42,870 - INFO - root - Page:5, Index:11, Neural Video Compression with Context Modulation, https://arxiv.org/pdf/2505.14541, 2025-05-20
+2025-11-12 01:41:42,870 - INFO - root - Page:5, Index:12, Selective Structured State Space for Multispectral-fused Small Target Detection, https://arxiv.org/pdf/2505.14043, 2025-05-23
+2025-11-12 01:41:42,870 - INFO - root - Page:5, Index:13, OmniStyle: Filtering High Quality Style Transfer Data at Scale, https://arxiv.org/pdf/2505.14028, 2025-05-20
+2025-11-12 01:41:42,871 - INFO - root - Page:5, Index:14, Domain Adaptation of VLM for Soccer Video Understanding, https://arxiv.org/pdf/2505.13860, 2025-07-07
+2025-11-12 01:41:42,871 - INFO - root - Page:5, Index:15, Ground-V: Teaching VLMs to Ground Complex Instructions in Pixels, https://arxiv.org/pdf/2505.13788, 2025-05-19
+2025-11-12 01:41:42,871 - INFO - root - Page:5, Index:16, FinePhys: Fine-grained Human Action Generation by Explicitly Incorporating Physical Laws for Effective Skeletal Guidance, https://arxiv.org/pdf/2505.13437, 2025-05-19
+2025-11-12 01:41:42,871 - INFO - root - Page:5, Index:17, The Way Up: A Dataset for Hold Usage Detection in Sport Climbing, https://arxiv.org/pdf/2505.12854, 2025-05-19
+2025-11-12 01:41:42,872 - INFO - root - Page:5, Index:18, PEER pressure: Model-to-Model Regularization for Single Source Domain Generalization, https://arxiv.org/pdf/2505.12745, 2025-05-19
+2025-11-12 01:41:42,872 - INFO - root - Page:5, Index:19, Mamba-Adaptor: State Space Model Adaptor for Visual Recognition, https://arxiv.org/pdf/2505.12685, 2025-05-19
+2025-11-12 01:41:42,872 - INFO - root - Page:5, Index:20, Scalable Video-to-Dataset Generation for Cross-Platform Mobile Agents, https://arxiv.org/pdf/2505.12632, 2025-05-18
+2025-11-12 01:41:42,873 - INFO - root - Page:5, Index:21, Degradation-Aware Feature Perturbation for All-in-One Image Restoration, https://arxiv.org/pdf/2505.12630, 2025-05-18
+2025-11-12 01:41:42,873 - INFO - root - Page:5, Index:22, Guiding Diffusion with Deep Geometric Moments: Balancing Fidelity and Variation, https://arxiv.org/pdf/2505.12486, 2025-05-18
+2025-11-12 01:41:42,873 - INFO - root - Page:5, Index:23, Learning to Highlight Audio by Watching Movies, https://arxiv.org/pdf/2505.12154, 2025-05-17
+2025-11-12 01:41:42,874 - INFO - root - Page:5, Index:24, Understanding the Capabilities of Molecular Graph Neural Networks in Materials Science Through Multimodal Learning and Physical Context Encoding, https://arxiv.org/pdf/2505.12137, 2025-05-17
+2025-11-12 01:41:42,874 - INFO - root - Page:5, Index:25, iSegMan: Interactive Segment-and-Manipulate 3D Gaussians, https://arxiv.org/pdf/2505.11934, 2025-05-17
+2025-11-12 01:41:42,875 - INFO - root - Page:5, Index:26, Self-Learning Hyperspectral and Multispectral Image Fusion via Adaptive Residual Guided Subspace Diffusion Model, https://arxiv.org/pdf/2505.11800, 2025-05-16
+2025-11-12 01:41:42,875 - INFO - root - Page:5, Index:27, X-Edit: Detecting and Localizing Edits in Images Altered by Text-Guided Diffusion Models, https://arxiv.org/pdf/2505.11753, 2025-05-16
+2025-11-12 01:41:42,875 - INFO - root - Page:5, Index:28, MTevent: A Multi-Task Event Camera Dataset for 6D Pose Estimation and Moving Object Detection, https://arxiv.org/pdf/2505.11282, 2025-06-02
+2025-11-12 01:41:42,878 - INFO - root - Page:5, Index:29, Imputation-free and Alignment-free: Incomplete Multi-view Clustering Driven by Consensus Semantic Learning, https://arxiv.org/pdf/2505.11182, 2025-05-16
+2025-11-12 01:41:42,878 - INFO - root - Page:5, Index:30, MultiLink: Multi-class Structure Recovery via Agglomerative Clustering and Model Selection, https://arxiv.org/pdf/2505.10874, 2025-05-16
+2025-11-12 01:41:42,880 - INFO - root - Page:5, Index:31, RefPose: Leveraging Reference Geometric Correspondences for Accurate 6D Pose Estimation of Unseen Objects, https://arxiv.org/pdf/2505.10841, 2025-05-16
+2025-11-12 01:41:42,880 - INFO - root - Page:5, Index:32, PosterO: Structuring Layout Trees to Enable Language Models in Generalized Content-Aware Layout Generation, https://arxiv.org/pdf/2505.07843, 2025-05-26
+2025-11-12 01:41:42,880 - INFO - root - Page:5, Index:33, Prototype Augmented Hypernetworks for Continual Learning, https://arxiv.org/pdf/2505.07450, 2025-05-16
+2025-11-12 01:41:42,880 - INFO - root - Fetching page 7 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=300
+2025-11-12 01:42:14,996 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:42:14,996 - INFO - root - Page:6, Index:0, Convex Relaxation for Robust Vanishing Point Estimation in Manhattan World, https://arxiv.org/pdf/2505.04788, 2025-06-05
+2025-11-12 01:42:14,996 - INFO - root - Page:6, Index:1, S3D: Sketch-Driven 3D Model Generation, https://arxiv.org/pdf/2505.04185, 2025-06-03
+2025-11-12 01:42:14,996 - INFO - root - Page:6, Index:2, Generating Synthetic Data via Augmentations for Improved Facial Resemblance in DreamBooth and InstantID, https://arxiv.org/pdf/2505.03557, 2025-07-17
+2025-11-12 01:42:14,996 - INFO - root - Page:6, Index:3, CAV-MAE Sync: Improving Contrastive Audio-Visual Mask Autoencoders via Fine-Grained Alignment, https://arxiv.org/pdf/2505.01237, 2025-05-21
+2025-11-12 01:42:14,996 - INFO - root - Fetching page 8 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=350
+2025-11-12 01:42:51,619 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:42:51,620 - INFO - root - Page:7, Index:0, Where's the liability in the Generative Era? Recovery-based Black-Box Detection of AI-Generated Content, https://arxiv.org/pdf/2505.01008, 2025-08-25
+2025-11-12 01:42:51,620 - INFO - root - Page:7, Index:1, SpatialLLM: A Compound 3D-Informed Design towards Spatially-Intelligent Large Multimodal Models, https://arxiv.org/pdf/2505.00788, 2025-06-10
+2025-11-12 01:42:51,620 - INFO - root - Page:7, Index:2, Prisma: An Open Source Toolkit for Mechanistic Interpretability in Vision and Video, https://arxiv.org/pdf/2504.19475, 2025-06-03
+2025-11-12 01:42:51,620 - INFO - root - Page:7, Index:3, SSL4Eco: A Global Seasonal Dataset for Geospatial Foundation Models in Ecology, https://arxiv.org/pdf/2504.18256, 2025-10-20
+2025-11-12 01:42:51,621 - INFO - root - Page:7, Index:4, Vision-Language Models Are Not Pragmatically Competent in Referring Expression Generation, https://arxiv.org/pdf/2504.16060, 2025-07-30
+2025-11-12 01:42:51,621 - INFO - root - Fetching page 9 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=400
+2025-11-12 01:43:17,894 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:43:17,894 - INFO - root - Page:8, Index:0, Leveraging Automatic CAD Annotations for Supervised Learning in 3D Scene Understanding, https://arxiv.org/pdf/2504.13580, 2025-05-16
+2025-11-12 01:43:17,895 - INFO - root - Page:8, Index:1, CAP-Net: A Unified Network for 6D Pose and Size Estimation of Categorical Articulated Parts from a Single RGB-D Image, https://arxiv.org/pdf/2504.11230, 2025-06-02
+2025-11-12 01:43:17,895 - INFO - root - Page:8, Index:2, Video Summarization with Large Language Models, https://arxiv.org/pdf/2504.11199, 2025-06-05
+2025-11-12 01:43:17,895 - INFO - root - Page:8, Index:3, R-TPT: Improving Adversarial Robustness of Vision-Language Models through Test-Time Prompt Tuning, https://arxiv.org/pdf/2504.11195, 2025-08-27
+2025-11-12 01:43:17,896 - INFO - root - Page:8, Index:4, TerraMesh: A Planetary Mosaic of Multimodal Earth Observation Data, https://arxiv.org/pdf/2504.11172, 2025-08-01
+2025-11-12 01:43:17,896 - INFO - root - Page:8, Index:5, Seeing like a Cephalopod: Colour Vision with a Monochrome Event Camera, https://arxiv.org/pdf/2504.10984, 2025-06-06
+2025-11-12 01:43:17,896 - INFO - root - Page:8, Index:6, Hearing Anywhere in Any Environment, https://arxiv.org/pdf/2504.10746, 2025-06-04
+2025-11-12 01:43:17,896 - INFO - root - Fetching page 10 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=450
+2025-11-12 01:43:46,848 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:43:46,848 - INFO - root - Page:9, Index:0, Correlative and Discriminative Label Grouping for Multi-Label Visual Prompt Tuning, https://arxiv.org/pdf/2504.09990, 2025-07-09
+2025-11-12 01:43:46,849 - INFO - root - Page:9, Index:1, SPICE: A Synergistic, Precise, Iterative, and Customizable Image Editing Workflow, https://arxiv.org/pdf/2504.09697, 2025-10-16
+2025-11-12 01:43:46,849 - INFO - root - Page:9, Index:2, Mimic In-Context Learning for Multimodal Tasks, https://arxiv.org/pdf/2504.08851, 2025-05-17
+2025-11-12 01:43:46,849 - INFO - root - Page:9, Index:3, Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset, https://arxiv.org/pdf/2504.08541, 2025-05-18
+2025-11-12 01:43:46,849 - INFO - root - Page:9, Index:4, MMLA: Multi-Environment, Multi-Species, Low-Altitude Drone Dataset, https://arxiv.org/pdf/2504.07744, 2025-10-22
+2025-11-12 01:43:46,850 - INFO - root - Fetching page 11 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=500
+2025-11-12 01:44:34,077 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:44:34,077 - INFO - root - Page:10, Index:0, PromptHMR: Promptable Human Mesh Recovery, https://arxiv.org/pdf/2504.06397, 2025-05-23
+2025-11-12 01:44:34,077 - INFO - root - Page:10, Index:1, SCAM: A Real-World Typographic Robustness Evaluation for Multimodal Foundation Models, https://arxiv.org/pdf/2504.04893, 2025-09-26
+2025-11-12 01:44:34,077 - INFO - root - Fetching page 12 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=550
+2025-11-12 01:45:19,497 - INFO - root - get_all_titles_from_web 
+2025-11-12 01:45:19,497 - INFO - root - Page:11, Index:0, T*: Re-thinking Temporal Search for Long-Form Video Understanding, https://arxiv.org/pdf/2504.02259, 2025-08-24
+2025-11-12 01:45:19,499 - INFO - root - Page:11, Index:1, CoMatcher: Multi-View Collaborative Feature Matching, https://arxiv.org/pdf/2504.01872, 2025-08-20
+2025-11-12 01:45:19,499 - INFO - root - Page:11, Index:2, Think Small, Act Big: Primitive Prompt Learning for Lifelong Robot Manipulation, https://arxiv.org/pdf/2504.00420, 2025-06-01
+2025-11-12 01:45:19,499 - INFO - root - Fetching page 13 with URL: https://arxiv.org/search/?query=CVPR+2025&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=600
+2025-11-12 01:45:20,606 - INFO - root - ------------------------------------------------------------------------------------------------------------------------
+2025-11-12 01:45:20,609 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Learning to Seek Evidence_ A Verifiable Reasoning Agent with Causal Faithfulness.pdf
+2025-11-12 01:45:20,622 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\OmniTrack++_ Omnidirectional Multi-Object Tracking by Learning Large-FoV Traject.pdf
+2025-11-12 01:45:20,625 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\NeuCo-Bench_ A Novel Benchmark Framework for Neural Embeddings in Earth Observat.pdf
+2025-11-12 01:45:20,631 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\NTIRE 2025 Challenge on Low Light Image Enhancement_ Methods and Results.pdf
+2025-11-12 01:45:20,633 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine.pdf
+2025-11-12 01:45:20,636 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\MIMO_ A medical vision language model with visual referring multimodal input and.pdf
+2025-11-12 01:45:20,637 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Vision Language Models_ A Survey of 26K Papers.pdf
+2025-11-12 01:45:20,640 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\DiT-VTON_ Diffusion Transformer Framework for Unified Multi-Category Virtual Try.pdf
+2025-11-12 01:45:20,642 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\PatchVSR_ Breaking Video Diffusion Resolution Limits with Patch-wise Video Super.pdf
+2025-11-12 01:45:20,643 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\FreqDebias_ Towards Generalizable Deepfake Detection via Consistency-Driven Freq.pdf
+2025-11-12 01:45:20,650 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\A Mutual Learning Method for Salient Object Detection with intertwined Multi-Sup.pdf
+2025-11-12 01:45:20,653 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\InstructVTON_ Optimal Auto-Masking and Natural-Language-Guided Interactive Style.pdf
+2025-11-12 01:45:20,655 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On.pdf
+2025-11-12 01:45:20,656 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\The Photographer Eye_ Teaching Multimodal Large Language Models to Understand Im.pdf
+2025-11-12 01:45:20,657 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\ENSAM_ an efficient foundation model for interactive segmentation of 3D medical.pdf
+2025-11-12 01:45:20,657 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\DEFT-VTON_ Efficient Virtual Try-On with Consistent Generalised H-Transform.pdf
+2025-11-12 01:45:20,658 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Weakly and Self-Supervised Class-Agnostic Motion Prediction for Autonomous Drivi.pdf
+2025-11-12 01:45:20,658 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Domain-Adaptive Pretraining Improves Primate Behavior Recognition.pdf
+2025-11-12 01:45:20,658 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\The System Description of CPS Team for Track on Driving with Language of CVPR 20.pdf
+2025-11-12 01:45:20,664 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\An HMM-based framework for identity-aware long-term multi-object tracking from s.pdf
+2025-11-12 01:45:20,666 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\InterAct_ Advancing Large-Scale Versatile 3D Human-Object Interaction Generation.pdf
+2025-11-12 01:45:20,667 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Geospatial Foundational Embedder_ Top-1 Winning Solution on EarthVision Embed2Sc.pdf
+2025-11-12 01:45:20,668 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\2nd Place Solution for CVPR2024 E2E Challenge_ End-to-End Autonomous Driving Usi.pdf
+2025-11-12 01:45:20,669 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Unsupervised Training of Vision Transformers with Synthetic Negatives.pdf
+2025-11-12 01:45:20,672 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\MV-SSM_ Multi-View State Space Modeling for 3D Human Pose Estimation.pdf
+2025-11-12 01:45:20,672 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\CryptoFace_ End-to-End Encrypted Face Recognition.pdf
+2025-11-12 01:45:20,675 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\ControlEchoSynth_ Boosting Ejection Fraction Estimation Models via Controlled Vi.pdf
+2025-11-12 01:45:20,675 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Explain Before You Answer_ A Survey on Compositional Visual Reasoning.pdf
+2025-11-12 01:45:20,677 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Investigating Different Geo Priors for Image Classification.pdf
+2025-11-12 01:45:20,681 - INFO - root - File already exists, skipping download: d:\ChatPaper\academic Papers\CVPR 2025\Towards Source-Free Machine Unlearning.pdf
+2025-11-12 01:45:20,685 - INFO - root - 跳过已处理论文 Learning to Seek Evidence: A Verifiable Reasoning Agent with Causal Faithfulness Analysis：d:\ChatPaper\academic Papers\CVPR 2025\Learning to Seek Evidence_ A Verifiable Reasoning Agent with Causal Faithfulness.pdf
+2025-11-12 01:45:20,685 - INFO - root - 跳过已处理论文 OmniTrack++: Omnidirectional Multi-Object Tracking by Learning Large-FoV Trajectory Feedback：d:\ChatPaper\academic Papers\CVPR 2025\OmniTrack++_ Omnidirectional Multi-Object Tracking by Learning Large-FoV Traject.pdf
+2025-11-12 01:45:20,686 - INFO - root - 跳过已处理论文 NeuCo-Bench: A Novel Benchmark Framework for Neural Embeddings in Earth Observation：d:\ChatPaper\academic Papers\CVPR 2025\NeuCo-Bench_ A Novel Benchmark Framework for Neural Embeddings in Earth Observat.pdf
+2025-11-12 01:45:20,686 - INFO - root - 跳过已处理论文 NTIRE 2025 Challenge on Low Light Image Enhancement: Methods and Results：d:\ChatPaper\academic Papers\CVPR 2025\NTIRE 2025 Challenge on Low Light Image Enhancement_ Methods and Results.pdf
+2025-11-12 01:45:20,687 - INFO - root - 跳过已处理论文 Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine-Grained Educational Videos：d:\ChatPaper\academic Papers\CVPR 2025\Class Prototypes based Contrastive Learning for Classifying Multi-Label and Fine.pdf
+2025-11-12 01:45:20,689 - INFO - root - 跳过已处理论文 MIMO: A medical vision language model with visual referring multimodal input and pixel grounding multimodal output：d:\ChatPaper\academic Papers\CVPR 2025\MIMO_ A medical vision language model with visual referring multimodal input and.pdf
+2025-11-12 01:45:20,689 - INFO - root - 跳过已处理论文 Vision Language Models: A Survey of 26K Papers：d:\ChatPaper\academic Papers\CVPR 2025\Vision Language Models_ A Survey of 26K Papers.pdf
+2025-11-12 01:45:20,690 - INFO - root - 跳过已处理论文 DiT-VTON: Diffusion Transformer Framework for Unified Multi-Category Virtual Try-On and Virtual Try-All with Integrated Image Editing：d:\ChatPaper\academic Papers\CVPR 2025\DiT-VTON_ Diffusion Transformer Framework for Unified Multi-Category Virtual Try.pdf
+2025-11-12 01:45:20,690 - INFO - root - 跳过已处理论文 PatchVSR: Breaking Video Diffusion Resolution Limits with Patch-wise Video Super-Resolution：d:\ChatPaper\academic Papers\CVPR 2025\PatchVSR_ Breaking Video Diffusion Resolution Limits with Patch-wise Video Super.pdf
+2025-11-12 01:45:20,690 - INFO - root - 跳过已处理论文 FreqDebias: Towards Generalizable Deepfake Detection via Consistency-Driven Frequency Debiasing：d:\ChatPaper\academic Papers\CVPR 2025\FreqDebias_ Towards Generalizable Deepfake Detection via Consistency-Driven Freq.pdf
+2025-11-12 01:45:20,691 - INFO - root - 跳过已处理论文 A Mutual Learning Method for Salient Object Detection with intertwined Multi-Supervision--Revised：d:\ChatPaper\academic Papers\CVPR 2025\A Mutual Learning Method for Salient Object Detection with intertwined Multi-Sup.pdf
+2025-11-12 01:45:20,691 - INFO - root - 跳过已处理论文 InstructVTON: Optimal Auto-Masking and Natural-Language-Guided Interactive Style Control for Inpainting-Based Virtual Try-On：d:\ChatPaper\academic Papers\CVPR 2025\InstructVTON_ Optimal Auto-Masking and Natural-Language-Guided Interactive Style.pdf
+2025-11-12 01:45:20,691 - INFO - root - 跳过已处理论文 Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On：d:\ChatPaper\academic Papers\CVPR 2025\Efficient Encoder-Free Pose Conditioning and Pose Control for Virtual Try-On.pdf
+2025-11-12 01:45:20,692 - INFO - root - 跳过已处理论文 The Photographer Eye: Teaching Multimodal Large Language Models to Understand Image Aesthetics like Photographers：d:\ChatPaper\academic Papers\CVPR 2025\The Photographer Eye_ Teaching Multimodal Large Language Models to Understand Im.pdf
+2025-11-12 01:45:20,693 - INFO - root - 正在总结论文 15/30: ENSAM: an efficient foundation model for interactive segmentation of 3D medical images
+2025-11-12 01:45:30,796 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:46:05,571 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:46:05,579 - INFO - root - LLMClient: rate limit reached, sleeping 15.1s
+2025-11-12 01:46:46,344 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:46:46,346 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:46:46,878 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page4.png
+2025-11-12 01:46:47,007 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 01:46:47,069 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page16.png
+2025-11-12 01:46:47,134 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page15.png
+2025-11-12 01:46:47,193 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page15.png
+2025-11-12 01:46:47,260 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page16.png
+2025-11-12 01:46:47,305 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page14.png
+2025-11-12 01:46:47,316 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page4.png
+2025-11-12 01:46:47,318 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 01:46:47,318 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page16.png
+2025-11-12 01:46:47,318 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page15.png
+2025-11-12 01:46:47,319 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page15.png
+2025-11-12 01:46:47,320 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page16.png
+2025-11-12 01:46:47,320 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page14.png
+2025-11-12 01:46:47,324 - INFO - root - 已更新图片链接
+2025-11-12 01:46:47,327 - INFO - root - 论文《ENSAM: an efficient foundation model for interactive segmentation of 3D medical images》的分析已保存到 ./export\CVPR 2026\ENSAM_ an efficient foundation model for interactive segmentation of 3D medical.md
+2025-11-12 01:46:47,330 - INFO - root - 正在总结论文 16/30: DEFT-VTON: Efficient Virtual Try-On with Consistent Generalised H-Transform
+2025-11-12 01:46:57,431 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:46:57,432 - INFO - root - LLMClient: rate limit reached, sleeping 23.3s
+2025-11-12 01:48:10,238 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:48:53,295 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:48:53,295 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:49:01,041 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:49:01,224 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 01:49:01,395 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 01:49:01,524 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page2.jpeg
+2025-11-12 01:49:01,601 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page4.png
+2025-11-12 01:49:01,734 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page8.png
+2025-11-12 01:49:01,852 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page7.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page2.jpeg
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page4.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page8.png
+2025-11-12 01:49:01,871 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page7.png
+2025-11-12 01:49:01,871 - INFO - root - 已更新图片链接
+2025-11-12 01:49:01,893 - INFO - root - 论文《DEFT-VTON: Efficient Virtual Try-On with Consistent Generalised H-Transform》的分析已保存到 ./export\CVPR 2026\DEFT-VTON_ Efficient Virtual Try-On with Consistent Generalised H-Transform.md
+2025-11-12 01:49:01,895 - INFO - root - 正在总结论文 17/30: Weakly and Self-Supervised Class-Agnostic Motion Prediction for Autonomous Driving
+2025-11-12 01:49:17,025 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:50:12,964 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:50:50,385 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:50:50,385 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:50:52,698 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:50:52,795 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page13.png
+2025-11-12 01:50:52,881 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page13.png
+2025-11-12 01:50:52,959 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page13.png
+2025-11-12 01:50:53,065 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page13.png
+2025-11-12 01:50:53,243 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page13.png
+2025-11-12 01:50:53,398 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page2.png
+2025-11-12 01:50:53,589 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page2.png
+2025-11-12 01:50:53,692 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page2.png
+2025-11-12 01:50:53,766 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page2.png
+2025-11-12 01:50:53,773 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page13.png
+2025-11-12 01:50:53,774 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page13.png
+2025-11-12 01:50:53,774 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page13.png
+2025-11-12 01:50:53,775 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page13.png
+2025-11-12 01:50:53,775 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page13.png
+2025-11-12 01:50:53,776 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page13.png
+2025-11-12 01:50:53,776 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page2.png
+2025-11-12 01:50:53,776 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page2.png
+2025-11-12 01:50:53,776 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page2.png
+2025-11-12 01:50:53,776 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page2.png
+2025-11-12 01:50:53,783 - INFO - root - 已更新图片链接
+2025-11-12 01:50:53,789 - INFO - root - 论文《Weakly and Self-Supervised Class-Agnostic Motion Prediction for Autonomous Driving》的分析已保存到 ./export\CVPR 2026\Weakly and Self-Supervised Class-Agnostic Motion Prediction for Autonomous Drivi.md
+2025-11-12 01:50:53,792 - INFO - root - 正在总结论文 18/30: Domain-Adaptive Pretraining Improves Primate Behavior Recognition
+2025-11-12 01:51:04,799 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:51:04,801 - INFO - root - LLMClient: rate limit reached, sleeping 8.2s
+2025-11-12 01:51:50,570 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:51:50,575 - INFO - root - LLMClient: rate limit reached, sleeping 3.2s
+2025-11-12 01:52:19,248 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:52:19,251 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:52:19,545 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 01:52:19,683 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 01:52:19,893 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page1.png
+2025-11-12 01:52:19,894 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 01:52:19,895 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 01:52:19,895 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page1.png
+2025-11-12 01:52:19,901 - INFO - root - 已更新图片链接
+2025-11-12 01:52:19,904 - INFO - root - 论文《Domain-Adaptive Pretraining Improves Primate Behavior Recognition》的分析已保存到 ./export\CVPR 2026\Domain-Adaptive Pretraining Improves Primate Behavior Recognition.md
+2025-11-12 01:52:19,905 - INFO - root - 正在总结论文 19/30: The System Description of CPS Team for Track on Driving with Language of CVPR 2024 Autonomous Grand Challenge
+2025-11-12 01:52:29,314 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:52:29,317 - INFO - root - LLMClient: rate limit reached, sleeping 24.5s
+2025-11-12 01:53:38,092 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:54:06,938 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:54:06,941 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:54:07,285 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page3.jpeg
+2025-11-12 01:54:07,331 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.jpeg
+2025-11-12 01:54:07,377 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page3.jpeg
+2025-11-12 01:54:07,424 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page3.jpeg
+2025-11-12 01:54:07,467 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page3.jpeg
+2025-11-12 01:54:07,512 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page3.jpeg
+2025-11-12 01:54:07,589 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page3.png
+2025-11-12 01:54:07,634 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page3.jpeg
+2025-11-12 01:54:07,678 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page3.jpeg
+2025-11-12 01:54:07,727 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page3.jpeg
+2025-11-12 01:54:07,733 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page3.jpeg
+2025-11-12 01:54:07,733 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.jpeg
+2025-11-12 01:54:07,734 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page3.jpeg
+2025-11-12 01:54:07,735 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page3.jpeg
+2025-11-12 01:54:07,735 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page3.jpeg
+2025-11-12 01:54:07,736 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page3.jpeg
+2025-11-12 01:54:07,736 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page3.png
+2025-11-12 01:54:07,737 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page3.jpeg
+2025-11-12 01:54:07,738 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page3.jpeg
+2025-11-12 01:54:07,738 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page3.jpeg
+2025-11-12 01:54:07,749 - INFO - root - 已更新图片链接
+2025-11-12 01:54:07,752 - INFO - root - 论文《The System Description of CPS Team for Track on Driving with Language of CVPR 2024 Autonomous Grand Challenge》的分析已保存到 ./export\CVPR 2026\The System Description of CPS Team for Track on Driving with Language of CVPR 20.md
+2025-11-12 01:54:07,754 - INFO - root - 正在总结论文 20/30: An HMM-based framework for identity-aware long-term multi-object tracking from sparse and uncertain identification: use case on long-term tracking in livestock
+2025-11-12 01:54:20,857 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:54:20,861 - INFO - root - LLMClient: rate limit reached, sleeping 17.2s
+2025-11-12 01:55:42,259 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:56:11,431 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:56:11,432 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:56:13,147 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page6.png
+2025-11-12 01:56:13,436 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 01:56:13,817 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page9.png
+2025-11-12 01:56:13,921 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page5.png
+2025-11-12 01:56:14,015 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:56:14,065 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page9.png
+2025-11-12 01:56:14,119 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page12.png
+2025-11-12 01:56:14,184 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page12.png
+2025-11-12 01:56:14,252 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page12.png
+2025-11-12 01:56:14,341 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page12.png
+2025-11-12 01:56:14,370 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page6.png
+2025-11-12 01:56:14,375 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 01:56:14,376 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page9.png
+2025-11-12 01:56:14,377 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page5.png
+2025-11-12 01:56:14,378 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page8.png
+2025-11-12 01:56:14,378 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page9.png
+2025-11-12 01:56:14,379 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page12.png
+2025-11-12 01:56:14,379 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page12.png
+2025-11-12 01:56:14,380 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page12.png
+2025-11-12 01:56:14,381 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page12.png
+2025-11-12 01:56:14,391 - INFO - root - 已更新图片链接
+2025-11-12 01:56:14,394 - INFO - root - 论文《An HMM-based framework for identity-aware long-term multi-object tracking from sparse and uncertain identification: use case on long-term tracking in livestock》的分析已保存到 ./export\CVPR 2026\An HMM-based framework for identity-aware long-term multi-object tracking from s.md
+2025-11-12 01:56:14,397 - INFO - root - 正在总结论文 21/30: InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation
+2025-11-12 01:56:26,700 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:56:26,701 - INFO - root - LLMClient: rate limit reached, sleeping 15.6s
+2025-11-12 01:57:34,275 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:58:07,656 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:58:07,657 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:58:10,854 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page6.png
+2025-11-12 01:58:10,934 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:58:11,005 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page7.png
+2025-11-12 01:58:11,119 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page2.png
+2025-11-12 01:58:11,236 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page2.png
+2025-11-12 01:58:11,295 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page2.png
+2025-11-12 01:58:11,349 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page2.png
+2025-11-12 01:58:11,419 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page1.png
+2025-11-12 01:58:11,494 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page1.png
+2025-11-12 01:58:11,568 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 01:58:11,575 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page6.png
+2025-11-12 01:58:11,576 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page8.png
+2025-11-12 01:58:11,576 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page7.png
+2025-11-12 01:58:11,576 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page2.png
+2025-11-12 01:58:11,577 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page2.png
+2025-11-12 01:58:11,577 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page2.png
+2025-11-12 01:58:11,578 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page2.png
+2025-11-12 01:58:11,578 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page1.png
+2025-11-12 01:58:11,579 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page1.png
+2025-11-12 01:58:11,579 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 01:58:11,586 - INFO - root - 已更新图片链接
+2025-11-12 01:58:11,588 - INFO - root - 论文《InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation》的分析已保存到 ./export\CVPR 2026\InterAct_ Advancing Large-Scale Versatile 3D Human-Object Interaction Generation.md
+2025-11-12 01:58:11,590 - INFO - root - 正在总结论文 22/30: Geospatial Foundational Embedder: Top-1 Winning Solution on EarthVision Embed2Scale Challenge (CVPR 2025)
+2025-11-12 01:58:27,636 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:58:27,637 - INFO - root - LLMClient: rate limit reached, sleeping 6.6s
+2025-11-12 01:59:24,882 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:59:55,689 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 01:59:55,693 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 01:59:56,602 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 01:59:56,665 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 01:59:56,669 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 01:59:56,669 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 01:59:56,672 - INFO - root - 已更新图片链接
+2025-11-12 01:59:56,675 - INFO - root - 论文《Geospatial Foundational Embedder: Top-1 Winning Solution on EarthVision Embed2Scale Challenge (CVPR 2025)》的分析已保存到 ./export\CVPR 2026\Geospatial Foundational Embedder_ Top-1 Winning Solution on EarthVision Embed2Sc.md
+2025-11-12 01:59:56,678 - INFO - root - 正在总结论文 23/30: 2nd Place Solution for CVPR2024 E2E Challenge: End-to-End Autonomous Driving Using Vision Language Model
+2025-11-12 02:00:05,084 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:00:05,086 - INFO - root - LLMClient: rate limit reached, sleeping 19.8s
+2025-11-12 02:01:11,815 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:01:41,225 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:01:41,227 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:01:41,828 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page3.png
+2025-11-12 02:01:41,994 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 02:01:41,997 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page3.png
+2025-11-12 02:01:41,998 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 02:01:42,005 - INFO - root - 已更新图片链接
+2025-11-12 02:01:42,010 - INFO - root - 论文《2nd Place Solution for CVPR2024 E2E Challenge: End-to-End Autonomous Driving Using Vision Language Model》的分析已保存到 ./export\CVPR 2026\2nd Place Solution for CVPR2024 E2E Challenge_ End-to-End Autonomous Driving Usi.md
+2025-11-12 02:01:42,014 - INFO - root - 正在总结论文 24/30: Unsupervised Training of Vision Transformers with Synthetic Negatives
+2025-11-12 02:01:54,901 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:01:54,904 - INFO - root - LLMClient: rate limit reached, sleeping 16.9s
+2025-11-12 02:03:17,118 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:04:22,705 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:04:22,706 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:04:23,017 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 02:04:23,353 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 02:04:23,653 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page1.png
+2025-11-12 02:04:23,756 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page1.png
+2025-11-12 02:04:23,959 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page1.png
+2025-11-12 02:04:24,016 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page1.png
+2025-11-12 02:04:24,082 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page1.png
+2025-11-12 02:04:24,329 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page1.png
+2025-11-12 02:04:24,387 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page1.png
+2025-11-12 02:04:24,443 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 02:04:24,443 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page1.png
+2025-11-12 02:04:24,445 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page1.png
+2025-11-12 02:04:24,446 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page1.png
+2025-11-12 02:04:24,447 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page1.png
+2025-11-12 02:04:24,447 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page1.png
+2025-11-12 02:04:24,448 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page1.png
+2025-11-12 02:04:24,448 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page1.png
+2025-11-12 02:04:24,448 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page1.png
+2025-11-12 02:04:24,449 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page1.png
+2025-11-12 02:04:24,450 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page1.png
+2025-11-12 02:04:24,454 - INFO - root - 已更新图片链接
+2025-11-12 02:04:24,459 - INFO - root - 论文《Unsupervised Training of Vision Transformers with Synthetic Negatives》的分析已保存到 ./export\CVPR 2026\Unsupervised Training of Vision Transformers with Synthetic Negatives.md
+2025-11-12 02:04:24,461 - INFO - root - 正在总结论文 25/30: MV-SSM: Multi-View State Space Modeling for 3D Human Pose Estimation
+2025-11-12 02:04:35,215 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:05:27,461 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:05:58,049 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:05:58,050 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:05:58,860 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page8.jpeg
+2025-11-12 02:05:59,069 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page5.jpeg
+2025-11-12 02:05:59,255 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 02:05:59,384 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page4.jpeg
+2025-11-12 02:05:59,398 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page8.jpeg
+2025-11-12 02:05:59,399 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page5.jpeg
+2025-11-12 02:05:59,400 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page1.jpeg
+2025-11-12 02:05:59,400 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page4.jpeg
+2025-11-12 02:05:59,409 - INFO - root - 已更新图片链接
+2025-11-12 02:05:59,411 - INFO - root - 论文《MV-SSM: Multi-View State Space Modeling for 3D Human Pose Estimation》的分析已保存到 ./export\CVPR 2026\MV-SSM_ Multi-View State Space Modeling for 3D Human Pose Estimation.md
+2025-11-12 02:05:59,415 - INFO - root - 正在总结论文 26/30: CryptoFace: End-to-End Encrypted Face Recognition
+2025-11-12 02:06:07,882 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:06:07,884 - INFO - root - LLMClient: rate limit reached, sleeping 19.6s
+2025-11-12 02:07:04,938 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:07:36,653 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:07:36,656 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:07:36,818 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page4.png
+2025-11-12 02:07:36,872 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 02:07:36,929 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page4.png
+2025-11-12 02:07:37,014 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page5.png
+2025-11-12 02:07:37,096 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page5.png
+2025-11-12 02:07:37,182 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page5.png
+2025-11-12 02:07:37,256 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page5.png
+2025-11-12 02:07:37,336 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page5.png
+2025-11-12 02:07:37,415 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page5.png
+2025-11-12 02:07:37,488 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page5.png
+2025-11-12 02:07:37,488 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page4.png
+2025-11-12 02:07:37,490 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page4.png
+2025-11-12 02:07:37,490 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page4.png
+2025-11-12 02:07:37,490 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page5.png
+2025-11-12 02:07:37,491 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page5.png
+2025-11-12 02:07:37,491 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page5.png
+2025-11-12 02:07:37,491 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page5.png
+2025-11-12 02:07:37,492 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page5.png
+2025-11-12 02:07:37,492 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page5.png
+2025-11-12 02:07:37,492 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page5.png
+2025-11-12 02:07:37,497 - INFO - root - 已更新图片链接
+2025-11-12 02:07:37,501 - INFO - root - 论文《CryptoFace: End-to-End Encrypted Face Recognition》的分析已保存到 ./export\CVPR 2026\CryptoFace_ End-to-End Encrypted Face Recognition.md
+2025-11-12 02:07:37,504 - INFO - root - 正在总结论文 27/30: ControlEchoSynth: Boosting Ejection Fraction Estimation Models via Controlled Video Diffusion
+2025-11-12 02:07:45,804 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:07:45,805 - INFO - root - LLMClient: rate limit reached, sleeping 19.1s
+2025-11-12 02:08:45,931 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:09:16,878 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:09:16,879 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:09:17,401 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page5.png
+2025-11-12 02:09:17,455 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 02:09:17,507 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 02:09:17,558 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page3.png
+2025-11-12 02:09:17,571 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page3.png
+2025-11-12 02:09:17,585 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page3.png
+2025-11-12 02:09:17,587 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page5.png
+2025-11-12 02:09:17,588 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page3.png
+2025-11-12 02:09:17,588 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page3.png
+2025-11-12 02:09:17,589 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page3.png
+2025-11-12 02:09:17,589 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page3.png
+2025-11-12 02:09:17,589 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page3.png
+2025-11-12 02:09:17,595 - INFO - root - 已更新图片链接
+2025-11-12 02:09:17,598 - INFO - root - 论文《ControlEchoSynth: Boosting Ejection Fraction Estimation Models via Controlled Video Diffusion》的分析已保存到 ./export\CVPR 2026\ControlEchoSynth_ Boosting Ejection Fraction Estimation Models via Controlled Vi.md
+2025-11-12 02:09:17,601 - INFO - root - 正在总结论文 28/30: Explain Before You Answer: A Survey on Compositional Visual Reasoning
+2025-11-12 02:09:24,873 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:09:24,877 - INFO - root - LLMClient: rate limit reached, sleeping 21.1s
+2025-11-12 02:10:23,664 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:10:41,389 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:10:41,391 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:10:47,729 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page9.png
+2025-11-12 02:10:48,202 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page12.png
+2025-11-12 02:10:48,782 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 02:10:48,994 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page13.png
+2025-11-12 02:10:49,338 - INFO - root - 已保存图片 5/10：./export\CVPR 2026\images\figure_5_page10.png
+2025-11-12 02:10:49,534 - INFO - root - 已保存图片 6/10：./export\CVPR 2026\images\figure_6_page17.jpeg
+2025-11-12 02:10:49,776 - INFO - root - 已保存图片 7/10：./export\CVPR 2026\images\figure_7_page15.png
+2025-11-12 02:10:49,994 - INFO - root - 已保存图片 8/10：./export\CVPR 2026\images\figure_8_page17.jpeg
+2025-11-12 02:10:50,127 - INFO - root - 已保存图片 9/10：./export\CVPR 2026\images\figure_9_page17.jpeg
+2025-11-12 02:10:50,256 - INFO - root - 已保存图片 10/10：./export\CVPR 2026\images\figure_10_page17.jpeg
+2025-11-12 02:10:50,315 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page9.png
+2025-11-12 02:10:50,315 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page12.png
+2025-11-12 02:10:50,315 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page8.png
+2025-11-12 02:10:50,316 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page13.png
+2025-11-12 02:10:50,316 - INFO - root - 成功添加图片 5：./export\CVPR 2026\images\figure_5_page10.png
+2025-11-12 02:10:50,316 - INFO - root - 成功添加图片 6：./export\CVPR 2026\images\figure_6_page17.jpeg
+2025-11-12 02:10:50,316 - INFO - root - 成功添加图片 7：./export\CVPR 2026\images\figure_7_page15.png
+2025-11-12 02:10:50,316 - INFO - root - 成功添加图片 8：./export\CVPR 2026\images\figure_8_page17.jpeg
+2025-11-12 02:10:50,317 - INFO - root - 成功添加图片 9：./export\CVPR 2026\images\figure_9_page17.jpeg
+2025-11-12 02:10:50,317 - INFO - root - 成功添加图片 10：./export\CVPR 2026\images\figure_10_page17.jpeg
+2025-11-12 02:10:50,324 - INFO - root - 已更新图片链接
+2025-11-12 02:10:50,327 - INFO - root - 论文《Explain Before You Answer: A Survey on Compositional Visual Reasoning》的分析已保存到 ./export\CVPR 2026\Explain Before You Answer_ A Survey on Compositional Visual Reasoning.md
+2025-11-12 02:10:50,330 - INFO - root - 正在总结论文 29/30: Investigating Different Geo Priors for Image Classification
+2025-11-12 02:10:59,296 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:10:59,298 - INFO - root - LLMClient: rate limit reached, sleeping 24.4s
+2025-11-12 02:11:56,175 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:12:17,833 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:12:17,838 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:12:17,869 - INFO - root - 论文《Investigating Different Geo Priors for Image Classification》的分析已保存到 ./export\CVPR 2026\Investigating Different Geo Priors for Image Classification.md
+2025-11-12 02:12:17,873 - INFO - root - 正在总结论文 30/30: Towards Source-Free Machine Unlearning
+2025-11-12 02:12:17,875 - INFO - root - LLMClient: rate limit reached, sleeping 5.8s
+2025-11-12 02:12:39,070 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:12:39,075 - INFO - root - LLMClient: rate limit reached, sleeping 17.1s
+2025-11-12 02:13:34,706 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:13:58,958 - INFO - httpx - HTTP Request: POST https://ark.cn-beijing.volces.com/api/v3/chat/completions "HTTP/1.1 200 OK"
+2025-11-12 02:13:58,960 - INFO - root - 正在提取论文图片到目录: ./export\CVPR 2026\images
+2025-11-12 02:14:00,363 - INFO - root - 已保存图片 1/10：./export\CVPR 2026\images\figure_1_page7.png
+2025-11-12 02:14:00,573 - INFO - root - 已保存图片 2/10：./export\CVPR 2026\images\figure_2_page7.png
+2025-11-12 02:14:00,757 - INFO - root - 已保存图片 3/10：./export\CVPR 2026\images\figure_3_page7.png
+2025-11-12 02:14:00,923 - INFO - root - 已保存图片 4/10：./export\CVPR 2026\images\figure_4_page7.png
+2025-11-12 02:14:00,934 - INFO - root - 成功添加图片 1：./export\CVPR 2026\images\figure_1_page7.png
+2025-11-12 02:14:00,935 - INFO - root - 成功添加图片 2：./export\CVPR 2026\images\figure_2_page7.png
+2025-11-12 02:14:00,936 - INFO - root - 成功添加图片 3：./export\CVPR 2026\images\figure_3_page7.png
+2025-11-12 02:14:00,936 - INFO - root - 成功添加图片 4：./export\CVPR 2026\images\figure_4_page7.png
+2025-11-12 02:14:00,943 - INFO - root - 已更新图片链接
+2025-11-12 02:14:00,945 - INFO - root - 论文《Towards Source-Free Machine Unlearning》的分析已保存到 ./export\CVPR 2026\Towards Source-Free Machine Unlearning.md
+2025-11-12 02:14:01,291 - INFO - root - 已生成汇总Excel表格: export\CVPR 2026\论文汇总_CVPR 2026_20251112_021400.xlsx
+2025-11-12 02:14:01,292 - INFO - root - 已生成汇总Excel表格: export\CVPR 2026\论文汇总_CVPR 2026_20251112_021400.xlsx
+2025-11-12 02:14:01,292 - INFO - root - summary time: 2145.37 seconds
