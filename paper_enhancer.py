@@ -22,10 +22,8 @@ class PaperEnhancer:
     def update_image_links(self, markdown_content, paper_title, keyword):
         """
         更新Markdown中的图片链接，使其指向关键词/标题子目录
-        （此功能逻辑保持不变）
+        (!!!) 注意：此函数在当前流程中已不再需要 (!!!)
         """
-        
-        # ... (此函数的其余部分保持不变) ...
         
         paper_safe_title = self.validate_filename(paper_title)
         keyword_safe = self.validate_filename(keyword)
@@ -105,24 +103,35 @@ class PaperEnhancer:
             try:
                 df_old = pd.read_excel(excel_path)
                 
+                # (!!!) 确保旧表也有所有列，以便 concat (!!!)
+                for col in columns_order:
+                    if col not in df_old.columns:
+                        df_old[col] = None
+                
                 # 4. 合并并去重
                 df_combined = pd.concat([df_old, df_new], ignore_index=True)
                 
                 # (!!!) 关键：按标题和 URL 去重，保留最后一次（最新）的记录 (!!!)
-                df_final = df_combined.drop_duplicates(subset=['title', 'url'], keep='last')
+                # (!!!) 在去重前，先按 processed_time 排序，确保最新的非空数据被保留 (!!!)
+                # (!!!) 增加按 'url' 排序，以确保一致性 (!!!)
+                df_combined.sort_values(by=['url', 'processed_time'], ascending=[True, True], inplace=True)
                 
-                logging.info(f"合并后: {len(df_final)} 条记录 (新增 {len(df_final) - len(df_old)} 条)")
+                df_final = df_combined.drop_duplicates(subset=['url'], keep='last')
+                
+                logging.info(f"合并后: {len(df_final)} 条记录 (新增 {len(df_final) - len(df_old)} 条, 更新 {len(df_new) - (len(df_final) - len(df_old))} 条)")
                 
             except Exception as e:
                 logging.warning(f"读取旧 Excel 文件失败: {e}。将覆盖原文件。")
-                df_final = df_new
+                df_final = df_new.drop_duplicates(subset=['url'], keep='last')
         else:
             logging.info(f"未找到旧 Excel 文件。正在创建新文件: {excel_path}")
-            df_final = df_new
+            df_final = df_new.drop_duplicates(subset=['url'], keep='last')
 
         # 5. 保存到 Excel
         try:
             with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
+                # 确保最终列顺序正确
+                df_final = df_final[columns_order]
                 df_final.to_excel(writer, index=False, sheet_name='Papers')
             
             logging.info(f"成功保存 Excel: {excel_path}")

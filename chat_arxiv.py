@@ -150,7 +150,8 @@ def _filter_papers_by_days(results: List[arxiv.Result], days: int) -> List[arxiv
 def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
     """
     (供并发调用) 下载单个 PDF 并创建 Paper 对象。
-    - 新增
+    (!!!) 修正：下载失败时也会创建 Paper 对象 (!!!)
+   
     """
     try:
         # (!!!) 修正：从 entry_id 派生 PDF URL (!!!)
@@ -162,11 +163,11 @@ def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
                 pdf_url = entry_id.replace('/abs/', '/pdf/') + '.pdf'
             else:
                 logging.warning(f"无法为 {entry_id or '未知条目'} 构建 PDF URL。跳过下载。")
-                return None
+                # (!!!) 抛出异常以触发下面的 except 块 (!!!)
+                raise ValueError(f"无法为 {entry_id} 构建有效的 PDF URL")
         
         # 1. 下载 PDF
         #
-        # (!!!) 修正：移除了 'chat_arxiv.' 前缀 (!!!)
         file_path = try_download_pdf(pdf_url, result.title, query)
         
         # 2. 提取所有元数据 (解决用户痛点)
@@ -174,7 +175,7 @@ def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
         authors = [str(a) for a in result.authors]
         published_date = result.published.date()
         
-        # 3. 创建 Paper 对象
+        # 3. 创建 Paper 对象 (下载成功)
         #
         paper = Paper(
             path=file_path,
@@ -183,15 +184,39 @@ def _download_and_create_paper(result: arxiv.Result, query: str) -> Paper:
             abs=result.summary.replace('\n', ' '), # 摘要
             authers=authors,
             published_date=published_date,
-            arxiv_id=arxiv_id
-            # citations 默认为 None
+            arxiv_id=arxiv_id,
+            citations=None,
+            manual_download_required=False # (!!!) 下载成功 (!!!)
         )
         logging.info(f"成功创建 Paper 对象: {arxiv_id}")
         return paper
         
     except Exception as e:
-        logging.warning(f"处理论文 {result.entry_id} 时失败: {e}", exc_info=True)
-        return None
+        # (!!!) 修正：下载失败，创建 Paper 对象用于 Excel (!!!)
+        logging.warning(f"处理/下载论文 {result.entry_id} 时失败: {e}", exc_info=False)
+        
+        try:
+            # 尝试仍然提取元数据
+            arxiv_id = result.get_short_id()
+            authors = [str(a) for a in result.authors]
+            published_date = result.published.date()
+            abs_text = result.summary.replace('\n', ' ') if result.summary else "摘要提取失败"
+        except Exception as e_meta:
+            logging.warning(f"提取 {result.entry_id} 的元数据也失败了: {e_meta}")
+            arxiv_id, authors, published_date, abs_text = "N/A", [], None, "摘要提取失败"
+
+        paper = Paper(
+            path=None, # (!!!) 路径为 None (!!!)
+            title=result.title or "标题提取失败",
+            url=result.entry_id, 
+            abs=abs_text,
+            authers=authors,
+            published_date=published_date,
+            arxiv_id=arxiv_id,
+            citations=None, # ArXiv 模式总为 None
+            manual_download_required=True # (!!!) 标记为需要手动下载 (!!!)
+        )
+        return paper
 
 # ---------------------------------------------------------------------
 # 主入口函数 (重写)
@@ -245,11 +270,16 @@ def get_arxiv_papers(args) -> List[Paper]:
         start_time = time.time()
         for i, future in enumerate(as_completed(futures), 1):
             paper = future.result()
-            if paper: # 仅添加成功处理的论文
+            if paper: # (!!!) 现在即使下载失败也会返回 Paper 对象 (!!!)
                 paper_list.append(paper)
             logging.info(f"下载进度: {i}/{len(papers_to_process)}")
             
     end_time = time.time()
     total_time = end_time - start_time
-    logging.info(f"成功下载并处理了 {len(paper_list)} 篇论文，耗时 {total_time:.2f} 秒。")
+    
+    # (!!!) 更新日志以区分成功和失败 (!!!)
+    success_count = sum(1 for p in paper_list if p and not p.manual_download_required)
+    fail_count = sum(1 for p in paper_list if p and p.manual_download_required)
+    
+    logging.info(f"论文处理完成: {success_count} 篇成功下载, {fail_count} 篇需手动下载。耗时 {total_time:.2f} 秒。")
     return paper_list

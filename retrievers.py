@@ -113,6 +113,7 @@ class ArxivRetriever(RetrieverStrategy):
         
         # chat_arxiv.get_arxiv_papers 内部创建 Paper 对象时
         # citations 默认为 None
+        # (!!!) 并且在下载失败时也会返回 Paper 对象 (!!!)
         #
         paper_list = chat_arxiv.get_arxiv_papers(args)
         
@@ -172,6 +173,7 @@ class GoogleScholarRetriever(RetrieverStrategy):
             title = row['Title']
             url = row['Source']
             citations = row['Citations'] # (!!!) 获取引用次数
+            authors = row['Author'].split(' and ')
             
             # 关键步骤：目前只尝试下载明确指向 arXiv 的链接
             # 这是一个简化处理，因为 Google Scholar 的源链接格式各异
@@ -188,13 +190,25 @@ class GoogleScholarRetriever(RetrieverStrategy):
                         url=url, 
                         # Scholar 不提供摘要，我们用引用数代替
                         abs=f"Cited by: {citations}. (摘要未从 Google Scholar 获取)",
-                        authers=row['Author'].split(' and '), # 简单的作者分割
-                        citations=citations  # <--- (!!!) 新增字段 (!!!)
+                        authers=authors, # 简单的作者分割
+                        citations=citations,  # <--- (!!!) 新增字段 (!!!)
+                        manual_download_required=False # 下载成功
                     )
                     paper_list.append(paper)
                     logging.info(f"成功下载 (Scholar-ArXiv): {title}")
                 except Exception as e:
                     logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
+                    # (!!!) 修正：下载失败也创建 Paper 对象 (!!!)
+                    paper = Paper(
+                        path=None, 
+                        title=title, 
+                        url=url, 
+                        abs=f"Cited by: {citations}. (摘要未从 Google Scholar 获取)",
+                        authers=authors,
+                        citations=citations,
+                        manual_download_required=True
+                    )
+                    paper_list.append(paper)
             else:
                 # (!!!) 增强日志：按用户要求添加引用次数 (!!!)
                 logging.warning(
@@ -202,6 +216,17 @@ class GoogleScholarRetriever(RetrieverStrategy):
                     f"\t  URL: {url}\n"
                     f"\t  Citations: {citations}"
                 )
+                # (!!!) 修正：创建 Paper 对象以便加入 Excel (!!!)
+                paper = Paper(
+                    path=None, 
+                    title=title, 
+                    url=url, 
+                    abs=f"Cited by: {citations}. (摘要未从 Google Scholar 获取)",
+                    authers=authors,
+                    citations=citations,
+                    manual_download_required=True # (!!!) 标记为需要手动下载 (!!!)
+                )
+                paper_list.append(paper)
 
         return paper_list
 
@@ -296,7 +321,7 @@ class SemanticScholarRetriever(RetrieverStrategy):
                         # 4. 复用下载器
                         filename = chat_arxiv.try_download_pdf(pdf_url, title, args.key_word)
                         
-                        # 5. 创建 Paper 对象
+                        # 5. 创建 Paper 对象 (下载成功)
                         paper = Paper(
                             path=filename,
                             title=title,
@@ -304,7 +329,8 @@ class SemanticScholarRetriever(RetrieverStrategy):
                             abs=abstract or "摘要不可用",
                             authers=authors,
                             published_date=pub_date,
-                            citations=citations
+                            citations=citations,
+                            manual_download_required=False # 下载成功
                             # arxiv_id 默认为 None
                         )
                         paper_list.append(paper)
@@ -312,6 +338,18 @@ class SemanticScholarRetriever(RetrieverStrategy):
                         
                     except Exception as e:
                         logging.warning(f"下载 {title} ({pdf_url}) 失败: {e}")
+                        # (!!!) 修正：即使下载失败，也创建 Paper 对象 (!!!)
+                        paper = Paper(
+                            path=None,
+                            title=title,
+                            url=sem_url,
+                            abs=abstract or "摘要不可用",
+                            authers=authors,
+                            published_date=pub_date,
+                            citations=citations,
+                            manual_download_required=True # 标记为需要手动下载
+                        )
+                        paper_list.append(paper)
                 else:
                     # 6. (!!!) 增强日志：按用户要求添加详细元数据 (!!!)
                     authors_str = ', '.join(authors) if authors else 'N/A'
@@ -321,6 +359,18 @@ class SemanticScholarRetriever(RetrieverStrategy):
                         f"\t  URL: {sem_url}\n"
                         f"\t  Citations: {citations} | Authors: {authors_str} | Date: {date_str}"
                     )
+                    # (!!!) 修正：创建 Paper 对象以便加入 Excel (!!!)
+                    paper = Paper(
+                        path=None,
+                        title=title,
+                        url=sem_url,
+                        abs=abstract or "摘要不可用",
+                        authers=authors,
+                        published_date=pub_date,
+                        citations=citations,
+                        manual_download_required=True # 标记为需要手动下载
+                    )
+                    paper_list.append(paper)
 
         except requests.exceptions.HTTPError as e:
             # (!!!) 捕获 429 错误 (!!!)
