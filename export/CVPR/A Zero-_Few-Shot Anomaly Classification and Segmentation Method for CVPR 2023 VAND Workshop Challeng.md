@@ -139,32 +139,32 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_1_page5.jpeg)
+![Figure 1](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_1_page5.jpeg)
 
 ## 图 2
-![Figure 2](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_2_page5.jpeg)
+![Figure 2](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_2_page5.jpeg)
 
 ## 图 3
-![Figure 3](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_3_page5.jpeg)
+![Figure 3](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_3_page5.jpeg)
 
 ## 图 4
-![Figure 4](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_4_page5.jpeg)
+![Figure 4](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_4_page5.jpeg)
 
 ## 图 5
-![Figure 5](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_5_page5.jpeg)
+![Figure 5](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_5_page5.jpeg)
 
 ## 图 6
-![Figure 6](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_6_page5.jpeg)
+![Figure 6](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_6_page5.jpeg)
 
 ## 图 7
-![Figure 7](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_7_page5.jpeg)
+![Figure 7](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_7_page5.jpeg)
 
 ## 图 8
-![Figure 8](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_8_page5.jpeg)
+![Figure 8](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_8_page5.jpeg)
 
 ## 图 9
-![Figure 9](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_9_page5.jpeg)
+![Figure 9](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_9_page5.jpeg)
 
 ## 图 10
-![Figure 10](images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_10_page5.jpeg)
+![Figure 10](./images/A Zero-_Few-Shot Anomaly Classification and Segmentation Method for CVPR 2023 VAND Workshop Challeng/figure_10_page5.jpeg)
 

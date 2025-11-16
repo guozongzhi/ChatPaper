@@ -152,23 +152,23 @@ LaSNN方法的整体流程通过**分层蒸馏**和**注意力机制**，精巧�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_1_page3.jpeg)
+![Figure 1](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_1_page3.jpeg)
 
 ## 图 2
-![Figure 2](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_2_page8.jpeg)
+![Figure 2](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_2_page8.jpeg)
 
 ## 图 3
-![Figure 3](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_3_page4.jpeg)
+![Figure 3](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_3_page4.jpeg)
 
 ## 图 4
-![Figure 4](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_4_page8.jpeg)
+![Figure 4](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_4_page8.jpeg)
 
 ## 图 5
-![Figure 5](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_5_page9.jpeg)
+![Figure 5](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_5_page9.jpeg)
 
 ## 图 6
-![Figure 6](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_6_page6.jpeg)
+![Figure 6](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_6_page6.jpeg)
 
 ## 图 7
-![Figure 7](images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_7_page9.jpeg)
+![Figure 7](./images/LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura/figure_7_page9.jpeg)
 

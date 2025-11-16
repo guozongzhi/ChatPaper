@@ -126,32 +126,32 @@ STDP规则是SNN无监督学习的基础，它根据突触前和突触后神经�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_1_page8.jpeg)
+![Figure 1](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_1_page8.jpeg)
 
 ## 图 2
-![Figure 2](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_2_page14.jpeg)
+![Figure 2](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_2_page14.jpeg)
 
 ## 图 3
-![Figure 3](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_3_page12.jpeg)
+![Figure 3](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_3_page12.jpeg)
 
 ## 图 4
-![Figure 4](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_4_page9.jpeg)
+![Figure 4](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_4_page9.jpeg)
 
 ## 图 5
-![Figure 5](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_5_page10.jpeg)
+![Figure 5](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_5_page10.jpeg)
 
 ## 图 6
-![Figure 6](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_6_page5.jpeg)
+![Figure 6](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_6_page5.jpeg)
 
 ## 图 7
-![Figure 7](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_7_page13.jpeg)
+![Figure 7](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_7_page13.jpeg)
 
 ## 图 8
-![Figure 8](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_8_page7.jpeg)
+![Figure 8](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_8_page7.jpeg)
 
 ## 图 9
-![Figure 9](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_9_page11.jpeg)
+![Figure 9](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_9_page11.jpeg)
 
 ## 图 10
-![Figure 10](images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_10_page13.jpeg)
+![Figure 10](./images/Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach/figure_10_page13.jpeg)
 

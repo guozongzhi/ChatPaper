@@ -154,17 +154,17 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_1_page2.png)
+![Figure 1](./images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_2_page1.png)
+![Figure 2](./images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_2_page1.png)
 
 ## 图 3
-![Figure 3](images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_3_page1.png)
+![Figure 3](./images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_3_page1.png)
 
 ## 图 4
-![Figure 4](images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_4_page1.png)
+![Figure 4](./images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_4_page1.png)
 
 ## 图 5
-![Figure 5](images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_5_page6.png)
+![Figure 5](./images/CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges/figure_5_page6.png)
 

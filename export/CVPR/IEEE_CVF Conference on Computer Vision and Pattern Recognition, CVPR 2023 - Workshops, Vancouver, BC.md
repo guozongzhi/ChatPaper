@@ -137,32 +137,32 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_1_page1.png)
+![Figure 1](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_2_page4.jpeg)
+![Figure 2](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_2_page4.jpeg)
 
 ## 图 3
-![Figure 3](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_3_page7.png)
+![Figure 3](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_3_page7.png)
 
 ## 图 4
-![Figure 4](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_4_page2.jpeg)
+![Figure 4](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_4_page2.jpeg)
 
 ## 图 5
-![Figure 5](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_5_page5.jpeg)
+![Figure 5](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_5_page5.jpeg)
 
 ## 图 6
-![Figure 6](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_6_page4.jpeg)
+![Figure 6](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_6_page4.jpeg)
 
 ## 图 7
-![Figure 7](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_7_page9.jpeg)
+![Figure 7](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_7_page9.jpeg)
 
 ## 图 8
-![Figure 8](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_8_page7.png)
+![Figure 8](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_8_page7.png)
 
 ## 图 9
-![Figure 9](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_9_page8.png)
+![Figure 9](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_9_page8.png)
 
 ## 图 10
-![Figure 10](images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_10_page8.png)
+![Figure 10](./images/IEEE_CVF Conference on Computer Vision and Pattern Recognition, CVPR 2023 - Workshops, Vancouver, BC/figure_10_page8.png)
 

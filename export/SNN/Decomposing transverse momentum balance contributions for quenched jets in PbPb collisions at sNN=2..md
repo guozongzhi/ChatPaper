@@ -153,8 +153,8 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2./figure_1_page1.png)
+![Figure 1](./images/Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2./figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2./figure_2_page1.png)
+![Figure 2](./images/Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2./figure_2_page1.png)
 

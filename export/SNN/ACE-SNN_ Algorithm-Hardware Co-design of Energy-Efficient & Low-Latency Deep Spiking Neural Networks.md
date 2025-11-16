@@ -151,32 +151,32 @@ ACE-SNN的整体工作流程可以概括为以下步骤：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_1_page15.png)
+![Figure 1](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_1_page15.png)
 
 ## 图 2
-![Figure 2](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_2_page15.jpeg)
+![Figure 2](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_2_page15.jpeg)
 
 ## 图 3
-![Figure 3](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_3_page7.jpeg)
+![Figure 3](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_3_page7.jpeg)
 
 ## 图 4
-![Figure 4](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_4_page11.jpeg)
+![Figure 4](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_4_page11.jpeg)
 
 ## 图 5
-![Figure 5](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_5_page8.jpeg)
+![Figure 5](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_5_page8.jpeg)
 
 ## 图 6
-![Figure 6](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_6_page13.jpeg)
+![Figure 6](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_6_page13.jpeg)
 
 ## 图 7
-![Figure 7](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_7_page9.jpeg)
+![Figure 7](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_7_page9.jpeg)
 
 ## 图 8
-![Figure 8](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_8_page3.jpeg)
+![Figure 8](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_8_page3.jpeg)
 
 ## 图 9
-![Figure 9](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_9_page17.jpeg)
+![Figure 9](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_9_page17.jpeg)
 
 ## 图 10
-![Figure 10](images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_10_page10.jpeg)
+![Figure 10](./images/ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks/figure_10_page10.jpeg)
 

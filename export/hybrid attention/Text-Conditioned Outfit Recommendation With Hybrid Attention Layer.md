@@ -171,32 +171,32 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page2.jpeg)
+![Figure 1](./images/figure_1_page2.jpeg)
 
 ## 图 2
-![Figure 2](images/figure_2_page8.png)
+![Figure 2](./images/figure_2_page8.png)
 
 ## 图 3
-![Figure 3](images/figure_3_page8.png)
+![Figure 3](./images/figure_3_page8.png)
 
 ## 图 4
-![Figure 4](images/figure_4_page8.png)
+![Figure 4](./images/figure_4_page8.png)
 
 ## 图 5
-![Figure 5](images/figure_5_page4.jpeg)
+![Figure 5](./images/figure_5_page4.jpeg)
 
 ## 图 6
-![Figure 6](images/figure_6_page4.jpeg)
+![Figure 6](./images/figure_6_page4.jpeg)
 
 ## 图 7
-![Figure 7](images/figure_7_page4.jpeg)
+![Figure 7](./images/figure_7_page4.jpeg)
 
 ## 图 8
-![Figure 8](images/figure_8_page4.jpeg)
+![Figure 8](./images/figure_8_page4.jpeg)
 
 ## 图 9
-![Figure 9](images/figure_9_page4.jpeg)
+![Figure 9](./images/figure_9_page4.jpeg)
 
 ## 图 10
-![Figure 10](images/figure_10_page4.jpeg)
+![Figure 10](./images/figure_10_page4.jpeg)
 

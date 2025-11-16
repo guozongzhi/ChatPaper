@@ -182,8 +182,8 @@ C4 --> D[最终跟踪结果]
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/The Second-place Solution for CVPR 2022 SoccerNet Tracking Challenge/figure_1_page3.png)
+![Figure 1](./images/The Second-place Solution for CVPR 2022 SoccerNet Tracking Challenge/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/The Second-place Solution for CVPR 2022 SoccerNet Tracking Challenge/figure_2_page2.png)
+![Figure 2](./images/The Second-place Solution for CVPR 2022 SoccerNet Tracking Challenge/figure_2_page2.png)
 

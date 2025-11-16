@@ -149,8 +149,8 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/WiCV@CVPR2023_ The Eleventh Women In Computer Vision Workshop at the Annual CVPR Conference/figure_1_page3.png)
+![Figure 1](./images/WiCV@CVPR2023_ The Eleventh Women In Computer Vision Workshop at the Annual CVPR Conference/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/WiCV@CVPR2023_ The Eleventh Women In Computer Vision Workshop at the Annual CVPR Conference/figure_2_page3.png)
+![Figure 2](./images/WiCV@CVPR2023_ The Eleventh Women In Computer Vision Workshop at the Annual CVPR Conference/figure_2_page3.png)
 

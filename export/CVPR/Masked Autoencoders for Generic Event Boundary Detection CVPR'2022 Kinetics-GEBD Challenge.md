@@ -155,11 +155,11 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_1_page2.png)
+![Figure 1](./images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_2_page4.png)
+![Figure 2](./images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_2_page4.png)
 
 ## 图 3
-![Figure 3](images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_3_page4.png)
+![Figure 3](./images/Masked Autoencoders for Generic Event Boundary Detection CVPR'2022 Kinetics-GEBD Challenge/figure_3_page4.png)
 

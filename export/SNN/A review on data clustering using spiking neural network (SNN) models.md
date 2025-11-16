@@ -139,17 +139,17 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A review on data clustering using spiking neural network (SNN) models/figure_1_page2.jpeg)
+![Figure 1](./images/A review on data clustering using spiking neural network (SNN) models/figure_1_page2.jpeg)
 
 ## 图 2
-![Figure 2](images/A review on data clustering using spiking neural network (SNN) models/figure_2_page4.jpeg)
+![Figure 2](./images/A review on data clustering using spiking neural network (SNN) models/figure_2_page4.jpeg)
 
 ## 图 3
-![Figure 3](images/A review on data clustering using spiking neural network (SNN) models/figure_3_page5.png)
+![Figure 3](./images/A review on data clustering using spiking neural network (SNN) models/figure_3_page5.png)
 
 ## 图 4
-![Figure 4](images/A review on data clustering using spiking neural network (SNN) models/figure_4_page6.jpeg)
+![Figure 4](./images/A review on data clustering using spiking neural network (SNN) models/figure_4_page6.jpeg)
 
 ## 图 5
-![Figure 5](images/A review on data clustering using spiking neural network (SNN) models/figure_5_page5.jpeg)
+![Figure 5](./images/A review on data clustering using spiking neural network (SNN) models/figure_5_page5.jpeg)
 

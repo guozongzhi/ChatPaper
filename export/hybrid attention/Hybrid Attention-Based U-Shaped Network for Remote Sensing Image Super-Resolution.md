@@ -179,32 +179,32 @@ HAUNet 的整体工作流程如下：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_1_page9.png)
+![Figure 1](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_1_page9.png)
 
 ## 图 2
-![Figure 2](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_2_page9.png)
+![Figure 2](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_2_page9.png)
 
 ## 图 3
-![Figure 3](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_3_page9.png)
+![Figure 3](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_3_page9.png)
 
 ## 图 4
-![Figure 4](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_4_page9.png)
+![Figure 4](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_4_page9.png)
 
 ## 图 5
-![Figure 5](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_5_page13.png)
+![Figure 5](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_5_page13.png)
 
 ## 图 6
-![Figure 6](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_6_page13.png)
+![Figure 6](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_6_page13.png)
 
 ## 图 7
-![Figure 7](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_7_page15.png)
+![Figure 7](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_7_page15.png)
 
 ## 图 8
-![Figure 8](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_8_page15.png)
+![Figure 8](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_8_page15.png)
 
 ## 图 9
-![Figure 9](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_9_page15.png)
+![Figure 9](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_9_page15.png)
 
 ## 图 10
-![Figure 10](images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_10_page15.png)
+![Figure 10](./images/Hybrid Attention-Based U-Shaped Network for Remote Sensing Image Super-Resolution/figure_10_page15.png)
 

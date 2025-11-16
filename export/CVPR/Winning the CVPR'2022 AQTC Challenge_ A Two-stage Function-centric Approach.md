@@ -148,11 +148,11 @@ AQTC任务的核心挑战在于如何准确理解用户以自然语言提出的�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_1_page3.png)
+![Figure 1](./images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_2_page3.jpeg)
+![Figure 2](./images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_2_page3.jpeg)
 
 ## 图 3
-![Figure 3](images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_3_page3.jpeg)
+![Figure 3](./images/Winning the CVPR'2022 AQTC Challenge_ A Two-stage Function-centric Approach/figure_3_page3.jpeg)
 

@@ -145,32 +145,32 @@ HAC-Net方法的精髓在于其**多层次、多角度的“注意力”思想**
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_1_page22.jpeg)
+![Figure 1](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_1_page22.jpeg)
 
 ## 图 2
-![Figure 2](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_2_page9.jpeg)
+![Figure 2](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_2_page9.jpeg)
 
 ## 图 3
-![Figure 3](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_3_page5.jpeg)
+![Figure 3](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_3_page5.jpeg)
 
 ## 图 4
-![Figure 4](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_4_page3.jpeg)
+![Figure 4](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_4_page3.jpeg)
 
 ## 图 5
-![Figure 5](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_5_page21.png)
+![Figure 5](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_5_page21.png)
 
 ## 图 6
-![Figure 6](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_6_page27.jpeg)
+![Figure 6](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_6_page27.jpeg)
 
 ## 图 7
-![Figure 7](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_7_page6.jpeg)
+![Figure 7](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_7_page6.jpeg)
 
 ## 图 8
-![Figure 8](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_8_page24.jpeg)
+![Figure 8](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_8_page24.jpeg)
 
 ## 图 9
-![Figure 9](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_9_page25.jpeg)
+![Figure 9](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_9_page25.jpeg)
 
 ## 图 10
-![Figure 10](images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_10_page26.jpeg)
+![Figure 10](./images/HAC-Net__A_Hybrid_Attention-Based_Convolutional_Neural_Network_for_Highly_Accurate_Protein-Ligand_Binding_Affinity_Prediction/figure_10_page26.jpeg)
 

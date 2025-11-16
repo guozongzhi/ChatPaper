@@ -153,32 +153,32 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_1_page11.jpeg)
+![Figure 1](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_1_page11.jpeg)
 
 ## 图 2
-![Figure 2](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_2_page11.jpeg)
+![Figure 2](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_2_page11.jpeg)
 
 ## 图 3
-![Figure 3](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_3_page6.png)
+![Figure 3](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_3_page6.png)
 
 ## 图 4
-![Figure 4](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_4_page20.png)
+![Figure 4](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_4_page20.png)
 
 ## 图 5
-![Figure 5](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_5_page17.jpeg)
+![Figure 5](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_5_page17.jpeg)
 
 ## 图 6
-![Figure 6](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_6_page17.jpeg)
+![Figure 6](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_6_page17.jpeg)
 
 ## 图 7
-![Figure 7](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_7_page6.png)
+![Figure 7](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_7_page6.png)
 
 ## 图 8
-![Figure 8](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_8_page5.jpeg)
+![Figure 8](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_8_page5.jpeg)
 
 ## 图 9
-![Figure 9](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_9_page1.png)
+![Figure 9](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_9_page1.png)
 
 ## 图 10
-![Figure 10](images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_10_page13.png)
+![Figure 10](./images/Large Multimodal Models_ Notes on CVPR 2023 Tutorial/figure_10_page13.png)
 

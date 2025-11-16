@@ -143,5 +143,5 @@ TCL方法通过一种巧妙且高效的两阶段管道，解决了ANN-SNN转换�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/TCL_ an ANN-to-SNN Conversion with Trainable Clipping Layers/figure_1_page3.png)
+![Figure 1](./images/TCL_ an ANN-to-SNN Conversion with Trainable Clipping Layers/figure_1_page3.png)
 

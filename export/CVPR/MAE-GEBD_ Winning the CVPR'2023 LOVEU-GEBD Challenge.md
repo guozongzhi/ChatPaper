@@ -126,8 +126,8 @@ MAE-GEBD 2023版本的方法精髓在于**精细化改进**。它没有推翻原
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/MAE-GEBD_ Winning the CVPR'2023 LOVEU-GEBD Challenge/figure_1_page2.png)
+![Figure 1](./images/MAE-GEBD_ Winning the CVPR'2023 LOVEU-GEBD Challenge/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/MAE-GEBD_ Winning the CVPR'2023 LOVEU-GEBD Challenge/figure_2_page5.png)
+![Figure 2](./images/MAE-GEBD_ Winning the CVPR'2023 LOVEU-GEBD Challenge/figure_2_page5.png)
 

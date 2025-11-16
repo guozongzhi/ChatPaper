@@ -142,32 +142,32 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_1_page7.png)
+![Figure 1](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_1_page7.png)
 
 ## 图 2
-![Figure 2](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_2_page8.png)
+![Figure 2](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_2_page8.png)
 
 ## 图 3
-![Figure 3](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_3_page2.png)
+![Figure 3](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_3_page2.png)
 
 ## 图 4
-![Figure 4](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_4_page7.png)
+![Figure 4](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_4_page7.png)
 
 ## 图 5
-![Figure 5](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_5_page4.png)
+![Figure 5](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_5_page4.png)
 
 ## 图 6
-![Figure 6](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_6_page8.png)
+![Figure 6](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_6_page8.png)
 
 ## 图 7
-![Figure 7](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_7_page6.png)
+![Figure 7](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_7_page6.png)
 
 ## 图 8
-![Figure 8](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_8_page3.png)
+![Figure 8](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_8_page3.png)
 
 ## 图 9
-![Figure 9](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_9_page3.png)
+![Figure 9](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_9_page3.png)
 
 ## 图 10
-![Figure 10](images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_10_page1.png)
+![Figure 10](./images/HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra/figure_10_page1.png)
 

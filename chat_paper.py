@@ -366,8 +366,8 @@ class Reader:
                         try:
                             if img_path and isinstance(img_path, str):
                                 filename = os.path.basename(img_path)
-                                # (!!!) 修正：Markdown 链接现在必须包含子目录 (!!!)
-                                rel_path = f"images/{paper_safe_title}/{filename}"
+                                # (!!!) 修正：添加 './' 以修复 GitHub 路径 (!!!)
+                                rel_path = f"./images/{paper_safe_title}/{filename}"
                                 images_section += f"## 图 {i}\n![Figure {i}]({rel_path})\n\n"
                                 logging.info("成功添加图片 %s：%s", i, img_path)
                         except Exception as e:

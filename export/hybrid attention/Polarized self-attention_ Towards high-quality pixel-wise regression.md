@@ -152,17 +152,17 @@ PSA模块通常作为一个即插即用单元，嵌入到编码器-解码器架�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page8.png)
+![Figure 1](./images/figure_1_page8.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page8.png)
+![Figure 2](./images/figure_2_page8.png)
 
 ## 图 3
-![Figure 3](images/figure_3_page4.png)
+![Figure 3](./images/figure_3_page4.png)
 
 ## 图 4
-![Figure 4](images/figure_4_page1.png)
+![Figure 4](./images/figure_4_page1.png)
 
 ## 图 5
-![Figure 5](images/figure_5_page4.png)
+![Figure 5](./images/figure_5_page4.png)
 

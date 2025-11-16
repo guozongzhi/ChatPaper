@@ -143,32 +143,32 @@ HAM-Net方法的精髓在于其**混合注意力机制的分工与协作**：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_1_page3.png)
+![Figure 1](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_2_page3.png)
+![Figure 2](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_2_page3.png)
 
 ## 图 3
-![Figure 3](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_3_page3.png)
+![Figure 3](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_3_page3.png)
 
 ## 图 4
-![Figure 4](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_4_page3.png)
+![Figure 4](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_4_page3.png)
 
 ## 图 5
-![Figure 5](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_5_page3.png)
+![Figure 5](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_5_page3.png)
 
 ## 图 6
-![Figure 6](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_6_page3.png)
+![Figure 6](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_6_page3.png)
 
 ## 图 7
-![Figure 7](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_7_page6.png)
+![Figure 7](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_7_page6.png)
 
 ## 图 8
-![Figure 8](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_8_page7.png)
+![Figure 8](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_8_page7.png)
 
 ## 图 9
-![Figure 9](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_9_page7.png)
+![Figure 9](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_9_page7.png)
 
 ## 图 10
-![Figure 10](images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_10_page1.png)
+![Figure 10](./images/A_Hybrid_Attention_Mechanism_for_Weakly-Supervised_Temporal_Action_Localization/figure_10_page1.png)
 

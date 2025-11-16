@@ -154,32 +154,32 @@ MHA-Net通过整合高效注意力机制、智能下采样策略、多尺度特�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_1_page8.jpeg)
+![Figure 1](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_1_page8.jpeg)
 
 ## 图 2
-![Figure 2](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_2_page9.jpeg)
+![Figure 2](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_2_page9.jpeg)
 
 ## 图 3
-![Figure 3](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_3_page4.jpeg)
+![Figure 3](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_3_page4.jpeg)
 
 ## 图 4
-![Figure 4](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_4_page3.jpeg)
+![Figure 4](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_4_page3.jpeg)
 
 ## 图 5
-![Figure 5](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_5_page6.jpeg)
+![Figure 5](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_5_page6.jpeg)
 
 ## 图 6
-![Figure 6](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_6_page3.jpeg)
+![Figure 6](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_6_page3.jpeg)
 
 ## 图 7
-![Figure 7](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_7_page5.jpeg)
+![Figure 7](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_7_page5.jpeg)
 
 ## 图 8
-![Figure 8](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_8_page6.jpeg)
+![Figure 8](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_8_page6.jpeg)
 
 ## 图 9
-![Figure 9](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_9_page11.jpeg)
+![Figure 9](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_9_page11.jpeg)
 
 ## 图 10
-![Figure 10](images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_10_page11.jpeg)
+![Figure 10](./images/MHA-Net_ Multipath Hybrid Attention Network for Building Footprint Extraction From High-Resolution R/figure_10_page11.jpeg)
 

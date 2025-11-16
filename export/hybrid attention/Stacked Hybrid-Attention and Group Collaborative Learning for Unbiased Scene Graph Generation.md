@@ -145,32 +145,32 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_1_page1.png)
+![Figure 1](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_2_page1.png)
+![Figure 2](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_2_page1.png)
 
 ## 图 3
-![Figure 3](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_3_page3.jpeg)
+![Figure 3](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_3_page3.jpeg)
 
 ## 图 4
-![Figure 4](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_4_page13.jpeg)
+![Figure 4](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_4_page13.jpeg)
 
 ## 图 5
-![Figure 5](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_5_page1.png)
+![Figure 5](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_5_page1.png)
 
 ## 图 6
-![Figure 6](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_6_page13.jpeg)
+![Figure 6](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_6_page13.jpeg)
 
 ## 图 7
-![Figure 7](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_7_page13.jpeg)
+![Figure 7](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_7_page13.jpeg)
 
 ## 图 8
-![Figure 8](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_8_page1.png)
+![Figure 8](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_8_page1.png)
 
 ## 图 9
-![Figure 9](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_9_page5.png)
+![Figure 9](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_9_page5.png)
 
 ## 图 10
-![Figure 10](images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_10_page5.png)
+![Figure 10](./images/Stacked_Hybrid-Attention_and_Group_Collaborative_Learning_for_Unbiased_Scene_Graph_Generation/figure_10_page5.png)
 

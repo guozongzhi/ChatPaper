@@ -145,17 +145,17 @@ ANN-SNN转换是一种通过特定算法将ANN参数转换为SNN参数的有效�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_1_page7.png)
+![Figure 1](./images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_1_page7.png)
 
 ## 图 2
-![Figure 2](images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_2_page4.png)
+![Figure 2](./images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_2_page4.png)
 
 ## 图 3
-![Figure 3](images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_3_page4.png)
+![Figure 3](./images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_3_page4.png)
 
 ## 图 4
-![Figure 4](images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_4_page3.png)
+![Figure 4](./images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_4_page3.png)
 
 ## 图 5
-![Figure 5](images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_5_page3.png)
+![Figure 5](./images/A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness/figure_5_page3.png)
 

@@ -161,14 +161,14 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page8.jpeg)
+![Figure 1](./images/figure_1_page8.jpeg)
 
 ## 图 2
-![Figure 2](images/figure_2_page8.jpeg)
+![Figure 2](./images/figure_2_page8.jpeg)
 
 ## 图 3
-![Figure 3](images/figure_3_page8.png)
+![Figure 3](./images/figure_3_page8.png)
 
 ## 图 4
-![Figure 4](images/figure_4_page8.png)
+![Figure 4](./images/figure_4_page8.png)
 

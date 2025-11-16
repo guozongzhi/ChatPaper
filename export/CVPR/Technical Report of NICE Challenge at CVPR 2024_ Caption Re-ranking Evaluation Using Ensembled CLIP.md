@@ -150,8 +150,8 @@ ECO框架的方法论优势在于：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Technical Report of NICE Challenge at CVPR 2024_ Caption Re-ranking Evaluation Using Ensembled CLIP/figure_1_page1.png)
+![Figure 1](./images/Technical Report of NICE Challenge at CVPR 2024_ Caption Re-ranking Evaluation Using Ensembled CLIP/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Technical Report of NICE Challenge at CVPR 2024_ Caption Re-ranking Evaluation Using Ensembled CLIP/figure_2_page3.png)
+![Figure 2](./images/Technical Report of NICE Challenge at CVPR 2024_ Caption Re-ranking Evaluation Using Ensembled CLIP/figure_2_page3.png)
 

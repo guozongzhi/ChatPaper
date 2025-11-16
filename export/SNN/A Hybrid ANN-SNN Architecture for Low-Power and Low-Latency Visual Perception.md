@@ -130,29 +130,29 @@ SNN模型存在的核心问题是其内部状态收敛慢且易衰减。这一�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_1_page8.png)
+![Figure 1](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_1_page8.png)
 
 ## 图 2
-![Figure 2](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_2_page8.png)
+![Figure 2](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_2_page8.png)
 
 ## 图 3
-![Figure 3](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_3_page8.png)
+![Figure 3](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_3_page8.png)
 
 ## 图 4
-![Figure 4](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_4_page8.png)
+![Figure 4](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_4_page8.png)
 
 ## 图 5
-![Figure 5](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_5_page6.png)
+![Figure 5](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_5_page6.png)
 
 ## 图 6
-![Figure 6](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_6_page6.png)
+![Figure 6](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_6_page6.png)
 
 ## 图 7
-![Figure 7](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_7_page1.png)
+![Figure 7](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_7_page1.png)
 
 ## 图 8
-![Figure 8](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_8_page3.png)
+![Figure 8](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_8_page3.png)
 
 ## 图 9
-![Figure 9](images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_9_page9.png)
+![Figure 9](./images/A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception/figure_9_page9.png)
 

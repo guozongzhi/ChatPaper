@@ -139,32 +139,32 @@ Y = A_{joint} \odot X
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_1_page12.png)
+![Figure 1](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_1_page12.png)
 
 ## 图 2
-![Figure 2](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_2_page12.png)
+![Figure 2](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_2_page12.png)
 
 ## 图 3
-![Figure 3](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_3_page8.png)
+![Figure 3](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_3_page8.png)
 
 ## 图 4
-![Figure 4](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_4_page10.png)
+![Figure 4](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_4_page10.png)
 
 ## 图 5
-![Figure 5](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_5_page10.png)
+![Figure 5](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_5_page10.png)
 
 ## 图 6
-![Figure 6](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_6_page3.jpeg)
+![Figure 6](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_6_page3.jpeg)
 
 ## 图 7
-![Figure 7](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_7_page3.jpeg)
+![Figure 7](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_7_page3.jpeg)
 
 ## 图 8
-![Figure 8](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_8_page3.jpeg)
+![Figure 8](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_8_page3.jpeg)
 
 ## 图 9
-![Figure 9](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_9_page3.jpeg)
+![Figure 9](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_9_page3.jpeg)
 
 ## 图 10
-![Figure 10](images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_10_page3.jpeg)
+![Figure 10](./images/TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks/figure_10_page3.jpeg)
 

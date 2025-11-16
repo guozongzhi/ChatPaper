@@ -133,11 +133,11 @@ AQTC任务面临几个关键难点：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_1_page1.png)
+![Figure 1](./images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_2_page2.png)
+![Figure 2](./images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_2_page2.png)
 
 ## 图 3
-![Figure 3](images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_3_page3.png)
+![Figure 3](./images/Technical Report for CVPR 2022 LOVEU AQTC Challenge/figure_3_page3.png)
 

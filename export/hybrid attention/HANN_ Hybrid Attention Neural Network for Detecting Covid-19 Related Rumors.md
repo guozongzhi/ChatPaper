@@ -168,32 +168,32 @@ HANN（混合注意力神经网络）是一项针对COVID-19相关社交媒体�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_1_page11.jpeg)
+![Figure 1](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_1_page11.jpeg)
 
 ## 图 2
-![Figure 2](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_2_page9.jpeg)
+![Figure 2](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_2_page9.jpeg)
 
 ## 图 3
-![Figure 3](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_3_page7.jpeg)
+![Figure 3](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_3_page7.jpeg)
 
 ## 图 4
-![Figure 4](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_4_page7.png)
+![Figure 4](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_4_page7.png)
 
 ## 图 5
-![Figure 5](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_5_page6.jpeg)
+![Figure 5](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_5_page6.jpeg)
 
 ## 图 6
-![Figure 6](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_6_page9.jpeg)
+![Figure 6](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_6_page9.jpeg)
 
 ## 图 7
-![Figure 7](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_7_page4.png)
+![Figure 7](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_7_page4.png)
 
 ## 图 8
-![Figure 8](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_8_page11.jpeg)
+![Figure 8](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_8_page11.jpeg)
 
 ## 图 9
-![Figure 9](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_9_page11.jpeg)
+![Figure 9](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_9_page11.jpeg)
 
 ## 图 10
-![Figure 10](images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_10_page3.png)
+![Figure 10](./images/HANN_ Hybrid Attention Neural Network for Detecting Covid-19 Related Rumors/figure_10_page3.png)
 

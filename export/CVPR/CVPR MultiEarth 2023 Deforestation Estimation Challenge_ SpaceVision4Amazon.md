@@ -132,17 +132,17 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_1_page3.png)
+![Figure 1](./images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_2_page2.png)
+![Figure 2](./images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_2_page2.png)
 
 ## 图 3
-![Figure 3](images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_3_page4.png)
+![Figure 3](./images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_3_page4.png)
 
 ## 图 4
-![Figure 4](images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_4_page4.png)
+![Figure 4](./images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_4_page4.png)
 
 ## 图 5
-![Figure 5](images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_5_page2.png)
+![Figure 5](./images/CVPR MultiEarth 2023 Deforestation Estimation Challenge_ SpaceVision4Amazon/figure_5_page2.png)
 

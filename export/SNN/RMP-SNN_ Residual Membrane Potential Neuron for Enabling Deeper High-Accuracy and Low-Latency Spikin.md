@@ -163,8 +163,8 @@ RMP-SNN方法的整体流程是一个精心设计的、理论驱动的离线转�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin/figure_1_page1.png)
+![Figure 1](./images/RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin/figure_2_page1.png)
+![Figure 2](./images/RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin/figure_2_page1.png)
 

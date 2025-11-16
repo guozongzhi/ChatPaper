@@ -123,32 +123,32 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_1_page3.png)
+![Figure 1](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_2_page3.png)
+![Figure 2](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_2_page3.png)
 
 ## 图 3
-![Figure 3](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_3_page4.jpeg)
+![Figure 3](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_3_page4.jpeg)
 
 ## 图 4
-![Figure 4](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_4_page4.jpeg)
+![Figure 4](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_4_page4.jpeg)
 
 ## 图 5
-![Figure 5](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_5_page4.jpeg)
+![Figure 5](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_5_page4.jpeg)
 
 ## 图 6
-![Figure 6](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_6_page4.jpeg)
+![Figure 6](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_6_page4.jpeg)
 
 ## 图 7
-![Figure 7](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_7_page4.jpeg)
+![Figure 7](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_7_page4.jpeg)
 
 ## 图 8
-![Figure 8](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_8_page4.jpeg)
+![Figure 8](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_8_page4.jpeg)
 
 ## 图 9
-![Figure 9](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_9_page4.jpeg)
+![Figure 9](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_9_page4.jpeg)
 
 ## 图 10
-![Figure 10](images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_10_page4.jpeg)
+![Figure 10](./images/The Second-place Solution for CVPR VISION 23 Challenge Track 1 - Data Effificient Defect Detection/figure_10_page4.jpeg)
 

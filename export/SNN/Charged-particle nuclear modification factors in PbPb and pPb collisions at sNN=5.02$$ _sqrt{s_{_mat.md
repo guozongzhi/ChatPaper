@@ -160,8 +160,8 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat/figure_1_page1.png)
+![Figure 1](./images/Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat/figure_2_page1.png)
+![Figure 2](./images/Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat/figure_2_page1.png)
 

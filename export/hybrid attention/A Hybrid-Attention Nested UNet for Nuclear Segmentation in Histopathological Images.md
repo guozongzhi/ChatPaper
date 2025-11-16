@@ -124,14 +124,14 @@ Han-Net的整体骨架是一个**嵌套的、密集连接的U-Net变体**。它�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological Images/figure_1_page5.jpeg)
+![Figure 1](./images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological ./images/figure_1_page5.jpeg)
 
 ## 图 2
-![Figure 2](images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological Images/figure_2_page4.jpeg)
+![Figure 2](./images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological ./images/figure_2_page4.jpeg)
 
 ## 图 3
-![Figure 3](images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological Images/figure_3_page2.jpeg)
+![Figure 3](./images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological ./images/figure_3_page2.jpeg)
 
 ## 图 4
-![Figure 4](images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological Images/figure_4_page3.jpeg)
+![Figure 4](./images/A Hybrid-Attention Nested UNet for Nuclear Segmentation in Histopathological ./images/figure_4_page3.jpeg)
 

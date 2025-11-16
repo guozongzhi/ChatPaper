@@ -130,5 +130,5 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Second Edition FRCSyn Challenge at CVPR 2024_ Face Recognition Challenge in the Era of Synthetic Dat/figure_1_page2.png)
+![Figure 1](./images/Second Edition FRCSyn Challenge at CVPR 2024_ Face Recognition Challenge in the Era of Synthetic Dat/figure_1_page2.png)
 

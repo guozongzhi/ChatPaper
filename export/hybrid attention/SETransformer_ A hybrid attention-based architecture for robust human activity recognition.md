@@ -175,8 +175,8 @@ SETransformer是一种创新的深度学习架构，专为处理多通道时序�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page6.png)
+![Figure 1](./images/figure_1_page6.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page5.png)
+![Figure 2](./images/figure_2_page5.png)
 

@@ -147,14 +147,14 @@ Hybrid-MPET 的方法精髓在于其**“宏观传输”与“微观反应”的
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page20.png)
+![Figure 1](./images/figure_1_page20.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page20.png)
+![Figure 2](./images/figure_2_page20.png)
 
 ## 图 3
-![Figure 3](images/figure_3_page18.png)
+![Figure 3](./images/figure_3_page18.png)
 
 ## 图 4
-![Figure 4](images/figure_4_page18.png)
+![Figure 4](./images/figure_4_page18.png)
 

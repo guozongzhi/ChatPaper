@@ -143,14 +143,14 @@ Transformer模型在处理长序列时面临二次计算复杂度和内存消耗
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page9.png)
+![Figure 1](./images/figure_1_page9.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page1.png)
+![Figure 2](./images/figure_2_page1.png)
 
 ## 图 3
-![Figure 3](images/figure_3_page8.png)
+![Figure 3](./images/figure_3_page8.png)
 
 ## 图 4
-![Figure 4](images/figure_4_page1.jpeg)
+![Figure 4](./images/figure_4_page1.jpeg)
 

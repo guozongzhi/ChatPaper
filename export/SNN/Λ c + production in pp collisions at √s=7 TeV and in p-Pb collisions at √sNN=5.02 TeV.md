@@ -195,5 +195,5 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Λ c + production in pp collisions at √s=7 TeV and in p-Pb collisions at √sNN=5.02 TeV/figure_1_page1.png)
+![Figure 1](./images/Λ c + production in pp collisions at √s=7 TeV and in p-Pb collisions at √sNN=5.02 TeV/figure_1_page1.png)
 

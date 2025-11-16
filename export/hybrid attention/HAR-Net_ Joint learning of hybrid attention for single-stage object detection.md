@@ -177,20 +177,20 @@ HAR-Net 是一项旨在提升单阶段目标检测器性能的创新工作。其
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page6.jpeg)
+![Figure 1](./images/figure_1_page6.jpeg)
 
 ## 图 2
-![Figure 2](images/figure_2_page3.jpeg)
+![Figure 2](./images/figure_2_page3.jpeg)
 
 ## 图 3
-![Figure 3](images/figure_3_page1.jpeg)
+![Figure 3](./images/figure_3_page1.jpeg)
 
 ## 图 4
-![Figure 4](images/figure_4_page4.jpeg)
+![Figure 4](./images/figure_4_page4.jpeg)
 
 ## 图 5
-![Figure 5](images/figure_5_page7.jpeg)
+![Figure 5](./images/figure_5_page7.jpeg)
 
 ## 图 6
-![Figure 6](images/figure_6_page5.jpeg)
+![Figure 6](./images/figure_6_page5.jpeg)
 

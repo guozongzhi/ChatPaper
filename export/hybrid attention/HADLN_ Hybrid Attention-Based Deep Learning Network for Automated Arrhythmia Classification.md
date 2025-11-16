@@ -172,29 +172,29 @@ HADLN是一种为自动化心律失常分类而设计的端到端深度学习模
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_1_page8.jpeg)
+![Figure 1](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_1_page8.jpeg)
 
 ## 图 2
-![Figure 2](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_2_page4.jpeg)
+![Figure 2](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_2_page4.jpeg)
 
 ## 图 3
-![Figure 3](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_3_page6.jpeg)
+![Figure 3](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_3_page6.jpeg)
 
 ## 图 4
-![Figure 4](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_4_page7.png)
+![Figure 4](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_4_page7.png)
 
 ## 图 5
-![Figure 5](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_5_page7.png)
+![Figure 5](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_5_page7.png)
 
 ## 图 6
-![Figure 6](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_6_page7.png)
+![Figure 6](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_6_page7.png)
 
 ## 图 7
-![Figure 7](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_7_page7.png)
+![Figure 7](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_7_page7.png)
 
 ## 图 8
-![Figure 8](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_8_page7.png)
+![Figure 8](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_8_page7.png)
 
 ## 图 9
-![Figure 9](images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_9_page7.png)
+![Figure 9](./images/HADLN_ Hybrid Attention-Based Deep Learning Network for Automated Arrhythmia Classification/figure_9_page7.png)
 

@@ -153,5 +153,5 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Elliptic flow of electrons from heavy-flavour hadron decays at mid-rapidity in Pb-Pb collisions at √/figure_1_page1.png)
+![Figure 1](./images/Elliptic flow of electrons from heavy-flavour hadron decays at mid-rapidity in Pb-Pb collisions at √/figure_1_page1.png)
 

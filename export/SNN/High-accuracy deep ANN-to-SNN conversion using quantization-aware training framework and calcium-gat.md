@@ -138,17 +138,17 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_1_page4.jpeg)
+![Figure 1](./images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_1_page4.jpeg)
 
 ## 图 2
-![Figure 2](images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_2_page5.jpeg)
+![Figure 2](./images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_2_page5.jpeg)
 
 ## 图 3
-![Figure 3](images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_3_page6.jpeg)
+![Figure 3](./images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_3_page6.jpeg)
 
 ## 图 4
-![Figure 4](images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_4_page3.jpeg)
+![Figure 4](./images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_4_page3.jpeg)
 
 ## 图 5
-![Figure 5](images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_5_page3.jpeg)
+![Figure 5](./images/High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat/figure_5_page3.jpeg)
 

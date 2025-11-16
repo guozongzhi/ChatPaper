@@ -176,32 +176,32 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_1_page3.jpeg)
+![Figure 1](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_1_page3.jpeg)
 
 ## 图 2
-![Figure 2](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_2_page4.png)
+![Figure 2](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_2_page4.png)
 
 ## 图 3
-![Figure 3](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_3_page1.jpeg)
+![Figure 3](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_3_page1.jpeg)
 
 ## 图 4
-![Figure 4](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_4_page1.jpeg)
+![Figure 4](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_4_page1.jpeg)
 
 ## 图 5
-![Figure 5](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_5_page1.jpeg)
+![Figure 5](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_5_page1.jpeg)
 
 ## 图 6
-![Figure 6](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_6_page1.jpeg)
+![Figure 6](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_6_page1.jpeg)
 
 ## 图 7
-![Figure 7](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_7_page1.jpeg)
+![Figure 7](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_7_page1.jpeg)
 
 ## 图 8
-![Figure 8](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_8_page3.png)
+![Figure 8](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_8_page3.png)
 
 ## 图 9
-![Figure 9](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_9_page4.png)
+![Figure 9](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_9_page4.png)
 
 ## 图 10
-![Figure 10](images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_10_page1.jpeg)
+![Figure 10](./images/Woodscape Fisheye Object Detection for Autonomous Driving - CVPR 2022 OmniCV Workshop Challenge/figure_10_page1.jpeg)
 

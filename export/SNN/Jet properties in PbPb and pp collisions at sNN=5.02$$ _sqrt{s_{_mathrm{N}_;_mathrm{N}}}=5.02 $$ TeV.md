@@ -130,8 +130,8 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV/figure_1_page1.png)
+![Figure 1](./images/Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV/figure_2_page1.png)
+![Figure 2](./images/Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV/figure_2_page1.png)
 

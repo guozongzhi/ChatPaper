@@ -125,29 +125,29 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_1_page1.png)
+![Figure 1](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_1_page1.png)
 
 ## 图 2
-![Figure 2](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_2_page1.png)
+![Figure 2](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_2_page1.png)
 
 ## 图 3
-![Figure 3](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_3_page1.png)
+![Figure 3](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_3_page1.png)
 
 ## 图 4
-![Figure 4](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_4_page1.jpeg)
+![Figure 4](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_4_page1.jpeg)
 
 ## 图 5
-![Figure 5](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_5_page1.png)
+![Figure 5](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_5_page1.png)
 
 ## 图 6
-![Figure 6](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_6_page1.png)
+![Figure 6](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_6_page1.png)
 
 ## 图 7
-![Figure 7](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_7_page5.png)
+![Figure 7](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_7_page5.png)
 
 ## 图 8
-![Figure 8](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_8_page5.png)
+![Figure 8](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_8_page5.png)
 
 ## 图 9
-![Figure 9](images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_9_page5.png)
+![Figure 9](./images/Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks/figure_9_page5.png)
 

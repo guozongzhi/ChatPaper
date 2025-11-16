@@ -148,32 +148,32 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_1_page6.jpeg)
+![Figure 1](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_1_page6.jpeg)
 
 ## 图 2
-![Figure 2](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_2_page6.png)
+![Figure 2](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_2_page6.png)
 
 ## 图 3
-![Figure 3](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_3_page4.png)
+![Figure 3](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_3_page4.png)
 
 ## 图 4
-![Figure 4](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_4_page4.png)
+![Figure 4](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_4_page4.png)
 
 ## 图 5
-![Figure 5](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_5_page4.png)
+![Figure 5](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_5_page4.png)
 
 ## 图 6
-![Figure 6](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_6_page4.png)
+![Figure 6](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_6_page4.png)
 
 ## 图 7
-![Figure 7](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_7_page4.png)
+![Figure 7](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_7_page4.png)
 
 ## 图 8
-![Figure 8](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_8_page4.png)
+![Figure 8](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_8_page4.png)
 
 ## 图 9
-![Figure 9](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_9_page4.png)
+![Figure 9](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_9_page4.png)
 
 ## 图 10
-![Figure 10](images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_10_page4.png)
+![Figure 10](./images/Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo/figure_10_page4.png)
 

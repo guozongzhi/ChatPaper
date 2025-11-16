@@ -173,17 +173,17 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_1_page2.png)
+![Figure 1](./images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_2_page2.jpeg)
+![Figure 2](./images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_2_page2.jpeg)
 
 ## 图 3
-![Figure 3](images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_3_page2.jpeg)
+![Figure 3](./images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_3_page2.jpeg)
 
 ## 图 4
-![Figure 4](images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_4_page2.png)
+![Figure 4](./images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_4_page2.png)
 
 ## 图 5
-![Figure 5](images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_5_page2.png)
+![Figure 5](./images/1st Place Solutions for RxR-Habitat Vision-and-Language Navigation Competition (CVPR 2022)/figure_5_page2.png)
 

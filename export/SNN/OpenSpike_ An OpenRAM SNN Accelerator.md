@@ -183,14 +183,14 @@ OpenSpike 方法的核心是构建一个**完全开源、可重构且能效比�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/OpenSpike_ An OpenRAM SNN Accelerator/figure_1_page3.png)
+![Figure 1](./images/OpenSpike_ An OpenRAM SNN Accelerator/figure_1_page3.png)
 
 ## 图 2
-![Figure 2](images/OpenSpike_ An OpenRAM SNN Accelerator/figure_2_page4.jpeg)
+![Figure 2](./images/OpenSpike_ An OpenRAM SNN Accelerator/figure_2_page4.jpeg)
 
 ## 图 3
-![Figure 3](images/OpenSpike_ An OpenRAM SNN Accelerator/figure_3_page4.png)
+![Figure 3](./images/OpenSpike_ An OpenRAM SNN Accelerator/figure_3_page4.png)
 
 ## 图 4
-![Figure 4](images/OpenSpike_ An OpenRAM SNN Accelerator/figure_4_page5.png)
+![Figure 4](./images/OpenSpike_ An OpenRAM SNN Accelerator/figure_4_page5.png)
 

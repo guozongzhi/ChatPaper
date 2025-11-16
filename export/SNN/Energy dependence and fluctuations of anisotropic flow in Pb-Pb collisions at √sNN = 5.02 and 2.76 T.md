@@ -140,5 +140,5 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Energy dependence and fluctuations of anisotropic flow in Pb-Pb collisions at √sNN = 5.02 and 2.76 T/figure_1_page1.png)
+![Figure 1](./images/Energy dependence and fluctuations of anisotropic flow in Pb-Pb collisions at √sNN = 5.02 and 2.76 T/figure_1_page1.png)
 

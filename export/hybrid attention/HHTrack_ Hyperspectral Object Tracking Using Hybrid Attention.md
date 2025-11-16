@@ -149,11 +149,11 @@ HHTrack 方法的核心细节和创新点在于其**光谱引导的混合注意�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_1_page2.png)
+![Figure 1](./images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_2_page2.jpeg)
+![Figure 2](./images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_2_page2.jpeg)
 
 ## 图 3
-![Figure 3](images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_3_page4.jpeg)
+![Figure 3](./images/HHTrack__Hyperspectral_Object_Tracking_Using_Hybrid_Attention/figure_3_page4.jpeg)
 

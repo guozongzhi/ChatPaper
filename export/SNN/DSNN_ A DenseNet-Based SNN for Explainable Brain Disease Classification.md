@@ -163,29 +163,29 @@ DSNN模型可以清晰地分为两个主要阶段：
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_1_page6.png)
+![Figure 1](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_1_page6.png)
 
 ## 图 2
-![Figure 2](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_2_page11.png)
+![Figure 2](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_2_page11.png)
 
 ## 图 3
-![Figure 3](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_3_page10.jpeg)
+![Figure 3](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_3_page10.jpeg)
 
 ## 图 4
-![Figure 4](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_4_page7.png)
+![Figure 4](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_4_page7.png)
 
 ## 图 5
-![Figure 5](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_5_page12.jpeg)
+![Figure 5](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_5_page12.jpeg)
 
 ## 图 6
-![Figure 6](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_6_page4.png)
+![Figure 6](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_6_page4.png)
 
 ## 图 7
-![Figure 7](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_7_page8.png)
+![Figure 7](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_7_page8.png)
 
 ## 图 8
-![Figure 8](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_8_page10.png)
+![Figure 8](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_8_page10.png)
 
 ## 图 9
-![Figure 9](images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_9_page7.png)
+![Figure 9](./images/DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification/figure_9_page7.png)
 

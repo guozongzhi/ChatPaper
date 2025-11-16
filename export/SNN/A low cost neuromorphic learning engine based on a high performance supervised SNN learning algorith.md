@@ -156,17 +156,17 @@ SNN的发展面临两大挑战：首先，由于脉冲的不可微分性，实�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_1_page8.png)
+![Figure 1](./images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_1_page8.png)
 
 ## 图 2
-![Figure 2](images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_2_page9.png)
+![Figure 2](./images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_2_page9.png)
 
 ## 图 3
-![Figure 3](images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_3_page10.png)
+![Figure 3](./images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_3_page10.png)
 
 ## 图 4
-![Figure 4](images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_4_page6.png)
+![Figure 4](./images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_4_page6.png)
 
 ## 图 5
-![Figure 5](images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_5_page13.png)
+![Figure 5](./images/A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith/figure_5_page13.png)
 

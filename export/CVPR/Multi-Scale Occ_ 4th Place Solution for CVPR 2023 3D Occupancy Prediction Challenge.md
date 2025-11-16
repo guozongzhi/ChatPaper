@@ -150,5 +150,5 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Multi-Scale Occ_ 4th Place Solution for CVPR 2023 3D Occupancy Prediction Challenge/figure_1_page2.png)
+![Figure 1](./images/Multi-Scale Occ_ 4th Place Solution for CVPR 2023 3D Occupancy Prediction Challenge/figure_1_page2.png)
 

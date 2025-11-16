@@ -166,11 +166,11 @@ DCA模块的内部工作流程包含两个关键步骤，其整体架构与数�
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page2.png)
+![Figure 1](./images/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page4.png)
+![Figure 2](./images/figure_2_page4.png)
 
 ## 图 3
-![Figure 3](images/figure_3_page6.png)
+![Figure 3](./images/figure_3_page6.png)
 

@@ -170,32 +170,32 @@ flowchart TD
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_1_page5.jpeg)
+![Figure 1](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_1_page5.jpeg)
 
 ## 图 2
-![Figure 2](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_2_page5.png)
+![Figure 2](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_2_page5.png)
 
 ## 图 3
-![Figure 3](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_3_page5.png)
+![Figure 3](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_3_page5.png)
 
 ## 图 4
-![Figure 4](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_4_page5.png)
+![Figure 4](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_4_page5.png)
 
 ## 图 5
-![Figure 5](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_5_page2.jpeg)
+![Figure 5](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_5_page2.jpeg)
 
 ## 图 6
-![Figure 6](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_6_page5.jpeg)
+![Figure 6](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_6_page5.jpeg)
 
 ## 图 7
-![Figure 7](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_7_page1.jpeg)
+![Figure 7](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_7_page1.jpeg)
 
 ## 图 8
-![Figure 8](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_8_page2.jpeg)
+![Figure 8](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_8_page2.jpeg)
 
 ## 图 9
-![Figure 9](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_9_page2.jpeg)
+![Figure 9](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_9_page2.jpeg)
 
 ## 图 10
-![Figure 10](images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_10_page2.jpeg)
+![Figure 10](./images/A Two-Stage Real Image Deraining Method for GT-RAIN Challenge CVPR 2023 Workshop UG2 + Track 3/figure_10_page2.jpeg)
 

@@ -156,5 +156,5 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Measurement of Ds+ production and nuclear modification factor in Pb-Pb collisions at sNN=2.76$$ _sqr/figure_1_page1.png)
+![Figure 1](./images/Measurement of Ds+ production and nuclear modification factor in Pb-Pb collisions at sNN=2.76$$ _sqr/figure_1_page1.png)
 

@@ -122,14 +122,14 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_1_page5.jpeg)
+![Figure 1](./images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_1_page5.jpeg)
 
 ## 图 2
-![Figure 2](images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_2_page7.jpeg)
+![Figure 2](./images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_2_page7.jpeg)
 
 ## 图 3
-![Figure 3](images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_3_page3.jpeg)
+![Figure 3](./images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_3_page3.jpeg)
 
 ## 图 4
-![Figure 4](images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_4_page8.png)
+![Figure 4](./images/A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ/figure_4_page8.png)
 

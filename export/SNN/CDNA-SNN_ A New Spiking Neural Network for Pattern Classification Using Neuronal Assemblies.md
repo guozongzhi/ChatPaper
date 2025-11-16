@@ -137,20 +137,20 @@ CDNA-SNN 方法的精髓在于将**功能特化**和**结构可塑性**紧密结
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_1_page12.jpeg)
+![Figure 1](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_1_page12.jpeg)
 
 ## 图 2
-![Figure 2](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_2_page13.jpeg)
+![Figure 2](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_2_page13.jpeg)
 
 ## 图 3
-![Figure 3](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_3_page4.jpeg)
+![Figure 3](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_3_page4.jpeg)
 
 ## 图 4
-![Figure 4](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_4_page9.jpeg)
+![Figure 4](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_4_page9.jpeg)
 
 ## 图 5
-![Figure 5](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_5_page13.jpeg)
+![Figure 5](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_5_page13.jpeg)
 
 ## 图 6
-![Figure 6](images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_6_page1.png)
+![Figure 6](./images/CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies/figure_6_page1.png)
 

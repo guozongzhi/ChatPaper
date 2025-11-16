@@ -146,8 +146,8 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/figure_1_page2.png)
+![Figure 1](./images/figure_1_page2.png)
 
 ## 图 2
-![Figure 2](images/figure_2_page2.png)
+![Figure 2](./images/figure_2_page2.png)
 

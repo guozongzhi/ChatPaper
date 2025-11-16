@@ -153,26 +153,26 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_1_page2.jpeg)
+![Figure 1](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_1_page2.jpeg)
 
 ## 图 2
-![Figure 2](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_2_page2.jpeg)
+![Figure 2](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_2_page2.jpeg)
 
 ## 图 3
-![Figure 3](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_3_page2.jpeg)
+![Figure 3](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_3_page2.jpeg)
 
 ## 图 4
-![Figure 4](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_4_page2.jpeg)
+![Figure 4](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_4_page2.jpeg)
 
 ## 图 5
-![Figure 5](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_5_page2.jpeg)
+![Figure 5](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_5_page2.jpeg)
 
 ## 图 6
-![Figure 6](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_6_page2.jpeg)
+![Figure 6](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_6_page2.jpeg)
 
 ## 图 7
-![Figure 7](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_7_page2.jpeg)
+![Figure 7](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_7_page2.jpeg)
 
 ## 图 8
-![Figure 8](images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_8_page2.jpeg)
+![Figure 8](./images/Submission to Generic Event Boundary Detection Challenge@CVPR 2022_ Local Context Modeling and Globa/figure_8_page2.jpeg)
 

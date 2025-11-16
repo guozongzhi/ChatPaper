@@ -140,20 +140,20 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_1_page7.png)
+![Figure 1](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_1_page7.png)
 
 ## 图 2
-![Figure 2](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_2_page7.png)
+![Figure 2](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_2_page7.png)
 
 ## 图 3
-![Figure 3](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_3_page7.png)
+![Figure 3](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_3_page7.png)
 
 ## 图 4
-![Figure 4](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_4_page7.png)
+![Figure 4](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_4_page7.png)
 
 ## 图 5
-![Figure 5](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_5_page7.png)
+![Figure 5](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_5_page7.png)
 
 ## 图 6
-![Figure 6](images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_6_page7.png)
+![Figure 6](./images/Reducing ANN-SNN Conversion Error through Residual Membrane Potential/figure_6_page7.png)
 

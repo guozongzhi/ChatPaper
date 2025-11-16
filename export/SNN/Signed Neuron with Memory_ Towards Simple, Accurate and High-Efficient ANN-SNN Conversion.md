@@ -142,14 +142,14 @@
 # 附录：论文图片
 
 ## 图 1
-![Figure 1](images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_1_page4.png)
+![Figure 1](./images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_1_page4.png)
 
 ## 图 2
-![Figure 2](images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_2_page3.png)
+![Figure 2](./images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_2_page3.png)
 
 ## 图 3
-![Figure 3](images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_3_page3.jpeg)
+![Figure 3](./images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_3_page3.jpeg)
 
 ## 图 4
-![Figure 4](images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_4_page5.png)
+![Figure 4](./images/Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion/figure_4_page5.png)
 
