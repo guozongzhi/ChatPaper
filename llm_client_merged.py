@@ -224,7 +224,7 @@ class DeepSeekClient(BaseLLMClient):
                     self.base_url = self.volcengine_base_url
                     self.api_key = self.volcengine_api_key
                     # 火山引擎使用特定的模型名称
-                    self.model_name = 'deepseek-v3-1-terminus'
+                    self.model_name = self.config.get('DeepSeek', 'MODEL_NAME', fallback='')
                 except Exception as e:
                     logging.warning("DeepSeekClient: 火山引擎配置读取失败: %s", e)
                     self.use_volcengine = False

@@ -378,5 +378,255 @@
     "title": "CVPR 2020 Continual Learning in Computer Vision Competition: Approaches, Results, Current Challenges and Future Directions",
     "output": "D:\\ChatPaper\\export\\CVPR\\CVPR 2020 Continual Learning in Computer Vision Competition_ Approaches, Results, Current Challenges.md",
     "time": "2025-11-15 02:18:45.679786"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Optimal ANN-SNN Conversion for High-accuracy and Ultra-low-latency Spiking Neural Networks.pdf": {
+    "title": "Optimal ANN-SNN Conversion for High-accuracy and Ultra-low-latency Spiking Neural Networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\Optimal ANN-SNN Conversion for High-accuracy and Ultra-low-latency Spiking Neural Networks.md",
+    "time": "2025-11-16 19:56:02.521990"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Fast-SNN_ Fast Spiking Neural Network by Converting Quantized ANN.pdf": {
+    "title": "Fast-SNN: Fast Spiking Neural Network by Converting Quantized ANN",
+    "output": "D:\\ChatPaper\\export\\SNN\\Fast-SNN_ Fast Spiking Neural Network by Converting Quantized ANN.md",
+    "time": "2025-11-16 19:58:01.017350"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Reducing ANN-SNN Conversion Error through Residual Membrane Potential.pdf": {
+    "title": "Reducing ANN-SNN Conversion Error through Residual Membrane Potential",
+    "output": "D:\\ChatPaper\\export\\SNN\\Reducing ANN-SNN Conversion Error through Residual Membrane Potential.md",
+    "time": "2025-11-16 19:59:52.187821"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies.pdf": {
+    "title": "CDNA-SNN: A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies",
+    "output": "D:\\ChatPaper\\export\\SNN\\CDNA-SNN_ A New Spiking Neural Network for Pattern Classification Using Neuronal Assemblies.md",
+    "time": "2025-11-16 20:01:43.610930"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\One-Spike SNN_ Single-Spike Phase Coding With Base Manipulation for ANN-to-SNN Conversion Loss Minim.pdf": {
+    "title": "One-Spike SNN: Single-Spike Phase Coding With Base Manipulation for ANN-to-SNN Conversion Loss Minimization",
+    "output": "D:\\ChatPaper\\export\\SNN\\One-Spike SNN_ Single-Spike Phase Coding With Base Manipulation for ANN-to-SNN Conversion Loss Minim.md",
+    "time": "2025-11-16 20:03:29.261227"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin.pdf": {
+    "title": "RMP-SNN: Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spiking Neural Network",
+    "output": "D:\\ChatPaper\\export\\SNN\\RMP-SNN_ Residual Membrane Potential Neuron for Enabling Deeper High-Accuracy and Low-Latency Spikin.md",
+    "time": "2025-11-16 20:05:43.184141"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception.pdf": {
+    "title": "A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception",
+    "output": "D:\\ChatPaper\\export\\SNN\\A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception.md",
+    "time": "2025-11-16 20:07:28.445187"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness.pdf": {
+    "title": "A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness",
+    "output": "D:\\ChatPaper\\export\\SNN\\A New ANN-SNN Conversion Method with High Accuracy, Low Latency and Good Robustness.md",
+    "time": "2025-11-16 20:09:26.655222"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat.pdf": {
+    "title": "High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gated bipolar leaky integrate and fire neuron",
+    "output": "D:\\ChatPaper\\export\\SNN\\High-accuracy deep ANN-to-SNN conversion using quantization-aware training framework and calcium-gat.md",
+    "time": "2025-11-16 20:11:24.936884"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks.pdf": {
+    "title": "Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\Optimal ANN-SNN Conversion for Fast and Accurate Inference in Deep Spiking Neural Networks.md",
+    "time": "2025-11-16 20:13:09.049040"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks.pdf": {
+    "title": "TCJA-SNN: Temporal-Channel Joint Attention for Spiking Neural Networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\TCJA-SNN_ Temporal-Channel Joint Attention for Spiking Neural Networks.md",
+    "time": "2025-11-16 20:15:08.723903"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion.pdf": {
+    "title": "Signed Neuron with Memory: Towards Simple, Accurate and High-Efficient ANN-SNN Conversion",
+    "output": "D:\\ChatPaper\\export\\SNN\\Signed Neuron with Memory_ Towards Simple, Accurate and High-Efficient ANN-SNN Conversion.md",
+    "time": "2025-11-16 20:16:56.733396"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith.pdf": {
+    "title": "A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorithm",
+    "output": "D:\\ChatPaper\\export\\SNN\\A low cost neuromorphic learning engine based on a high performance supervised SNN learning algorith.md",
+    "time": "2025-11-16 20:19:08.737471"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\OpenSpike_ An OpenRAM SNN Accelerator.pdf": {
+    "title": "OpenSpike: An OpenRAM SNN Accelerator",
+    "output": "D:\\ChatPaper\\export\\SNN\\OpenSpike_ An OpenRAM SNN Accelerator.md",
+    "time": "2025-11-16 20:21:21.682813"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura.pdf": {
+    "title": "LaSNN: Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neural Networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\LaSNN_ Layer-wise ANN-to-SNN Distillation for Effective and Efficient Training in Deep Spiking Neura.md",
+    "time": "2025-11-16 20:23:11.961833"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\STSC-SNN_ Spatio-Temporal Synaptic Connection with temporal convolution and attention for spiking ne.pdf": {
+    "title": "STSC-SNN: Spatio-Temporal Synaptic Connection with temporal convolution and attention for spiking neural networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\STSC-SNN_ Spatio-Temporal Synaptic Connection with temporal convolution and attention for spiking ne.md",
+    "time": "2025-11-16 20:25:03.796334"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra.pdf": {
+    "title": "HIRE-SNN: Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Training with Crafted Input Noise",
+    "output": "D:\\ChatPaper\\export\\SNN\\HIRE-SNN_ Harnessing the Inherent Robustness of Energy-Efficient Deep Spiking Neural Networks by Tra.md",
+    "time": "2025-11-16 20:26:59.178102"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo.pdf": {
+    "title": "Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo",
+    "output": "D:\\ChatPaper\\export\\SNN\\Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xylo.md",
+    "time": "2025-11-16 20:28:44.225416"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks.pdf": {
+    "title": "ACE-SNN: Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks for 3D Image Recognition",
+    "output": "D:\\ChatPaper\\export\\SNN\\ACE-SNN_ Algorithm-Hardware Co-design of Energy-Efficient & Low-Latency Deep Spiking Neural Networks.md",
+    "time": "2025-11-16 20:30:45.380084"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Spiking Neural Network (SNN) With Memristor Synapses Having Non-linear Weight Update.pdf": {
+    "title": "Spiking Neural Network (SNN) With Memristor Synapses Having Non-linear Weight Update",
+    "output": "D:\\ChatPaper\\export\\SNN\\Spiking Neural Network (SNN) With Memristor Synapses Having Non-linear Weight Update.md",
+    "time": "2025-11-16 20:32:32.627395"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Towards Lossless ANN-SNN Conversion under Ultra-Low Latency with Dual-Phase Optimization.pdf": {
+    "title": "Towards Lossless ANN-SNN Conversion under Ultra-Low Latency with Dual-Phase Optimization",
+    "output": "D:\\ChatPaper\\export\\SNN\\Towards Lossless ANN-SNN Conversion under Ultra-Low Latency with Dual-Phase Optimization.md",
+    "time": "2025-11-16 20:34:33.944894"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification.pdf": {
+    "title": "DSNN: A DenseNet-Based SNN for Explainable Brain Disease Classification",
+    "output": "D:\\ChatPaper\\export\\SNN\\DSNN_ A DenseNet-Based SNN for Explainable Brain Disease Classification.md",
+    "time": "2025-11-16 20:36:26.609815"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Energy-Efficient SNN Implementation Using RRAM-Based Computation In-Memory (CIM).pdf": {
+    "title": "Energy-Efficient SNN Implementation Using RRAM-Based Computation In-Memory (CIM)",
+    "output": "D:\\ChatPaper\\export\\SNN\\Energy-Efficient SNN Implementation Using RRAM-Based Computation In-Memory (CIM).md",
+    "time": "2025-11-16 20:38:34.506088"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\mlGeNN_ accelerating SNN inference using GPU-enabled neural networks.pdf": {
+    "title": "mlGeNN: accelerating SNN inference using GPU-enabled neural networks",
+    "output": "D:\\ChatPaper\\export\\SNN\\mlGeNN_ accelerating SNN inference using GPU-enabled neural networks.md",
+    "time": "2025-11-16 20:40:23.530426"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Global Λ -hyperon polarization in Au+Au collisions at sNN=3 GeV.pdf": {
+    "title": "Global \nΛ\n-hyperon polarization in \nAu+Au\n collisions at \nsNN=3 GeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Global Λ -hyperon polarization in Au+Au collisions at sNN=3 GeV.md",
+    "time": "2025-11-16 20:42:21.855346"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV.pdf": {
+    "title": "Jet properties in PbPb and pp collisions at sNN=5.02$$ \\sqrt{s_{\\mathrm{N}\\;\\mathrm{N}}}=5.02 $$ TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Jet properties in PbPb and pp collisions at sNN=5.02$$ _sqrt{s_{_mathrm{N}_;_mathrm{N}}}=5.02 $$ TeV.md",
+    "time": "2025-11-16 20:44:26.670877"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Flow and interferometry results from Au+Au collisions at sNN=4.5 GeV.pdf": {
+    "title": "Flow and interferometry results from \nAu+Au\n collisions at \nsNN=4.5\n GeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Flow and interferometry results from Au+Au collisions at sNN=4.5 GeV.md",
+    "time": "2025-11-16 20:46:28.033507"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Balancing the Cost and Performance Trade-Offs in SNN Processors.pdf": {
+    "title": "Balancing the Cost and Performance Trade-Offs in SNN Processors",
+    "output": "D:\\ChatPaper\\export\\SNN\\Balancing the Cost and Performance Trade-Offs in SNN Processors.md",
+    "time": "2025-11-16 20:48:11.264064"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Global polarization of Λ hyperons in Au + Au collisions at sNN=200 GeV.pdf": {
+    "title": "Global polarization of \nΛ\n hyperons in Au + Au collisions at \nsNN=200\n GeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Global polarization of Λ hyperons in Au + Au collisions at sNN=200 GeV.md",
+    "time": "2025-11-16 20:50:16.698403"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\R-SNN_ An Analysis and Design Methodology for Robustifying Spiking Neural Networks against Adversari.pdf": {
+    "title": "R-SNN: An Analysis and Design Methodology for Robustifying Spiking Neural Networks against Adversarial Attacks through Noise Filters for Dynamic Vision Sensors",
+    "output": "D:\\ChatPaper\\export\\SNN\\R-SNN_ An Analysis and Design Methodology for Robustifying Spiking Neural Networks against Adversari.md",
+    "time": "2025-11-16 20:52:07.648323"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Strange hadron production in Au+Au collisions at sNN =7.7, 11.5, 19.6, 27, and 39 GeV.pdf": {
+    "title": "Strange hadron production in Au+Au collisions at sNN =7.7, 11.5, 19.6, 27, and 39 GeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Strange hadron production in Au+Au collisions at sNN =7.7, 11.5, 19.6, 27, and 39 GeV.md",
+    "time": "2025-11-16 20:54:17.422451"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\TCL_ an ANN-to-SNN Conversion with Trainable Clipping Layers.pdf": {
+    "title": "TCL: an ANN-to-SNN Conversion with Trainable Clipping Layers",
+    "output": "D:\\ChatPaper\\export\\SNN\\TCL_ an ANN-to-SNN Conversion with Trainable Clipping Layers.md",
+    "time": "2025-11-16 20:56:07.618894"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\The proton–Ω correlation function in Au + Au collisions at sNN=200GeV.pdf": {
+    "title": "The proton–Ω correlation function in Au + Au collisions at sNN=200GeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\The proton–Ω correlation function in Au + Au collisions at sNN=200GeV.md",
+    "time": "2025-11-16 20:58:08.457386"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat.pdf": {
+    "title": "Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ \\sqrt{s_{\\mathrm{N}\\;\\mathrm{N}}}=5.02 $$ TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Charged-particle nuclear modification factors in PbPb and pPb collisions at sNN=5.02$$ _sqrt{s_{_mat.md",
+    "time": "2025-11-16 21:00:15.625474"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Measurement of nuclear modification factors of ϒ(1S), ϒ(2S), and ϒ(3S) mesons in PbPb collisions at.pdf": {
+    "title": "Measurement of nuclear modification factors of ϒ(1S), ϒ(2S), and ϒ(3S) mesons in PbPb collisions at sNN=5.02 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Measurement of nuclear modification factors of ϒ(1S), ϒ(2S), and ϒ(3S) mesons in PbPb collisions at.md",
+    "time": "2025-11-16 21:02:30.990894"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Λ c + production in pp collisions at √s=7 TeV and in p-Pb collisions at √sNN=5.02 TeV.pdf": {
+    "title": "Λ c + production in pp collisions at √s=7 TeV and in p-Pb collisions at √sNN=5.02 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Λ c + production in pp collisions at √s=7 TeV and in p-Pb collisions at √sNN=5.02 TeV.md",
+    "time": "2025-11-16 21:04:50.989916"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ.pdf": {
+    "title": "A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperative ECoG",
+    "output": "D:\\ChatPaper\\export\\SNN\\A spiking neural network (SNN) for detecting high frequency oscillations (HFOs) in the intraoperativ.md",
+    "time": "2025-11-16 21:06:37.406400"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\J_ψ suppression at forward rapidity in Pb–Pb collisions at √sNN = 5.02 TeV.pdf": {
+    "title": "J/ψ suppression at forward rapidity in Pb–Pb collisions at √sNN = 5.02 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\J_ψ suppression at forward rapidity in Pb–Pb collisions at √sNN = 5.02 TeV.md",
+    "time": "2025-11-16 21:08:30.678017"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Energy dependence and fluctuations of anisotropic flow in Pb-Pb collisions at √sNN = 5.02 and 2.76 T.pdf": {
+    "title": "Energy dependence and fluctuations of anisotropic flow in Pb-Pb collisions at √sNN = 5.02 and 2.76 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Energy dependence and fluctuations of anisotropic flow in Pb-Pb collisions at √sNN = 5.02 and 2.76 T.md",
+    "time": "2025-11-16 21:10:42.188555"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Elliptic flow of electrons from heavy-flavour hadron decays at mid-rapidity in Pb-Pb collisions at √.pdf": {
+    "title": "Elliptic flow of electrons from heavy-flavour hadron decays at mid-rapidity in Pb-Pb collisions at √sNN=2.76 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Elliptic flow of electrons from heavy-flavour hadron decays at mid-rapidity in Pb-Pb collisions at √.md",
+    "time": "2025-11-16 21:12:36.787854"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\End to End Learning of a Multi-Layered Snn Based on R-Stdp for a Target Tracking Snake-Like Robot.pdf": {
+    "title": "End to End Learning of a Multi-Layered Snn Based on R-Stdp for a Target Tracking Snake-Like Robot",
+    "output": "D:\\ChatPaper\\export\\SNN\\End to End Learning of a Multi-Layered Snn Based on R-Stdp for a Target Tracking Snake-Like Robot.md",
+    "time": "2025-11-16 21:14:24.599709"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Measurement of Ds+ production and nuclear modification factor in Pb-Pb collisions at sNN=2.76$$ _sqr.pdf": {
+    "title": "Measurement of Ds+ production and nuclear modification factor in Pb-Pb collisions at sNN=2.76$$ \\sqrt{{\\mathrm{s}}_{\\mathrm{NN}}}=2.76 $$ TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Measurement of Ds+ production and nuclear modification factor in Pb-Pb collisions at sNN=2.76$$ _sqr.md",
+    "time": "2025-11-16 21:16:38.987776"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Nuclear modification factor of D0 mesons in PbPb collisions at sNN=5.02TeV.pdf": {
+    "title": "Nuclear modification factor of D0 mesons in PbPb collisions at sNN=5.02TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Nuclear modification factor of D0 mesons in PbPb collisions at sNN=5.02TeV.md",
+    "time": "2025-11-16 21:18:55.206331"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach.pdf": {
+    "title": "Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reaching Vehicle",
+    "output": "D:\\ChatPaper\\export\\SNN\\Supervised Learning in SNN via Reward-Modulated Spike-Timing-Dependent Plasticity for a Target Reach.md",
+    "time": "2025-11-16 21:20:31.618632"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Centrality dependence of ψ(2S) suppression in p-Pb collisions at √sNN = 5.02 TeV.pdf": {
+    "title": "Centrality dependence of ψ(2S) suppression in p-Pb collisions at √sNN = 5.02 TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Centrality dependence of ψ(2S) suppression in p-Pb collisions at √sNN = 5.02 TeV.md",
+    "time": "2025-11-16 21:22:53.051700"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\A review on data clustering using spiking neural network (SNN) models.pdf": {
+    "title": "A review on data clustering using spiking neural network (SNN) models",
+    "output": "D:\\ChatPaper\\export\\SNN\\A review on data clustering using spiking neural network (SNN) models.md",
+    "time": "2025-11-16 21:24:26.314492"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Charged-particle nuclear modification factors in XeXe collisions at sNN=5.44$$ _sqrt{s_{_mathrm{NN}}.pdf": {
+    "title": "Charged-particle nuclear modification factors in XeXe collisions at sNN=5.44$$ \\sqrt{s_{\\mathrm{NN}}} = 5.44 $$ TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Charged-particle nuclear modification factors in XeXe collisions at sNN=5.44$$ _sqrt{s_{_mathrm{NN}}.md",
+    "time": "2025-11-16 21:26:48.295523"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Bulk properties of the system formed in Au+Au collisions at sNN =14.5 GeV at the BNL STAR detector.pdf": {
+    "title": "Bulk properties of the system formed in Au+Au collisions at sNN =14.5 GeV at the BNL STAR detector",
+    "output": "D:\\ChatPaper\\export\\SNN\\Bulk properties of the system formed in Au+Au collisions at sNN =14.5 GeV at the BNL STAR detector.md",
+    "time": "2025-11-16 21:28:49.484953"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2..pdf": {
+    "title": "Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2.76$$ \\sqrt{s_{\\mathrm{N}\\;\\mathrm{N}}}=2.76 $$ TeV",
+    "output": "D:\\ChatPaper\\export\\SNN\\Decomposing transverse momentum balance contributions for quenched jets in PbPb collisions at sNN=2..md",
+    "time": "2025-11-16 21:30:51.999601"
+  },
+  "D:\\ChatPaper\\api_downloads\\SNN\\Production of 4He and 4He in Pb–Pb collisions at √sNN = 2.76 TeV at the LHC..pdf": {
+    "title": "Production of 4He and 4He in Pb–Pb collisions at √sNN = 2.76 TeV at the LHC.",
+    "output": "D:\\ChatPaper\\export\\SNN\\Production of 4He and 4He in Pb–Pb collisions at √sNN = 2.76 TeV at the LHC..md",
+    "time": "2025-11-16 21:32:36.111377"
   }
 }
