@@ -42,7 +42,8 @@ def validateTitle(title: str) -> str:
     title = title[:100] # 限制文件名长度
     rstr = r"[/\\:*?\"<>|]"
     title = re.sub(rstr, "_", title)
-    title = re.sub(r"\s+", " ", title)
+    # (!!!) 修正：将所有空格替换为下划线，以确保 URL 友好 (!!!)
+    title = re.sub(r"\s+", "_", title) 
     title = re.sub(r"_+", "_", title)
     return title.strip(' _') or "untitled"
 
