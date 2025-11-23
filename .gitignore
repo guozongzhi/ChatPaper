@@ -8,3 +8,5 @@ build/
 .idea
 .idea/*
 /academic Papers
+/api_downloads
+/myPapers

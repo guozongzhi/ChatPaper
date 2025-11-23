@@ -58,7 +58,11 @@ class GeminiClient(BaseLLMClient):
     
     def __init__(self, config: configparser.ConfigParser, args=None):
         super().__init__(config, args)
-        self.model = None
+        self.api_keys = []
+        self.available_models = []
+        self.current_api_key_index = 0
+        self.current_model_index = 0
+        self.model_name = "Unknown"
         self.safety_settings = [
             {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
             {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
@@ -67,122 +71,171 @@ class GeminiClient(BaseLLMClient):
         ]
     
     def initialize(self) -> bool:
-        """初始化Gemini客户端"""
+        """初始化Gemini客户端，支持多API密钥和多模型"""
         try:
-            api_key = self.config.get('Gemini', 'API_KEY')
-        except Exception:
-            api_key = None
+            # 读取主API密钥
+            if self.config.has_option('Gemini', 'API_KEY'):
+                main_key = self.config.get('Gemini', 'API_KEY')
+                if main_key and main_key != 'your_gemini_api_key_here':
+                    self.api_keys.append(main_key)
+            
+            # 读取额外的API密钥 (API_KEY_2, API_KEY_3, ...)
+            i = 2
+            while self.config.has_option('Gemini', f'API_KEY_{i}'):
+                extra_key = self.config.get('Gemini', f'API_KEY_{i}')
+                if extra_key:
+                    self.api_keys.append(extra_key)
+                i += 1
 
-        if not api_key or api_key == 'your_gemini_api_key_here':
-            logging.warning("GeminiClient: API key not provided. LLM disabled.")
+        except Exception as e:
+            logging.error("GeminiClient: 读取API密钥时出错: %s", e)
+
+        if not self.api_keys:
+            logging.warning("GeminiClient: 未提供任何有效的Gemini API密钥。LLM已禁用。")
             self.enabled = False
             return False
-
-        try:
-            genai.configure(api_key=api_key)
             
-            # 获取可用模型
+        logging.info("GeminiClient: 找到 %d 个API密钥。", len(self.api_keys))
+
+        # 使用第一个API密钥进行初始化和模型发现
+        try:
+            genai.configure(api_key=self.api_keys[self.current_api_key_index])
+            
+            # 获取所有可用模型
             all_models = [m.name for m in genai.list_models()]
             
-            # 优先级模型列表（完整名称）
+            # 优先级模型列表
             priority_models = ["models/gemini-2.5-flash", "models/gemini-2.5-pro", "models/gemini-pro"]
-            model_queue = []
-            for m in priority_models:
-                if m in all_models:
-                    model_queue.append(m)
             
-            # 回退到任何可用模型
-            if not model_queue and all_models:
-                model_queue.append(all_models[0])
-
-            # 尝试模型
-            for candidate in model_queue:
-                try:
-                    logging.info("GeminiClient: trying model %s", candidate)
-                    inst = genai.GenerativeModel(candidate)
-                    # 快速测试
+            # 尝试实例化并验证每个优先模型
+            for model_name in priority_models:
+                if model_name in all_models:
                     try:
-                        resp = inst.generate_content("Test message")
-                        text = getattr(resp, 'text', None)
-                        if text:
-                            self.model = inst
-                            self.model_name = candidate.replace('models/', '')
-                            self.enabled = True
-                            logging.info("GeminiClient: initialized model %s", self.model_name)
-                            return True
-                    except Exception:
-                        pass
-                except Exception as e:
-                    logging.warning("GeminiClient: failed to initialize model %s: %s", candidate, e)
-
-            if not self.enabled:
-                logging.warning("GeminiClient: no usable model found")
+                        model_instance = genai.GenerativeModel(model_name)
+                        # 进行一次快速测试以确保模型可用
+                        model_instance.generate_content("test", request_options={'timeout': 20})
+                        self.available_models.append(model_instance)
+                        logging.info("GeminiClient: 已成功验证并添加模型: %s", model_name.replace('models/', ''))
+                    except Exception as e:
+                        logging.warning("GeminiClient: 模型 %s 实例化或测试失败: %s", model_name.replace('models/', ''), e)
+            
+            if self.available_models:
+                self.enabled = True
+                self.model_name = self.available_models[0].model_name.replace('models/', '')
+                logging.info("GeminiClient: 初始化成功，找到 %d 个可用模型。", len(self.available_models))
+                return True
+            else:
+                logging.warning("GeminiClient: 未找到任何可用的Gemini模型。")
+                self.enabled = False
                 return False
                 
         except Exception as e:
-            logging.error("GeminiClient: error during initialization: %s", e)
+            logging.error("GeminiClient: 使用第一个API密钥初始化时出错: %s", e)
             self.enabled = False
             return False
-        
+
+    def _switch_to_next_model(self) -> bool:
+        """切换到下一个可用模型"""
+        if not self.available_models:
+            return False
+        self.current_model_index = (self.current_model_index + 1) % len(self.available_models)
+        self.model_name = self.current_model_name()
+        logging.info("GeminiClient: 切换到下一个模型: %s", self.model_name)
         return True
-    
-    def generate(self, prompt: str, max_retries: int = 3, retry_delay: int = 60) -> str:
-        if not self.enabled or not self.model:
-            error_msg = "抱歉，Gemini客户端未初始化或不可用。"
+
+    def _switch_to_next_key(self) -> bool:
+        """切换到下一个API密钥并重新配置"""
+        if not self.api_keys:
+            return False
+        self.current_api_key_index = (self.current_api_key_index + 1) % len(self.api_keys)
+        new_key = self.api_keys[self.current_api_key_index]
+        logging.warning("GeminiClient: 切换到下一个API密钥 (索引 %d)。", self.current_api_key_index)
+        try:
+            genai.configure(api_key=new_key)
+            # 切换密钥后，重置模型索引以从第一个模型开始重试
+            self.current_model_index = 0
+            self.model_name = self.current_model_name()
+            logging.info("GeminiClient: 已使用新密钥重新配置，并将模型重置为 %s", self.model_name)
+            return True
+        except Exception as e:
+            logging.error("GeminiClient: 使用新API密钥配置失败: %s", e)
+            return False
+            
+    def generate(self, prompt: str, max_retries: int = 2, retry_delay: int = 30) -> str:
+        if not self.enabled or not self.available_models:
+            error_msg = "抱歉，Gemini客户端未初始化或没有可用的模型。"
             logging.error("GeminiClient: %s", error_msg)
             return error_msg
 
-        for attempt in range(max_retries):
-            try:
-                if attempt > 0:
-                    logging.info("GeminiClient: retry attempt %s for generation", attempt + 1)
+        initial_key_index = self.current_api_key_index
+        initial_model_index = self.current_model_index
+        
+        # 外层循环：遍历API密钥
+        while True:
+            # 中层循环：遍历可用模型
+            while True:
+                current_model = self.available_models[self.current_model_index]
+                logging.info("GeminiClient: 正在使用模型 '%s' 和密钥索引 %d 进行生成...", self.current_model_name(), self.current_api_key_index)
                 
-                self._wait_for_rate_limit()
-                resp = self.model.generate_content(prompt, safety_settings=self.safety_settings)
-                text = getattr(resp, 'text', None)
-                if text:
-                    return text
-                
-                # 备用获取方式
-                if hasattr(resp, 'candidates'):
+                # 内层循环：对当前模型和密钥进行重试
+                for attempt in range(max_retries):
                     try:
-                        c = resp.candidates
-                        if len(c) and hasattr(c[0], 'content'):
-                            return c[0].content
-                    except Exception:
-                        pass
-                raise Exception('empty response')
+                        if attempt > 0:
+                            logging.info("GeminiClient: 对模型 '%s' 的第 %d 次重试...", self.current_model_name(), attempt + 1)
+                        
+                        self._wait_for_rate_limit()
+                        resp = current_model.generate_content(prompt, safety_settings=self.safety_settings)
+                        text = getattr(resp, 'text', None)
+                        if text:
+                            return text
+                        
+                        raise Exception('empty response from Gemini API')
+                        
+                    except Exception as e:
+                        err_lower = str(e).lower()
+                        logging.warning("GeminiClient: 模型 '%s' 生成失败 (尝试 %d/%d): %s", self.current_model_name(), attempt + 1, max_retries, e)
+                        
+                        # 如果是流量或配额问题，进行等待后重试
+                        if any(k in err_lower for k in ('quota', '429', 'rate', 'limit')):
+                            if attempt < max_retries - 1:
+                                logging.warning("GeminiClient: 检测到流量限制，等待 %d 秒后重试。", retry_delay)
+                                time.sleep(retry_delay)
+                                continue # 继续内层循环重试
+                            else:
+                                # 如果最后一次重试仍然是流量问题，则跳出内层循环，尝试切换模型/密钥
+                                logging.warning("GeminiClient: 模型 '%s' 在所有重试后仍遇到流量限制。", self.current_model_name())
+                                break 
+                        else:
+                            # 对于其他类型的错误（如连接错误、无效参数等），立即跳出内层重试循环
+                            logging.error("GeminiClient: 遇到非流量限制错误，将立即尝试下一个模型/密钥。")
+                            break # 跳出内层循环
                 
-            except Exception as e:
-                err = str(e).lower()
-                logging.exception("GeminiClient: generation error: %s", e)
-                
-                # 详细的错误分类处理
-                if any(k in err for k in ('quota', '429', 'rate', 'limit')) and attempt < max_retries - 1:
-                    error_type = "配额或频率限制"
-                    logging.warning("GeminiClient: %s 检测到，等待 %s 秒后重试", error_type, retry_delay)
-                    time.sleep(retry_delay)
-                    continue
-                elif any(k in err for k in ('timeout', 'connection', 'network')) and attempt < max_retries - 1:
-                    error_type = "网络连接问题"
-                    logging.warning("GeminiClient: %s 检测到，等待 %s 秒后重试", error_type, retry_delay)
-                    time.sleep(retry_delay)
-                    continue
-                elif any(k in err for k in ('auth', 'unauthorized', 'invalid', 'key')) and attempt < max_retries - 1:
-                    error_type = "认证或API密钥问题"
-                    logging.warning("GeminiClient: %s 检测到，等待 %s 秒后重试", error_type, retry_delay)
-                    time.sleep(retry_delay)
-                    continue
-                    
-                if attempt < max_retries - 1:
-                    logging.warning("GeminiClient: 通用错误，等待 %s 秒后重试", retry_delay)
-                    time.sleep(retry_delay)
-                    continue
-                
-                # 最终失败时返回详细的错误信息
-                error_msg = f"抱歉，Gemini生成内容时遇到问题：{str(e)}"
-                logging.error("GeminiClient: 最终失败 - %s", error_msg)
+                # 如果内层循环（所有重试）完成或中断，尝试切换到下一个模型
+                self._switch_to_next_model()
+                # 如果已经把所有模型都试了一遍，跳出中层循环
+                if self.current_model_index == initial_model_index:
+                    logging.warning("GeminiClient: 已尝试完当前密钥下的所有可用模型。")
+                    break
+
+            # 如果中层循环（所有模型）完成，尝试切换到下一个API密钥
+            self._switch_to_next_key()
+            # 如果已经把所有密钥都试了一遍，跳出外层循环
+            if self.current_api_key_index == initial_key_index:
+                error_msg = "抱歉，所有Gemini模型和API密钥均尝试失败。"
+                logging.error("GeminiClient: %s", error_msg)
                 return error_msg
+                
+    def current_model_name(self) -> str:
+        """获取当前活动模型的名称"""
+        if self.enabled and self.available_models:
+            # 确保索引在范围内
+            idx = self.current_model_index % len(self.available_models)
+            model_full_name = self.available_models[idx].model_name
+            return model_full_name.replace('models/', '')
+        return "Unknown"
+
+
+
 
 
 class DeepSeekClient(BaseLLMClient):
